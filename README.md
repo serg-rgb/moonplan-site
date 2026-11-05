@@ -11,7 +11,7 @@ python3 build.py --preview
 python3 -m http.server 4817 --directory dist
 ```
 
-Open http://localhost:4817/en/ (or `/de/`, `/ja/`). The default production origin in `site.json` is `https://moonplan.day`; it is a planned domain until registration and DNS are completed.
+Open http://localhost:4817/en/ (or `/de/`, `/ja/`). The default production origin in `site.json` is `https://moonplan.day`; it is registered and configured for this site.
 
 For a GitHub project preview, build with its base path:
 
@@ -38,7 +38,7 @@ Repository: https://github.com/serg-rgb/moonplan-site
 
 GitHub Actions builds HTML and deploys to GitHub Pages. Hosting and public repository Actions use the existing GitHub account; no backend, paid site builder, database or email signup service is used. Domain registration and renewal are separate purchases.
 
-The workflow defaults to the preview URL. After the domain is registered and configured, set repository variables `SITE_URL=https://moonplan.day` and `INDEX_SITE=true`, update the Pages custom domain, and rerun the workflow. Wait for certificate approval before enforcing HTTPS on the custom domain. The website does not manage domain registration or billing.
+Production repository variables are `SITE_URL=https://moonplan.day` and `INDEX_SITE=true`; the Pages custom domain is moonplan.day. The workflow has a preview fallback for a new checkout without these variables. Domain registration and renewal are managed separately through Vercel. See `docs/domain-setup.md`.
 
 ## Assets and privacy
 

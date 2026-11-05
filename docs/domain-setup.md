@@ -1,10 +1,12 @@
-# moonplan.day — pending registration
+# moonplan.day
 
-The user selected this domain and plans to add a payment method in Vercel and provide registrant details. No registration has been executed and no charge has been made. Get a fresh Vercel quote and explicit approval of its disclosures before a purchase. Do not use an expired quote or infer purchase approval from a domain preference.
+Registered November 5, 2026 through the existing Vercel account for Aurelia Labs LLC. Domain billing and renewal are managed separately in Vercel; hosting uses GitHub Pages.
 
-The site is already live at https://serg-rgb.github.io/moonplan-site/ with `noindex`. No paid hosting is needed.
+GitHub Pages repository: `serg-rgb/moonplan-site`. Production origin: `https://moonplan.day`. Actions variables: `SITE_URL=https://moonplan.day`, `INDEX_SITE=true`.
 
-After the purchase, verify the domain in GitHub using the TXT challenge shown by the account settings. Add `moonplan.day` as the custom domain of the `serg-rgb/moonplan-site` Pages site before changing DNS. Then add the following records at the authoritative DNS provider:
+## DNS
+
+Authoritative DNS is Vercel. The following records point to GitHub Pages:
 
 | Type | Name | Value |
 |---|---|---|
@@ -14,11 +16,8 @@ After the purchase, verify the domain in GitHub using the TXT challenge shown by
 | A | @ | 185.199.111.153 |
 | CNAME | www | serg-rgb.github.io |
 
-Do not add a wildcard record. Keep unrelated DNS records intact. If an existing apex record conflicts, review that specific record before replacing it. IPv6 records are optional and can be added using GitHub’s documented values.
+The newly created default Vercel parking ALIAS records at the apex and wildcard were removed. Existing CAA records authorising certificate issuers, including letsencrypt.org, were preserved.
 
-Set the repository Actions variables `SITE_URL=https://moonplan.day` and `INDEX_SITE=true`. Rerun the website workflow, verify DNS, wait for the GitHub certificate, enforce HTTPS and check the apex and www redirect. GitHub Actions Pages sites use the repository custom domain setting; a generated CNAME file alone does not configure it.
+The GitHub Pages custom domain is set to moonplan.day. GitHub manages the HTTPS certificate. The root domain and www should be checked after any DNS or Pages configuration change.
 
-Check each language’s homepage, privacy, terms and support page at the final domain. The app and App Store Connect must use the final public URLs. Adding the website alone does not insert a privacy link into the iOS app.
-
-Official configuration reference, checked November 5, 2026:
-https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site
+Official reference: https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site
