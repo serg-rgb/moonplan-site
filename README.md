@@ -65,7 +65,11 @@ Legal text describes the implementation reviewed on November 5, 2026. It does no
 `scripts/check-site.cjs` uses an existing Playwright installation and Chrome. It checks all public page variants at 320, 390, 768 and 1440 px, translated legal navigation, mobile menu, native FAQ without JS, reduced motion, clipboard feedback, local links and browser errors. Screenshots are written outside the site output.
 
 ```sh
-PLAYWRIGHT_MODULE=/path/to/playwright ARTIFACTS=/tmp/moonplan-checks node scripts/check-site.cjs
+PLAYWRIGHT_MODULE=/path/to/playwright ARTIFACTS=./verification node scripts/check-site.cjs
 ```
 
 Set `SITE_URL` when testing a base path or deployed preview. The test expects all route requests to return 200 including the direct `/404.html` document; an unknown URL on the deployed host should instead return HTTP 404 with that document.
+
+## Local project materials
+
+All landing materials are kept in this Desktop project directory. `deliverables/` contains the source archive and Russian handoff/domain documents. `verification/` contains browser reports and screenshots; `work/` contains reference and diagnostic files. These three directories are local and excluded from the public repository and website build.

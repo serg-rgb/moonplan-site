@@ -4,7 +4,7 @@ const fs=require('node:fs');
 const path=require('node:path');
 const assert=require('node:assert/strict');
 const base=process.env.SITE_URL || 'http://127.0.0.1:4817';
-const artifacts=process.env.ARTIFACTS || '/tmp/moonplan-site-checks';
+const artifacts=process.env.ARTIFACTS || path.resolve(__dirname,'../verification');
 fs.mkdirSync(artifacts,{recursive:true});
 (async()=>{
   const browser=await chromium.launch({channel:'chrome',headless:true});
