@@ -26,6 +26,15 @@
         ]
       },
       {
+        "id": "purchases",
+        "title": "Käufe von Moonplan Premium",
+        "paragraphs": [
+          "Moonplan Premium ist ein optionales, sich automatisch verlängerndes Abonnement, das über Apples App Store verkauft wird. Zahlung, Abrechnung, Verlängerung, Kündigung und Erstattungen wickelt Apple ab. Aurelia Labs erhält bei einem Kauf weder deine Zahlungskartendaten noch dein Apple Kontopasswort, deinen Namen oder deine E-Mail-Adresse.",
+          "Die App prüft den Abostatus auf deinem Gerät über Apples StoreKit anhand von Transaktionen, die Apple signiert; wir betreiben dafür keinen Server. Damit Premium auch offline funktioniert, speichert die App eine Kopie dieses Status lokal (Produktkennung, Ablaufdatum und ob ein Probezeitraum läuft). Außerdem speichert sie lokal, welches Vorhaben du in der kostenlosen Version gewählt hast und wann, sowie ob das Abo-Angebot nach der Einrichtung bereits angezeigt wurde. „Käufe wiederherstellen“ fordert bei Apple einen Abgleich deiner Käufe an.",
+          "Das Löschen der App entfernt diese lokalen Kopien, kündigt aber kein Abonnement: Es bleibt mit deinem Apple Konto verbunden, bis du es in den Einstellungen deines Apple Kontos kündigst."
+        ]
+      },
+      {
         "id": "website",
         "title": "Diese Website",
         "paragraphs": [
@@ -112,9 +121,11 @@
       },
       {
         "id": "payments",
-        "title": "Verfügbarkeit und künftige Käufe",
+        "title": "Moonplan Premium",
         "paragraphs": [
-          "Diese Website nimmt keine Zahlungen an und schließt keine Abonnements ab. Hier werden weder ein Preis noch ein Probezeitraum oder ein kostenpflichtiger Tarif angeboten. Falls später kostenpflichtige Funktionen eingeführt werden, werden Preis, Laufzeit, Verlängerung und Kündigung vor dem Kauf angezeigt. Eine spätere Aktualisierung dieser Bedingungen erlaubt keine Abbuchung."
+          "Moonplan Premium ist ein optionales, sich automatisch verlängerndes Abonnement, das in der App angeboten und ausschließlich über Apples App Store verkauft wird, mit Monats- und Jahrestarif. Preis und Laufzeit werden in der App vor der Bestätigung des Kaufs in deiner Landeswährung angezeigt. Die Zahlung wird bei Bestätigung des Kaufs oder nach Ende eines kostenlosen Probezeitraums über dein Apple Konto abgerechnet.",
+          "Neuen Abonnenten kann ein kostenloser Probezeitraum angeboten werden (derzeit 3 Tage). Wenn du nicht mindestens 24 Stunden vor Ende des Probezeitraums oder der laufenden Periode kündigst, verlängert sich das Abonnement automatisch zum Preis des gewählten Tarifs, und dein Apple Konto wird innerhalb von 24 Stunden vor Ende der Periode belastet. Du kannst das Abonnement in den Einstellungen deines Apple Kontos verwalten oder kündigen; die Kündigung wirkt zum Ende der laufenden Periode. Erstattungen bearbeitet Apple nach seinen Richtlinien.",
+          "Premium erweitert den Kalender über den nächsten Monat hinaus und erlaubt, das Vorhaben im Planer jederzeit zu wechseln. Die übrigen Funktionen bleiben ohne Abonnement verfügbar. Diese Website nimmt keine Zahlungen an und schließt keine Abonnements ab. Für den Kauf im App Store gelten Apples <a href=\"https://www.apple.com/legal/internet-services/itunes/dev/stdeula/\">Standardlizenzvertrag für Endnutzer</a> und Apples Bedingungen."
         ]
       },
       {
