@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "viewChecks": 75,
+  "linksChecked": 94,
+  "widths": [
+    320,
+    390,
+    768,
+    1440
+  ],
+  "routes": 17,
+  "browserErrors": [],
+  "failedResources": []
+}
