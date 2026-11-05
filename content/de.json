@@ -1,0 +1,58 @@
+{
+  "langName":"Deutsch", "locale":"de_DE",
+  "title":"Moonplan · Mondkalender für das iPhone",
+  "description":"Entdecke den Mond mit Moonplan: Mondphasen, Monatskalender, traditionelle Tagesplanung, Mondatlas und Widgets für dein iPhone. Auf Deutsch, Englisch und Japanisch.",
+  "skip":"Zum Inhalt", "home":"Startseite", "menu":"Menü", "close":"Menü schließen", "language":"Sprache",
+  "nav":["Entdecken","So geht’s","Fragen"],
+  "eyebrow":"Ein Mondkalender für dein iPhone",
+  "hero":["Dem Mond", "ein Stück näher."],
+  "intro":"Entdecke seine Phasen. Finde deinen Rhythmus. Und ein wenig Staunen im Alltag.",
+  "heroBody":"Ein detaillierter Mondkalender, ein durchdachter Planer und ein Mond zum Erkunden. Zusammen an einem ruhigen Ort auf deinem iPhone.",
+  "cta":"Moonplan entdecken", "download":"Im App Store laden", "status":"Bald im App Store", "compatibility":"Für iPhone · Ab iOS 17",
+  "proof":["Ohne Benutzerkonto","Berechnung auf deinem Gerät","Drei Sprachen"],
+  "heroCaption":"Ein echter Einblick in Moonplan", "heroAlt":"Die Heuteansicht von Moonplan mit Mondphase und lokalen Monddaten",
+  "rail":["Mondphasen","Der Himmel über deiner Stadt","Bewusst planen","Genauer hinsehen"],
+  "featureEyebrow":"Mehr entdecken, jeden Tag", "featureTitle":["Ein Mond.","So viel zu entdecken."],
+  "featureIntro":"Ein kurzer Blick auf die heutige Phase oder etwas Zeit für den kommenden Monat. Du entscheidest, wie tief du eintauchst.",
+  "features":[
+    {"number":"01","tag":"Dein Mondkalender","title":"Der Monat in einem neuen Licht.","body":"Neumond, Vollmond und alle Phasen dazwischen. Öffne einen Tag und entdecke Monddaten und Zeiten für die Stadt, die du ausgewählt hast.","detail":"Phase · Beleuchtung · Mondaufgang und Monduntergang","image":"calendar","alt":"Der Monatskalender von Moonplan mit Mondphasen für jeden Tag"},
+    {"number":"02","tag":"Ein Planer mit Bedacht","title":"Mehr Bewusstsein für deine Alltagspläne.","body":"Ob Pflanzenpflege oder Haushalt: Entdecke passende Tage aus der Perspektive überlieferter Mondtraditionen. Jeder Vorschlag erklärt die Faktoren dahinter.","detail":"Aktivitäten finden · Tage vergleichen · Gründe verstehen","image":"planner-results","alt":"Der Planer von Moonplan mit vorgeschlagenen Tagen und ihren Begründungen","note":"Die Planungsvorschläge beruhen auf kulturellen Traditionen. Sie belegen keine wissenschaftlichen Wirkungen und garantieren keine Ergebnisse."},
+    {"number":"03","tag":"Dein Mondatlas für unterwegs","title":"Entdecke die Welt über uns.","body":"Zoome in die detailreiche Mondoberfläche. Entdecke benannte Krater und Mondmeere sowie die Orte, an denen die Apollo Missionen gelandet sind.","detail":"Mondoberfläche · Benannte Formationen · Apollo Landestellen","image":"fullscreen","alt":"Die bildschirmfüllende Mondansicht mit benannten Formationen"}
+  ],
+  "extras":[
+    {"title":"Der Mond auf einen Blick","body":"Mit Widgets auf dem Homebildschirm und dem Sperrbildschirm bleibt die Mondphase immer in deiner Nähe."},
+    {"title":"Eine weitere Ebene der Zeit","body":"Entdecke den japanischen Kalender mit Daten des alten Kalenders, Rokuyō und japanischen Feiertagen."},
+    {"title":"In deiner Sprache zu Hause","body":"Deutsch, English oder 日本語. Wähle die Sprache direkt in der App und ändere sie jederzeit."}
+  ],
+  "howEyebrow":"Mach es zu deinem Kalender", "howTitle":"Drei kleine Schritte.\nEin neuer Blickwinkel.",
+  "steps":[
+    {"title":"Wähle deine Stadt","body":"Lege Sprache und Stadt fest. Ohne Konto, Geburtsdaten oder Zugriff auf deinen Standort."},
+    {"title":"Entdecke deinen Tag","body":"Beginne mit dem heutigen Mond oder öffne ein Datum im Kalender und sieh dir die Details an."},
+    {"title":"Folge deiner Neugier","body":"Suche eine Aktivität im Planer, erkunde den Mondatlas oder füge ein Widget hinzu."}
+  ],
+  "tagline":["Ein wenig weniger Eile.","Ein wenig mehr Rhythmus."],
+  "principleEyebrow":"Mit Sorgfalt gemacht", "principleTitle":"Raum zum Staunen.\nKlarheit, wo sie zählt.",
+  "principles":[
+    {"title":"Astronomie auf deinem iPhone","body":"Mondpositionen und Phasen werden auf deinem Gerät berechnet. Der Kalender bleibt auch ohne Internet verfügbar."},
+    {"title":"Traditionen mit Kontext","body":"Der Planer zeigt traditionelle Deutungen mit ihren Begründungen. Deine Entscheidungen und dein Urteilsvermögen stehen an erster Stelle."},
+    {"title":"Bewusst unaufdringlich","body":"Kein Konto, keine Werbetracker und keine Analysedienste in der App. Die Stadtsuche nutzt auf deine Anfrage Apples Geocodingdienst."}
+  ],
+  "faqEyebrow":"Gut zu wissen", "faqTitle":"Ein paar irdische Fragen.",
+  "faq":[
+    ["Kann ich Moonplan schon herunterladen?","Moonplan wird für den App Store vorbereitet. Diese Website zeigt die aktuelle App. Sobald die öffentliche Version verfügbar ist, findest du hier den Downloadlink."],
+    ["Welche Geräte und Sprachen werden unterstützt?","Moonplan ist für das iPhone mit iOS 17 oder neuer entwickelt. App und Website gibt es auf Deutsch, Englisch und Japanisch."],
+    ["Brauche ich ein Konto oder GPS?","Nein. Wähle selbst eine Stadt oder behalte die voreingestellte Stadt. Moonplan fragt weder den Gerätestandort ab noch verlangt es ein Benutzerkonto."],
+    ["Funktioniert Moonplan ohne Internet?","Ja, Mondberechnungen, Kalender und Planer laufen auf deinem Gerät. Nur die Suche nach einer neuen Stadt benötigt eine Internetverbindung zu Apples Geocodingdienst."],
+    ["Worauf beruhen die Planungsvorschläge?","Sie beruhen auf überlieferten Deutungen von Mondphasen und weiteren Kalenderfaktoren. Diese kulturellen Traditionen sind keine wissenschaftlich belegten Wirkungen, keine Fachberatung und keine Ergebnisversprechen."],
+    ["Kann ich den japanischen Kalender nutzen?","Ja. Die optionale Ansicht enthält Daten des alten Kalenders, Rokuyō und japanische Feiertage. Wenn du Japanisch in der App auswählst, wird sie automatisch aktiviert."],
+    ["Erfasst Moonplan meine Suchanfragen im Planer?","Suchanfragen im Planer werden auf deinem Gerät verarbeitet und nicht an uns gesendet. Bei der Stadtsuche wird der eingegebene Text an Apple übermittelt, damit die Stadt gefunden werden kann."],
+    ["Wo bekomme ich Hilfe?","Schreibe an admin@aurelialabs.io. Nenne deine iOS Version, die Appversion und beschreibe kurz das Problem. Bitte sende keine sensiblen persönlichen Informationen."]
+  ],
+  "finalEyebrow":"Ein kleines Ritual für jeden Tag", "finalTitle":["Ein wenig Platz", "für den Mond."], "finalBody":"Dein Kalender. Deine Neugier. Ein ruhigerer Blick nach vorn.",
+  "footerLine":"Ein Mondkalender für deinen Alltag.", "privacy":"Datenschutz", "terms":"Nutzungsbedingungen", "support":"Support", "legalNotice":"Anbieter", "credits":"Quellen", "legalEyebrow":"Klar und verständlich", "updated":"Aktualisiert am 5. November 2026", "contents":"Auf dieser Seite", "back":"Zurück zu Moonplan", "emailAction":"Support kontaktieren", "copyEmail":"Adresse kopieren", "copied":"Adresse kopiert", "copyFailed":"Kopieren nicht möglich. Bitte markiere die Adresse unten.",
+  "supportTitle":"Ein wenig Hilfe,\nwenn du sie brauchst.", "supportIntro":"Fragen zu Moonplan, ein Problem oder ein Anliegen zum Datenschutz? Schreib uns direkt.",
+  "supportChecklistTitle":"Damit wir das Problem verstehen", "supportChecklist":["Dein iPhone Modell und deine iOS Version","Die Moonplan Version aus den Einstellungen","Die gewählte Stadt, das Datum und die Appsprache","Was du erwartet hast und was stattdessen passiert ist"],
+  "supportPrivacy":"Sende nur die Angaben, die wir zum Verständnis benötigen. Entferne aus Screenshots Informationen, die du nicht teilen möchtest.",
+  "notFoundTitle":"Kurz vom Kurs abgekommen.", "notFoundBody":"Diese Seite wurde nicht gefunden. Hier geht es zurück zu Moonplan.",
+  "rootTitle":"Der Mond spricht deine Sprache.", "rootBody":"Wähle eine Sprache und entdecke Moonplan.", "preview":"Appvorschau. Die Ansichten zeigen ein Beispieldatum und eine Beispielstadt."
+}
