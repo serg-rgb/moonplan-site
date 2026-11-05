@@ -1,54 +1,47 @@
 # Moonplan website
 
-Static multilingual website for Moonplan by Aurelia Labs LLC. English, German and Japanese; each language includes the landing page, privacy policy, terms, support and publisher information. The root is a language selector and a custom 404 is included.
+Static website for Moonplan by Aurelia Labs LLC, in English, German and Japanese. Each language includes the landing page, privacy policy, terms, support and publisher information. A language selector and branded 404 are included.
 
-## Build and preview
+Production: https://moonplan.day/
+Repository: https://github.com/serg-rgb/moonplan-site
 
-Python 3.9+ is the only build requirement. No packages or API keys are needed.
+## Build locally
+
+Python 3.9+ is the only build requirement; no packages or API keys are needed.
 
 ```sh
 python3 build.py --preview
 python3 -m http.server 4817 --directory dist
 ```
 
-Open http://localhost:4817/en/ (or `/de/`, `/ja/`). The default production origin in `site.json` is `https://moonplan.day`; it is registered and configured for this site.
-
-For a GitHub project preview, build with its base path:
-
-```sh
-python3 build.py --url https://serg-rgb.github.io/moonplan-site --preview
-```
-
-The preview is marked `noindex`; it is publicly accessible, not password protected. Production is built without `--preview`, with canonical URLs, reciprocal language alternates, sitemap and CNAME.
+Open http://localhost:4817/en/ (or `/de/`, `/ja/`). `python3 build.py` builds production with indexing enabled. `--preview` adds noindex and omits the production sitemap entries.
 
 ## Edit
 
-- `content/en.json`, `de.json`, `ja.json`: marketing, navigation and support text.
-- `legal/en.json`, `de.json`, `ja.json`: privacy, terms and publisher pages.
-- `site.json`: contact, company details, target domain, eventual App Store URL.
+- `content/`: marketing and support text for en, de and ja.
+- `legal/`: privacy, terms and publisher text for each language.
+- `site.json`: company, contact, origin and eventual App Store URL.
 - `scripts/render.py`: shared HTML templates.
-- `assets/site.css`, `responsive.css`: layout and responsive rules.
-- `assets/site.js`: progressive enhancement for menu, reveals and copy email.
+- `assets/`: styles, progressive enhancement, local fonts and real app screenshots.
+- `vercel.json`: static build, output directory and URL handling.
 
-When the app launches, set `appStoreUrl` and update the release status and first FAQ answer in all three content files. Review the terms’ preview wording. When subscriptions, analytics or another data flow are introduced, update the matching legal text before the feature ships.
+When the app launches, set `appStoreUrl` and update release text and the first FAQ answer in all three languages. Review the preview wording in the terms. Update legal text before introducing purchases, analytics or another data flow.
 
-## Hosting
+## Hosting and deployment
 
-Repository: https://github.com/serg-rgb/moonplan-site
+Production is hosted in the already active Vercel Pro account, project `moonplan-site`. Pushing main automatically builds the static output. The framework is Other, build command `python3 build.py`, output `dist`. No server functions or new paid subscription were added. Domain registration and renewal are managed separately in Vercel; see `docs/domain-setup.md`.
 
-GitHub Actions builds HTML and deploys to GitHub Pages. Hosting and public repository Actions use the existing GitHub account; no backend, paid site builder, database or email signup service is used. Domain registration and renewal are separate purchases.
+The GitHub Pages workflow is manual and serves an optional noindex preview using its project base path. It does not deploy production or configure the production domain.
 
-Production repository variables are `SITE_URL=https://moonplan.day` and `INDEX_SITE=true`; the Pages custom domain is moonplan.day. The workflow has a preview fallback for a new checkout without these variables. Domain registration and renewal are managed separately through Vercel. See `docs/domain-setup.md`.
+For manual production deployment from an explicitly linked directory, inspect the project and scope first, then use `vercel deploy --prod --scope sergcreator69-1812s-projects`. Keep `.vercel/` local and out of Git.
 
 ## Assets and privacy
 
-The font pair Unbounded / Manrope matches the current AstroGuide website. Original fonts and screenshots come from the existing Moonplan project; font licences are in `assets/fonts/`. Screenshots were converted to WebP for delivery. Japanese glyphs use the visitor’s system fonts. No external font requests are made. The social preview is a browser rendering of the website branding and a real app screenshot.
+Unbounded / Manrope match the current AstroGuide website. Font licences are bundled in `assets/fonts`. Japanese glyphs use system fonts. App screenshots were converted to WebP; no new external image assets were downloaded. The social preview is a browser rendering of the branding and a real app screenshot.
 
-No cookies, analytics, local storage, remote scripts, signup forms or payment processing are added. GitHub Pages infrastructure still processes access logs, as explained in the privacy policy. The publisher’s address matches https://aurelialabs.io/ at the time of preparation.
+No advertising or analytics cookies, signup forms, remote scripts, tracking or payment forms were added. Infrastructure logs are described in the privacy policy, covering Vercel production and the GitHub Pages preview.
 
-## Store metadata
-
-Once live on the final domain, use these paths in App Store Connect:
+## App Store metadata
 
 | Language | Marketing | Privacy | Support | Terms |
 |---|---|---|---|---|
@@ -56,20 +49,15 @@ Once live on the final domain, use these paths in App Store Connect:
 | German | `/de/` | `/de/privacy.html` | `/de/support.html` | `/de/terms.html` |
 | Japanese | `/ja/` | `/ja/privacy.html` | `/ja/support.html` | `/ja/terms.html` |
 
-Apple also requires an easily accessible privacy policy link **inside the app**. Publishing this website does not add that app link or change App Store Connect metadata. App distribution uses Apple’s Standard EULA unless a different licence is explicitly supplied; these website terms supplement it.
+Use https://moonplan.day as the origin. Apple also requires an accessible privacy policy link inside the app. This website does not modify the iOS code or App Store Connect fields. Apple's Standard EULA applies unless a different licence is expressly supplied; these website terms supplement it. Legal text describes the implementation reviewed November 5, 2026 and does not certify App Review approval or replace legal review.
 
-Legal text describes the implementation reviewed on November 5, 2026. It does not certify App Review approval or substitute for jurisdiction specific legal review. The publisher should confirm its operational handling of support emails and international transfers before relying on the policy.
+## Checks and local materials
 
-## Verification
-
-`scripts/check-site.cjs` uses an existing Playwright installation and Chrome. It checks all public page variants at 320, 390, 768 and 1440 px, translated legal navigation, mobile menu, native FAQ without JS, reduced motion, clipboard feedback, local links and browser errors. Screenshots are written outside the site output.
+`scripts/check-site.cjs` verifies all page variants at four widths, menu and FAQ behavior, language changes, accessibility basics and internal links. `scripts/check-production.cjs` checks the production domain, all translated documents, HTTPS, www redirect and custom 404. Both use an existing Playwright installation and Chrome.
 
 ```sh
-PLAYWRIGHT_MODULE=/path/to/playwright ARTIFACTS=./verification node scripts/check-site.cjs
+PLAYWRIGHT_MODULE=/path/to/playwright node scripts/check-site.cjs
+PLAYWRIGHT_MODULE=/path/to/playwright node scripts/check-production.cjs
 ```
 
-Set `SITE_URL` when testing a base path or deployed preview. The test expects all route requests to return 200 including the direct `/404.html` document; an unknown URL on the deployed host should instead return HTTP 404 with that document.
-
-## Local project materials
-
-All landing materials are kept in this Desktop project directory. `deliverables/` contains the source archive and Russian handoff/domain documents. `verification/` contains browser reports and screenshots; `work/` contains reference and diagnostic files. These three directories are local and excluded from the public repository and website build.
+Reports and screenshots default to `verification/`. `deliverables/` contains the source archive and Russian handoff/domain documents. `work/` contains reference and diagnostic files. These three directories are local, ignored by Git and excluded from the website build. All landing materials remain in this Desktop project directory.

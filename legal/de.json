@@ -30,7 +30,8 @@
         "title": "Diese Website",
         "paragraphs": [
           "Diese Website setzt keine Werbe oder Analyse Cookies, verwendet keine Besucheranalyse und legt keine Profile im Browserspeicher an. Schriften, Skripte und Screenshots werden zusammen mit der Website ausgeliefert. Die Sprachwahl funktioniert über normale Links und nicht über Tracking Cookies.",
-          "Die Website wird auf Vercel gehostet. Vercel verarbeitet technische Anfragen einschließlich IP Adressen und Anfragemetadaten, um die Website auszuliefern und zu schützen. Weitere Angaben enthält <a href=\"https://vercel.com/legal/privacy-notice\">Vercels Datenschutzhinweis</a>. Für Infrastrukturdaten gelten die dort beschriebenen Aufbewahrungsfristen und Regeln für internationale Übermittlungen. Externe Links führen zu Diensten mit eigenen Datenschutzregeln."
+          "Die Website wird auf Vercel gehostet. Vercel verarbeitet technische Anfragen einschließlich IP Adressen und Anfragemetadaten, um die Website auszuliefern und zu schützen. Weitere Angaben enthält <a href=\"https://vercel.com/legal/privacy-notice\">Vercels Datenschutzhinweis</a>. Für Infrastrukturdaten gelten die dort beschriebenen Aufbewahrungsfristen und Regeln für internationale Übermittlungen. Externe Links führen zu Diensten mit eigenen Datenschutzregeln.",
+          "Die frühere Vorschauadresse wird auf GitHub Pages gehostet. Wenn du diese Vorschau besuchst, speichert GitHub IP Adressen zu Sicherheitszwecken. Weitere Angaben enthält <a href=\"https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement\">GitHubs Datenschutzerklärung</a>."
         ]
       },
       {

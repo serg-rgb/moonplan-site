@@ -1,23 +1,21 @@
 # moonplan.day
 
-Registered November 5, 2026 through the existing Vercel account for Aurelia Labs LLC. Domain billing and renewal are managed separately in Vercel; hosting uses GitHub Pages.
+Registered November 5, 2026 through the existing Vercel account for Aurelia Labs LLC. Billing and renewal are managed in Vercel.
 
-GitHub Pages repository: `serg-rgb/moonplan-site`. Production origin: `https://moonplan.day`. Actions variables: `SITE_URL=https://moonplan.day`, `INDEX_SITE=true`.
+Production uses the existing active Vercel Pro plan. Project: `moonplan-site`; repository: `serg-rgb/moonplan-site`. Git pushes to main build the static site with `python3 build.py` and publish `dist/`. No server functions, analytics or additional subscription were added.
 
 ## DNS
 
-Authoritative DNS is Vercel. The following records point to GitHub Pages:
+Vercel is the authoritative DNS provider. Current project recommendations:
 
 | Type | Name | Value |
 |---|---|---|
-| A | @ | 185.199.108.153 |
-| A | @ | 185.199.109.153 |
-| A | @ | 185.199.110.153 |
-| A | @ | 185.199.111.153 |
-| CNAME | www | serg-rgb.github.io |
+| A | @ | 216.150.1.1 |
+| A | @ | 216.150.16.1 |
+| CNAME | www | 01fd712a13ce3ce3.vercel-dns-016.com. |
 
-The newly created default Vercel parking ALIAS records at the apex and wildcard were removed. Existing CAA records authorising certificate issuers, including letsencrypt.org, were preserved.
+The www hostname redirects to the apex domain with HTTP 308. Vercel manages HTTPS certificates. Existing certificate authority records were preserved. DNS recommendations can change; inspect the specific Vercel project before making future changes.
 
-The GitHub Pages custom domain is set to moonplan.day. GitHub manages the HTTPS certificate. The root domain and www should be checked after any DNS or Pages configuration change.
+GitHub Pages is an optional preview at https://serg-rgb.github.io/moonplan-site/ with noindex. Its workflow is manual and does not manage the production domain.
 
-Official reference: https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site
+Reference: https://vercel.com/docs/domains/working-with-domains/add-a-domain

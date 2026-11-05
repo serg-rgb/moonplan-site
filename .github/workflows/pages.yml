@@ -1,4 +1,4 @@
-name: Publish Moonplan website
+name: Publish Moonplan preview
 
 on:
   workflow_dispatch:
@@ -18,14 +18,8 @@ jobs:
       - uses: actions/configure-pages@v5
       - name: Build static pages
         env:
-          SITE_URL: ${{ vars.SITE_URL || 'https://serg-rgb.github.io/moonplan-site' }}
-          INDEX_SITE: ${{ vars.INDEX_SITE || 'false' }}
-        run: |
-          if [ "$INDEX_SITE" = "true" ]; then
-            python3 build.py --url "$SITE_URL"
-          else
-            python3 build.py --url "$SITE_URL" --preview
-          fi
+          PREVIEW_URL: https://serg-rgb.github.io/moonplan-site
+        run: python3 build.py --url "$PREVIEW_URL" --preview
       - uses: actions/upload-pages-artifact@v4
         with:
           path: dist
