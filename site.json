@@ -4,7 +4,11 @@
   "email": "admin@aurelialabs.io",
   "company": "Aurelia Labs LLC",
   "address": "30 N Gould St #60794, Sheridan, WY 82801, United States",
-  "updated": "2026-11-05",
-  "appStoreUrl": "",
-  "languages": ["en", "de", "ja"]
+  "updated": "2026-11-07",
+  "appStoreUrl": "https://apps.apple.com/app/id6830957447",
+  "languages": [
+    "en",
+    "de",
+    "ja"
+  ]
 }

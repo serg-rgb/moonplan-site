@@ -24,7 +24,7 @@ def head(lang, c, cfg, page='', title=None, description=None, noindex=False, roo
     # No inline script is needed. The CSP is also enforced on GitHub Pages via this meta tag.
     csp = "default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'none'; object-src 'none'; base-uri 'self'; form-action 'none'"
     return f'''<!doctype html>
-<html lang="{lang}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<html lang="{lang}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">{'<meta name="apple-itunes-app" content="app-id=6830957447">' if cfg.get('appStoreUrl') else ''}
 <meta http-equiv="Content-Security-Policy" content="{e(csp, quote=True)}"><meta name="referrer" content="strict-origin-when-cross-origin">
 <title>{e(title)}</title><meta name="description" content="{e(description, quote=True)}">
 <meta name="robots" content="{'noindex, follow' if noindex else 'index, follow'}"><link rel="canonical" href="{url}">
@@ -55,13 +55,15 @@ def footer(lang,c,cfg,page=''):
 def phone(lang, kind, alt, cfg, hero=False):
     return f'<div class="phone{ " phone-hero" if hero else ""}"><img src="{cfg["base"]}/assets/screens/{kind}-{lang}.webp" width="1290" height="2796" alt="{e(alt,quote=True)}" loading="{"eager" if hero else "lazy"}" decoding="async" {"fetchpriority=high" if hero else ""}></div>'
 
-def cta(c,cfg,href):
-    return f'<a class="button" href="{e(cfg["appStoreUrl"] or href,quote=True)}">{e(c["download"] if cfg["appStoreUrl"] else c["cta"])}<span aria-hidden="true">↗</span></a>'
+def cta(c,cfg,href,lang='en'):
+    if cfg["appStoreUrl"]:  # official, unmodified Apple badge (Apple Marketing Tools), localized per page language
+        return f'<a class="store-badge" href="{e(cfg["appStoreUrl"],quote=True)}" rel="noopener"><img src="{cfg["base"]}/assets/badges/app-store-{lang}.svg" alt="{e(c["download"],quote=True)}" height="56" width="{168 if lang!="ja" else 152}" decoding="async"></a>'
+    return f'<a class="button" href="{e(href,quote=True)}">{e(c["cta"])}<span aria-hidden="true">↗</span></a>'
 
 def landing(lang,c,cfg):
     result=head(lang,c,cfg,noindex=cfg['noindex'])+header(lang,c,cfg)
     result+=f'''<main id="main"><section class="hero wrap"><div class="hero-copy"><p class="eyebrow"><span class="tiny-moon" aria-hidden="true"></span>{e(c['eyebrow'])}</p>
-<h1>{lines(c['hero'])}</h1><p class="intro">{e(c['intro'])}</p><p class="hero-body">{e(c['heroBody'])}</p><div class="hero-actions">{cta(c,cfg,'#discover')}<p class="release">{e(c['status']) if not cfg['appStoreUrl'] else e(c['compatibility'])}</p></div>
+<h1>{lines(c['hero'])}</h1><p class="intro">{e(c['intro'])}</p><p class="hero-body">{e(c['heroBody'])}</p><div class="hero-actions">{cta(c,cfg,'#discover',lang)}<p class="release">{e(c['status']) if not cfg['appStoreUrl'] else e(c['compatibility'])}</p></div>
 <ul class="proof">{''.join('<li>'+e(p)+'</li>' for p in c['proof'])}</ul></div>
 <figure class="hero-visual"><div class="orbit orbit-one" aria-hidden="true"></div><div class="orbit orbit-two" aria-hidden="true"></div>{phone(lang,'today',c['heroAlt'],cfg,True)}<figcaption>{e(c['heroCaption'])}</figcaption></figure></section>
 <div class="phase-rail wrap" aria-hidden="true">{''.join(f'<span><i class="phase phase-{i}"></i>{e(s)}</span>' for i,s in enumerate(c['rail']))}</div>
@@ -73,7 +75,7 @@ def landing(lang,c,cfg):
 <section class="tagline wrap" aria-label="{e(' '.join(c['tagline']),quote=True)}"><div class="tagline-orbit" aria-hidden="true"></div><p aria-hidden="true">{''.join('<span class="tagline-line">'+''.join('<span class="word">'+e(w)+'</span>'+('' if lang=='ja' else ' ') for w in (list(line) if lang=='ja' else line.split(' ')))+'</span>' for line in c['tagline'])}</p></section>
 <section class="section principles wrap"><div class="section-heading reveal"><p class="eyebrow">{e(c['principleEyebrow'])}</p><h2>{lines(c['principleTitle'])}</h2></div><div class="principle-list">{''.join(f'<article class="reveal"><span class="index" aria-hidden="true">0{i+1}</span><div><h3>{e(x["title"])}</h3><p>{e(x["body"])}</p></div></article>' for i,x in enumerate(c['principles']))}</div></section>
 <section id="questions" class="section wrap faq"><div class="section-heading reveal"><p class="eyebrow">{e(c['faqEyebrow'])}</p><h2>{e(c['faqTitle'])}</h2></div><div class="faq-items">{''.join(f'<details><summary>{e(q)}<span aria-hidden="true">+</span></summary><p>{e(a)}</p></details>' for q,a in c['faq'])}</div></section>
-<section class="final-cta section wrap reveal"><span class="final-moon" aria-hidden="true">☾</span><p class="eyebrow">{e(c['finalEyebrow'])}</p><h2>{lines(c['finalTitle'])}</h2><p>{e(c['finalBody'])}</p>{cta(c,cfg,'#discover')}<p class="release">{e(c['status']) if not cfg['appStoreUrl'] else e(c['compatibility'])}</p></section></main>'''
+<section class="final-cta section wrap reveal"><span class="final-moon" aria-hidden="true">☾</span><p class="eyebrow">{e(c['finalEyebrow'])}</p><h2>{lines(c['finalTitle'])}</h2><p>{e(c['finalBody'])}</p>{cta(c,cfg,'#discover',lang)}<p class="release">{e(c['status']) if not cfg['appStoreUrl'] else e(c['compatibility'])}</p></section></main>'''
     return result+footer(lang,c,cfg)
 
 def legal_page(lang,c,legal,cfg,kind):

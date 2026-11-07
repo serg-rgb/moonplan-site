@@ -41,7 +41,7 @@
   ],
   "faqEyebrow":"Good to know", "faqTitle":"A few earthly questions.",
   "faq":[
-    ["Is Moonplan available to download?", "Moonplan is being prepared for the App Store. This website shows the current app. A download link will appear here when the public release is available."],
+    ["Where can I download Moonplan?", "Yes. Moonplan is available on the App Store for iPhone with iOS 17 or later. The app is free to download; Moonplan Premium is an optional subscription."],
     ["Which devices and languages does it support?", "Moonplan is designed for iPhone with iOS 17 or later. The app and this website are available in English, German and Japanese."],
     ["Do I need an account or GPS access?", "No. Choose a city yourself, or keep the default city. Moonplan does not request your device’s location or ask you to create an account."],
     ["Does it work without the internet?", "Yes, lunar calculations, the calendar and the planner run on your device. Looking up a new city requires an internet connection to Apple’s geocoding service."],
