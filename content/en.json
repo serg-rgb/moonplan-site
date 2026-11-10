@@ -1,7 +1,7 @@
 {
   "langName": "English", "locale": "en_US",
   "title": "Moonplan · Moon calendar for iPhone",
-  "description": "Meet the Moon with Moonplan for iPhone: lunar phases, a monthly calendar, traditional activity planning, a lunar atlas and widgets. In English, German and Japanese.",
+  "description": "Meet the Moon with Moonplan for iPhone: lunar phases, a monthly calendar, traditional activity planning, a lunar atlas and widgets. In eight languages.",
   "skip": "Skip to content", "home": "Home", "menu": "Menu", "close": "Close menu", "language": "Language",
   "nav": ["Discover", "How it works", "Questions"],
   "eyebrow": "A moon calendar for iPhone",
@@ -9,7 +9,7 @@
   "intro": "Follow its phases. Find your rhythm. Make room for a little wonder in your everyday.",
   "heroBody": "A detailed lunar calendar, a thoughtful planner and a Moon you can explore. Together in one quiet corner of your iPhone.",
   "cta": "Explore Moonplan", "download": "Download on the App Store", "status": "Coming to the App Store", "compatibility": "For iPhone · iOS 17 or later",
-  "proof": ["No account needed", "Calculations on your device", "Three languages"],
+  "proof": ["No account needed", "Calculations on your device", "Eight languages"],
   "heroCaption": "A real look inside Moonplan",
   "heroAlt": "Moonplan Today screen with the Moon, its phase and local lunar information",
   "rail": ["Lunar phases", "Your city’s sky", "Everyday planning", "A closer look"],
@@ -42,7 +42,7 @@
   "faqEyebrow":"Good to know", "faqTitle":"A few earthly questions.",
   "faq":[
     ["Where can I download Moonplan?", "Yes. Moonplan is available on the App Store for iPhone with iOS 17 or later. The app is free to download; Moonplan Premium is an optional subscription."],
-    ["Which devices and languages does it support?", "Moonplan is designed for iPhone with iOS 17 or later. The app and this website are available in English, German and Japanese."],
+    ["Which devices and languages does it support?", "Moonplan is designed for iPhone with iOS 17 or later. The app is available in English, German, Japanese, Russian, Spanish, French, Portuguese (Brazil) and Italian; this website in English, German and Japanese."],
     ["Do I need an account or GPS access?", "No. Choose a city yourself, or keep the default city. Moonplan does not request your device’s location or ask you to create an account."],
     ["Does it work without the internet?", "Yes, lunar calculations, the calendar and the planner run on your device. Looking up a new city requires an internet connection to Apple’s geocoding service."],
     ["What are the planning suggestions based on?", "They use traditional interpretations of lunar phases and other calendar factors. These cultural traditions are not scientifically established effects, professional advice or promises about an outcome."],
