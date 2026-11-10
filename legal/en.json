@@ -21,7 +21,7 @@
         "id": "apple",
         "title": "City search and Apple services",
         "paragraphs": [
-          "When you search for a city, the text you enter is sent to Apple’s geocoding service to find coordinates and a time zone. This needs an internet connection. Apple may process the network and technical information needed to provide that service. Avoid entering a home address or other personal information when a city name is sufficient. You can skip searching and use the default city.",
+          "When you search for a city, the text you enter is sent to Apple’s geocoding service to find coordinates and a time zone. This needs an internet connection. When the app language or your device language changes, the coordinates of the city you chose are sent once to the same service to get the city’s name in that language; the coordinates and time zone stored in the app do not change. Apple may process the network and technical information needed to provide that service. Avoid entering a home address or other personal information when a city name is sufficient. You can skip searching and use the default city.",
           "Apple independently operates the App Store, TestFlight, device backups and optional system diagnostics. Your use of those services and any diagnostic information you choose to share are governed by Apple’s settings and <a href=\"https://www.apple.com/legal/privacy/\">Privacy Policy</a>. We do not receive your Apple account password. Removing the app does not itself delete information held independently by Apple."
         ]
       },

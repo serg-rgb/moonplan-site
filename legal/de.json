@@ -21,7 +21,7 @@
         "id": "apple",
         "title": "Stadtsuche und Dienste von Apple",
         "paragraphs": [
-          "Bei der Suche nach einer Stadt wird dein eingegebener Text an Apples Geocodingdienst gesendet, um Koordinaten und Zeitzone zu ermitteln. Dafür ist eine Internetverbindung erforderlich. Apple kann die zur Bereitstellung des Dienstes nötigen Netzwerkdaten und technischen Informationen verarbeiten. Gib keine Wohnadresse oder anderen persönlichen Angaben ein, wenn ein Stadtname genügt. Du kannst die Suche überspringen und die voreingestellte Stadt verwenden.",
+          "Bei der Suche nach einer Stadt wird dein eingegebener Text an Apples Geocodingdienst gesendet, um Koordinaten und Zeitzone zu ermitteln. Dafür ist eine Internetverbindung erforderlich. Wenn sich die Sprache der App oder deines Geräts ändert, werden die Koordinaten der gewählten Stadt einmal an denselben Dienst gesendet, um den Stadtnamen in dieser Sprache zu erhalten; die in der App gespeicherten Koordinaten und die Zeitzone ändern sich dabei nicht. Apple kann die zur Bereitstellung des Dienstes nötigen Netzwerkdaten und technischen Informationen verarbeiten. Gib keine Wohnadresse oder anderen persönlichen Angaben ein, wenn ein Stadtname genügt. Du kannst die Suche überspringen und die voreingestellte Stadt verwenden.",
           "Apple betreibt App Store, TestFlight, Gerätesicherungen und optionale Systemdiagnosen eigenständig. Für diese Dienste und freiwillig geteilte Diagnoseinformationen gelten Apples Einstellungen und <a href=\"https://www.apple.com/legal/privacy/\">Datenschutzrichtlinie</a>. Wir erhalten dein Apple Kontopasswort nicht. Durch das Löschen der App werden unabhängig bei Apple gespeicherte Informationen nicht automatisch entfernt."
         ]
       },
