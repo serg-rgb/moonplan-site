@@ -51,7 +51,7 @@ No advertising or analytics cookies, signup forms, remote scripts, tracking or p
 
 The same four pages exist under `/es/`, `/fr/`, `/it/`, `/pt-br/` and `/ru/`.
 
-App screenshots on the site are the raw App Store 1.1 captures (`../store/raw/<lang>/`: 01-today, 02-planner, 03-calendar, 06-moon-names) converted to WebP q80. The App Store badge falls back to the English one when `assets/badges/app-store-<lang>.svg` is missing.
+App screenshots on the site are the raw App Store 1.1 captures (`../store/raw/<lang>/`: 01-today, 02-planner, 03-calendar, 06-moon-names) converted to WebP q80. Localized App Store badges for all 8 languages come from Apple Marketing Tools (toolbox.marketingtools.apple.com, black, downloaded 2026-11-11); the English badge is the fallback if one is missing.
 
 Use https://moonplan.day as the origin. Apple also requires an accessible privacy policy link inside the app. This website does not modify the iOS code or App Store Connect fields. Apple's Standard EULA applies unless a different licence is expressly supplied; these website terms supplement it. Legal text describes the implementation reviewed November 5, 2026 and does not certify App Review approval or replace legal review.
 
