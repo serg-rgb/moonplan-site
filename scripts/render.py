@@ -26,13 +26,18 @@ def langs(lang, page, base, label):
 def footer_langs(lang, page, base, label):
     return f'<nav class="footer-languages" aria-label="{e(label,quote=True)}">{lang_links(lang,page,base)}</nav>'
 
+def analytics(cfg):
+    # Vercel Web Analytics (cookieless). Production builds only; see the privacy policy, section "This website".
+    src = cfg.get('analyticsScript')
+    return f'<script defer src="{cfg["base"]}{src}"></script>' if src and not cfg['noindex'] else ''
+
 def head(lang, c, cfg, page='', title=None, description=None, noindex=False, root=False):
     base = cfg['base']
     url = cfg['url'] + ('/' if root else f'/{lang}/{page}')
     alternates = ''.join(f'<link rel="alternate" hreflang="{tag(l)}" href="{cfg["url"]}/{l}/{page}">' for l in LANGS)
     title, description = title or c['title'], description or c['description']
     # No inline script is needed. The CSP is also enforced on GitHub Pages via this meta tag.
-    csp = "default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'none'; object-src 'none'; base-uri 'self'; form-action 'none'"
+    csp = "default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'"
     return f'''<!doctype html>
 <html lang="{tag(lang)}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">{'<meta name="apple-itunes-app" content="app-id=6830957447">' if cfg.get('appStoreUrl') else ''}
 <meta http-equiv="Content-Security-Policy" content="{e(csp, quote=True)}"><meta name="referrer" content="strict-origin-when-cross-origin">
@@ -45,7 +50,7 @@ def head(lang, c, cfg, page='', title=None, description=None, noindex=False, roo
 <meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="{e(title, quote=True)}"><meta name="twitter:description" content="{e(description, quote=True)}"><meta name="twitter:image" content="{cfg['url']}/assets/og-image.png">
 <meta name="theme-color" content="#070711"><link rel="icon" href="{base}/assets/favicon.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="{base}/assets/apple-touch-icon.png">
 <link rel="preload" href="{base}/assets/fonts/manrope_regular.ttf" as="font" type="font/ttf" crossorigin><link rel="stylesheet" href="{base}/assets/site.css"><link rel="stylesheet" href="{base}/assets/responsive.css">
-<script defer src="{base}/assets/site.js"></script></head>'''
+<script defer src="{base}/assets/site.js"></script>{analytics(cfg)}</head>'''
 
 def header(lang, c, cfg, page=''):
     base = cfg['base']

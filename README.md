@@ -39,7 +39,7 @@ For manual production deployment from an explicitly linked directory, inspect th
 
 Unbounded / Manrope match the current AstroGuide website. Font licences are bundled in `assets/fonts`. Japanese glyphs use system fonts. App screenshots were converted to WebP; no new external image assets were downloaded. The social preview is a browser rendering of the branding and a real app screenshot.
 
-No advertising or analytics cookies, signup forms, remote scripts, tracking or payment forms were added. Infrastructure logs are described in the privacy policy, covering Vercel production and the GitHub Pages preview.
+No cookies, signup forms, third-party scripts or payment forms. Production pages load Vercel Web Analytics (cookieless, same-origin script, `analyticsScript` in site.json; omitted in `--preview` builds); the privacy policy describes it in all languages. Infrastructure logs are described in the privacy policy, covering Vercel production and the GitHub Pages preview.
 
 ## App Store metadata
 

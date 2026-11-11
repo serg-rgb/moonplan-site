@@ -4,7 +4,7 @@
   "email": "admin@aurelialabs.io",
   "company": "Aurelia Labs LLC",
   "address": "30 N Gould St #60794, Sheridan, WY 82801, United States",
-  "updated": "2026-11-10",
+  "updated": "2026-11-11",
   "appStoreUrl": "https://apps.apple.com/app/id6830957447",
   "languages": [
     "en",
@@ -15,5 +15,6 @@
     "pt-br",
     "ru",
     "ja"
-  ]
+  ],
+  "analyticsScript": "/_vercel/insights/script.js"
 }
