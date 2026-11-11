@@ -24,7 +24,7 @@
   "extras": [
     {"title":"The Moon at a glance", "body":"Keep the lunar phase close with Home Screen and Lock Screen widgets."},
     {"title":"Another layer of time", "body":"Explore the Japanese calendar with old calendar dates, rokuyō and Japanese public holidays."},
-    {"title":"At home in your language", "body":"English, Deutsch or 日本語. Choose your language in the app and change it whenever you like."}
+    {"title":"At home in your language", "body":"Eight languages, from English and Español to Русский and 日本語. Choose your language in the app and change it whenever you like."}
   ],
   "howEyebrow":"Make it yours", "howTitle":"Three small steps.\nA different perspective.",
   "steps":[
@@ -41,8 +41,8 @@
   ],
   "faqEyebrow":"Good to know", "faqTitle":"A few earthly questions.",
   "faq":[
-    ["Where can I download Moonplan?", "Yes. Moonplan is available on the App Store for iPhone with iOS 17 or later. The app is free to download; Moonplan Premium is an optional subscription."],
-    ["Which devices and languages does it support?", "Moonplan is designed for iPhone with iOS 17 or later. The app is available in English, German, Japanese, Russian, Spanish, French, Portuguese (Brazil) and Italian; this website in English, German and Japanese."],
+    ["Where can I download Moonplan?", "Moonplan is available on the App Store for iPhone with iOS 17 or later. The app is free to download; Moonplan Premium is an optional subscription."],
+    ["Which devices and languages does it support?", "Moonplan is designed for iPhone with iOS 17 or later. The app is available in English, German, Japanese, Russian, Spanish, French, Portuguese (Brazil) and Italian, and so is this website."],
     ["Do I need an account or GPS access?", "No. Choose a city yourself, or keep the default city. Moonplan does not request your device’s location or ask you to create an account."],
     ["Does it work without the internet?", "Yes, lunar calculations, the calendar and the planner run on your device. Looking up a new city requires an internet connection to Apple’s geocoding service."],
     ["What are the planning suggestions based on?", "They use traditional interpretations of lunar phases and other calendar factors. These cultural traditions are not scientifically established effects, professional advice or promises about an outcome."],

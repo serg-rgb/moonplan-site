@@ -7,3 +7,5 @@
 
 .mobile-menu:not([open]) nav{display:none}
 @media(max-width:600px){.orbit{width:240px;height:240px}.hero-visual{min-width:0}}
+@media(max-width:900px){.site-header .lang-menu{margin-left:auto}.language-choices{grid-template-columns:repeat(2,minmax(0,220px))}}
+@media(max-width:600px){.lang-menu summary{padding:8px}.lang-list{right:-48px}.footer-languages{justify-content:flex-start;width:100%}.language-choices{grid-template-columns:1fr;width:100%}}

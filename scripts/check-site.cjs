@@ -13,7 +13,7 @@ fs.mkdirSync(artifacts,{recursive:true});
   page.on('pageerror',error=>errors.push(error.message));
   page.on('console',message=>{if(message.type()==='error')errors.push(message.text());});
   page.on('response',response=>{if(response.status()>=400)bad.push({url:response.url(),status:response.status()});});
-  const routes=['/','/404.html',...['en','de','ja'].flatMap(lang=>['','privacy.html','terms.html','support.html','publisher.html'].map(file=>`/${lang}/${file}`))];
+  const routes=['/','/404.html',...['en','de','es','fr','it','pt-br','ru','ja'].flatMap(lang=>['','privacy.html','terms.html','support.html','publisher.html'].map(file=>`/${lang}/${file}`))];
   for(const width of [320,390,768,1440]){
     await page.setViewportSize({width,height:900});
     for(const route of routes){
@@ -31,19 +31,22 @@ fs.mkdirSync(artifacts,{recursive:true});
       }));
       assert.equal(result.overflow,false,`${width}: horizontal overflow ${route}`);
       assert.equal(result.headings,1,route);assert.equal(result.missingAlt,0,route);assert.deepEqual(result.badImages,[],route);
-      assert(result.canonical,route);assert.equal(result.alternates,4,route);
+      assert(result.canonical,route);assert.equal(result.alternates,9,route);
       assert(!result.links.includes('#'),`${route}: dead anchor`);
-      if(/^\/(en|de|ja)\//.test(route))assert.equal(result.lang,route.split('/')[1]);
+      if(/^\/(en|de|es|fr|it|pt-br|ru|ja)\//.test(route))assert.equal(result.lang,route.split('/')[1].replace('pt-br','pt-BR'));
       checks++;
     }
   }
   // A legal language change must stay on the same document.
   for(const file of ['privacy.html','terms.html','support.html','publisher.html']){
     await page.goto(base+'/en/'+file);
-    await page.locator('.site-header .languages a[hreflang=de]').click();
-    assert(page.url().endsWith('/de/'+file));
-    await page.locator('.site-header .languages a[hreflang=ja]').click();
-    assert(page.url().endsWith('/ja/'+file));checks++;
+    for(const [code,dir] of [['de','de'],['pt-BR','pt-br'],['ja','ja']]){
+      await page.locator('.site-header .lang-menu summary').click();
+      await page.locator(`.site-header .lang-list a[hreflang=${code}]`).click();
+      assert(page.url().endsWith(`/${dir}/`+file));
+    }
+    await page.locator('.site-header .lang-menu summary').click();
+    await page.keyboard.press('Escape');assert.equal(await page.locator('.site-header .lang-menu').getAttribute('open'),null);checks++;
   }
   await page.setViewportSize({width:390,height:844});
   await page.goto(base+'/de/');

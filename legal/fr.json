@@ -1,0 +1,169 @@
+{
+  "privacy": {
+    "intro": "Cette politique explique comment Aurelia Labs LLC traite les informations dans l’app Moonplan pour iPhone et sur ce site web. Moonplan ne nécessite aucun compte. Ses calculs lunaires et son planificateur d’activités s’exécutent sur votre appareil. Il s’agit d’une traduction fournie par commodité ; en cas de différence avec la version anglaise, c’est la version anglaise qui s’applique.",
+    "sections": [
+      {
+        "id": "controller",
+        "title": "Qui est responsable",
+        "paragraphs": [
+          "Aurelia Labs LLC, 30 N Gould St #60794, Sheridan, WY 82801, États-Unis, est responsable des informations que nous traitons. Pour toute question ou demande relative à la confidentialité, contactez-nous à <a href=\"mailto:admin@aurelialabs.io\">admin@aurelialabs.io</a>."
+        ]
+      },
+      {
+        "id": "device",
+        "title": "Informations sur votre appareil",
+        "paragraphs": [
+          "L’app enregistre localement la ville que vous avez choisie, les coordonnées et le fuseau horaire de cette ville, la langue, l’état de la configuration initiale et les préférences du calendrier japonais. Ces réglages et les images lunaires générées sont partagés avec les widgets de Moonplan via un App Group iOS sur le même appareil. Ils servent à afficher le calendrier, les heures locales et les widgets.",
+          "Les recherches d’activités et les calculs de planification sont traités localement. Moonplan n’envoie ni ces recherches ni votre usage du calendrier à Aurelia Labs. Nous n’exploitons dans Moonplan ni base de données de comptes, ni traceurs publicitaires, ni SDK d’analyse, ni service d’IA à distance. L’app ne demande pas l’accès à la position GPS de votre appareil, ni à vos contacts, vos photos ou votre microphone."
+        ]
+      },
+      {
+        "id": "apple",
+        "title": "Recherche de ville et services Apple",
+        "paragraphs": [
+          "Lorsque vous recherchez une ville, le texte que vous saisissez est envoyé au service de géocodage d’Apple pour trouver des coordonnées et un fuseau horaire. Une connexion Internet est nécessaire. Lorsque la langue de l’app ou celle de votre appareil change, les coordonnées de la ville que vous avez choisie sont envoyées une fois au même service afin d’obtenir le nom de la ville dans cette langue ; les coordonnées et le fuseau horaire enregistrés dans l’app ne changent pas. Apple peut traiter les informations réseau et techniques nécessaires à ce service. Évitez de saisir une adresse personnelle ou d’autres informations personnelles lorsqu’un nom de ville suffit. Vous pouvez ignorer la recherche et utiliser la ville par défaut.",
+          "Apple exploite de manière indépendante l’App Store, TestFlight, les sauvegardes de l’appareil et les diagnostics système facultatifs. Votre utilisation de ces services et les informations de diagnostic que vous choisissez de partager sont régies par les réglages d’Apple et sa <a href=\"https://www.apple.com/legal/privacy/\">politique de confidentialité</a>. Nous ne recevons pas le mot de passe de votre compte Apple. La suppression de l’app n’efface pas à elle seule les informations conservées indépendamment par Apple."
+        ]
+      },
+      {
+        "id": "purchases",
+        "title": "Achats Moonplan Premium",
+        "paragraphs": [
+          "Moonplan Premium est un abonnement facultatif à renouvellement automatique, vendu via l’App Store d’Apple. Apple gère le paiement, la facturation, le renouvellement, la résiliation et les remboursements. Aurelia Labs ne reçoit de l’achat ni les données de votre carte bancaire, ni le mot de passe de votre compte Apple, ni votre nom, ni votre adresse e-mail.",
+          "L’app vérifie l’état de votre abonnement sur votre appareil via StoreKit d’Apple, à l’aide de transactions signées par Apple ; nous n’exploitons pas de serveur pour cela. Pour que Premium continue de fonctionner hors connexion, l’app conserve localement une copie de cet état (identifiant du produit, date d’expiration et indication d’un essai gratuit en cours). Elle conserve aussi localement l’activité que vous avez choisie dans la version gratuite et le moment du choix, ainsi que le fait que l’offre d’abonnement a déjà été présentée après la configuration. « Restaurer les achats » demande à Apple de resynchroniser vos achats.",
+          "La suppression de l’app efface ces copies locales mais ne résilie pas l’abonnement : il reste lié à votre compte Apple jusqu’à ce que vous le résiliiez dans les réglages de votre compte Apple."
+        ]
+      },
+      {
+        "id": "website",
+        "title": "Ce site web",
+        "paragraphs": [
+          "Ce site web ne dépose aucun cookie publicitaire ou d’analyse, n’effectue aucune analyse des visiteurs et n’utilise pas le stockage du navigateur pour établir un profil. Les polices, les scripts et les captures d’écran sont servis avec le site. Le choix de la langue passe par de simples liens, et non par des cookies de suivi.",
+          "Le site est hébergé sur Vercel. Vercel traite des requêtes techniques, notamment les adresses IP et les métadonnées de requête, pour fournir et sécuriser le site. Consultez l’<a href=\"https://vercel.com/legal/privacy-notice\">avis de confidentialité de Vercel</a>. Ses pratiques de conservation et de transfert international s’appliquent aux données d’infrastructure. Suivre un lien externe vous mène vers un service qui a ses propres pratiques de confidentialité.",
+          "L’ancienne adresse d’aperçu est hébergée sur GitHub Pages. Si vous visitez cet aperçu, GitHub enregistre les adresses IP à des fins de sécurité. Consultez la <a href=\"https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement\">déclaration de confidentialité de GitHub</a>."
+        ]
+      },
+      {
+        "id": "support",
+        "title": "Lorsque vous nous contactez",
+        "paragraphs": [
+          "Si vous nous écrivez, nous recevons votre adresse e-mail, votre message, les éventuelles pièces jointes et les métadonnées habituelles du courriel. Nous utilisons ces informations pour répondre à votre question, examiner le problème ou traiter votre demande relative à la confidentialité. Nos prestataires de messagerie traitent le message pour l’acheminer et le stocker. Nous n’utilisons pas les messages d’assistance à des fins publicitaires et nous ne les vendons pas.",
+          "N’envoyez que les informations nécessaires à votre demande. Nous ne conservons la correspondance que le temps nécessaire pour traiter la demande et en assurer le suivi, ou pour respecter une obligation légale applicable. Vous pouvez nous demander de la supprimer ; si nous devons en conserver une partie, nous vous en expliquerons la raison."
+        ]
+      },
+      {
+        "id": "basis",
+        "title": "Finalités, bases juridiques et partage",
+        "paragraphs": [
+          "Lorsque le droit européen de la protection des données s’applique, nous traitons les informations nécessaires pour répondre à une demande de service afin d’exécuter un contrat ou de prendre des mesures à votre demande (article 6, paragraphe 1, point b, du RGPD). La résolution de problèmes techniques, la protection de nos services et la gestion de la correspondance peuvent reposer sur nos intérêts légitimes (article 6, paragraphe 1, point f) ; le respect d’obligations légales repose sur l’article 6, paragraphe 1, point c. Si une fonctionnalité exige un consentement, nous le demanderons séparément et vous permettrons de le retirer.",
+          "Nous ne partageons des informations que dans la mesure nécessaire avec des prestataires qui contribuent à fournir le service concerné, ou lorsqu’une obligation légale valable l’exige. Nous exigeons des prestataires agissant pour notre compte qu’ils protègent les informations personnelles et ne les utilisent que pour la finalité convenue. Apple et Vercel décrivent aussi leurs traitements dans leurs politiques de confidentialité respectives. Aurelia Labs est établie aux États-Unis ; les prestataires de messagerie et d’infrastructure peuvent traiter des informations dans d’autres pays. Lorsque la loi l’exige, les transferts doivent s’appuyer sur des garanties applicables, telles que des clauses contractuelles approuvées ou un autre mécanisme de transfert licite. Contactez-nous pour obtenir des informations sur les garanties relatives à votre demande."
+        ]
+      },
+      {
+        "id": "retention",
+        "title": "Conservation et suppression",
+        "paragraphs": [
+          "Les préférences locales restent jusqu’à ce que vous les modifiiez ou que vous supprimiez les données de l’app. Pour supprimer les données locales de Moonplan, supprimez l’app au lieu de la décharger, puis retirez ses widgets. Les sauvegardes iOS, si elles sont activées sur votre appareil, sont gérées via vos réglages Apple et peuvent conserver une copie distincte. Nous ne pouvons pas lire ni effacer à distance les données stockées uniquement sur votre appareil.",
+          "Vous n’avez pas besoin de demander la suppression d’un compte, car Moonplan n’a pas de comptes utilisateur. Pour la correspondance d’assistance que nous détenons, contactez <a href=\"mailto:admin@aurelialabs.io\">admin@aurelialabs.io</a>. Pour les informations détenues indépendamment par Apple ou Vercel, utilisez les commandes ou les coordonnées indiquées dans leurs politiques de confidentialité respectives."
+        ]
+      },
+      {
+        "id": "rights",
+        "title": "Vos choix et vos droits",
+        "paragraphs": [
+          "Selon le droit applicable, vous pouvez demander l’accès, la rectification, l’effacement, la limitation ou une copie portable des informations personnelles que nous détenons sur vous, et vous opposer à certains traitements. Vous pouvez retirer votre consentement lorsque le traitement repose sur celui-ci, sans incidence sur les traitements licites antérieurs. Nous pouvons avoir besoin d’éléments suffisants pour vérifier que la demande émane bien de vous. Nous répondrons dans le délai prévu par le droit applicable.",
+          "Vous pouvez également introduire une réclamation auprès d’une autorité de protection des données compétente. L’exercice de ces droits ne vous oblige pas à créer un compte. Comme nous ne pouvons pas identifier l’usage local de l’app, il se peut que nous n’ayons aucun enregistrement d’utilisation de l’app à vous communiquer."
+        ]
+      },
+      {
+        "id": "children",
+        "title": "Enfants et mises à jour de la politique",
+        "paragraphs": [
+          "Moonplan est un calendrier grand public et ne demande pas aux enfants de créer un compte ni de fournir des données personnelles. Si vous pensez qu’un enfant nous a transmis des informations personnelles via l’assistance, contactez-nous afin que nous puissions traiter la demande et supprimer les informations lorsque la loi l’exige.",
+          "Nous mettrons cette page à jour lorsque nos pratiques changeront et nous réviserons la date ci-dessus. Les modifications importantes seront communiquées comme l’exige le droit applicable. L’ajout d’une fonctionnalité nécessitant un consentement ne sera pas considéré comme une autorisation donnée du seul fait de la mise à jour de cette politique."
+        ]
+      }
+    ]
+  },
+  "terms": {
+    "intro": "Ces conditions décrivent le site web Moonplan et les informations présentées dans l’app Moonplan, fournis par Aurelia Labs LLC. Elles complètent, sans le remplacer, le contrat de licence applicable à une app téléchargée depuis l’App Store d’Apple. Il s’agit d’une traduction fournie par commodité ; en cas de différence avec la version anglaise, c’est la version anglaise qui s’applique.",
+    "sections": [
+      {
+        "id": "provider",
+        "title": "Fournisseur et contact",
+        "paragraphs": [
+          "Moonplan est fourni par Aurelia Labs LLC, 30 N Gould St #60794, Sheridan, WY 82801, États-Unis. Pour l’assistance sur le produit ou les questions relatives à ces conditions, écrivez à <a href=\"mailto:admin@aurelialabs.io\">admin@aurelialabs.io</a>."
+        ]
+      },
+      {
+        "id": "purpose",
+        "title": "Ce que propose Moonplan",
+        "paragraphs": [
+          "Moonplan présente les phases lunaires, des calculs astronomiques, des informations de calendrier, un atlas lunaire et des suggestions d’activités fondées sur des traditions culturelles. Les dates et les heures dépendent de la ville, du fuseau horaire et des réglages choisis dans l’app. Les calculs et les données de référence peuvent comporter des approximations ou des erreurs ; la visibilité réelle dépend aussi des conditions locales.",
+          "Les suggestions de planification expriment des interprétations traditionnelles. Ce ne sont ni des effets scientifiquement établis, ni des conseils professionnels, ni des garanties de réussite. Faites appel à votre propre jugement et à des sources spécialisées fiables pour les décisions touchant à la santé, à la sécurité, aux questions juridiques ou aux finances. Moonplan n’est pas un outil de navigation ni de sécurité."
+        ]
+      },
+      {
+        "id": "licence",
+        "title": "Licence de l’app et Apple",
+        "paragraphs": [
+          "Pour une app distribuée via l’App Store, le <a href=\"https://www.apple.com/legal/internet-services/itunes/dev/stdeula/\">contrat de licence d’utilisateur final standard</a> d’Apple s’applique, sauf si une autre licence est expressément fournie avec l’app. Ces conditions du site web ne remplacent pas ce contrat et ne modifient pas les règles d’utilisation d’Apple. Apple n’est pas l’éditeur de Moonplan. Les questions sur le produit doivent être adressées à Aurelia Labs.",
+          "Le site web présente Moonplan, qui est disponible dans l’App Store. Les captures d’écran montrent des dates et des réglages d’exemple ; elles ne constituent pas un relevé en direct de la Lune au-dessus de votre position actuelle. La disponibilité et les fonctionnalités prises en charge peuvent varier selon la version de l’app et la région."
+        ]
+      },
+      {
+        "id": "acceptable-use",
+        "title": "Utilisation du site web et des contenus",
+        "paragraphs": [
+          "Vous pouvez utiliser le site web pour découvrir Moonplan et contacter l’assistance. Ne tentez pas de compromettre sa sécurité, d’en perturber l’accès, de détourner l’adresse d’assistance ni de porter atteinte aux droits d’autrui. Ces conditions ne restreignent pas les usages autorisés par le droit applicable.",
+          "Le nom Moonplan, le design original et le contenu original appartiennent à Aurelia Labs ou à leurs titulaires de droits respectifs. Les polices, les composants logiciels et le matériel de référence peuvent relever de licences distinctes. Consultez les <a href=\"publisher.html#credits\">crédits et sources</a>. Ne suggérez pas l’approbation d’Apple, de la NASA ou d’une autre source."
+        ]
+      },
+      {
+        "id": "payments",
+        "title": "Moonplan Premium",
+        "paragraphs": [
+          "Moonplan Premium est un abonnement facultatif à renouvellement automatique, proposé dans l’app et vendu uniquement via l’App Store d’Apple, avec des formules mensuelle et annuelle. Le prix et la durée sont indiqués dans l’app, dans votre devise locale, avant que vous confirmiez un achat. Le paiement est débité de votre compte Apple lorsque vous confirmez l’achat, ou à la fin d’un essai gratuit.",
+          "Les nouveaux abonnés peuvent se voir proposer un essai gratuit (actuellement 3 jours). Sauf si vous résiliez au moins 24 heures avant la fin de l’essai ou de la période en cours, l’abonnement se renouvelle automatiquement au prix de la formule choisie, et votre compte Apple est débité dans les 24 heures précédant la fin de la période. Vous pouvez gérer ou résilier l’abonnement dans les réglages de votre compte Apple ; la résiliation prend effet à la fin de la période en cours. Les remboursements sont gérés par Apple selon ses politiques.",
+          "Premium étend le calendrier au-delà du mois suivant et vous permet de changer à tout moment l’activité du planificateur. Les autres fonctionnalités restent disponibles sans abonnement. Ce site web n’encaisse aucun paiement et ne vous inscrit à aucun abonnement. Pour l’achat dans l’App Store, le <a href=\"https://www.apple.com/legal/internet-services/itunes/dev/stdeula/\">contrat de licence d’utilisateur final standard</a> d’Apple et les conditions d’Apple s’appliquent."
+        ]
+      },
+      {
+        "id": "limits",
+        "title": "Exactitude et vos droits",
+        "paragraphs": [
+          "Nous nous efforçons de maintenir Moonplan et ses informations utiles et exactes, mais nous ne promettons ni une disponibilité ininterrompue ni des calculs exempts d’erreurs. Dans la mesure permise par le droit applicable, le site web et son contenu informatif sont fournis tels que disponibles. Les garanties et la responsabilité relatives à l’app sont régies par la licence applicable de l’app et par le droit impératif.",
+          "Rien dans ces conditions n’exclut une responsabilité qui ne peut légalement être exclue, ne limite les droits impératifs des consommateurs ni ne supprime les recours juridiques dont vous disposez dans votre lieu de résidence. En cas de problème, vous pouvez nous contacter, mais ce n’est pas une condition pour exercer vos droits légaux."
+        ]
+      },
+      {
+        "id": "changes",
+        "title": "Confidentialité et modifications",
+        "paragraphs": [
+          "Lisez notre <a href=\"privacy.html\">politique de confidentialité</a> pour savoir comment les informations sont traitées. Nous pouvons mettre à jour ces conditions à mesure que le produit évolue, avec une date révisée sur cette page et tout avis exigé par la loi. Les modifications ne suppriment pas rétroactivement les droits dont vous disposez déjà."
+        ]
+      }
+    ]
+  },
+  "publisher": {
+    "intro": "Informations sur l’éditeur et coordonnées de Moonplan. Il s’agit d’une traduction fournie par commodité ; en cas de différence avec la version anglaise, c’est la version anglaise qui s’applique.",
+    "sections": [
+      {
+        "id": "company",
+        "title": "Aurelia Labs LLC",
+        "paragraphs": [
+          "30 N Gould St #60794<br>Sheridan, WY 82801<br>États-Unis",
+          "E-mail : <a href=\"mailto:admin@aurelialabs.io\">admin@aurelialabs.io</a><br>Site de l’entreprise : <a href=\"https://aurelialabs.io\">aurelialabs.io</a>"
+        ]
+      },
+      {
+        "id": "credits",
+        "title": "Crédits et sources",
+        "paragraphs": [
+          "Toutes les captures d’écran de l’app montrent Moonplan. Les images lunaires de l’app utilisent des données lunaires de la NASA ; la toponymie et le matériel de référence s’appuient sur des sources de l’UAI (IAU) et de la NASA. Ces références n’impliquent aucune approbation. Consultez le <a href=\"https://svs.gsfc.nasa.gov/4720/\">CGI Moon Kit de la NASA</a> et le <a href=\"https://planetarynames.wr.usgs.gov/\">Gazetteer of Planetary Nomenclature de l’UAI (IAU)</a>.",
+          "Les polices Unbounded et Manrope sont incluses sous la licence SIL Open Font License. Les mentions de licence sont fournies avec les ressources du site web. Le langage visuel s’inspire d’AstroGuide, un autre projet d’Aurelia Labs. Apple, iPhone et App Store sont des marques commerciales d’Apple Inc."
+        ]
+      }
+    ]
+  }
+}

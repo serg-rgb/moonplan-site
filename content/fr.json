@@ -1,0 +1,60 @@
+{
+  "langName": "Français", "locale": "fr_FR",
+  "title": "Moonplan · Calendrier lunaire pour iPhone",
+  "description": "Découvrez la Lune avec Moonplan pour iPhone : phases lunaires, calendrier mensuel, planification d’activités selon la tradition, atlas lunaire et widgets. En huit langues.",
+  "skip": "Aller au contenu", "home": "Accueil", "menu": "Menu", "close": "Fermer le menu", "language": "Langue",
+  "nav": ["Découvrir", "Fonctionnement", "Questions"],
+  "eyebrow": "Un calendrier lunaire pour iPhone",
+  "hero": ["La Lune,", "un peu plus proche."],
+  "intro": "Suivez ses phases. Trouvez votre rythme. Faites une petite place à l’émerveillement dans votre quotidien.",
+  "heroBody": "Un calendrier lunaire détaillé, un planificateur réfléchi et une Lune à explorer. Réunis dans un coin tranquille de votre iPhone.",
+  "cta": "Découvrir Moonplan", "download": "Télécharger dans l’App Store", "status": "Bientôt dans l’App Store", "compatibility": "Pour iPhone · iOS 17 ou version ultérieure",
+  "proof": ["Aucun compte requis", "Calculs sur votre appareil", "Huit langues"],
+  "heroCaption": "Un vrai aperçu de Moonplan",
+  "heroAlt": "Écran Aujourd’hui de Moonplan avec la Lune, sa phase et les informations lunaires locales",
+  "rail": ["Phases lunaires", "Le ciel de votre ville", "Planification au quotidien", "Un regard de plus près"],
+  "featureEyebrow": "Un peu plus dans chaque jour",
+  "featureTitle": ["Une Lune.", "Tant à découvrir."],
+  "featureIntro": "D’un coup d’œil à la phase de ce soir à un regard plus posé sur le mois à venir. Choisissez jusqu’où aller.",
+  "features": [
+    {"number":"01", "tag":"Votre calendrier lunaire", "title":"Voyez le mois sous un autre jour.", "body":"Nouvelles lunes, pleines lunes et toutes les phases entre les deux. Ouvrez un jour pour voir les détails lunaires et les heures propres à la ville choisie.", "detail":"Phase · Éclairement · Lever et coucher de la Lune", "image":"calendar", "alt":"Calendrier mensuel de Moonplan avec la phase de la Lune pour chaque date"},
+    {"number":"02", "tag":"Un planificateur réfléchi", "title":"Une petite intention pour vos projets du quotidien.", "body":"Du soin des plantes à l’entretien de la maison, explorez les dates à travers le prisme des traditions lunaires. Chaque suggestion explique les éléments sur lesquels elle repose.", "detail":"Parcourir les activités · Comparer les dates · Lire les raisons", "image":"planner-results", "alt":"Planificateur Moonplan affichant une activité, des dates suggérées et leurs raisons", "note":"Les suggestions de planification reflètent des traditions culturelles. Elles n’établissent aucun effet scientifique et ne garantissent aucun résultat."},
+    {"number":"03", "tag":"Votre atlas lunaire de poche", "title":"Apprenez à connaître le monde au-dessus de nous.", "body":"Zoomez sur la surface texturée de la Lune. Découvrez des cratères et des mers lunaires nommés, et explorez les lieux d’alunissage des missions Apollo.", "detail":"Surface lunaire détaillée · Formations nommées · Sites Apollo", "image":"fullscreen", "alt":"Vue lunaire en plein écran de Moonplan avec les formations nommées"}
+  ],
+  "extras": [
+    {"title":"La Lune en un coup d’œil", "body":"Gardez la phase lunaire à portée de main avec les widgets de l’écran d’accueil et de l’écran verrouillé."},
+    {"title":"Une autre couche de temps", "body":"Explorez le calendrier japonais avec les dates de l’ancien calendrier, le rokuyō et les jours fériés japonais."},
+    {"title":"Chez vous, dans votre langue", "body":"Huit langues, de English et Español à Русский et 日本語. Choisissez votre langue dans l’app et changez-la quand vous le souhaitez."}
+  ],
+  "howEyebrow":"Faites-en le vôtre", "howTitle":"Trois petites étapes.\nUne autre perspective.",
+  "steps":[
+    {"title":"Choisissez votre ville", "body":"Réglez votre langue et votre ville. Aucun compte, aucune donnée de naissance, aucune autorisation de localisation requis."},
+    {"title":"Trouvez votre jour", "body":"Commencez par la Lune du jour ou ouvrez une date dans le calendrier pour en voir les détails."},
+    {"title":"Suivez votre curiosité", "body":"Cherchez une activité dans le planificateur, explorez l’atlas lunaire ou ajoutez un widget."}
+  ],
+  "tagline":["Un peu moins de hâte.", "Un peu plus de rythme."],
+  "principleEyebrow":"Conçu avec soin", "principleTitle":"De la place pour l’émerveillement.\nDe la clarté là où il le faut.",
+  "principles":[
+    {"title":"L’astronomie sur votre iPhone", "body":"Les positions et les phases de la Lune sont calculées sur votre appareil. Le calendrier reste disponible sans connexion."},
+    {"title":"Des traditions, avec leur contexte", "body":"Le planificateur présente les interprétations traditionnelles avec leurs raisons. Vos choix et votre jugement passent avant tout."},
+    {"title":"Discret par conception", "body":"Aucun compte, aucun traceur publicitaire ni SDK d’analyse. La recherche de ville utilise le service de géocodage d’Apple lorsque vous la demandez."}
+  ],
+  "faqEyebrow":"Bon à savoir", "faqTitle":"Quelques questions terre à terre.",
+  "faq":[
+    ["Où puis-je télécharger Moonplan ?", "Moonplan est disponible dans l’App Store pour iPhone sous iOS 17 ou version ultérieure. L’app est gratuite à télécharger ; Moonplan Premium est un abonnement facultatif."],
+    ["Quels appareils et quelles langues sont pris en charge ?", "Moonplan est conçu pour iPhone sous iOS 17 ou version ultérieure. L’app est disponible en anglais, allemand, japonais, russe, espagnol, français, portugais (Brésil) et italien, tout comme ce site web."],
+    ["Ai-je besoin d’un compte ou d’un accès GPS ?", "Non. Choisissez vous-même une ville, ou gardez la ville par défaut. Moonplan ne demande pas la position de votre appareil et ne vous demande pas de créer un compte."],
+    ["Fonctionne-t-il sans Internet ?", "Oui, les calculs lunaires, le calendrier et le planificateur s’exécutent sur votre appareil. La recherche d’une nouvelle ville nécessite une connexion Internet au service de géocodage d’Apple."],
+    ["Sur quoi reposent les suggestions de planification ?", "Elles s’appuient sur des interprétations traditionnelles des phases lunaires et d’autres éléments du calendrier. Ces traditions culturelles ne sont ni des effets scientifiquement établis, ni des conseils professionnels, ni des promesses de résultat."],
+    ["Puis-je utiliser le calendrier japonais ?", "Oui. Le calendrier japonais facultatif comprend les dates de l’ancien calendrier, le rokuyō et les jours fériés japonais. Il s’active automatiquement lorsque vous choisissez le japonais dans l’app."],
+    ["Moonplan collecte-t-il mes recherches d’activités ?", "Les recherches du planificateur sont traitées sur votre appareil et ne nous sont pas envoyées. Les recherches de ville sont différentes : le texte que vous saisissez est envoyé à Apple afin de trouver cette ville."],
+    ["Où obtenir de l’aide ?", "Écrivez à admin@aurelialabs.io. Indiquez votre version d’iOS, la version de l’app et une courte description de ce qui s’est passé. Merci de ne pas inclure d’informations personnelles sensibles."]
+  ],
+  "finalEyebrow":"Découvrez votre nouveau rituel quotidien", "finalTitle":["Faites un peu de place", "à la Lune."], "finalBody":"Votre calendrier. Votre curiosité. Une façon plus sereine de regarder devant soi.",
+  "footerLine":"Un calendrier lunaire pour le quotidien.", "privacy":"Politique de confidentialité", "terms":"Conditions d’utilisation", "support":"Assistance", "legalNotice":"Éditeur", "credits":"Crédits", "legalEyebrow":"Clair par conception", "updated":"Mis à jour le 5 novembre 2026", "contents":"Sur cette page", "back":"Retour à Moonplan", "emailAction":"Écrire à l’assistance", "copyEmail":"Copier l’adresse e-mail", "copied":"Adresse e-mail copiée", "copyFailed":"Copie impossible. Sélectionnez l’adresse e-mail ci-dessous.",
+  "supportTitle":"Un coup de pouce,\nquand vous en avez besoin.", "supportIntro":"Une question sur Moonplan, un problème à signaler ou une demande relative à la confidentialité ? Écrivez-nous directement.",
+  "supportChecklistTitle":"Aidez-nous à comprendre ce qui s’est passé", "supportChecklist":["Le modèle de votre iPhone et votre version d’iOS", "La version de Moonplan indiquée dans les Réglages", "La ville choisie, la date et la langue de l’app", "Ce que vous attendiez et ce que vous avez vu à la place"],
+  "supportPrivacy":"N’envoyez que ce qui est nécessaire pour expliquer le problème. Si vous joignez une capture d’écran, retirez toute information que vous ne souhaitez pas partager.",
+  "notFoundTitle":"Un peu hors orbite.", "notFoundBody":"Cette page est introuvable. Revenons à Moonplan.",
+  "rootTitle":"La Lune parle votre langue.", "rootBody":"Choisissez une langue pour découvrir Moonplan.", "preview":"Aperçu de l’app. Les écrans montrent une date et une ville d’exemple."
+}

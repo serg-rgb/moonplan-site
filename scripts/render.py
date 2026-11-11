@@ -1,8 +1,11 @@
 """Small, dependency-free HTML renderer. Content is stored per language."""
 from html import escape as e
 
-LANGS = ('en', 'de', 'ja')
-NAMES = {'en': 'English', 'de': 'Deutsch', 'ja': '日本語'}
+LANGS = ('en', 'de', 'es', 'fr', 'it', 'pt-br', 'ru', 'ja')
+NAMES = {'en': 'English', 'de': 'Deutsch', 'es': 'Español', 'fr': 'Français', 'it': 'Italiano',
+         'pt-br': 'Português', 'ru': 'Русский', 'ja': '日本語'}
+CODES = {'pt-br': 'PT', 'ja': '日本語'}  # short label in the header switcher
+def tag(l): return 'pt-BR' if l == 'pt-br' else l  # BCP 47 tag for lang/hreflang
 
 def lines(value):
     return '<br>'.join(e(x) for x in (value if isinstance(value, list) else value.split('\n')))
@@ -10,21 +13,28 @@ def lines(value):
 def moon_mark():
     return '<svg class="moon-mark" viewBox="0 0 40 40" aria-hidden="true"><path d="M29 30A15 15 0 0 1 14 5a16 16 0 1 0 15 25Z" fill="currentColor"/><path d="M29 6v10m-5-5h10" stroke="currentColor" stroke-width="1.4"/></svg>'
 
-def langs(lang, page, base):
-    label = {'en':'Language','de':'Sprache','ja':'言語'}[lang]
-    return f'<div class="languages" aria-label="{label}">' + ''.join(
-        f'<a href="{base}/{l}/{page}" lang="{l}" hreflang="{l}" aria-label="{NAMES[l]}"' +
-        (' aria-current="page"' if lang == l else '') + f'>{l.upper() if l != "ja" else "日本語"}</a>' for l in LANGS) + '</div>'
+def lang_links(lang, page, base):
+    return ''.join(f'<a href="{base}/{l}/{page}" lang="{tag(l)}" hreflang="{tag(l)}"' +
+        (' aria-current="page"' if lang == l else '') + f'>{NAMES[l]}</a>' for l in LANGS)
+
+def langs(lang, page, base, label):
+    # Header: compact disclosure (works without JavaScript). Footer: full list.
+    return (f'<details class="lang-menu"><summary aria-label="{e(label,quote=True)}: {NAMES[lang]}">'
+            f'<span>{CODES.get(lang, lang.upper())}</span><i aria-hidden="true"></i></summary>'
+            f'<nav class="lang-list" aria-label="{e(label,quote=True)}">{lang_links(lang,page,base)}</nav></details>')
+
+def footer_langs(lang, page, base, label):
+    return f'<nav class="footer-languages" aria-label="{e(label,quote=True)}">{lang_links(lang,page,base)}</nav>'
 
 def head(lang, c, cfg, page='', title=None, description=None, noindex=False, root=False):
     base = cfg['base']
     url = cfg['url'] + ('/' if root else f'/{lang}/{page}')
-    alternates = ''.join(f'<link rel="alternate" hreflang="{l}" href="{cfg["url"]}/{l}/{page}">' for l in LANGS)
+    alternates = ''.join(f'<link rel="alternate" hreflang="{tag(l)}" href="{cfg["url"]}/{l}/{page}">' for l in LANGS)
     title, description = title or c['title'], description or c['description']
     # No inline script is needed. The CSP is also enforced on GitHub Pages via this meta tag.
     csp = "default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'none'; object-src 'none'; base-uri 'self'; form-action 'none'"
     return f'''<!doctype html>
-<html lang="{lang}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">{'<meta name="apple-itunes-app" content="app-id=6830957447">' if cfg.get('appStoreUrl') else ''}
+<html lang="{tag(lang)}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">{'<meta name="apple-itunes-app" content="app-id=6830957447">' if cfg.get('appStoreUrl') else ''}
 <meta http-equiv="Content-Security-Policy" content="{e(csp, quote=True)}"><meta name="referrer" content="strict-origin-when-cross-origin">
 <title>{e(title)}</title><meta name="description" content="{e(description, quote=True)}">
 <meta name="robots" content="{'noindex, follow' if noindex else 'index, follow'}"><link rel="canonical" href="{url}">
@@ -43,21 +53,32 @@ def header(lang, c, cfg, page=''):
     nav = ''.join(f'<a href="{base}/{lang}/#{t}">{e(label)}</a>' for t,label in zip(targets,c['nav']))
     return f'''<body><a class="skip" href="#main">{e(c['skip'])}</a>
 <header class="site-header"><a class="brand" href="{base}/{lang}/" aria-label="Moonplan · {e(c['home'])}">{moon_mark()}<span>Moonplan</span></a>
-<nav class="desktop-nav" aria-label="{e(c['menu'])}">{nav}</nav>{langs(lang,page,base)}
+<nav class="desktop-nav" aria-label="{e(c['menu'])}">{nav}</nav>{langs(lang,page,base,c['language'])}
 <details class="mobile-menu"><summary aria-label="{e(c['menu'])}"><span></span><span></span></summary><nav aria-label="{e(c['menu'])}">{nav}<a href="{base}/{lang}/support.html">{e(c['support'])}</a></nav></details></header>'''
 
 def footer(lang,c,cfg,page=''):
     base=cfg['base']
     return f'''<footer class="site-footer wrap"><div class="footer-top"><div><a class="brand" href="{base}/{lang}/">{moon_mark()}<span>Moonplan</span></a><p>{e(c['footerLine'])}</p></div>
 <nav aria-label="{e(c['legalNotice'])}"><a href="{base}/{lang}/privacy.html">{e(c['privacy'])}</a><a href="{base}/{lang}/terms.html">{e(c['terms'])}</a><a href="{base}/{lang}/support.html">{e(c['support'])}</a><a href="{base}/{lang}/publisher.html">{e(c['legalNotice'])}</a></nav></div>
-<div class="footer-bottom"><span>© 2026 Aurelia Labs LLC</span>{langs(lang,page,base)}<a href="{base}/{lang}/publisher.html#credits">{e(c['credits'])}</a></div></footer></body></html>'''
+<div class="footer-bottom"><span>© 2026 Aurelia Labs LLC</span>{footer_langs(lang,page,base,c['language'])}<a href="{base}/{lang}/publisher.html#credits">{e(c['credits'])}</a></div></footer></body></html>'''
 
 def phone(lang, kind, alt, cfg, hero=False):
     return f'<div class="phone{ " phone-hero" if hero else ""}"><img src="{cfg["base"]}/assets/screens/{kind}-{lang}.webp" width="1290" height="2796" alt="{e(alt,quote=True)}" loading="{"eager" if hero else "lazy"}" decoding="async" {"fetchpriority=high" if hero else ""}></div>'
 
+def badge(lang):
+    """Localized badge if present, else the English one; width from the SVG viewBox at 56 px height."""
+    import re
+    from pathlib import Path
+    d = Path(__file__).resolve().parent.parent / 'assets' / 'badges'
+    f = d / f'app-store-{lang}.svg'
+    if not f.exists(): f = d / 'app-store-en.svg'
+    vb = re.search(r'viewBox="([\d.\s-]+)"', f.read_text()).group(1).split()
+    return f.name, round(56 * float(vb[2]) / float(vb[3]))
+
 def cta(c,cfg,href,lang='en'):
     if cfg["appStoreUrl"]:  # official, unmodified Apple badge (Apple Marketing Tools), localized per page language
-        return f'<a class="store-badge" href="{e(cfg["appStoreUrl"],quote=True)}" rel="noopener"><img src="{cfg["base"]}/assets/badges/app-store-{lang}.svg" alt="{e(c["download"],quote=True)}" height="56" width="{168 if lang!="ja" else 152}" decoding="async"></a>'
+        name, width = badge(lang)
+        return f'<a class="store-badge" href="{e(cfg["appStoreUrl"],quote=True)}" rel="noopener"><img src="{cfg["base"]}/assets/badges/{name}" alt="{e(c["download"],quote=True)}" height="56" width="{width}" decoding="async"></a>'
     return f'<a class="button" href="{e(href,quote=True)}">{e(c["cta"])}<span aria-hidden="true">↗</span></a>'
 
 def landing(lang,c,cfg):
@@ -100,7 +121,7 @@ def support(lang,c,cfg):
 def root_page(c,cfg,error=False):
     title = c['notFoundTitle'] if error else 'Moonplan · Choose your language'
     result=head('en',c,cfg,title=title,noindex=cfg['noindex'] or error,root=True)
-    result+=f'<body class="language-page"><main id="main"><a class="brand" href="{cfg["base"]}/">{moon_mark()}<span>Moonplan</span></a><p class="eyebrow">{"404" if error else "English · Deutsch · 日本語"}</p><h1>{e(c["notFoundTitle"] if error else c["rootTitle"])}</h1><p>{e(c["notFoundBody"] if error else c["rootBody"])}</p><nav aria-label="Language" class="language-choices">'
+    result+=f'<body class="language-page"><main id="main"><a class="brand" href="{cfg["base"]}/">{moon_mark()}<span>Moonplan</span></a><p class="eyebrow">{"404" if error else " · ".join(NAMES[l] for l in LANGS)}</p><h1>{e(c["notFoundTitle"] if error else c["rootTitle"])}</h1><p>{e(c["notFoundBody"] if error else c["rootBody"])}</p><nav aria-label="Language" class="language-choices">'
     for l in LANGS:
-        result+=f'<a href="{cfg["base"]}/{l}/" lang="{l}">{NAMES[l]}<span aria-hidden="true">↗</span></a>'
+        result+=f'<a href="{cfg["base"]}/{l}/" lang="{tag(l)}">{NAMES[l]}<span aria-hidden="true">↗</span></a>'
     return result+f'</nav><p class="root-footer">Aurelia Labs LLC · <a href="{cfg["base"]}/en/privacy.html">Privacy</a> · <a href="{cfg["base"]}/en/terms.html">Terms</a></p></main></body></html>'

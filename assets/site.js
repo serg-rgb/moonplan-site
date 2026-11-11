@@ -68,3 +68,12 @@ document.querySelectorAll('.copy-email').forEach(button=>{
     }
   });
 });
+
+// Language menu: close on outside click and Escape (it also works without JavaScript).
+const langMenu = document.querySelector('.lang-menu');
+if (langMenu) {
+  document.addEventListener('click', event => { if (langMenu.open && !langMenu.contains(event.target)) langMenu.open = false; });
+  document.addEventListener('keydown', event => {
+    if (event.key === 'Escape' && langMenu.open) { langMenu.open = false; langMenu.querySelector('summary').focus(); }
+  });
+}

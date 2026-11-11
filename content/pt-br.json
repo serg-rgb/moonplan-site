@@ -1,0 +1,60 @@
+{
+  "langName": "Português", "locale": "pt_BR",
+  "title": "Moonplan · Calendário lunar para iPhone",
+  "description": "Conheça a Lua com o Moonplan para iPhone: fases da Lua, calendário mensal, planejamento de atividades segundo a tradição, um atlas lunar e widgets. Em oito idiomas.",
+  "skip": "Ir para o conteúdo", "home": "Início", "menu": "Menu", "close": "Fechar menu", "language": "Idioma",
+  "nav": ["Descubra", "Como funciona", "Dúvidas"],
+  "eyebrow": "Um calendário lunar para iPhone",
+  "hero": ["A Lua,", "um pouco mais perto."],
+  "intro": "Acompanhe as fases. Encontre o seu ritmo. Abra espaço para um pouco de encanto no seu dia a dia.",
+  "heroBody": "Um calendário lunar detalhado, um planejador cuidadoso e uma Lua para explorar. Tudo reunido num canto tranquilo do seu iPhone.",
+  "cta": "Conheça o Moonplan", "download": "Baixar na App Store", "status": "Em breve na App Store", "compatibility": "Para iPhone · iOS 17 ou superior",
+  "proof": ["Sem necessidade de conta", "Cálculos no seu dispositivo", "Oito idiomas"],
+  "heroCaption": "Uma visão real do Moonplan por dentro",
+  "heroAlt": "Tela Hoje do Moonplan com a Lua, sua fase e informações lunares locais",
+  "rail": ["Fases da Lua", "O céu da sua cidade", "Planejamento do dia a dia", "Um olhar de perto"],
+  "featureEyebrow": "Um pouco mais em cada dia",
+  "featureTitle": ["Uma Lua.", "Tanto a descobrir."],
+  "featureIntro": "De uma olhadinha na fase desta noite a um olhar mais calmo sobre o mês que vem. Escolha até onde quer ir.",
+  "features": [
+    {"number":"01", "tag":"Seu calendário lunar", "title":"Veja o mês sob uma nova luz.", "body":"Luas novas, luas cheias e todas as fases entre elas. Abra um dia para ver os detalhes lunares e os horários da cidade que você escolheu.", "detail":"Fase · Iluminação · Nascer e pôr da Lua", "image":"calendar", "alt":"Calendário mensal do Moonplan com a fase da Lua em cada data"},
+    {"number":"02", "tag":"Um planejador cuidadoso", "title":"Um pouco de intenção para os planos do dia a dia.", "body":"De cuidar das plantas a cuidar da casa, explore as datas pelo olhar das tradições lunares. Cada sugestão explica os fatores por trás dela.", "detail":"Explore atividades · Compare datas · Leia os motivos", "image":"planner-results", "alt":"Planejador do Moonplan mostrando uma atividade, datas sugeridas e seus motivos", "note":"As sugestões de planejamento refletem tradições culturais. Elas não comprovam efeitos científicos nem garantem resultados."},
+    {"number":"03", "tag":"Seu atlas lunar de bolso", "title":"Conheça o mundo lá em cima.", "body":"Aproxime a superfície texturizada da Lua. Descubra crateras e mares lunares com nome e explore os locais de pouso das missões Apollo.", "detail":"Superfície lunar detalhada · Formações com nome · Locais da Apollo", "image":"fullscreen", "alt":"Visão lunar em tela cheia do Moonplan com formações nomeadas"}
+  ],
+  "extras": [
+    {"title":"A Lua num relance", "body":"Tenha a fase da Lua sempre à mão com widgets para a Tela de Início e a Tela Bloqueada."},
+    {"title":"Outra camada de tempo", "body":"Explore o calendário japonês com as datas do calendário antigo, o rokuyō e os feriados nacionais do Japão."},
+    {"title":"Em casa no seu idioma", "body":"Oito idiomas, de English e Español a Русский e 日本語. Escolha o idioma no app e troque quando quiser."}
+  ],
+  "howEyebrow":"Deixe com a sua cara", "howTitle":"Três passos simples.\nUma nova perspectiva.",
+  "steps":[
+    {"title":"Escolha sua cidade", "body":"Defina o idioma e a cidade. Sem conta, sem dados de nascimento e sem permissão de localização."},
+    {"title":"Encontre o seu dia", "body":"Comece pela Lua de hoje ou abra uma data no calendário para ver os detalhes."},
+    {"title":"Siga a sua curiosidade", "body":"Procure uma atividade no planejador, explore o atlas lunar ou adicione um widget."}
+  ],
+  "tagline":["Um pouco menos de pressa.", "Um pouco mais de ritmo."],
+  "principleEyebrow":"Feito com cuidado", "principleTitle":"Espaço para o encanto.\nClareza onde importa.",
+  "principles":[
+    {"title":"Astronomia no seu iPhone", "body":"As posições e as fases da Lua são calculadas no seu dispositivo. O calendário continua disponível sem conexão."},
+    {"title":"Tradições, com contexto", "body":"O planejador apresenta interpretações tradicionais junto com os seus motivos. Suas escolhas e o seu critério vêm em primeiro lugar."},
+    {"title":"Discreto por princípio", "body":"Sem conta, sem rastreadores de publicidade e sem SDKs de análise. A busca de cidades usa o serviço de geocodificação da Apple só quando você pede."}
+  ],
+  "faqEyebrow":"Bom saber", "faqTitle":"Algumas perguntas terrenas.",
+  "faq":[
+    ["Onde posso baixar o Moonplan?", "O Moonplan está disponível na App Store para iPhone com iOS 17 ou superior. O app é gratuito para baixar; o Moonplan Premium é uma assinatura opcional."],
+    ["Quais dispositivos e idiomas são compatíveis?", "O Moonplan foi feito para iPhone com iOS 17 ou superior. O app está disponível em inglês, alemão, japonês, russo, espanhol, francês, português (Brasil) e italiano, assim como este site."],
+    ["Preciso de conta ou de acesso ao GPS?", "Não. Escolha uma cidade você mesmo ou mantenha a cidade padrão. O Moonplan não solicita a localização do seu dispositivo nem pede que você crie uma conta."],
+    ["Funciona sem internet?", "Sim, os cálculos lunares, o calendário e o planejador funcionam no seu dispositivo. Buscar uma cidade nova exige conexão com a internet para usar o serviço de geocodificação da Apple."],
+    ["Em que se baseiam as sugestões de planejamento?", "Elas usam interpretações tradicionais das fases da Lua e de outros fatores do calendário. Essas tradições culturais não são efeitos comprovados cientificamente, nem orientação profissional, nem promessa de resultado."],
+    ["Posso usar o calendário japonês?", "Sim. O calendário japonês opcional inclui as datas do calendário antigo, o rokuyō e os feriados nacionais do Japão. Ele é ativado automaticamente quando você escolhe japonês no app."],
+    ["O Moonplan coleta as minhas buscas de atividades?", "As buscas no planejador são processadas no seu dispositivo e não são enviadas para nós. As buscas de cidades são diferentes: o texto que você digita é enviado à Apple para que ela encontre essa cidade."],
+    ["Onde posso obter ajuda?", "Escreva para admin@aurelialabs.io. Informe a versão do iOS, a versão do app e uma breve descrição do que aconteceu. Não inclua informações pessoais sensíveis."]
+  ],
+  "finalEyebrow":"Conheça o seu novo ritual diário", "finalTitle":["Abra um pouco de espaço", "para a Lua."], "finalBody":"Seu calendário. Sua curiosidade. Um jeito mais tranquilo de olhar para frente.",
+  "footerLine":"Um calendário lunar para o dia a dia.", "privacy":"Política de privacidade", "terms":"Termos de uso", "support":"Suporte", "legalNotice":"Editor", "credits":"Créditos", "legalEyebrow":"Claro por princípio", "updated":"Atualizado em 5 de novembro de 2026", "contents":"Nesta página", "back":"Voltar ao Moonplan", "emailAction":"Escrever ao suporte", "copyEmail":"Copiar e-mail", "copied":"E-mail copiado", "copyFailed":"Não foi possível copiar. Selecione o endereço de e-mail abaixo.",
+  "supportTitle":"Uma ajudinha,\nquando você precisar.", "supportIntro":"Dúvidas sobre o Moonplan, um problema para relatar ou uma solicitação de privacidade? Escreva diretamente para nós.",
+  "supportChecklistTitle":"Ajude-nos a entender o que aconteceu", "supportChecklist":["O modelo do seu iPhone e a versão do iOS", "A versão do Moonplan exibida em Ajustes", "A cidade, a data e o idioma do app selecionados", "O que você esperava e o que viu em vez disso"],
+  "supportPrivacy":"Envie apenas o necessário para explicar o problema. Se anexar uma captura de tela, remova qualquer informação que não queira compartilhar.",
+  "notFoundTitle":"Um pouco fora de órbita.", "notFoundBody":"Não encontramos esta página. Vamos levar você de volta ao Moonplan.",
+  "rootTitle":"A Lua fala o seu idioma.", "rootBody":"Escolha um idioma para conhecer o Moonplan.", "preview":"Prévia do app. As telas mostram uma data e uma cidade de exemplo."
+}

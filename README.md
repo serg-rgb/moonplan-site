@@ -1,6 +1,6 @@
 # Moonplan website
 
-Static website for Moonplan by Aurelia Labs LLC, in English, German and Japanese. Each language includes the landing page, privacy policy, terms, support and publisher information. A language selector and branded 404 are included.
+Static website for Moonplan by Aurelia Labs LLC, in eight languages: English, German, Spanish, French, Italian, Portuguese (Brazil), Russian and Japanese. Each language includes the landing page, privacy policy, terms, support and publisher information. A language selector and branded 404 are included.
 
 Production: https://moonplan.day/
 Repository: https://github.com/serg-rgb/moonplan-site
@@ -14,18 +14,18 @@ python3 build.py --preview
 python3 -m http.server 4817 --directory dist
 ```
 
-Open http://localhost:4817/en/ (or `/de/`, `/ja/`). `python3 build.py` builds production with indexing enabled. `--preview` adds noindex and omits the production sitemap entries.
+Open http://localhost:4817/en/ (or `/de/`, `/es/`, `/fr/`, `/it/`, `/pt-br/`, `/ru/`, `/ja/`). `python3 build.py` builds production with indexing enabled. `--preview` adds noindex and omits the production sitemap entries.
 
 ## Edit
 
-- `content/`: marketing and support text for en, de and ja.
-- `legal/`: privacy, terms and publisher text for each language.
+- `content/`: marketing and support text per language (`pt-br` is served with `lang="pt-BR"`).
+- `legal/`: privacy, terms and publisher text for each language. es, fr, it, pt-br and ru are convenience translations of the English text (each intro says the English version applies); they are not lawyer-reviewed.
 - `site.json`: company, contact, origin and eventual App Store URL.
 - `scripts/render.py`: shared HTML templates.
 - `assets/`: styles, progressive enhancement, local fonts and real app screenshots.
 - `vercel.json`: static build, output directory and URL handling.
 
-When the app launches, set `appStoreUrl` and update release text and the first FAQ answer in all three languages. Review the preview wording in the terms. Update legal text before introducing purchases, analytics or another data flow.
+When the app launches, set `appStoreUrl` and update release text and the first FAQ answer in all languages. Review the preview wording in the terms. Update legal text before introducing purchases, analytics or another data flow.
 
 ## Hosting and deployment
 
@@ -48,6 +48,10 @@ No advertising or analytics cookies, signup forms, remote scripts, tracking or p
 | English | `/en/` | `/en/privacy.html` | `/en/support.html` | `/en/terms.html` |
 | German | `/de/` | `/de/privacy.html` | `/de/support.html` | `/de/terms.html` |
 | Japanese | `/ja/` | `/ja/privacy.html` | `/ja/support.html` | `/ja/terms.html` |
+
+The same four pages exist under `/es/`, `/fr/`, `/it/`, `/pt-br/` and `/ru/`.
+
+App screenshots on the site are the raw App Store 1.1 captures (`../store/raw/<lang>/`: 01-today, 02-planner, 03-calendar, 06-moon-names) converted to WebP q80. The App Store badge falls back to the English one when `assets/badges/app-store-<lang>.svg` is missing.
 
 Use https://moonplan.day as the origin. Apple also requires an accessible privacy policy link inside the app. This website does not modify the iOS code or App Store Connect fields. Apple's Standard EULA applies unless a different licence is expressly supplied; these website terms supplement it. Legal text describes the implementation reviewed November 5, 2026 and does not certify App Review approval or replace legal review.
 

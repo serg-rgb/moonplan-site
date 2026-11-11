@@ -22,7 +22,7 @@
   "extras":[
     {"title":"Der Mond auf einen Blick","body":"Mit Widgets auf dem Homebildschirm und dem Sperrbildschirm bleibt die Mondphase immer in deiner Nähe."},
     {"title":"Eine weitere Ebene der Zeit","body":"Entdecke den japanischen Kalender mit Daten des alten Kalenders, Rokuyō und japanischen Feiertagen."},
-    {"title":"In deiner Sprache zu Hause","body":"Deutsch, English oder 日本語. Wähle die Sprache direkt in der App und ändere sie jederzeit."}
+    {"title":"In deiner Sprache zu Hause","body":"Acht Sprachen, von Deutsch und English bis Русский und 日本語. Wähle die Sprache direkt in der App und ändere sie jederzeit."}
   ],
   "howEyebrow":"Mach es zu deinem Kalender", "howTitle":"Drei kleine Schritte.\nEin neuer Blickwinkel.",
   "steps":[
@@ -40,7 +40,7 @@
   "faqEyebrow":"Gut zu wissen", "faqTitle":"Ein paar irdische Fragen.",
   "faq":[
     ["Wo kann ich Moonplan herunterladen?","Moonplan ist im App Store für iPhone ab iOS 17 erhältlich. Der Download ist kostenlos; Moonplan Premium ist ein optionales Abo."],
-    ["Welche Geräte und Sprachen werden unterstützt?","Moonplan ist für das iPhone mit iOS 17 oder neuer entwickelt. Die App gibt es auf Deutsch, Englisch, Japanisch, Russisch, Spanisch, Französisch, Portugiesisch (Brasilien) und Italienisch, die Website auf Deutsch, Englisch und Japanisch."],
+    ["Welche Geräte und Sprachen werden unterstützt?","Moonplan ist für das iPhone mit iOS 17 oder neuer entwickelt. Die App gibt es auf Deutsch, Englisch, Japanisch, Russisch, Spanisch, Französisch, Portugiesisch (Brasilien) und Italienisch – und die Website ebenfalls."],
     ["Brauche ich ein Konto oder GPS?","Nein. Wähle selbst eine Stadt oder behalte die voreingestellte Stadt. Moonplan fragt weder den Gerätestandort ab noch verlangt es ein Benutzerkonto."],
     ["Funktioniert Moonplan ohne Internet?","Ja, Mondberechnungen, Kalender und Planer laufen auf deinem Gerät. Nur die Suche nach einer neuen Stadt benötigt eine Internetverbindung zu Apples Geocodingdienst."],
     ["Worauf beruhen die Planungsvorschläge?","Sie beruhen auf überlieferten Deutungen von Mondphasen und weiteren Kalenderfaktoren. Diese kulturellen Traditionen sind keine wissenschaftlich belegten Wirkungen, keine Fachberatung und keine Ergebnisversprechen."],
