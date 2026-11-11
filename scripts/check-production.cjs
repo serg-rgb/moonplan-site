@@ -18,7 +18,7 @@ fs.mkdirSync(artifacts,{recursive:true});
       assert.equal(response.status(),200,page.url());
       assert.equal(await page.locator('h1').count(),1,page.url());
       assert.equal(await page.evaluate(()=>getComputedStyle(document.body).backgroundColor),'rgb(7, 7, 17)');
-      assert.equal(await page.locator('html').getAttribute('lang'),lang);
+      assert.equal(await page.locator('html').getAttribute('lang'),lang==='pt-br'?'pt-BR':lang);
       assert(!(await page.locator('meta[name=robots]').getAttribute('content')).includes('noindex'));
       assert.equal(await page.locator('link[rel=canonical]').getAttribute('href'),`${base}/${lang}/${file}`);
       assert.deepEqual(await page.locator('img').evaluateAll(images=>images.filter(x=>x.complete&&x.naturalWidth===0).map(x=>x.src)),[]);
