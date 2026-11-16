@@ -65,5 +65,15 @@
   "newsNote": "原典へのリンク付きの短い要約です。イラストは NASA LRO のデータをもとに当社で制作しました。",
   "newsRead": "原文を読む",
   "newsLang": "英語",
-  "illustrationCredit": "イラスト：Moonplan · NASA LRO"
+  "illustrationCredit": "イラスト：Moonplan · NASA LRO",
+  "articleUpdated": "更新",
+  "articleMinutes": "分で読めます",
+  "articleSources": "出典",
+  "articleContents": "目次",
+  "articleSection_moon": "月",
+  "articleRead": "続きを読む",
+  "articleBack": "月の記事一覧",
+  "breadcrumbHome": "Moonplan",
+  "breadcrumbLabel": "パンくずリスト",
+  "articleHubIntro": "月の記事：月の満ち欠け、太陰月、そして Moonplan がお使いの端末で行う計算について。"
 }

@@ -11,6 +11,7 @@ from xml.sax.saxutils import escape
 ROOT=Path(__file__).resolve().parent
 sys.path.insert(0,str(ROOT/'scripts'))
 from render import landing, legal_page, support, root_page
+import articles
 
 parser=argparse.ArgumentParser()
 parser.add_argument('--url', help='Public origin and optional project path, without trailing slash')
@@ -36,6 +37,8 @@ out.mkdir(parents=True)
 shutil.copytree(ROOT/'assets',out/'assets',ignore=shutil.ignore_patterns('*.png.orig'))
 (out/'.nojekyll').touch()
 urls=[cfg['url']+'/']
+cfg['hubs']=articles.hubs(ROOT,cfg['languages'])
+contents={l:json.loads((ROOT/'content'/f'{l}.json').read_text()) for l in cfg['languages']}
 for lang in cfg['languages']:
     c=json.loads((ROOT/'content'/f'{lang}.json').read_text())
     legal=json.loads((ROOT/'legal'/f'{lang}.json').read_text())
@@ -45,6 +48,7 @@ for lang in cfg['languages']:
     for kind in ('privacy','terms','publisher'):
         (target/f'{kind}.html').write_text(legal_page(lang,c,legal,cfg,kind))
     urls.extend(cfg['url']+f'/{lang}/'+p for p in ('','privacy.html','terms.html','support.html','publisher.html'))
+urls.extend(articles.build(ROOT,out,cfg,contents))
 c=json.loads((ROOT/'content/en.json').read_text())
 (out/'index.html').write_text(root_page(c,cfg))
 (out/'404.html').write_text(root_page(c,cfg,error=True))

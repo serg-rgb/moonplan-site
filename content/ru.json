@@ -67,5 +67,15 @@
   "newsNote": "Короткие пересказы с ссылками на первоисточники. Иллюстрации — наши, по данным NASA LRO.",
   "newsRead": "Читать источник",
   "newsLang": "англ.",
-  "illustrationCredit": "Иллюстрация Moonplan · NASA LRO"
+  "illustrationCredit": "Иллюстрация Moonplan · NASA LRO",
+  "articleUpdated": "Обновлено",
+  "articleMinutes": "мин чтения",
+  "articleSources": "Источники",
+  "articleContents": "Содержание",
+  "articleSection_moon": "Луна",
+  "articleRead": "Читать дальше",
+  "articleBack": "Все статьи о Луне",
+  "breadcrumbHome": "Moonplan",
+  "breadcrumbLabel": "Навигация по разделам",
+  "articleHubIntro": "Статьи о Луне: фазы, лунный месяц и расчёты, которые Moonplan делает на вашем устройстве."
 }

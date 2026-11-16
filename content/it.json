@@ -67,5 +67,15 @@
   "newsNote": "Brevi riassunti con link alle fonti originali. Le illustrazioni sono nostre, create dai dati NASA LRO.",
   "newsRead": "Leggi la fonte",
   "newsLang": "in inglese",
-  "illustrationCredit": "Illustrazione: Moonplan · NASA LRO"
+  "illustrationCredit": "Illustrazione: Moonplan · NASA LRO",
+  "articleUpdated": "Aggiornato",
+  "articleMinutes": "min di lettura",
+  "articleSources": "Fonti",
+  "articleContents": "Indice",
+  "articleSection_moon": "Luna",
+  "articleRead": "Continua a leggere",
+  "articleBack": "Tutti gli articoli sulla Luna",
+  "breadcrumbHome": "Moonplan",
+  "breadcrumbLabel": "Percorso di navigazione",
+  "articleHubIntro": "Articoli sulla Luna: fasi, mese lunare e i calcoli che Moonplan esegue sul tuo dispositivo."
 }

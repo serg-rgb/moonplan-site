@@ -15,7 +15,7 @@ def moon_mark():
     return '<svg class="moon-mark" viewBox="0 0 40 40" aria-hidden="true"><path d="M29 30A15 15 0 0 1 14 5a16 16 0 1 0 15 25Z" fill="currentColor"/><path d="M29 6v10m-5-5h10" stroke="currentColor" stroke-width="1.4"/></svg>'
 
 def lang_links(lang, page, base):
-    return ''.join(f'<a href="{base}/{l}/{page}" lang="{tag(l)}" hreflang="{tag(l)}"' +
+    return ''.join(f'<a href="{base}/{l}/{page.get(l,"") if isinstance(page,dict) else page}" lang="{tag(l)}" hreflang="{tag(l)}"' +
         (' aria-current="page"' if lang == l else '') + f'>{NAMES[l]}</a>' for l in LANGS)
 
 def langs(lang, page, base, label):
@@ -32,7 +32,7 @@ def analytics(cfg):
     src = cfg.get('analyticsScript')
     return f'<script defer src="{cfg["base"]}{src}"></script>' if src and not cfg['noindex'] else ''
 
-def head(lang, c, cfg, page='', title=None, description=None, noindex=False, root=False, space=False):
+def head(lang, c, cfg, page='', title=None, description=None, noindex=False, root=False, space=False, alts=None, og='website', image=None):
     base = cfg['base']
     url = cfg['url'] + ('/' if root else f'/{lang}/{page}')
     alternates = ''.join(f'<link rel="alternate" hreflang="{tag(l)}" href="{cfg["url"]}/{l}/{page}">' for l in LANGS)
@@ -46,11 +46,11 @@ def head(lang, c, cfg, page='', title=None, description=None, noindex=False, roo
 <meta http-equiv="Content-Security-Policy" content="{e(csp, quote=True)}"><meta name="referrer" content="strict-origin-when-cross-origin">
 <title>{e(title)}</title><meta name="description" content="{e(description, quote=True)}">
 <meta name="robots" content="{'noindex, follow' if noindex else 'index, follow'}"><link rel="canonical" href="{url}">
-{alternates}<link rel="alternate" hreflang="x-default" href="{cfg['url'] + ('/' if not page else '/en/' + page)}">
-<meta property="og:type" content="website"><meta property="og:site_name" content="Moonplan"><meta property="og:locale" content="{c['locale']}">
+{alts if alts is not None else alternates + '<link rel="alternate" hreflang="x-default" href="' + cfg['url'] + ('/' if not page else '/en/' + page) + '">'}
+<meta property="og:type" content="{og}"><meta property="og:site_name" content="Moonplan"><meta property="og:locale" content="{c['locale']}">
 <meta property="og:title" content="{e(title, quote=True)}"><meta property="og:description" content="{e(description, quote=True)}"><meta property="og:url" content="{url}">
-<meta property="og:image" content="{cfg['url']}/assets/og-image.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="Moonplan">
-<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="{e(title, quote=True)}"><meta name="twitter:description" content="{e(description, quote=True)}"><meta name="twitter:image" content="{cfg['url']}/assets/og-image.png">
+<meta property="og:image" content="{image or cfg['url'] + '/assets/og-image.png'}"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="Moonplan">
+<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="{e(title, quote=True)}"><meta name="twitter:description" content="{e(description, quote=True)}"><meta name="twitter:image" content="{image or cfg['url'] + '/assets/og-image.png'}">
 <meta name="theme-color" content="#070711"><link rel="icon" href="{base}/assets/favicon.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="{base}/assets/apple-touch-icon.png">
 <link rel="preload" href="{base}/assets/fonts/manrope_regular.ttf" as="font" type="font/ttf" crossorigin><link rel="stylesheet" href="{base}/assets/site.css"><link rel="stylesheet" href="{base}/assets/responsive.css">{space_css}
 <script defer src="{base}/assets/site.js"></script>{analytics(cfg)}{space_js}</head>'''
@@ -66,8 +66,9 @@ def header(lang, c, cfg, page=''):
 
 def footer(lang,c,cfg,page=''):
     base=cfg['base']
+    hub=f'<a href="{base}/{lang}/moon/">{e(c["articleSection_moon"])}</a>' if lang in cfg.get('hubs',()) else ''
     return f'''<footer class="site-footer wrap"><div class="footer-top"><div><a class="brand" href="{base}/{lang}/">{moon_mark()}<span>Moonplan</span></a><p>{e(c['footerLine'])}</p></div>
-<nav aria-label="{e(c['legalNotice'])}"><a href="{base}/{lang}/privacy.html">{e(c['privacy'])}</a><a href="{base}/{lang}/terms.html">{e(c['terms'])}</a><a href="{base}/{lang}/support.html">{e(c['support'])}</a><a href="{base}/{lang}/publisher.html">{e(c['legalNotice'])}</a></nav></div>
+<nav aria-label="{e(c['legalNotice'])}"><a href="{base}/{lang}/privacy.html">{e(c['privacy'])}</a><a href="{base}/{lang}/terms.html">{e(c['terms'])}</a><a href="{base}/{lang}/support.html">{e(c['support'])}</a><a href="{base}/{lang}/publisher.html">{e(c['legalNotice'])}</a>{hub}</nav></div>
 <div class="footer-bottom"><span>© 2026 Aurelia Labs LLC</span>{footer_langs(lang,page,base,c['language'])}<a href="{base}/{lang}/publisher.html#credits">{e(c['credits'])}</a></div></footer></body></html>'''
 
 def phone(lang, kind, alt, cfg, hero=False):

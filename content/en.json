@@ -67,5 +67,15 @@
   "newsNote": "Short summaries with links to the original sources. Illustrations are ours, made from NASA LRO data.",
   "newsRead": "Read at source",
   "newsLang": "",
-  "illustrationCredit": "Illustration: Moonplan · NASA LRO"
+  "illustrationCredit": "Illustration: Moonplan · NASA LRO",
+  "articleUpdated": "Updated",
+  "articleMinutes": "min read",
+  "articleSources": "Sources",
+  "articleContents": "Contents",
+  "articleSection_moon": "Moon",
+  "articleRead": "Keep reading",
+  "articleBack": "All Moon articles",
+  "breadcrumbHome": "Moonplan",
+  "breadcrumbLabel": "Breadcrumb",
+  "articleHubIntro": "Articles about the Moon: phases, the lunar month and the calculations Moonplan makes on your device."
 }
