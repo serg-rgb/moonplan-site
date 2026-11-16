@@ -17,7 +17,7 @@ fs.mkdirSync(artifacts,{recursive:true});
       const response=await page.goto(`${base}/${lang}/${file}`,{waitUntil:'networkidle'});
       assert.equal(response.status(),200,page.url());
       assert.equal(await page.locator('h1').count(),1,page.url());
-      assert.equal(await page.evaluate(()=>getComputedStyle(document.body).backgroundColor),'rgb(7, 7, 17)');
+      assert.equal(await page.evaluate(()=>getComputedStyle(document.body).backgroundColor),file===''?'rgb(4, 4, 10)':'rgb(7, 7, 17)',page.url()); // landing: darker space background under the WebGL canvas
       assert.equal(await page.locator('html').getAttribute('lang'),lang==='pt-br'?'pt-BR':lang);
       assert(!(await page.locator('meta[name=robots]').getAttribute('content')).includes('noindex'));
       assert.equal(await page.locator('link[rel=canonical]').getAttribute('href'),`${base}/${lang}/${file}`);
