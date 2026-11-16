@@ -7,7 +7,7 @@ const base=process.env.SITE_URL || 'http://127.0.0.1:4817';
 const artifacts=process.env.ARTIFACTS || path.resolve(__dirname,'../verification');
 fs.mkdirSync(artifacts,{recursive:true});
 (async()=>{
-  const browser=await chromium.launch({channel:'chrome',headless:true});
+  const browser=await chromium.launch({channel:'chrome',headless:true,args:['--use-angle=swiftshader','--enable-unsafe-swiftshader']});
   const context=await browser.newContext({viewport:{width:1440,height:1000}});
   const page=await context.newPage();const errors=[];let checks=0;const bad=[];
   page.on('pageerror',error=>errors.push(error.message));
@@ -64,6 +64,25 @@ fs.mkdirSync(artifacts,{recursive:true});
   await plain.locator('.mobile-menu summary').click();
   assert.equal(await plain.locator('.mobile-menu nav').evaluate(el=>Math.round(el.getBoundingClientRect().height)),844);
   await noJS.close();checks++;
+  // Landing: canvas background, no hero phone, 4 news cards with https links, HUD text from the content file.
+  const landings=['en','de','es','fr','it','pt-br','ru','ja'];
+  for(const lang of landings){
+    await page.setViewportSize({width:1440,height:900});await page.goto(base+`/${lang}/`,{waitUntil:'networkidle'});
+    assert.equal(await page.locator('body > canvas#space').count(),1,`${lang}: canvas#space`);
+    assert.equal(await page.locator('.hero .phone, .hero-visual').count(),0,`${lang}: hero phone removed`);
+    assert.equal(await page.evaluate(()=>getComputedStyle(document.querySelector('#space')).pointerEvents),'none',`${lang}: canvas must not block clicks`);
+    const hrefs=await page.locator('.news .feed a').evaluateAll(n=>n.map(a=>a.getAttribute('href')));
+    assert.equal(hrefs.length,4,`${lang}: news cards`);assert(hrefs.every(h=>h.startsWith('https://')),`${lang}: news links`);
+    assert(await page.locator('.news time[datetime]').evaluateAll(n=>n.every(t=>t.textContent.trim().length>3)),`${lang}: news dates`);
+    assert(await page.locator('#questions').evaluate(el=>el.previousElementSibling.id==='news'),`${lang}: news before FAQ`);
+    await page.waitForFunction(()=>document.querySelector('[data-phase]').textContent.trim().length>0);
+    const hud=await page.locator('[data-phase]').textContent();
+    assert(/\d+%/.test(hud),`${lang}: HUD ${hud}`);
+    assert(hud.includes(await page.locator('[data-phase]').getAttribute('data-lit')),`${lang}: HUD localized`);
+    checks++;
+  }
+  for(const file of ['privacy.html','support.html'])
+    {await page.goto(base+'/en/'+file);assert.equal(await page.locator('canvas#space, script[src*="space.js"]').count(),0,'space only on landing');}
   // Reduced motion, keyboard entry point and real email action.
   await page.emulateMedia({reducedMotion:'reduce'});await page.goto(base+'/en/');
   await page.keyboard.press('Tab');assert.equal(await page.locator('.skip').evaluate(el=>el===document.activeElement),true);

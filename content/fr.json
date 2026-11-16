@@ -56,5 +56,16 @@
   "supportChecklistTitle":"Aidez-nous à comprendre ce qui s’est passé", "supportChecklist":["Le modèle de votre iPhone et votre version d’iOS", "La version de Moonplan indiquée dans les Réglages", "La ville choisie, la date et la langue de l’app", "Ce que vous attendiez et ce que vous avez vu à la place"],
   "supportPrivacy":"N’envoyez que ce qui est nécessaire pour expliquer le problème. Si vous joignez une capture d’écran, retirez toute information que vous ne souhaitez pas partager.",
   "notFoundTitle":"Un peu hors orbite.", "notFoundBody":"Cette page est introuvable. Revenons à Moonplan.",
-  "rootTitle":"La Lune parle votre langue.", "rootBody":"Choisissez une langue pour découvrir Moonplan.", "preview":"Aperçu de l’app. Les écrans montrent une date et une ville d’exemple."
+  "rootTitle":"La Lune parle votre langue.", "rootBody":"Choisissez une langue pour découvrir Moonplan.", "preview":"Aperçu de l’app. Les écrans montrent une date et une ville d’exemple.",
+  "moonNow": "La Lune maintenant",
+  "lit": "éclairée",
+  "waxing": "croissante",
+  "waning": "décroissante",
+  "moonCredit": "Surface : NASA LRO, LROC et LOLA · éclairage calculé pour aujourd’hui",
+  "newsEyebrow": "Actualité scientifique",
+  "newsTitle": "Du nouveau sur la Lune",
+  "newsNote": "Courts résumés avec liens vers les sources d’origine. Les illustrations sont les nôtres, réalisées à partir des données NASA LRO.",
+  "newsRead": "Lire la source",
+  "newsLang": "en anglais",
+  "illustrationCredit": "Illustration : Moonplan · NASA LRO"
 }

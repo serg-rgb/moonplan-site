@@ -1,5 +1,6 @@
 """Small, dependency-free HTML renderer. Content is stored per language."""
 from html import escape as e
+from news import news_section
 
 LANGS = ('en', 'de', 'es', 'fr', 'it', 'pt-br', 'ru', 'ja')
 NAMES = {'en': 'English', 'de': 'Deutsch', 'es': 'Español', 'fr': 'Français', 'it': 'Italiano',
@@ -31,11 +32,13 @@ def analytics(cfg):
     src = cfg.get('analyticsScript')
     return f'<script defer src="{cfg["base"]}{src}"></script>' if src and not cfg['noindex'] else ''
 
-def head(lang, c, cfg, page='', title=None, description=None, noindex=False, root=False):
+def head(lang, c, cfg, page='', title=None, description=None, noindex=False, root=False, space=False):
     base = cfg['base']
     url = cfg['url'] + ('/' if root else f'/{lang}/{page}')
     alternates = ''.join(f'<link rel="alternate" hreflang="{tag(l)}" href="{cfg["url"]}/{l}/{page}">' for l in LANGS)
     title, description = title or c['title'], description or c['description']
+    space_js = f'<script type="module" src="{base}/assets/space/space.js"></script>' if space else ''
+    space_css = f'<link rel="stylesheet" href="{base}/assets/space.css">' if space else ''
     # No inline script is needed. The CSP is also enforced on GitHub Pages via this meta tag.
     csp = "default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'"
     return f'''<!doctype html>
@@ -49,8 +52,8 @@ def head(lang, c, cfg, page='', title=None, description=None, noindex=False, roo
 <meta property="og:image" content="{cfg['url']}/assets/og-image.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="Moonplan">
 <meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="{e(title, quote=True)}"><meta name="twitter:description" content="{e(description, quote=True)}"><meta name="twitter:image" content="{cfg['url']}/assets/og-image.png">
 <meta name="theme-color" content="#070711"><link rel="icon" href="{base}/assets/favicon.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="{base}/assets/apple-touch-icon.png">
-<link rel="preload" href="{base}/assets/fonts/manrope_regular.ttf" as="font" type="font/ttf" crossorigin><link rel="stylesheet" href="{base}/assets/site.css"><link rel="stylesheet" href="{base}/assets/responsive.css">
-<script defer src="{base}/assets/site.js"></script>{analytics(cfg)}</head>'''
+<link rel="preload" href="{base}/assets/fonts/manrope_regular.ttf" as="font" type="font/ttf" crossorigin><link rel="stylesheet" href="{base}/assets/site.css"><link rel="stylesheet" href="{base}/assets/responsive.css">{space_css}
+<script defer src="{base}/assets/site.js"></script>{analytics(cfg)}{space_js}</head>'''
 
 def header(lang, c, cfg, page=''):
     base = cfg['base']
@@ -87,11 +90,11 @@ def cta(c,cfg,href,lang='en'):
     return f'<a class="button" href="{e(href,quote=True)}">{e(c["cta"])}<span aria-hidden="true">↗</span></a>'
 
 def landing(lang,c,cfg):
-    result=head(lang,c,cfg,noindex=cfg['noindex'])+header(lang,c,cfg)
+    result=head(lang,c,cfg,noindex=cfg['noindex'],space=True)+header(lang,c,cfg).replace('<body>','<body class="has-space"><canvas id="space" aria-hidden="true"></canvas>',1)
     result+=f'''<main id="main"><section class="hero wrap"><div class="hero-copy"><p class="eyebrow"><span class="tiny-moon" aria-hidden="true"></span>{e(c['eyebrow'])}</p>
 <h1>{lines(c['hero'])}</h1><p class="intro">{e(c['intro'])}</p><p class="hero-body">{e(c['heroBody'])}</p><div class="hero-actions">{cta(c,cfg,'#discover',lang)}<p class="release">{e(c['status']) if not cfg['appStoreUrl'] else e(c['compatibility'])}</p></div>
 <ul class="proof">{''.join('<li>'+e(p)+'</li>' for p in c['proof'])}</ul></div>
-<figure class="hero-visual"><div class="orbit orbit-one" aria-hidden="true"></div><div class="orbit orbit-two" aria-hidden="true"></div>{phone(lang,'today',c['heroAlt'],cfg,True)}<figcaption>{e(c['heroCaption'])}</figcaption></figure></section>
+</section>
 <div class="phase-rail wrap" aria-hidden="true">{''.join(f'<span><i class="phase phase-{i}"></i>{e(s)}</span>' for i,s in enumerate(c['rail']))}</div>
 <section id="discover" class="section wrap"><div class="section-heading reveal"><p class="eyebrow">{e(c['featureEyebrow'])}</p><h2>{lines(c['featureTitle'])}</h2><p>{e(c['featureIntro'])}</p></div>'''
     for f in c['features']:
@@ -100,8 +103,10 @@ def landing(lang,c,cfg):
 <section id="how" class="section wrap"><div class="section-heading reveal"><p class="eyebrow">{e(c['howEyebrow'])}</p><h2>{lines(c['howTitle'])}</h2></div><ol class="steps">{''.join(f'<li class="reveal"><span class="step-number" aria-hidden="true">0{i+1}</span><h3>{e(x["title"])}</h3><p>{e(x["body"])}</p></li>' for i,x in enumerate(c['steps']))}</ol></section>
 <section class="tagline wrap" aria-label="{e(' '.join(c['tagline']),quote=True)}"><div class="tagline-orbit" aria-hidden="true"></div><p aria-hidden="true">{''.join('<span class="tagline-line">'+''.join('<span class="word">'+e(w)+'</span>'+('' if lang=='ja' else ' ') for w in (list(line) if lang=='ja' else line.split(' ')))+'</span>' for line in c['tagline'])}</p></section>
 <section class="section principles wrap"><div class="section-heading reveal"><p class="eyebrow">{e(c['principleEyebrow'])}</p><h2>{lines(c['principleTitle'])}</h2></div><div class="principle-list">{''.join(f'<article class="reveal"><span class="index" aria-hidden="true">0{i+1}</span><div><h3>{e(x["title"])}</h3><p>{e(x["body"])}</p></div></article>' for i,x in enumerate(c['principles']))}</div></section>
+{news_section(lang,c,cfg)}
 <section id="questions" class="section wrap faq"><div class="section-heading reveal"><p class="eyebrow">{e(c['faqEyebrow'])}</p><h2>{e(c['faqTitle'])}</h2></div><div class="faq-items">{''.join(f'<details><summary>{e(q)}<span aria-hidden="true">+</span></summary><p>{e(a)}</p></details>' for q,a in c['faq'])}</div></section>
-<section class="final-cta section wrap reveal"><span class="final-moon" aria-hidden="true">☾</span><p class="eyebrow">{e(c['finalEyebrow'])}</p><h2>{lines(c['finalTitle'])}</h2><p>{e(c['finalBody'])}</p>{cta(c,cfg,'#discover',lang)}<p class="release">{e(c['status']) if not cfg['appStoreUrl'] else e(c['compatibility'])}</p></section></main>'''
+<section class="final-cta section wrap reveal"><span class="final-moon" aria-hidden="true">☾</span><p class="eyebrow">{e(c['finalEyebrow'])}</p><h2>{lines(c['finalTitle'])}</h2><p>{e(c['finalBody'])}</p>{cta(c,cfg,'#discover',lang)}<p class="release">{e(c['status']) if not cfg['appStoreUrl'] else e(c['compatibility'])}</p></section></main>
+<div class="hud" aria-live="polite"><div class="wrap"><span><strong>{e(c['moonNow'])}</strong>&nbsp;&nbsp;<span data-phase data-lit="{e(c['lit'],quote=True)}" data-waxing="{e(c['waxing'],quote=True)}" data-waning="{e(c['waning'],quote=True)}"></span></span><span>{e(c['moonCredit'])}</span></div></div>'''
     return result+footer(lang,c,cfg)
 
 def legal_page(lang,c,legal,cfg,kind):

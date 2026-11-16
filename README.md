@@ -22,6 +22,7 @@ Open http://localhost:4817/en/ (or `/de/`, `/es/`, `/fr/`, `/it/`, `/pt-br/`, `/
 - `legal/`: privacy, terms and publisher text for each language. es, fr, it, pt-br and ru are convenience translations of the English text (each intro says the English version applies); they are not lawyer-reviewed.
 - `site.json`: company, contact, origin and eventual App Store URL.
 - `scripts/render.py`: shared HTML templates.
+- `news.json`: the four science-news cards (see below). Rendered by `scripts/news.py`.
 - `assets/`: styles, progressive enhancement, local fonts and real app screenshots.
 - `vercel.json`: static build, output directory and URL handling.
 
@@ -65,3 +66,9 @@ PLAYWRIGHT_MODULE=/path/to/playwright node scripts/check-production.cjs
 ```
 
 Reports and screenshots default to `verification/`. `deliverables/` contains the source archive and Russian handoff/domain documents. `work/` contains reference and diagnostic files. These three directories are local, ignored by Git and excluded from the website build. All landing materials remain in this Desktop project directory.
+
+## Space background and news
+
+The landing pages (not legal/support/root) draw the Moon on `canvas#space` with plain WebGL: `assets/space/space.js` (phase maths in `moonphase.js`, textures `*.webp`), styled by `assets/space.css`. No library, no network except same-origin files; reduced motion draws one still frame, and without WebGL the page keeps its dark background. HUD words come from `content/{lang}.json` (`moonNow`, `lit`, `waxing`, `waning`, `moonCredit`). Credits: Moon colour map and surface data from NASA SVS CGI Moon Kit 4720 (LRO LROC colour, LOLA elevation); news illustrations are Moonplan renders from the same LRO data.
+
+News (`news.json`), update weekly: keep 4 items, newest or most relevant first. Each item has `id`, `url` (https, original source), `source`, `date` (YYYY-MM-DD), `image` (file name without extension in `assets/news/`) and `text` with `title`, `summary` and `alt` in all 8 languages (`ru`, `en`, `de`, `es`, `fr`, `it`, `pt-br`, `ja`); a missing language falls back to English. Paraphrase briefly, keep numbers exact, add no claims. Set `updated`, rebuild, run the check. Section labels are in `content/{lang}.json` (`news*`, `illustrationCredit`).

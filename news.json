@@ -1,0 +1,73 @@
+{
+  "updated": "2026-11-16",
+  "items": [
+    {
+      "id": "artemis-ii-science",
+      "url": "https://www.sciencenews.org/article/artemis-ii-human-moon-science",
+      "source": "Science News",
+      "date": "2026-10-16",
+      "image": "artemis-terminator",
+      "text": {
+        "ru": {"title": "Что люди увидели у Луны: первые научные итоги Artemis II", "summary": "Экипаж заметил пять вспышек от падения метеороидов размером примерно с мяч для гольфа. Учёные считают это самыми маленькими ударами, которые когда-либо видели на Луне.", "alt": "Терминатор Луны: граница света и тени, длинные тени кратеров"},
+        "en": {"title": "What people saw at the Moon: Artemis II's first science results", "summary": "The crew spotted five flashes from meteoroids roughly the size of a golf ball. Scientists say these are the smallest impacts ever seen on the Moon.", "alt": "The lunar terminator, where light meets shadow and craters cast long shadows"},
+        "de": {"title": "Was Menschen am Mond sahen: die ersten wissenschaftlichen Ergebnisse von Artemis II", "summary": "Die Besatzung beobachtete fünf Lichtblitze von Meteoroiden, etwa so groß wie ein Golfball. Forschende sprechen von den kleinsten Einschlägen, die je auf dem Mond gesehen wurden.", "alt": "Der Terminator des Mondes, wo Licht auf Schatten trifft und Krater lange Schatten werfen"},
+        "es": {"title": "Lo que la gente vio en la Luna: los primeros resultados científicos de Artemis II", "summary": "La tripulación observó cinco destellos de meteoroides del tamaño aproximado de una pelota de golf. Los científicos dicen que son los impactos más pequeños jamás vistos en la Luna.", "alt": "El terminador lunar, donde la luz se encuentra con la sombra y los cráteres proyectan sombras largas"},
+        "fr": {"title": "Ce que l’on a vu près de la Lune : premiers résultats scientifiques d’Artemis II", "summary": "L’équipage a repéré cinq éclairs causés par des météoroïdes de la taille approximative d’une balle de golf. Les scientifiques parlent des plus petits impacts jamais observés sur la Lune.", "alt": "Le terminateur lunaire, où la lumière rencontre l’ombre et où les cratères projettent de longues ombres"},
+        "it": {"title": "Cosa hanno visto le persone vicino alla Luna: i primi risultati scientifici di Artemis II", "summary": "L’equipaggio ha notato cinque lampi causati da meteoroidi grandi più o meno quanto una pallina da golf. Gli scienziati li definiscono gli impatti più piccoli mai visti sulla Luna.", "alt": "Il terminatore lunare, dove la luce incontra l’ombra e i crateri proiettano lunghe ombre"},
+        "pt-br": {"title": "O que as pessoas viram na Lua: os primeiros resultados científicos da Artemis II", "summary": "A tripulação percebeu cinco clarões de meteoroides do tamanho aproximado de uma bola de golfe. Os cientistas dizem que são os menores impactos já vistos na Lua.", "alt": "O terminador lunar, onde a luz encontra a sombra e as crateras projetam sombras longas"},
+        "ja": {"title": "人類が月で見たもの：アルテミス II の初期の科学成果", "summary": "乗組員は、ゴルフボールほどの大きさの流星物質による閃光を5回確認しました。科学者は、月でこれまでに観測された中で最も小さな衝突だとしています。", "alt": "光と影の境目である月のターミネーター。クレーターが長い影を落としている"}
+      }
+    },
+    {
+      "id": "promise-rover",
+      "url": "https://www.nasa.gov/news-release/nasa-awards-moon-base-transportation-technology-science-projects/",
+      "source": "NASA",
+      "date": "2026-11-07",
+      "image": "south-pole",
+      "text": {
+        "ru": {"title": "Ровер PROMISE поищет лёд у Южного полюса", "summary": "NASA выбрало проекты для будущей лунной базы. Шестиколёсный ровер с ядерным источником энергии пробурит грунт примерно на метр и сможет работать лунной ночью.", "alt": "Район Южного полюса Луны при низком Солнце"},
+        "en": {"title": "The PROMISE rover will look for ice near the south pole", "summary": "NASA picked projects for a future Moon base. A six-wheeled, nuclear-powered rover will drill about a metre into the soil and keep working through the lunar night.", "alt": "The Moon's south polar region under a low Sun"},
+        "de": {"title": "Der Rover PROMISE soll am Südpol nach Eis suchen", "summary": "Die NASA hat Projekte für eine künftige Mondbasis ausgewählt. Ein sechsrädriger Rover mit Nuklearantrieb soll etwa einen Meter tief in den Boden bohren und auch die Mondnacht über weiterarbeiten.", "alt": "Die Südpolregion des Mondes bei tiefstehender Sonne"},
+        "es": {"title": "El rover PROMISE buscará hielo cerca del polo sur", "summary": "La NASA eligió proyectos para una futura base lunar. Un rover de seis ruedas y propulsión nuclear perforará aproximadamente un metro en el suelo y seguirá funcionando durante la noche lunar.", "alt": "La región del polo sur de la Luna con el Sol bajo"},
+        "fr": {"title": "Le rover PROMISE cherchera de la glace près du pôle Sud", "summary": "La NASA a retenu des projets pour une future base lunaire. Un rover à six roues, à propulsion nucléaire, forera environ un mètre dans le sol et continuera de fonctionner pendant la nuit lunaire.", "alt": "La région du pôle Sud de la Lune sous un Soleil bas"},
+        "it": {"title": "Il rover PROMISE cercherà il ghiaccio vicino al polo sud", "summary": "La NASA ha scelto progetti per una futura base lunare. Un rover a sei ruote e alimentazione nucleare perforerà il suolo per circa un metro e continuerà a lavorare durante la notte lunare.", "alt": "La regione del polo sud della Luna con il Sole basso"},
+        "pt-br": {"title": "O rover PROMISE vai procurar gelo perto do polo sul", "summary": "A NASA escolheu projetos para uma futura base lunar. Um rover de seis rodas e alimentação nuclear vai perfurar cerca de um metro no solo e continuar trabalhando durante a noite lunar.", "alt": "A região do polo sul da Lua sob um Sol baixo"},
+        "ja": {"title": "探査車 PROMISE が南極付近で氷を探す", "summary": "NASA は将来の月面基地に向けたプロジェクトを選定しました。原子力で動く6輪の探査車が地面を約1メートル掘り、月の夜も活動を続けます。", "alt": "太陽が低い位置にある月の南極域"}
+      }
+    },
+    {
+      "id": "supermoons-2026",
+      "url": "https://science.nasa.gov/solar-system/skywatching/whats-up-november-2026-skywatching-tips-from-nasa/",
+      "source": "NASA Science",
+      "date": "2026-11-02",
+      "image": "supermoon",
+      "text": {
+        "ru": {"title": "24 ноября — первое из трёх суперлуний подряд", "summary": "За ноябрьским последуют декабрьское и январское. По нашему расчёту полнолуние наступит 24 ноября в 14:54 UTC, Луна будет в 360 754 км от Земли.", "alt": "Полная Луна"},
+        "en": {"title": "24 November brings the first of three supermoons in a row", "summary": "December and January follow. By our calculation the Moon is full on 24 November at 14:54 UTC, 360,754 km from Earth.", "alt": "The full Moon"},
+        "de": {"title": "Der 24. November bringt den ersten von drei Supermonden in Folge", "summary": "Es folgen Dezember und Januar. Nach unserer Berechnung ist am 24. November um 14:54 UTC Vollmond, 360.754 km von der Erde entfernt.", "alt": "Der Vollmond"},
+        "es": {"title": "El 24 de noviembre llega la primera de tres superlunas seguidas", "summary": "Le seguirán las de diciembre y enero. Según nuestro cálculo, la Luna llena es el 24 de noviembre a las 14:54 UTC, a 360.754 km de la Tierra.", "alt": "La Luna llena"},
+        "fr": {"title": "Le 24 novembre, la première de trois super-Lunes d’affilée", "summary": "Celles de décembre et de janvier suivront. D’après notre calcul, la Pleine Lune a lieu le 24 novembre à 14:54 UTC, à 360 754 km de la Terre.", "alt": "La Pleine Lune"},
+        "it": {"title": "Il 24 novembre arriva la prima di tre superlune di fila", "summary": "Seguiranno quelle di dicembre e gennaio. Secondo il nostro calcolo la Luna piena cade il 24 novembre alle 14:54 UTC, a 360.754 km dalla Terra.", "alt": "La Luna piena"},
+        "pt-br": {"title": "24 de novembro traz a primeira de três superluas seguidas", "summary": "As de dezembro e janeiro vêm em seguida. Pelo nosso cálculo, a Lua cheia ocorre em 24 de novembro às 14:54 UTC, a 360.754 km da Terra.", "alt": "A Lua cheia"},
+        "ja": {"title": "11月24日、3か月連続スーパームーンの最初の満月", "summary": "12月と1月が続きます。私たちの計算では、満月は11月24日の14:54 UTC で、地球から360,754 km の距離です。", "alt": "満月"}
+      }
+    },
+    {
+      "id": "minimoon-2026-qq8",
+      "url": "https://www.livescience.com/space/meteoroids/astronomers-confirm-a-tiny-new-moon-is-orbiting-earth-and-itll-stick-around-for-the-holidays",
+      "source": "Live Science",
+      "date": "2026-11-13",
+      "image": "minimoon",
+      "text": {
+        "ru": {"title": "У Земли временная мини-луна 2026 QQ8", "summary": "Крошечный астероид около 1,8 метра в поперечнике попал на орбиту Земли в апреле и, по оценкам, покинет её в январе.", "alt": "Тонкий серп Луны в тёмном небе"},
+        "en": {"title": "Earth has a temporary minimoon, 2026 QQ8", "summary": "A tiny asteroid about 1.8 metres across was captured into Earth orbit in April and is expected to leave in January.", "alt": "A thin crescent Moon in a dark sky"},
+        "de": {"title": "Die Erde hat einen vorübergehenden Minimond: 2026 QQ8", "summary": "Ein winziger Asteroid von etwa 1,8 Metern Durchmesser wurde im April in eine Erdumlaufbahn eingefangen und soll sie im Januar wieder verlassen.", "alt": "Eine schmale Mondsichel am dunklen Himmel"},
+        "es": {"title": "La Tierra tiene una minilunia temporal, 2026 QQ8", "summary": "Un diminuto asteroide de unos 1,8 metros de ancho fue capturado en órbita terrestre en abril y se espera que la abandone en enero.", "alt": "Una fina media luna en un cielo oscuro"},
+        "fr": {"title": "La Terre a une mini-lune temporaire, 2026 QQ8", "summary": "Un minuscule astéroïde d’environ 1,8 mètre de large a été capturé sur une orbite terrestre en avril et devrait la quitter en janvier.", "alt": "Un fin croissant de Lune dans un ciel sombre"},
+        "it": {"title": "La Terra ha una minilluna temporanea, 2026 QQ8", "summary": "Un minuscolo asteroide largo circa 1,8 metri è stato catturato in orbita terrestre ad aprile e dovrebbe lasciarla a gennaio.", "alt": "Una sottile falce di Luna in un cielo scuro"},
+        "pt-br": {"title": "A Terra tem uma minilua temporária, 2026 QQ8", "summary": "Um minúsculo asteroide de cerca de 1,8 metro de largura foi capturado em órbita da Terra em abril e deve deixá-la em janeiro.", "alt": "Uma fina Lua crescente em um céu escuro"},
+        "ja": {"title": "地球に一時的なミニムーン「2026 QQ8」", "summary": "幅約1.8メートルの小さな小惑星が4月に地球周回軌道に捕らえられ、1月に離れる見込みです。", "alt": "暗い空に浮かぶ細い三日月"}
+      }
+    }
+  ]
+}

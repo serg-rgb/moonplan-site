@@ -1,0 +1,46 @@
+/* Landing only: WebGL Moon background (assets/space/space.js), hero over it, HUD line and news cards. */
+body.has-space{background:#04040a}
+.has-space:before{display:none}
+#space{position:fixed;inset:0;width:100%;height:100%;display:block;z-index:-1;pointer-events:none;background:#04040a}
+.has-space .hero{display:grid;grid-template-columns:1fr;gap:0;align-content:center;align-items:center;min-height:calc(100svh - 80px);padding-block:48px 96px}
+.has-space .hero-copy{max-width:560px;text-shadow:0 0 24px rgba(4,4,10,.85)}
+.has-space .hero h1{text-shadow:none;filter:drop-shadow(0 0 18px rgba(4,4,10,.8))}
+.has-space .hero-copy>*{animation:space-in .9s var(--ease) both}
+.has-space .hero-copy>:nth-child(1){animation-delay:.2s}.has-space .hero-copy>:nth-child(2){animation-delay:.35s}.has-space .hero-copy>:nth-child(3){animation-delay:.5s}
+.has-space .hero-copy>:nth-child(4){animation-delay:.65s}.has-space .hero-copy>:nth-child(5){animation-delay:.8s}.has-space .hero-copy>:nth-child(6){animation-delay:.95s}
+@keyframes space-in{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+.has-space .phase-rail,.has-space .section-heading,.has-space .tagline p{text-shadow:0 0 24px rgba(4,4,10,.85)}
+.no-webgl #space{background:#04040a}
+
+.hud{position:fixed;left:0;right:0;bottom:24px;z-index:4;pointer-events:none;transition:opacity .6s var(--ease)}
+.scrolled .hud{opacity:0}
+.hud .wrap{display:flex;flex-direction:column;gap:4px;font-size:12px;line-height:16px;letter-spacing:.06em;color:var(--faint)}
+.hud strong{color:var(--light-gold);font-weight:600;letter-spacing:.08em;text-transform:uppercase}
+.hud span{opacity:0;transition:opacity 1.2s var(--ease) 1.4s}
+.space-ready .hud span{opacity:1}
+
+.news{padding-block:96px 64px;text-shadow:0 0 24px rgba(4,4,10,.85)}
+.news h2{font-family:var(--display);font-weight:400;font-size:36px;line-height:40px;letter-spacing:-.045em;margin-top:24px;max-width:18ch}
+.news .note{margin-top:16px;color:var(--muted);max-width:60ch}
+.feed{margin:48px 0 0;padding:0;list-style:none;display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:48px 32px}
+.feed a{display:grid;gap:16px;align-content:start;color:inherit;text-decoration:none}
+.feed figure{margin:0;position:relative;overflow:hidden;border-radius:12px;border:1px solid rgba(232,210,158,.12);background:#04040a;aspect-ratio:8/5}
+.feed img{width:100%;height:100%;object-fit:cover;display:block;transform:scale(1.001);transition:transform .9s var(--ease)}
+.feed a:hover img{transform:scale(1.045)}
+.feed figcaption{text-shadow:0 1px 6px rgba(4,4,10,.9);position:absolute;left:12px;bottom:10px;font-size:11px;line-height:14px;color:rgba(240,232,216,.62);letter-spacing:.04em}
+.feed .meta{display:flex;flex-wrap:wrap;gap:4px 12px;font-size:12px;line-height:16px;letter-spacing:.12em;text-transform:uppercase;font-weight:600;color:var(--gold)}
+.feed .meta time{color:var(--faint);font-weight:400}
+.feed h3{margin:0;font-family:var(--display);font-weight:400;font-size:20px;line-height:28px;letter-spacing:-.03em;text-wrap:balance;color:var(--text)}
+.feed p{margin:0;color:var(--muted);font-size:15px;line-height:24px}
+.feed .go{font-size:14px;color:var(--text);border-bottom:1px solid rgba(240,232,216,.3);justify-self:start;padding-bottom:2px;transition:border-color .3s var(--ease)}
+.feed a:hover .go{border-color:var(--light-gold)}
+.feed a:focus-visible{outline:2px solid var(--light-gold);outline-offset:6px;border-radius:12px}
+html[lang=ja] .news h2,html[lang=ja] .feed h3{letter-spacing:.01em;font-weight:600}
+html[lang=ja] .feed h3{font-size:18px;line-height:28px}
+
+@media(max-width:760px){
+  .has-space .hero{align-content:end;min-height:calc(100svh - 80px);padding-block:0 120px}
+  .news{padding-block:64px 32px}
+  .news h2{font-size:28px;line-height:34px}
+}
+@media(prefers-reduced-motion:reduce){.has-space .hero-copy>*{animation:none}.hud span{transition:opacity .3s linear}}

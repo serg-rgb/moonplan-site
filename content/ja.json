@@ -54,5 +54,16 @@
   "supportChecklistTitle":"問題を確認するために", "supportChecklist":["iPhoneの機種とiOSのバージョン","設定に表示されるMoonplanのバージョン","選択した都市、日付、アプリの言語","期待していた動作と、実際に起きたこと"],
   "supportPrivacy":"問題の説明に必要な情報だけをお送りください。スクリーンショットを添付する場合は、共有したくない情報を隠してください。",
   "notFoundTitle":"少し、軌道を外れたようです。", "notFoundBody":"このページは見つかりませんでした。Moonplanに戻りましょう。",
-  "rootTitle":"あなたの言葉で、月に出会う。", "rootBody":"言語を選んで、Moonplanをご覧ください。", "preview":"アプリのプレビューです。画面の日付と都市は表示例です。"
+  "rootTitle":"あなたの言葉で、月に出会う。", "rootBody":"言語を選んで、Moonplanをご覧ください。", "preview":"アプリのプレビューです。画面の日付と都市は表示例です。",
+  "moonNow": "現在の月",
+  "lit": "輝面比",
+  "waxing": "満ちていく",
+  "waning": "欠けていく",
+  "moonCredit": "月面：NASA LRO、LROC、LOLA ・ 照明は本日分を計算",
+  "newsEyebrow": "科学ニュース",
+  "newsTitle": "月について新しくわかったこと",
+  "newsNote": "原典へのリンク付きの短い要約です。イラストは NASA LRO のデータをもとに当社で制作しました。",
+  "newsRead": "原文を読む",
+  "newsLang": "英語",
+  "illustrationCredit": "イラスト：Moonplan · NASA LRO"
 }
