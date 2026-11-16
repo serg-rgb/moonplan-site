@@ -56,7 +56,7 @@ Entre le premier pas d'Armstrong et la fermeture de l'écoutille, il s'est écou
 
 ## À quoi ressemblait la Lune vue de la Terre ce jour-là
 
-Nous avons calculé la phase au moment de l'alunissage, le 20 juillet 1969 à 20:17:40 UTC. Vue de la Terre, la Lune était un croissant de Lune croissante, éclairé à 33 %. Il s'était écoulé 6,25 jours depuis la nouvelle Lune du 14 juillet, et le premier quartier est arrivé le 22 juillet, alors que l'équipage était déjà sur le chemin du retour. La distance du centre de la Terre au centre de la Lune à cet instant était de 389 456 km.
+Nous avons calculé la phase au moment de l'alunissage, le 20 juillet 1969 à 20:17:40 UTC. Vue de la Terre, la Lune était un fin croissant, éclairé à 33 %. Il s'était écoulé 6,25 jours depuis la nouvelle Lune du 14 juillet, et le premier quartier est arrivé le 22 juillet, alors que l'équipage était déjà sur le chemin du retour. La distance du centre de la Terre au centre de la Lune à cet instant était de 389 456 km.
 
 Ce n'est pas un hasard. L'alunissage avait été prévu pour le matin lunaire, quand le Soleil est bas au-dessus du site et que les pierres et les cratères projettent de longues ombres, ce qui aide le pilote à évaluer le relief. Or le matin lunaire sur la mer de la Tranquillité tombe justement aux jours où l'on voit depuis la Terre la Lune croissante, peu avant le premier quartier.
 
