@@ -13,7 +13,7 @@ fs.mkdirSync(artifacts,{recursive:true});
   page.on('pageerror',error=>errors.push(error.message));
   page.on('console',message=>{if(message.type()==='error')errors.push(message.text());});
   page.on('response',response=>{if(response.status()>=400)bad.push({url:response.url(),status:response.status()});});
-  const routes=['/','/404.html',...['en','de','es','fr','it','pt-br','ru','ja'].flatMap(lang=>['','privacy.html','terms.html','support.html','publisher.html'].map(file=>`/${lang}/${file}`))];
+  const routes=['/','/404.html',...['en','de','es','fr','it','pt-br','ru','ja'].flatMap(lang=>['','privacy.html','terms.html','support.html','publisher.html','today/'].map(file=>`/${lang}/${file}`))];
   // Articles: articles/{slug}/{lang}.md -> /{lang}/moon/{slug}.html plus the hub /{lang}/moon/ per language that has one.
   const articleDir=path.resolve(__dirname,'../articles');const articleRoutes=new Set();
   for(const slug of fs.readdirSync(articleDir)){const dir=path.join(articleDir,slug);if(!fs.statSync(dir).isDirectory())continue;
@@ -120,8 +120,9 @@ fs.mkdirSync(artifacts,{recursive:true});
       await page.screenshot({path:path.join(artifacts,`${lang}-${width}-full.png`),fullPage:true});
     }
   }
+  const todayChecks=await require('./check-today.cjs')(browser,base);
   assert.deepEqual(bad,[],'Failed resources');assert.deepEqual(errors,[],'Browser errors');
-  const report={passed:true,viewChecks:checks,linksChecked:seen.size,widths:[320,390,768,1440],routes:routes.length,browserErrors:errors,failedResources:bad};
+  const report={passed:true,viewChecks:checks,todayChecks,linksChecked:seen.size,widths:[320,390,768,1440],routes:routes.length,browserErrors:errors,failedResources:bad};
   fs.writeFileSync(path.join(artifacts,'checks.json'),JSON.stringify(report,null,2));console.log(JSON.stringify(report,null,2));
   await browser.close();
 })().catch(error=>{console.error(error);process.exit(1);});

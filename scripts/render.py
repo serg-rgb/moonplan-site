@@ -68,7 +68,7 @@ def footer(lang,c,cfg,page=''):
     base=cfg['base']
     hub=f'<a href="{base}/{lang}/moon/">{e(c["articleSection_moon"])}</a>' if lang in cfg.get('hubs',()) else ''
     return f'''<footer class="site-footer wrap"><div class="footer-top"><div><a class="brand" href="{base}/{lang}/">{moon_mark()}<span>Moonplan</span></a><p>{e(c['footerLine'])}</p></div>
-<nav aria-label="{e(c['legalNotice'])}"><a href="{base}/{lang}/privacy.html">{e(c['privacy'])}</a><a href="{base}/{lang}/terms.html">{e(c['terms'])}</a><a href="{base}/{lang}/support.html">{e(c['support'])}</a><a href="{base}/{lang}/publisher.html">{e(c['legalNotice'])}</a>{hub}</nav></div>
+<nav aria-label="{e(c['legalNotice'])}"><a href="{base}/{lang}/privacy.html">{e(c['privacy'])}</a><a href="{base}/{lang}/terms.html">{e(c['terms'])}</a><a href="{base}/{lang}/support.html">{e(c['support'])}</a><a href="{base}/{lang}/publisher.html">{e(c['legalNotice'])}</a>{hub}<a href="{base}/{lang}/today/">{e(c['today']['nav'])}</a></nav></div>
 <div class="footer-bottom"><span>© 2026 Aurelia Labs LLC</span>{footer_langs(lang,page,base,c['language'])}<a href="{base}/{lang}/publisher.html#credits">{e(c['credits'])}</a></div></footer></body></html>'''
 
 def phone(lang, kind, alt, cfg, hero=False):

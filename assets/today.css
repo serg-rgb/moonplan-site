@@ -1,0 +1,43 @@
+/* "Moon today" page; builds on article.css */
+.today-live{max-width:1000px;margin:40px 0 0}
+.today-head{padding:24px 28px;border:1px solid var(--line);border-radius:16px;background:var(--panel)}
+.today-date{font-size:24px;line-height:32px;color:var(--text);}
+.today-tz{margin-top:4px;font-size:14px;line-height:20px;color:var(--faint)}
+.today-facts{display:flex;flex-wrap:wrap;gap:8px 24px;margin:16px 0 0;padding:0;list-style:none;color:var(--light-gold);font-size:16px;line-height:24px}
+.today-lists{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:24px}
+.today-list{padding:24px 28px;border:1px solid var(--line);border-radius:16px;background:var(--panel)}
+.today-list h2{font-size:22px;line-height:30px;color:var(--text)}
+.today-good h2{color:var(--light-gold)}
+.today-list h3{margin-top:20px;font-size:12px;line-height:16px;letter-spacing:.08em;text-transform:uppercase;color:var(--gold);font-weight:600}
+.today-list ul{margin:8px 0 0;padding:0;list-style:none}
+.today-list li{display:flex;flex-direction:column;gap:2px;padding:10px 0;border-bottom:1px solid var(--line)}
+.today-list li:last-child{border-bottom:0}
+.today-list .name{font-size:16px;line-height:24px;color:var(--text)}
+.today-list .why{font-size:14px;line-height:20px;color:var(--faint)}
+.today-list .vg{margin-left:10px;padding:1px 8px;border:1px solid var(--gold);border-radius:999px;font-size:12px;font-style:normal;color:var(--light-gold);white-space:nowrap}
+.today-empty,.today-note{margin-top:16px;font-size:15px;line-height:24px;color:var(--faint)}
+.today-strip{margin-top:24px}.today-strip h2{font-size:22px;line-height:30px}
+.today-strip ul{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:8px;margin:12px 0 0;padding:0;list-style:none}
+.today-strip button{width:100%;min-height:44px;padding:10px 6px;display:flex;flex-direction:column;align-items:center;gap:2px;border:1px solid var(--line);border-radius:12px;background:var(--panel);color:var(--text);font:inherit;cursor:pointer}
+.today-strip button:hover{border-color:var(--gold)}
+.today-strip button[aria-pressed=true]{border-color:var(--light-gold);background:rgba(232,210,158,.12)}
+.today-strip button:focus-visible{outline:2px solid var(--light-gold);outline-offset:2px}
+.today-strip button{min-width:0;overflow:hidden}.today-strip .wd,.today-strip .dt{max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.today-strip .wd{font-size:12px;line-height:16px;color:var(--gold);text-transform:capitalize}
+.today-strip .dt{font-size:14px;line-height:20px}
+.today-strip .counts{display:flex;gap:8px;font-size:14px;line-height:20px}
+.today-strip .counts b{font-weight:600;display:inline-flex;align-items:center;gap:4px}
+.today-strip .counts b:before{content:"";width:6px;height:6px;border-radius:50%;background:currentColor}
+.today-strip .g{color:#9fd8b0}.today-strip .a{color:#e6a09a}
+.article-body h3{margin-top:32px;font-size:20px;line-height:28px;color:var(--text)}
+.today-all{max-width:68ch;margin:12px 0 0;padding:0;list-style:none}
+.today-all li{display:flex;flex-direction:column;gap:2px;padding:10px 0;border-bottom:1px solid var(--line)}
+.today-all span{font-size:15px;line-height:24px;color:var(--faint)}
+.today-disclaimer{margin-top:40px;padding:16px 20px;border-left:3px solid var(--gold);font-size:16px;color:var(--light-gold)}
+.today-cta-text{font-size:18px;line-height:28px;color:var(--text);max-width:60ch}
+@media(max-width:820px){.today-lists{grid-template-columns:1fr}}
+@media(max-width:600px){.today-head,.today-list{padding:20px}.today-date{font-size:20px;line-height:28px}.today-strip ul{gap:4px}.today-strip button{padding:8px 2px}.today-strip .dt{font-size:12px}.today-strip .counts{gap:4px;font-size:12px}}
+@media(max-width:400px){.today-strip .counts{flex-direction:column;gap:0;align-items:center}.today-strip .counts b:before{display:none}}
+.today-strip .is-today .dt{text-decoration:underline;text-underline-offset:3px;text-decoration-color:var(--gold)}
+.today-strip .legend{display:flex;flex-wrap:wrap;gap:4px 20px;margin-top:12px;font-size:13px;line-height:20px}
+.today-strip .legend span:before{content:"";display:inline-block;width:6px;height:6px;margin-right:6px;border-radius:50%;background:currentColor;vertical-align:middle}
+.today-strip .legend .g{color:#9fd8b0}.today-strip .legend .a{color:#e6a09a}

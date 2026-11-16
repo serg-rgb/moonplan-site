@@ -1,0 +1,31 @@
+// Temporary parity test: copy into moonplan-ios-1.2/MoonplanTests/TodayParityDumpTests.swift (rename, drop ".txt"), run xcodegen, run only this test,
+// then delete the file and run xcodegen again. Output: one "PARITY\tcity\tday\tid\trating\tvoidLowered" line per (city, day, activity).
+import XCTest
+@testable import Moonplan
+
+final class TodayParityDumpTests: XCTestCase {
+    func testDump() throws {
+        let rulesURL = URL(fileURLWithPath: "/Users/admin/Desktop/Moonplan/landing/assets/today/rules.json")
+        let exported = try JSONSerialization.jsonObject(with: Data(contentsOf: rulesURL)) as! [String: Any]
+        let ids = (exported["activities"] as! [[String: Any]]).map { $0["id"] as! String }
+        let rules = PlannerRules.bundled
+        let acts = ids.map { id in rules.activities.first { $0.id == id }! }
+        let cities: [(String, String, Double, Double)] = [("Moscow", "Europe/Moscow", 55.7558, 37.6173),
+            ("New York", "America/New_York", 40.7128, -74.0060), ("Tokyo", "Asia/Tokyo", 35.6762, 139.6503)]
+        var out = ""
+        for (name, tzid, lat, lon) in cities {
+            let city = SelectedCity(name: name, latitude: lat, longitude: lon, timeZoneID: tzid)
+            var cal = Calendar(identifier: .gregorian); cal.timeZone = city.timeZone
+            let from = cal.date(from: DateComponents(year: 2026, month: 11, day: 16, hour: 12))!
+            for d in DayFactsBuilder.build(from: from, days: 400, city: city) {
+                let c = cal.dateComponents([.year, .month, .day], from: d.dayStart)
+                let label = String(format: "%04d-%02d-%02d", c.year!, c.month!, c.day!)
+                for a in acts {
+                    let v = DayEvaluator.evaluate(a, on: d)
+                    out += "PARITY\t\(name)\t\(label)\t\(a.id)\t\(v.rating)\t\(v.voidLowered)\n"
+                }
+            }
+        }
+        try out.write(toFile: "/tmp/swift_parity.txt", atomically: true, encoding: .utf8)
+    }
+}

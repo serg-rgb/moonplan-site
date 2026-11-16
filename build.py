@@ -12,6 +12,7 @@ ROOT=Path(__file__).resolve().parent
 sys.path.insert(0,str(ROOT/'scripts'))
 from render import landing, legal_page, support, root_page
 import articles
+import today
 
 parser=argparse.ArgumentParser()
 parser.add_argument('--url', help='Public origin and optional project path, without trailing slash')
@@ -49,6 +50,7 @@ for lang in cfg['languages']:
         (target/f'{kind}.html').write_text(legal_page(lang,c,legal,cfg,kind))
     urls.extend(cfg['url']+f'/{lang}/'+p for p in ('','privacy.html','terms.html','support.html','publisher.html'))
 urls.extend(articles.build(ROOT,out,cfg,contents))
+urls.extend(today.build(ROOT,out,cfg,contents))
 c=json.loads((ROOT/'content/en.json').read_text())
 (out/'index.html').write_text(root_page(c,cfg))
 (out/'404.html').write_text(root_page(c,cfg,error=True))
