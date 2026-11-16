@@ -1,15 +1,11 @@
 """Build-time inline SVG figures and tables for articles. Data files live next to the article."""
-import csv, math, re
+import csv, json, math, re
+from pathlib import Path
 from datetime import date
 from html import escape as e
 from news import MONTHS
 
-L = {  # small label dictionaries; fallback en
- 'ru': dict(sun='Солнечный свет', earth='Земля', mean='среднее', utc='Время UTC', month='Месяц',
-   ph=['Новолуние','Растущий серп','Первая четверть','Растущая Луна','Полнолуние','Убывающая Луна','Последняя четверть','Убывающий серп']),
- 'en': dict(sun='Sunlight', earth='Earth', mean='mean', utc='Times in UTC', month='Month',
-   ph=['New Moon','Waxing crescent','First quarter','Waxing gibbous','Full Moon','Waning gibbous','Last quarter','Waning crescent']),
-}
+L = json.load(open(Path(__file__).with_name('figure_labels.json'), encoding='utf-8'))  # label dictionaries; fallback en
 RU_NOM = 'Январь Февраль Март Апрель Май Июнь Июль Август Сентябрь Октябрь Ноябрь Декабрь'.split()
 LIT, DARK, GOLD = '#e8e0cf', '#1a1a24', 'rgba(201,168,106,.35)'
 FONT = 'font-family="Manrope,system-ui,sans-serif" font-size="13"'
@@ -78,7 +74,8 @@ def chart(lang, caption, folder):
              f'<text x="{X1}" y="{f1(py(mean)-6)}" text-anchor="end" {FONT} fill="#e8d29e" stroke="#070711" stroke-width="4" paint-order="stroke">{e(t["mean"])} {num(mean, lang)}</text>')
     for (a, v), up in ((min(rows, key=lambda r: r[1]), False), (max(rows, key=lambda r: r[1]), True)):
         y, x = py(v), px(a)
-        txt = f'{a[8:10]}.{a[5:7]}.{a[:4]} · {num(v, lang)}'
+        ds = t['date'].format(dd=a[8:10], mm=a[5:7], d=int(a[8:10]), m=int(a[5:7]), y=a[:4])
+        txt = f'{ds} · {num(v, lang)}'
         o.append(f'<circle cx="{f1(x)}" cy="{f1(y)}" r="4" fill="#e8d29e" stroke="#070711"/>'
                  f'<text x="{f1(x)}" y="{f1(y-10 if up else y+20)}" text-anchor="middle" {FONT} fill="#f0e8d8" stroke="#070711" stroke-width="4" paint-order="stroke">{txt}</text>')
     return svg(760, 330, caption, ''.join(o))
@@ -87,7 +84,7 @@ def phases_table(lang, folder):
     t = lab(lang); data = {}
     for ln in open(folder / 'phases-2027-utc.txt', encoding='utf-8'):
         m = re.fullmatch(r'(new|first|full|last) (\d{4})-(\d\d)-(\d\d) (\d\d:\d\d)\s*', ln)
-        if m: data.setdefault((int(m.group(3)), m.group(1)), []).append(f'{int(m.group(4))}, {m.group(5)}')
+        if m: data.setdefault((int(m.group(3)), m.group(1)), []).append((f'{int(m.group(4))}日 ' if lang == 'ja' else f'{int(m.group(4))}, ') + m.group(5))
     if not data: raise ValueError('no phase lines parsed')
     heads = [t['month']] + [t['ph'][i] for i in (0, 2, 4, 6)]
     rows = ''.join(f'<tr><th scope="row">{e(month_name(lang, mo-1))}</th>' +

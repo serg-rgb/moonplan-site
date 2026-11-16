@@ -1,0 +1,18 @@
+{
+ "ru": {"sun": "Солнечный свет", "earth": "Земля", "mean": "среднее", "utc": "Время UTC", "month": "Месяц", "date": "{dd}.{mm}.{y}",
+  "ph": ["Новолуние", "Растущий серп", "Первая четверть", "Растущая Луна", "Полнолуние", "Убывающая Луна", "Последняя четверть", "Убывающий серп"]},
+ "en": {"sun": "Sunlight", "earth": "Earth", "mean": "mean", "utc": "Times in UTC", "month": "Month", "date": "{dd}.{mm}.{y}",
+  "ph": ["New Moon", "Waxing crescent", "First quarter", "Waxing gibbous", "Full Moon", "Waning gibbous", "Last quarter", "Waning crescent"]},
+ "de": {"sun": "Sonnenlicht", "earth": "Erde", "mean": "Mittel", "utc": "Zeiten in UTC", "month": "Monat", "date": "{dd}.{mm}.{y}",
+  "ph": ["Neumond", "Zunehmende Sichel", "Erstes Viertel", "Zunehmender Mond", "Vollmond", "Abnehmender Mond", "Letztes Viertel", "Abnehmende Sichel"]},
+ "es": {"sun": "Luz solar", "earth": "Tierra", "mean": "media", "utc": "Horas en UTC", "month": "Mes", "date": "{dd}/{mm}/{y}",
+  "ph": ["Luna nueva", "Creciente", "Cuarto creciente", "Gibosa creciente", "Luna llena", "Gibosa menguante", "Cuarto menguante", "Menguante"]},
+ "fr": {"sun": "Lumière du Soleil", "earth": "Terre", "mean": "moyenne", "utc": "Heures en UTC", "month": "Mois", "date": "{dd}/{mm}/{y}",
+  "ph": ["Nouvelle lune", "Premier croissant", "Premier quartier", "Gibbeuse croissante", "Pleine lune", "Gibbeuse décroissante", "Dernier quartier", "Dernier croissant"]},
+ "it": {"sun": "Luce solare", "earth": "Terra", "mean": "media", "utc": "Orari in UTC", "month": "Mese", "date": "{dd}/{mm}/{y}",
+  "ph": ["Luna nuova", "Falce crescente", "Primo quarto", "Gibbosa crescente", "Luna piena", "Gibbosa calante", "Ultimo quarto", "Falce calante"]},
+ "pt-br": {"sun": "Luz solar", "earth": "Terra", "mean": "média", "utc": "Horários em UTC", "month": "Mês", "date": "{dd}/{mm}/{y}",
+  "ph": ["Lua nova", "Crescente côncava", "Quarto crescente", "Gibosa crescente", "Lua cheia", "Gibosa minguante", "Quarto minguante", "Minguante côncava"]},
+ "ja": {"sun": "太陽光", "earth": "地球", "mean": "平均", "utc": "時刻は UTC", "month": "月", "date": "{y}年{m}月{d}日",
+  "ph": ["新月", "三日月", "上弦の月", "満ちていく月", "満月", "欠けていく月", "下弦の月", "有明月"]}
+}
