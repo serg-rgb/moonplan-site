@@ -167,8 +167,8 @@ async function start() {
     const pl = gl.getAttribLocation(moonProg, 'pos'), ul = gl.getAttribLocation(moonProg, 'uv');
     gl.enableVertexAttribArray(pl); gl.vertexAttribPointer(pl, 3, gl.FLOAT, false, 20, 0);
     gl.enableVertexAttribArray(ul); gl.vertexAttribPointer(ul, 2, gl.FLOAT, false, 20, 12);
-    const r = small ? 0.62 : 0.84;                                          // radius in NDC height units
-    const cx = small ? 0.0 : 0.44, cy = small ? 0.42 : -0.04;
+    const r = small ? 0.40 : 0.84;                                          // radius in NDC height units
+    const cx = small ? 0.0 : 0.44, cy = small ? 0.58 : -0.04;
     const scale = r * (0.94 + 0.06 * intro) * (1 + sp * 0.18);
     gl.uniform3f(gl.getUniformLocation(moonProg, 'place'), cx - pointer[0] * 0.02, cy + pointer[1] * 0.02 + sp * 0.55, scale);
     gl.uniform1f(gl.getUniformLocation(moonProg, 'aspect'), aspect);

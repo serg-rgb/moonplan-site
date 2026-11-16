@@ -39,7 +39,8 @@ html[lang=ja] .news h2,html[lang=ja] .feed h3{letter-spacing:.01em;font-weight:6
 html[lang=ja] .feed h3{font-size:18px;line-height:28px}
 
 @media(max-width:760px){
-  .has-space .hero{align-content:end;min-height:calc(100svh - 80px);padding-block:0 120px}
+  .has-space .hero{align-content:start;min-height:calc(100svh - 80px);padding-block:40svh 120px}
+  .hud{position:absolute;top:calc(40svh + 36px);bottom:auto}.hud .wrap>span+span{display:none}
   .news{padding-block:64px 32px}
   .news h2{font-size:28px;line-height:34px}
 }
