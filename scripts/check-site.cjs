@@ -9,19 +9,22 @@ fs.mkdirSync(artifacts,{recursive:true});
 (async()=>{
   const browser=await chromium.launch({channel:'chrome',headless:true,args:['--use-angle=swiftshader','--enable-unsafe-swiftshader']});
   const context=await browser.newContext({viewport:{width:1440,height:1000}});
-  const page=await context.newPage();const errors=[];let checks=0;const bad=[];
+  const page=await context.newPage();page.setDefaultTimeout(30000);const errors=[];let checks=0;const bad=[];
   page.on('pageerror',error=>errors.push(error.message));
   page.on('console',message=>{if(message.type()==='error')errors.push(message.text());});
   page.on('response',response=>{if(response.status()>=400)bad.push({url:response.url(),status:response.status()});});
   const routes=['/','/404.html',...['en','de','es','fr','it','pt-br','ru','ja'].flatMap(lang=>['','privacy.html','terms.html','support.html','publisher.html','today/'].map(file=>`/${lang}/${file}`))];
-  // Articles: articles/{slug}/{lang}.md -> /{lang}/moon/{slug}.html plus the hub /{lang}/moon/ per language that has one.
-  const articleDir=path.resolve(__dirname,'../articles');const articleRoutes=new Set();
+  // Articles: articles/{slug}/{lang}.md -> /{lang}/{section}/{slug}.html plus the hub /{lang}/{section}/ per language that has one.
+  const articleDir=path.resolve(__dirname,'../articles');const articleRoutes=new Set();const photoRoutes=new Set();
   for(const slug of fs.readdirSync(articleDir)){const dir=path.join(articleDir,slug);if(!fs.statSync(dir).isDirectory())continue;
-    for(const f of fs.readdirSync(dir))if(f.endsWith('.md')){const lang=f.slice(0,-3);articleRoutes.add(`/${lang}/moon/`);articleRoutes.add(`/${lang}/moon/${slug}.html`);}}
+    for(const f of fs.readdirSync(dir))if(f.endsWith('.md')){const lang=f.slice(0,-3);const text=fs.readFileSync(path.join(dir,f),'utf8');
+      const sec=text.match(/^section:\s*(\w+)/m)[1];articleRoutes.add(`/${lang}/${sec}/`);articleRoutes.add(`/${lang}/${sec}/${slug}.html`);
+      if(/^\s+kind:\s*photo/m.test(text))photoRoutes.add(`/${lang}/${sec}/${slug}.html`);}}
   routes.push(...articleRoutes);
   for(const width of [320,390,768,1440]){
     await page.setViewportSize({width,height:900});
     for(const route of routes){
+      const t0=Date.now();
       const response=await page.goto(base+route,{waitUntil:'networkidle'});
       assert.equal(response.status(),200,route);
       const result=await page.evaluate(()=>({
@@ -39,9 +42,9 @@ fs.mkdirSync(artifacts,{recursive:true});
       assert(result.canonical,route);if(articleRoutes.has(route))assert(result.alternates>=2,route);else assert.equal(result.alternates,9,route);
       assert(!result.links.includes('#'),`${route}: dead anchor`);
       if(articleRoutes.has(route)){const x=await page.evaluate(()=>({canvas:document.querySelectorAll('canvas').length,ld:[...document.querySelectorAll('script[type="application/ld+json"]')].map(n=>JSON.parse(n.textContent)['@graph'].length),svg:document.querySelectorAll('svg.fig-svg title').length,og:document.querySelector('meta[property="og:type"]').content,wide:[...document.querySelectorAll('.article-body *')].filter(n=>n.getBoundingClientRect().right>innerWidth+1&&!n.closest('.table-wrap,.fig')).length}));
-      assert.equal(x.canvas,0,route);assert.equal(x.wide,0,route+' content wider than viewport');if(route.endsWith('.html')){assert.deepEqual(x.ld,[2],route);assert.equal(x.og,'article',route);assert.equal(x.svg,2,route);}}
+      assert.equal(x.canvas,0,route);if(route.endsWith('/'))assert((await page.locator('.article-list li').count())>=1,route+' hub has no cards');assert.equal(x.wide,0,route+' content wider than viewport');if(route.endsWith('.html')){assert.deepEqual(x.ld,[2],route);assert.equal(x.og,'article',route);if(photoRoutes.has(route)){const p=await page.evaluate(async()=>{const img=document.querySelector('figure.fig-photo img');if(!img)return null;img.scrollIntoView();for(let i=0;i<50&&!(img.complete&&img.naturalWidth>0);i++)await new Promise(r=>setTimeout(r,100));return{w:img.naturalWidth,srcset:!!img.srcset,cap:(img.closest('figure').querySelector('figcaption')?.textContent||'').trim().length,alt:img.alt.length};});assert(p&&p.w>0&&p.srcset&&p.cap>10&&p.alt>10,`${route}: photo figure ${JSON.stringify(p)}`);assert.equal(x.svg,0,route);}else assert.equal(x.svg,2,route);}}
     if(/^\/(en|de|es|fr|it|pt-br|ru|ja)\//.test(route))assert.equal(result.lang,route.split('/')[1].replace('pt-br','pt-BR'));
-      checks++;
+      checks++;if(process.env.VERBOSE)console.log(width,route,Date.now()-t0,'ms');
     }
   }
   // A legal language change must stay on the same document.

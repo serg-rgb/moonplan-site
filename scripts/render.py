@@ -3,6 +3,7 @@ from html import escape as e
 from news import news_section
 
 LANGS = ('en', 'de', 'es', 'fr', 'it', 'pt-br', 'ru', 'ja')
+SECTIONS = ('moon', 'apollo')  # article sections: /{lang}/{section}/; strings articleSection_{section} in content/*.json
 NAMES = {'en': 'English', 'de': 'Deutsch', 'es': 'Español', 'fr': 'Français', 'it': 'Italiano',
          'pt-br': 'Português', 'ru': 'Русский', 'ja': '日本語'}
 CODES = {'pt-br': 'PT', 'ja': '日本語'}  # short label in the header switcher
@@ -66,7 +67,7 @@ def header(lang, c, cfg, page=''):
 
 def footer(lang,c,cfg,page=''):
     base=cfg['base']
-    hub=f'<a href="{base}/{lang}/moon/">{e(c["articleSection_moon"])}</a>' if lang in cfg.get('hubs',()) else ''
+    hub=''.join(f'<a href="{base}/{lang}/{s}/">{e(c["articleSection_"+s])}</a>' for s in SECTIONS if lang in cfg.get('hubs',{}).get(s,()))
     return f'''<footer class="site-footer wrap"><div class="footer-top"><div><a class="brand" href="{base}/{lang}/">{moon_mark()}<span>Moonplan</span></a><p>{e(c['footerLine'])}</p></div>
 <nav aria-label="{e(c['legalNotice'])}"><a href="{base}/{lang}/privacy.html">{e(c['privacy'])}</a><a href="{base}/{lang}/terms.html">{e(c['terms'])}</a><a href="{base}/{lang}/support.html">{e(c['support'])}</a><a href="{base}/{lang}/publisher.html">{e(c['legalNotice'])}</a>{hub}<a href="{base}/{lang}/today/">{e(c['today']['nav'])}</a></nav></div>
 <div class="footer-bottom"><span>© 2026 Aurelia Labs LLC</span>{footer_langs(lang,page,base,c['language'])}<a href="{base}/{lang}/publisher.html#credits">{e(c['credits'])}</a></div></footer></body></html>'''
