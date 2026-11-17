@@ -22,7 +22,10 @@ def prepare(src):
     for w in SIZES:
         out = src.with_name(f'{src.stem}-{w}.webp')
         w2 = min(w, im.width)
-        im.resize((w2, round(im.height * w2 / im.width)), Image.LANCZOS).save(out, 'WEBP', quality=80, method=6)
+        for attempt in range(3):  # a 0-byte file was seen twice (2026-11-17); retry, then fail loudly
+            im.resize((w2, round(im.height * w2 / im.width)), Image.LANCZOS).save(out, 'WEBP', quality=80, method=6)
+            if out.stat().st_size > 0: break
+        else: raise SystemExit(f'{out}: empty after 3 attempts')
         print(f'{out.relative_to(ROOT)}: {w2}x{round(im.height * w2 / im.width)}, {out.stat().st_size} bytes')
 
 if __name__ == '__main__':
