@@ -4,7 +4,7 @@ from news import news_section
 import reading
 
 LANGS = ('en', 'de', 'es', 'fr', 'it', 'pt-br', 'ru', 'ja')
-SECTIONS = ('moon', 'apollo')  # article sections: /{lang}/{section}/; strings articleSection_{section} in content/*.json
+SECTIONS = ('moon', 'apollo', 'luna', 'china', 'new')  # article sections: /{lang}/{section}/; strings articleSection_{section} in content/*.json
 NAMES = {'en': 'English', 'de': 'Deutsch', 'es': 'Español', 'fr': 'Français', 'it': 'Italiano',
          'pt-br': 'Português', 'ru': 'Русский', 'ja': '日本語'}
 CODES = {'pt-br': 'PT', 'ja': '日本語'}  # short label in the header switcher
