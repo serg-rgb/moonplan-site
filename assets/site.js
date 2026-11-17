@@ -77,3 +77,23 @@ if (langMenu) {
     if (event.key === 'Escape' && langMenu.open) { langMenu.open = false; langMenu.querySelector('summary').focus(); }
   });
 }
+
+// 3D phone mockups: side buttons (decorative) and a gentle tilt that follows the pointer.
+document.querySelectorAll('.phone').forEach(phone => {
+  [['l', 'a'], ['l', 'v1'], ['l', 'v2'], ['r', 'p']].forEach(([side, kind]) => {
+    const b = document.createElement('span'); b.className = `pbtn ${side} ${kind}`; b.setAttribute('aria-hidden', 'true'); phone.append(b);
+  });
+  const area = phone.closest('.feature-visual');
+  if (!area || reduced.matches || !window.matchMedia('(hover: hover)').matches) return;
+  const base = parseFloat(getComputedStyle(phone).getPropertyValue('--ry')) || -18;
+  area.addEventListener('pointermove', e => {
+    const r = area.getBoundingClientRect();
+    const x = (e.clientX - r.left) / r.width - 0.5, y = (e.clientY - r.top) / r.height - 0.5;
+    phone.classList.add('is-tilting');
+    phone.style.setProperty('--ry', `${base * 0.35 + x * 24}deg`);
+    phone.style.setProperty('--rx', `${4 - y * 14}deg`);
+  });
+  area.addEventListener('pointerleave', () => {
+    phone.classList.remove('is-tilting'); phone.style.removeProperty('--ry'); phone.style.removeProperty('--rx');
+  });
+});
