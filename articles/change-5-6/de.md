@@ -4,7 +4,7 @@ section: china
 title: Chang'e 5 und Chang'e 6: Mondboden von der Vorder- und der Rückseite des Mondes
 seoTitle: Chang'e 5 und Chang'e 6: 1731 g Boden aus dem Ozean der Stürme und 1935,3 g von der Mondrückseite, aus dem Apollo-Becken
 description: 2020 brachte Chang'e 5 1731 g Boden aus dem Ozean der Stürme zur Erde, 2024 Chang'e 6 1935,3 g von der Rückseite des Mondes. Wo sie landeten, was auf den LRO-Aufnahmen zu sehen ist und was Forschende über das Alter der Mondvulkane erfuhren.
-author: Aurelia.Lab
+author: Philipp Gladen
 updated: 2026-11-17
 cover: cover.webp
 coverAlt: Das Landegebiet von Chang'e 6 am Südrand des Apollo-Beckens, Farbmosaik der LRO-Kamera

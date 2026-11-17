@@ -4,7 +4,7 @@ section: apollo
 title: Apollo 17: el último alunizaje, un lanzamiento nocturno y el primer científico en la Luna
 seoTitle: Apollo 17: la última expedición con alunizaje, el valle de Taurus-Littrow, Harrison Schmitt, cronología según datos de la NASA
 description: Diciembre de 1972. El primer lanzamiento nocturno de un Saturn V, tres días en el valle de Taurus-Littrow, 30 km en el vehículo lunar, 110,52 kg de muestras y el primer científico en la Luna, Harrison Schmitt. La última expedición Apollo con alunizaje de personas hasta hoy.
-author: Aurelia.Lab
+author: Philipp Gladen
 updated: 2026-11-17
 cover: cover.webp
 coverAlt: Harrison Schmitt junto a un enorme peñasco partido en el valle de Taurus-Littrow

@@ -4,7 +4,7 @@ section: china
 title: Chang'e 4: el primer alunizaje en la cara oculta de la Luna
 seoTitle: Chang'e 4 y Yutu-2: el primer alunizaje suave en la cara oculta de la Luna, el cráter Von Kármán y el satélite repetidor Queqiao
 description: El 3 de enero de 2019, la sonda china Chang'e 4 se posó suavemente por primera vez en la historia en la cara oculta de la Luna, en el cráter Von Kármán. Cómo se resolvió el problema de las comunicaciones, qué busca el vehículo Yutu-2 y cómo se les ve desde la órbita con la cámara estadounidense LRO.
-author: Aurelia.Lab
+author: Philipp Gladen
 updated: 2026-11-17
 cover: cover.webp
 coverAlt: La cara oculta de la Luna en la zona del cráter Von Kármán, ilustración de Moonplan con datos de la cámara de LRO

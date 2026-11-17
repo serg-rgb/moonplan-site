@@ -4,7 +4,7 @@ section: apollo
 title: アポロ11号：1969年7月の8日間
 seoTitle: アポロ11号：飛行の時系列、乗組員、着陸地点、月から持ち帰ったもの
 description: 人類初の月面着陸はどう進んだのか。1969年7月16日の打ち上げから7月24日の着水まで。NASAのデータに基づく主要な出来事の時刻、着陸地点、21.55 kgの月の試料、そして当日の月の見え方。
-author: Aurelia.Lab
+author: Philipp Gladen
 updated: 2026-11-16
 cover: cover.webp
 coverAlt: 1969年7月20日、月着陸船イーグルの脚の接地板のそばを月面で歩くエドウィン・オルドリン

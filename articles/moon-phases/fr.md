@@ -4,7 +4,7 @@ section: moon
 title: Pourquoi la Lune a des phases
 seoTitle: Les phases de la Lune expliquées : pourquoi la Lune change de forme et combien dure un mois lunaire
 description: Pourquoi la Lune apparaît en croissant, en demi-disque ou en disque complet, en quoi le mois synodique diffère du mois sidéral, et pourquoi un mois lunaire réel peut être plus court ou plus long de 13 heures qu'un autre.
-author: Aurelia.Lab
+author: Philipp Gladen
 updated: 2026-11-16
 cover: cover.webp
 coverAlt: Les phases de la Lune, du premier croissant à la pleine Lune puis au dernier croissant, rendues par Moonplan à partir des données de la caméra de LRO

@@ -4,7 +4,7 @@ section: apollo
 title: Apollo 11: eight days in July 1969
 seoTitle: Apollo 11: flight timeline, crew, landing site and what came back from the Moon
 description: How the first crewed lunar landing went: from launch on July 16, 1969 to splashdown on July 24. Times of the key events from NASA data, the landing site, 21.55 kg of lunar samples and what the Moon looked like that day.
-author: Aurelia.Lab
+author: Philipp Gladen
 updated: 2026-11-16
 cover: cover.webp
 coverAlt: Edwin Aldrin walks on the surface of the Moon next to a footpad of the Eagle lunar module, July 20, 1969

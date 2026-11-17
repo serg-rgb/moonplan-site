@@ -4,7 +4,7 @@ section: apollo
 title: Apollo 13: eine Explosion auf halbem Weg und die Rückkehr im Mondlandemodul
 seoTitle: Apollo 13: was mit dem Sauerstofftank geschah, wie die Besatzung zur Erde zurückkehrte, Chronik nach NASA-Daten
 description: April 1970. 55 Stunden und 54 Minuten nach dem Start explodierte ein Sauerstofftank im Servicemodul, die Landung wurde abgesagt. Die Besatzung umrundete den Mond und kehrte heim, wobei sie das Mondlandemodul als Rettungsboot nutzte. Eine Chronik nach NASA-Daten, Minute für Minute.
-author: Aurelia.Lab
+author: Philipp Gladen
 updated: 2026-11-17
 cover: cover.webp
 coverAlt: Das beschädigte Servicemodul von Apollo 13 nach der Abtrennung: Die Explosion riss ein ganzes Verkleidungsteil ab

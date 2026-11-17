@@ -4,7 +4,7 @@ section: apollo
 title: Apollo 12: raios na decolagem e o encontro com o Surveyor
 seoTitle: Apollo 12: raios no lançamento, pouso junto ao Surveyor 3, tripulação e cronologia do voo
 description: O segundo pouso lunar tripulado, em novembro de 1969. Dois raios no primeiro minuto de voo, um pouso preciso a 600 pés da sonda automática Surveyor 3, duas saídas à superfície e 34,35 kg de amostras. Horários dos eventos segundo dados da NASA.
-author: Aurelia.Lab
+author: Philipp Gladen
 updated: 2026-11-17
 cover: cover.webp
 coverAlt: Charles Conrad ao lado da sonda Surveyor 3, com o módulo lunar da Apollo 12 ao fundo

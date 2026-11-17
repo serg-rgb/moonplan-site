@@ -4,7 +4,7 @@ section: apollo
 title: Apollo 13: uma explosão no meio do caminho e a volta no módulo lunar
 seoTitle: Apollo 13: o que aconteceu com o tanque de oxigênio, como a tripulação voltou à Terra, cronologia segundo dados da NASA
 description: Abril de 1970. Com 55 horas e 54 minutos de voo, um tanque de oxigênio do módulo de serviço explodiu e o pouso foi cancelado. A tripulação contornou a Lua e voltou para casa usando o módulo lunar como bote salva-vidas. Cronologia minuto a minuto segundo dados da NASA.
-author: Aurelia.Lab
+author: Philipp Gladen
 updated: 2026-11-17
 cover: cover.webp
 coverAlt: O módulo de serviço danificado da Apollo 13 depois da separação: a explosão arrancou um painel inteiro do revestimento

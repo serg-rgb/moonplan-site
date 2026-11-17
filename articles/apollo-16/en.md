@@ -4,7 +4,7 @@ section: apollo
 title: Apollo 16: the Descartes highlands and a jump salute
 seoTitle: Apollo 16: the Descartes highlands, an engine fault, 95.71 kg of samples, a timeline from NASA data
 description: April 1972. A landing delayed by almost six hours because of a fault in the service module engine, three moonwalks totalling 20 hours 14 minutes, 27 km in the lunar rover across the Descartes highlands and 95.71 kg of samples.
-author: Aurelia.Lab
+author: Philipp Gladen
 updated: 2026-11-17
 cover: cover.webp
 coverAlt: John Young jumping to salute the US flag, with the lunar module Orion on the left and the lunar rover beside it

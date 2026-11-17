@@ -4,7 +4,7 @@ section: apollo
 title: Apollo 16: gli altopiani di Descartes e il salto con saluto
 seoTitle: Apollo 16: gli altopiani di Descartes, un guasto al motore, 95,71 kg di campioni, cronologia secondo i dati della NASA
 description: Aprile 1972. Un allunaggio ritardato di quasi sei ore per un guasto al motore del modulo di servizio, tre uscite per un totale di 20 ore e 14 minuti, 27 km con il veicolo lunare sugli altopiani di Descartes e 95,71 kg di campioni.
-author: Aurelia.Lab
+author: Philipp Gladen
 updated: 2026-11-17
 cover: cover.webp
 coverAlt: John Young in un salto saluta la bandiera degli Stati Uniti; a sinistra il modulo lunare Orion, accanto il veicolo lunare

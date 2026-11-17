@@ -4,7 +4,7 @@ section: apollo
 title: Apollo 14: Fra Mauro, un carrello a mano e due palline da golf
 seoTitle: Apollo 14: l'equipaggio di Shepard, sei tentativi di aggancio, l'allunaggio presso il cratere Fra Mauro e 42,28 kg di campioni
 description: Gennaio-febbraio 1971. Sei tentativi di aggancio, un allunaggio sulle colline presso il cratere Fra Mauro, due uscite per un totale di 9 ore e 23 minuti, un carrello a mano per gli attrezzi e due palline da golf. Cronologia secondo i dati della NASA.
-author: Aurelia.Lab
+author: Philipp Gladen
 updated: 2026-11-17
 cover: cover.webp
 coverAlt: Il modulo lunare Antares sulla superficie della Luna, con accanto la bandiera degli Stati Uniti

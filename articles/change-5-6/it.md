@@ -4,7 +4,7 @@ section: china
 title: Chang'e 5 e Chang'e 6: suolo dal lato visibile e dal lato nascosto della Luna
 seoTitle: Chang'e 5 e Chang'e 6: 1731 g di suolo dall'Oceano delle Tempeste e 1935,3 g dal lato nascosto della Luna, dal bacino Apollo
 description: Nel 2020 Chang'e 5 portò sulla Terra 1731 g di suolo dall'Oceano delle Tempeste, nel 2024 Chang'e 6 ne portò 1935,3 g dal lato nascosto della Luna. Dove si posarono, che cosa si vede nelle immagini di LRO e che cosa hanno scoperto gli scienziati sull'età dei vulcani lunari.
-author: Aurelia.Lab
+author: Philipp Gladen
 updated: 2026-11-17
 cover: cover.webp
 coverAlt: La regione di allunaggio di Chang'e 6 sul bordo meridionale del bacino Apollo, mosaico a colori della fotocamera di LRO

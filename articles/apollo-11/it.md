@@ -4,7 +4,7 @@ section: apollo
 title: Apollo 11: otto giorni di luglio del 1969
 seoTitle: Apollo 11: cronologia del volo, equipaggio, sito di allunaggio e cosa è tornato dalla Luna
 description: Come si svolse il primo allunaggio con equipaggio: dal lancio del 16 luglio 1969 all'ammaraggio del 24 luglio. Orari degli eventi chiave secondo i dati NASA, il sito di allunaggio, 21,55 kg di campioni lunari e che aspetto aveva la Luna quel giorno.
-author: Aurelia.Lab
+author: Philipp Gladen
 updated: 2026-11-16
 cover: cover.webp
 coverAlt: Edwin Aldrin cammina sulla superficie della Luna accanto a un piede d'appoggio del modulo lunare Eagle, 20 luglio 1969

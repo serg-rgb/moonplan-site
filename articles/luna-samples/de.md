@@ -4,7 +4,7 @@ section: luna
 title: Luna 16, Luna 20, Luna 24: Mondboden ohne Menschen
 seoTitle: Luna 16, Luna 20 und Luna 24: wie sowjetische Automaten Mondboden zur Erde brachten, 101, 55 und 170 Gramm
 description: Von 1970 bis 1976 entnahmen drei sowjetische automatische Stationen Proben von Mondboden und brachten sie zur Erde: 101 g aus dem Meer der Fruchtbarkeit (Mare Fecunditatis), 55 g aus dem Hochland am Krater Apollonius und 170 g aus dem Meer der Krisen (Mare Crisium) aus mehr als zwei Metern Tiefe. Wie das funktionierte und wie ihre Landestufen heute aus dem Orbit aussehen.
-author: Aurelia.Lab
+author: Philipp Gladen
 updated: 2026-11-17
 cover: cover.webp
 coverAlt: Die Landestufe von Luna 16 im Meer der Fruchtbarkeit, vom Orbit aus mit der LRO-Kamera aufgenommen

@@ -4,7 +4,7 @@ section: luna
 title: Luna 9: the first soft landing on the Moon
 seoTitle: Luna 9: the first soft landing on the Moon and the first pictures from its surface, February 3, 1966
 description: On February 3, 1966, the Soviet Luna 9 station made the first soft landing on the Moon in history and sent pictures of the surface to Earth. How the 99 kg station was built, what its panoramas showed and what the Moon looked like from Earth that day.
-author: Aurelia.Lab
+author: Philipp Gladen
 updated: 2026-11-17
 cover: cover.webp
 coverAlt: The Luna 9 landing station with its petals open and its antennas extended

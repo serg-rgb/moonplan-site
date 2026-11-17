@@ -4,7 +4,7 @@ section: luna
 title: ルナ16号、ルナ20号、ルナ24号：人を乗せずに持ち帰った月の土壌
 seoTitle: ルナ16号、ルナ20号、ルナ24号：ソ連の無人探査機はどのように月の土壌を地球へ届けたか、101 g、55 g、170 g
 description: 1970年から1976年にかけて、ソ連の無人探査機3機が月の土壌の試料を採取して地球へ届けました。豊かの海（Mare Fecunditatis）から101 g、アポロニウス・クレーター近くの高地から55 g、危機の海（Mare Crisium）の深さ2 m以上から170 gです。そのしくみと、降下段が現在軌道上からどう見えるかを紹介します。
-author: Aurelia.Lab
+author: Philipp Gladen
 updated: 2026-11-17
 cover: cover.webp
 coverAlt: 豊かの海にあるルナ16号の降下段。LROのカメラが軌道上から撮影

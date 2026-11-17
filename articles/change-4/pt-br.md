@@ -4,7 +4,7 @@ section: china
 title: Chang'e 4: o primeiro pouso no lado oculto da Lua
 seoTitle: Chang'e 4 e Yutu-2: o primeiro pouso suave no lado oculto da Lua, a cratera Von Kármán e o satélite repetidor Queqiao
 description: Em 3 de janeiro de 2019, a sonda chinesa Chang'e 4 pousou pela primeira vez na história, de forma suave, no lado oculto da Lua, na cratera Von Kármán. Como o problema das comunicações foi resolvido, o que o veículo Yutu-2 procura e como se pode vê-los da órbita com a câmera americana LRO.
-author: Aurelia.Lab
+author: Philipp Gladen
 updated: 2026-11-17
 cover: cover.webp
 coverAlt: O lado oculto da Lua na região da cratera Von Kármán, ilustração do Moonplan com dados da câmera da LRO

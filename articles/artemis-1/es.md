@@ -4,7 +4,7 @@ section: new
 title: Artemis I: un vuelo no tripulado alrededor de la Luna antes del regreso de las personas
 seoTitle: Artemis I: el primer vuelo del cohete SLS y la nave Orion a la Luna, 25 días en el espacio, imágenes de la NASA
 description: Noviembre–diciembre de 2022. El primer vuelo de prueba del cohete SLS y la nave Orion sin tripulación: 25 días 10 horas 53 minutos, dos sobrevuelos de la Luna a unas 80 millas de la superficie y un amerizaje frente a San Diego.
-author: Aurelia.Lab
+author: Philipp Gladen
 updated: 2026-11-17
 cover: cover.webp
 coverAlt: Parte de la cara oculta de la Luna junto a la nave Orion, imagen de la cámara situada en el extremo de su panel solar

@@ -4,7 +4,7 @@ section: apollo
 title: Apollo 11: oito dias de julho de 1969
 seoTitle: Apollo 11: cronologia do voo, tripulação, local de pouso e o que voltou da Lua
 description: Como foi o primeiro pouso lunar tripulado: do lançamento em 16 de julho de 1969 até o pouso no mar em 24 de julho. Horários dos eventos principais segundo dados da NASA, o local de pouso, 21,55 kg de amostras lunares e como a Lua estava naquele dia.
-author: Aurelia.Lab
+author: Philipp Gladen
 updated: 2026-11-16
 cover: cover.webp
 coverAlt: Edwin Aldrin caminha na superfície da Lua ao lado de uma sapata do módulo lunar Eagle, 20 de julho de 1969

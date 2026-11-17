@@ -4,7 +4,7 @@ section: apollo
 title: Apollo 14: Fra Mauro, un carrito de mano y dos pelotas de golf
 seoTitle: Apollo 14: la tripulación de Shepard, seis intentos de acoplamiento, el alunizaje junto al cráter Fra Mauro y 42,28 kg de muestras
 description: Enero-febrero de 1971. Seis intentos de acoplamiento, un alunizaje en las colinas junto al cráter Fra Mauro, dos salidas de 9 horas y 23 minutos en total, un carrito de mano para las herramientas y dos pelotas de golf. Cronología según datos de la NASA.
-author: Aurelia.Lab
+author: Philipp Gladen
 updated: 2026-11-17
 cover: cover.webp
 coverAlt: El módulo lunar Antares sobre la superficie de la Luna, con la bandera de EE. UU. al lado

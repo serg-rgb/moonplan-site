@@ -4,7 +4,7 @@ section: apollo
 title: Apollo 11 : huit jours de juillet 1969
 seoTitle: Apollo 11 : chronologie du vol, équipage, site d'alunissage et ce qui est revenu de la Lune
 description: Comment s'est déroulé le premier alunissage habité : du lancement le 16 juillet 1969 à l'amerrissage le 24 juillet. Heures des événements clés d'après les données de la NASA, le site d'alunissage, 21,55 kg d'échantillons lunaires et l'aspect de la Lune ce jour-là.
-author: Aurelia.Lab
+author: Philipp Gladen
 updated: 2026-11-16
 cover: cover.webp
 coverAlt: Edwin Aldrin marche sur la surface de la Lune à côté d'un patin d'atterrissage du module lunaire Eagle, 20 juillet 1969

@@ -4,7 +4,7 @@ section: apollo
 title: Apollo 13: una explosión a mitad de camino y el regreso en el módulo lunar
 seoTitle: Apollo 13: qué le pasó al tanque de oxígeno, cómo volvió la tripulación a la Tierra, cronología según datos de la NASA
 description: Abril de 1970. A las 55 horas y 54 minutos del lanzamiento explotó un tanque de oxígeno del módulo de servicio y se canceló el alunizaje. La tripulación rodeó la Luna y volvió a casa usando el módulo lunar como bote salvavidas. Cronología minuto a minuto según datos de la NASA.
-author: Aurelia.Lab
+author: Philipp Gladen
 updated: 2026-11-17
 cover: cover.webp
 coverAlt: El módulo de servicio dañado del Apollo 13 tras la separación: la explosión arrancó un panel entero del casco

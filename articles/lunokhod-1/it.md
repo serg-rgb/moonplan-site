@@ -4,7 +4,7 @@ section: luna
 title: Lunochod 1: 10,5 km attraverso il Mare delle Piogge
 seoTitle: Lunochod 1 e Luna 17: il primo rover lunare, come veniva guidato dalla Terra e dove si trova oggi
 description: Novembre 1970: la Luna 17 portò nel Mare delle Piogge il Lunochod 1, con otto ruote. Si prevedeva che funzionasse per tre giorni lunari, invece ne funzionò undici, percorse 10,54 km e trasmise più di 20.000 immagini televisive. Come andò e come lo si ritrovò dall'orbita 40 anni dopo.
-author: Aurelia.Lab
+author: Philipp Gladen
 updated: 2026-11-17
 cover: cover.webp
 coverAlt: Lunochod 1 nella sua ultima posizione nel Mare Imbrium, ripreso dall’orbita dalla camera di LRO

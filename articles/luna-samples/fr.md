@@ -4,7 +4,7 @@ section: luna
 title: Luna 16, Luna 20, Luna 24 : du sol lunaire sans équipage
 seoTitle: Luna 16, Luna 20 et Luna 24 : comment des stations automatiques soviétiques ont rapporté du sol lunaire sur Terre, 101, 55 et 170 grammes
 description: De 1970 à 1976, trois stations automatiques soviétiques ont prélevé des échantillons de sol lunaire et les ont livrés à la Terre : 101 g dans la Mer de la Fécondité (Mare Fecunditatis), 55 g sur les hautes terres près du cratère Apollonius et 170 g dans la Mer des Crises (Mare Crisium), à plus de deux mètres de profondeur. Comment cela fonctionnait et à quoi ressemblent aujourd'hui leurs étages de descente vus de l'orbite.
-author: Aurelia.Lab
+author: Philipp Gladen
 updated: 2026-11-17
 cover: cover.webp
 coverAlt: L'étage de descente de Luna 16 dans la Mer de la Fécondité, vu de l'orbite par la caméra de LRO

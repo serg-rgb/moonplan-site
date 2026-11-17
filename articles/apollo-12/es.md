@@ -4,7 +4,7 @@ section: apollo
 title: Apollo 12: rayos en el despegue y un encuentro con el Surveyor
 seoTitle: Apollo 12: rayos en el lanzamiento, alunizaje junto al Surveyor 3, tripulación y cronología del vuelo
 description: El segundo alunizaje tripulado, noviembre de 1969. Dos rayos en el primer minuto de vuelo, un alunizaje preciso a 600 pies del Surveyor 3, una sonda automática, dos salidas a la superficie y 34,35 kg de muestras. Horas de los sucesos según datos de la NASA.
-author: Aurelia.Lab
+author: Philipp Gladen
 updated: 2026-11-17
 cover: cover.webp
 coverAlt: Charles Conrad junto a la sonda Surveyor 3, con el módulo lunar del Apollo 12 al fondo

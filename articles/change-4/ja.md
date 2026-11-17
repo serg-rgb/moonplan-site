@@ -4,7 +4,7 @@ section: china
 title: 嫦娥4号：月の裏側への初の着陸
 seoTitle: 嫦娥4号と玉兎2号：月の裏側への初の軟着陸、フォン・カルマン・クレーター、中継衛星「鵲橋」
 description: 2019年1月3日、中国の探査機「嫦娥4号」は史上初めて月の裏側、フォン・カルマン・クレーターに軟着陸しました。通信の問題はどう解決されたのか、ローバー「玉兎2号」は何を探しているのか、そしてアメリカのLROのカメラで軌道上から2機がどう見えるのか。
-author: Aurelia.Lab
+author: Philipp Gladen
 updated: 2026-11-17
 cover: cover.webp
 coverAlt: フォン・カルマン・クレーター周辺の月の裏側。LROのカメラのデータをもとにしたMoonplanのイラスト

@@ -4,7 +4,7 @@ section: apollo
 title: Apollo 15: the first lunar rover at the Apennine mountains
 seoTitle: Apollo 15: the first crewed rover, Hadley Rille, the hammer and the feather, a spacewalk on the way home
 description: July–August 1971. The first expedition with a lunar rover: three moonwalks totalling 18 hours 35 minutes, 27.9 km across the plain by the Apennine mountains and Hadley Rille, 77.31 kg of samples, a hammer and a feather that fell at the same time, and the first spacewalk far from Earth.
-author: Aurelia.Lab
+author: Philipp Gladen
 updated: 2026-11-17
 cover: cover.webp
 coverAlt: James Irwin beside the lunar rover, with Mount Hadley in the background

@@ -4,7 +4,7 @@ section: new
 title: Artemis I: un volo senza equipaggio attorno alla Luna prima del ritorno dell'uomo
 seoTitle: Artemis I: il primo volo del razzo SLS e della navicella Orion verso la Luna, 25 giorni nello spazio, immagini della NASA
 description: Novembre–dicembre 2022. Il primo volo di prova del razzo SLS e della navicella Orion senza equipaggio: 25 giorni 10 ore 53 minuti, due sorvoli della Luna a circa 80 miglia dalla superficie e un ammaraggio al largo di San Diego.
-author: Aurelia.Lab
+author: Philipp Gladen
 updated: 2026-11-17
 cover: cover.webp
 coverAlt: Una parte del lato nascosto della Luna accanto alla navicella Orion, immagine della telecamera all'estremità del suo pannello solare

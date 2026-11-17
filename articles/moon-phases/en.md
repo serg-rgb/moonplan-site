@@ -4,7 +4,7 @@ section: moon
 title: Why the Moon has phases
 seoTitle: Moon phases explained: why the Moon changes shape and how long a lunar month lasts
 description: Why the Moon shows a crescent, a half and a full disc, how the synodic month differs from the sidereal month, and why a real lunar month can be 13 hours shorter or longer than another.
-author: Aurelia.Lab
+author: Philipp Gladen
 updated: 2026-11-16
 cover: cover.webp
 coverAlt: The phases of the Moon from waxing crescent through full Moon to waning crescent, rendered by Moonplan from LRO camera data

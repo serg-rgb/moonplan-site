@@ -4,7 +4,7 @@ section: luna
 title: Luna 9: o primeiro pouso suave na Lua
 seoTitle: Luna 9: o primeiro pouso suave na Lua e as primeiras imagens de sua superfície, 3 de fevereiro de 1966
 description: Em 3 de fevereiro de 1966, a estação soviética Luna 9 fez o primeiro pouso suave da história na Lua e transmitiu à Terra imagens da superfície. Como era construída a estação de 99 kg, o que seus panoramas mostraram e como era a Lua vista da Terra naquele dia.
-author: Aurelia.Lab
+author: Philipp Gladen
 updated: 2026-11-17
 cover: cover.webp
 coverAlt: A estação de pouso Luna 9 com as pétalas abertas e as antenas estendidas

@@ -4,7 +4,7 @@ section: apollo
 title: Apollo 17 : le dernier alunissage, un lancement de nuit et le premier scientifique sur la Lune
 seoTitle: Apollo 17 : la dernière expédition avec alunissage, la vallée de Taurus-Littrow, Harrison Schmitt, chronologie d'après les données de la NASA
 description: Décembre 1972. Le premier lancement de nuit d'une Saturn V, trois jours dans la vallée de Taurus-Littrow, 30 km en véhicule lunaire, 110,52 kg d'échantillons et le premier scientifique sur la Lune, Harrison Schmitt. À ce jour, la dernière expédition Apollo à avoir posé des humains sur la Lune.
-author: Aurelia.Lab
+author: Philipp Gladen
 updated: 2026-11-17
 cover: cover.webp
 coverAlt: Harrison Schmitt à côté d'un énorme rocher fendu dans la vallée de Taurus-Littrow

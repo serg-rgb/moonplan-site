@@ -4,7 +4,7 @@ section: apollo
 title: Apollo 17: die letzte Landung, ein Nachtstart und der erste Wissenschaftler auf dem Mond
 seoTitle: Apollo 17: die letzte Expedition mit Mondlandung, das Tal Taurus-Littrow, Harrison Schmitt, Chronik nach NASA-Daten
 description: Dezember 1972. Der erste Nachtstart einer Saturn V, drei Tage im Tal Taurus-Littrow, 30 km im Mondauto, 110,52 kg Proben und der erste Wissenschaftler auf dem Mond, Harrison Schmitt. Die bisher letzte Apollo-Expedition mit Landung von Menschen.
-author: Aurelia.Lab
+author: Philipp Gladen
 updated: 2026-11-17
 cover: cover.webp
 coverAlt: Harrison Schmitt neben einem riesigen gespaltenen Felsblock im Tal Taurus-Littrow

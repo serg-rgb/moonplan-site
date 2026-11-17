@@ -4,7 +4,7 @@ section: china
 title: Chang'e 4 : le premier alunissage sur la face cachée de la Lune
 seoTitle: Chang'e 4 et Yutu-2 : le premier alunissage en douceur sur la face cachée de la Lune, le cratère Von Kármán et le satellite relais Queqiao
 description: Le 3 janvier 2019, la sonde chinoise Chang'e 4 s'est posée pour la première fois dans l'histoire en douceur sur la face cachée de la Lune, dans le cratère Von Kármán. Comment le problème des communications a été résolu, ce que cherche l'astromobile Yutu-2 et comment on les voit depuis l'orbite grâce à la caméra américaine LRO.
-author: Aurelia.Lab
+author: Philipp Gladen
 updated: 2026-11-17
 cover: cover.webp
 coverAlt: La face cachée de la Lune dans la région du cratère Von Kármán, illustration de Moonplan d'après les données de la caméra de LRO

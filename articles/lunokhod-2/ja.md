@@ -4,7 +4,7 @@ section: luna
 title: ルノホート2号：ル・モニエ・クレーターを37 km
 seoTitle: ルノホート2号とルナ21号：ル・モニエ・クレーターでの走行ルート、月の夜をどう乗り切ったか、なぜ動かなくなったのか
 description: 1973年1月、ルナ21号は2台目のソ連の月面ローバーを、晴れの海（Mare Serenitatis）の縁にあるル・モニエ・クレーターの底に届けました。4か月半で約37 kmを走り、フォッサ・レクタを横切り、放熱器に積もった塵が原因で動かなくなりました。
-author: Aurelia.Lab
+author: Philipp Gladen
 updated: 2026-11-17
 cover: cover.webp
 coverAlt: ル・モニエ・クレーターの最終停車地点にあるルノホート2号。LROのカメラが軌道上から撮影

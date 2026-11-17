@@ -4,7 +4,7 @@ section: moon
 title: Por qué la Luna tiene fases
 seoTitle: Las fases de la Luna explicadas: por qué cambia de forma y cuánto dura un mes lunar
 description: Por qué la Luna se ve como un creciente, una mitad o un disco completo, en qué se diferencia el mes sinódico del mes sidéreo y por qué un mes lunar real puede ser 13 horas más corto o más largo que otro.
-author: Aurelia.Lab
+author: Philipp Gladen
 updated: 2026-11-16
 cover: cover.webp
 coverAlt: Las fases de la Luna, de creciente a llena y a menguante, representadas por Moonplan a partir de datos de la cámara del LRO

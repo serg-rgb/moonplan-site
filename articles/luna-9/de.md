@@ -4,7 +4,7 @@ section: luna
 title: Luna 9: die erste weiche Landung auf dem Mond
 seoTitle: Luna 9: die erste weiche Landung auf dem Mond und die ersten Bilder von seiner Oberfläche, 3. Februar 1966
 description: Am 3. Februar 1966 landete die sowjetische Station Luna 9 als erste in der Geschichte weich auf dem Mond und übermittelte Bilder der Oberfläche zur Erde. Wie die 99 kg schwere Station aufgebaut war, was ihre Panoramen zeigten und wie der Mond an diesem Tag von der Erde aus aussah.
-author: Aurelia.Lab
+author: Philipp Gladen
 updated: 2026-11-17
 cover: cover.webp
 coverAlt: Die Landestation Luna 9 mit geöffneten Blütenblättern und ausgefahrenen Antennen

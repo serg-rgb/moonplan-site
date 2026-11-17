@@ -4,7 +4,7 @@ section: luna
 title: Lunokhod 1: 10.5 km across the Sea of Rains
 seoTitle: Lunokhod 1 and Luna 17: the first lunar rover, how it was driven from Earth and where it is now
 description: November 1970: Luna 17 delivered the eight-wheeled Lunokhod 1 to Mare Imbrium (Sea of Rains). It was expected to work for three lunar days and worked for eleven, drove 10.54 km and sent back more than 20,000 television images. How it went, and how it was found from orbit 40 years later.
-author: Aurelia.Lab
+author: Philipp Gladen
 updated: 2026-11-17
 cover: cover.webp
 coverAlt: Lunokhod 1 at its final parking place in Mare Imbrium, seen from orbit by the LRO camera

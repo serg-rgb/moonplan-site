@@ -4,7 +4,7 @@ section: china
 title: Chang'e 4: the first landing on the far side of the Moon
 seoTitle: Chang'e 4 and Yutu-2: the first soft landing on the far side of the Moon, Von Kármán crater and the Queqiao relay satellite
 description: On January 3, 2019, China's Chang'e 4 became the first spacecraft ever to make a soft landing on the far side of the Moon, in Von Kármán crater. How the communications problem was solved, what the Yutu-2 rover is looking for and how the two vehicles can be seen from orbit by the American LRO camera.
-author: Aurelia.Lab
+author: Philipp Gladen
 updated: 2026-11-17
 cover: cover.webp
 coverAlt: The far side of the Moon around Von Kármán crater, a Moonplan illustration based on LRO camera data

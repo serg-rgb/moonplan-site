@@ -4,7 +4,7 @@ section: apollo
 title: Apollo 12: lightning at launch and a meeting with Surveyor
 seoTitle: Apollo 12: lightning at launch, landing next to Surveyor 3, the crew and the flight timeline
 description: The second crewed lunar landing, November 1969. Two lightning strikes in the first minute of flight, a precise landing 600 feet from the uncrewed Surveyor 3, two moonwalks and 34.35 kg of samples. Event times from NASA data.
-author: Aurelia.Lab
+author: Philipp Gladen
 updated: 2026-11-17
 cover: cover.webp
 coverAlt: Charles Conrad next to the Surveyor 3 spacecraft, with the Apollo 12 lunar module in the background

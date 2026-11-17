@@ -4,7 +4,7 @@ section: luna
 title: Lunochod 2: 37 km durch den Krater Le Monnier
 seoTitle: Lunochod 2 und Luna 21: die Route durch den Krater Le Monnier, wie der Rover durch die Mondnacht warm blieb und warum er ausfiel
 description: Januar 1973: Luna 21 setzte den zweiten sowjetischen Rover auf dem Boden des Kraters Le Monnier am Rand des Meeres der Heiterkeit (Mare Serenitatis) ab. In viereinhalb Monaten legte er etwa 37 km zurück, überquerte die Fossa Recta und fiel wegen Staub auf den Radiatoren aus.
-author: Aurelia.Lab
+author: Philipp Gladen
 updated: 2026-11-17
 cover: cover.webp
 coverAlt: Lunochod 2 an seinem letzten Standort im Krater Le Monnier, aufgenommen aus der Umlaufbahn von der LRO-Kamera

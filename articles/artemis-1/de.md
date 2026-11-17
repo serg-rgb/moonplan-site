@@ -4,7 +4,7 @@ section: new
 title: Artemis I: ein unbemannter Flug um den Mond vor der Rückkehr der Menschen
 seoTitle: Artemis I: der erste Flug der Rakete SLS und der Raumkapsel Orion zum Mond, 25 Tage im All, Aufnahmen der NASA
 description: November–Dezember 2022. Der erste Testflug der Rakete SLS und der Raumkapsel Orion ohne Besatzung: 25 Tage 10 Stunden 53 Minuten, zwei Vorbeiflüge am Mond in etwa 80 Meilen Abstand von der Oberfläche und eine Wasserung vor San Diego.
-author: Aurelia.Lab
+author: Philipp Gladen
 updated: 2026-11-17
 cover: cover.webp
 coverAlt: Ein Teil der Mondrückseite neben der Raumkapsel Orion, Aufnahme der Kamera am Ende ihres Solarmoduls

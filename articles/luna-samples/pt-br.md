@@ -4,7 +4,7 @@ section: luna
 title: Luna 16, Luna 20, Luna 24: solo lunar sem pessoas
 seoTitle: Luna 16, Luna 20 e Luna 24: como as estações automáticas soviéticas trouxeram solo lunar à Terra, 101, 55 e 170 gramas
 description: De 1970 a 1976, três estações automáticas soviéticas coletaram amostras de solo lunar e as entregaram à Terra: 101 g do Mar da Fertilidade (Mare Fecunditatis), 55 g das terras altas perto da cratera Apollonius e 170 g do Mar das Crises (Mare Crisium), de uma profundidade de mais de dois metros. Como isso funcionava e como seus estágios de descida aparecem hoje vistos da órbita.
-author: Aurelia.Lab
+author: Philipp Gladen
 updated: 2026-11-17
 cover: cover.webp
 coverAlt: O estágio de descida da Luna 16 no Mar da Fertilidade, visto da órbita pela câmera do LRO

@@ -4,7 +4,7 @@ section: china
 title: Chang'e 5 and Chang'e 6: soil from the near side and the far side of the Moon
 seoTitle: Chang'e 5 and Chang'e 6: 1,731 g of soil from Oceanus Procellarum and 1,935.3 g from the far side of the Moon, from the Apollo basin
 description: In 2020 Chang'e 5 brought 1,731 g of soil from Oceanus Procellarum (Ocean of Storms) to Earth, and in 2024 Chang'e 6 brought 1,935.3 g from the far side of the Moon. Where they landed, what the LRO images show and what scientists learned about the age of lunar volcanoes.
-author: Aurelia.Lab
+author: Philipp Gladen
 updated: 2026-11-17
 cover: cover.webp
 coverAlt: The Chang'e 6 landing region on the southern edge of the Apollo basin, a colour mosaic from the LRO camera

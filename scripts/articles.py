@@ -105,7 +105,7 @@ def article_page(a, cfg, c, langs_here):
     img = og or f'{cfg["url"]}/assets/og-image.png'
     ld = json_ld({'@context': 'https://schema.org', '@graph': [
         {'@type': 'Article', 'headline': m['title'], 'description': m['description'], 'datePublished': m['updated'],
-         'dateModified': m['updated'], 'author': {'@type': 'Organization', 'name': m['author']},
+         'dateModified': m['updated'], 'author': {'@type': 'Person', 'name': m['author']},
          'publisher': {'@type': 'Organization', 'name': 'Aurelia Labs LLC'}, 'inLanguage': tag(lang),
          'mainEntityOfPage': url, 'image': img},
         {'@type': 'BreadcrumbList', 'itemListElement': [

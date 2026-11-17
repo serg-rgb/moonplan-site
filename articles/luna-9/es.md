@@ -4,7 +4,7 @@ section: luna
 title: Luna 9: el primer alunizaje suave en la Luna
 seoTitle: Luna 9: el primer alunizaje suave en la Luna y las primeras imágenes de su superficie, 3 de febrero de 1966
 description: El 3 de febrero de 1966, la estación soviética Luna 9 realizó el primer alunizaje suave de la historia y transmitió a la Tierra imágenes de la superficie. Cómo estaba construida la estación de 99 kg, qué mostraron sus panoramas y cómo se veía la Luna desde la Tierra ese día.
-author: Aurelia.Lab
+author: Philipp Gladen
 updated: 2026-11-17
 cover: cover.webp
 coverAlt: La estación de alunizaje Luna 9 con los pétalos abiertos y las antenas desplegadas

@@ -4,7 +4,7 @@ section: apollo
 title: Apollo 17: the last landing, a night launch and the first scientist on the Moon
 seoTitle: Apollo 17: the last expedition to land on the Moon, the Taurus-Littrow valley, Harrison Schmitt, a timeline from NASA data
 description: December 1972. The first night launch of a Saturn V, three days in the Taurus-Littrow valley, 30 km in the lunar rover, 110.52 kg of samples and the first scientist on the Moon, Harrison Schmitt. To date, the last Apollo expedition to land people.
-author: Aurelia.Lab
+author: Philipp Gladen
 updated: 2026-11-17
 cover: cover.webp
 coverAlt: Harrison Schmitt beside a huge split boulder in the Taurus-Littrow valley

@@ -4,7 +4,7 @@ section: apollo
 title: Apollo 17: l'ultimo allunaggio, un lancio notturno e il primo scienziato sulla Luna
 seoTitle: Apollo 17: l'ultima spedizione con allunaggio, la valle di Taurus-Littrow, Harrison Schmitt, cronologia secondo i dati della NASA
 description: Dicembre 1972. Il primo lancio notturno di un Saturn V, tre giorni nella valle di Taurus-Littrow, 30 km con il veicolo lunare, 110,52 kg di campioni e il primo scienziato sulla Luna, Harrison Schmitt. Finora l'ultima spedizione Apollo con allunaggio di esseri umani.
-author: Aurelia.Lab
+author: Philipp Gladen
 updated: 2026-11-17
 cover: cover.webp
 coverAlt: Harrison Schmitt accanto a un enorme masso spaccato nella valle di Taurus-Littrow

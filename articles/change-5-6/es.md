@@ -4,7 +4,7 @@ section: china
 title: Chang'e 5 y Chang'e 6: suelo de la cara visible y de la cara oculta de la Luna
 seoTitle: Chang'e 5 y Chang'e 6: 1731 g de suelo del Océano de las Tormentas y 1935,3 g de la cara oculta de la Luna, de la cuenca Apollo
 description: En 2020 Chang'e 5 trajo a la Tierra 1731 g de suelo del Océano de las Tormentas, y en 2024 Chang'e 6 trajo 1935,3 g de la cara oculta de la Luna. Dónde alunizaron, qué se ve en las imágenes de LRO y qué descubrieron los científicos sobre la edad de los volcanes lunares.
-author: Aurelia.Lab
+author: Philipp Gladen
 updated: 2026-11-17
 cover: cover.webp
 coverAlt: La zona de alunizaje de Chang'e 6 en el borde sur de la cuenca Apollo, mosaico en color de la cámara de LRO

@@ -4,7 +4,7 @@ section: apollo
 title: Apollo 16: as terras altas de Descartes e o salto com continência
 seoTitle: Apollo 16: as terras altas de Descartes, uma falha no motor, 95,71 kg de amostras, cronologia segundo dados da NASA
 description: Abril de 1972. Um pouso atrasado quase seis horas por uma falha no motor do módulo de serviço, três saídas somando 20 horas e 14 minutos, 27 km no veículo lunar pelas terras altas de Descartes e 95,71 kg de amostras.
-author: Aurelia.Lab
+author: Philipp Gladen
 updated: 2026-11-17
 cover: cover.webp
 coverAlt: John Young em um salto, fazendo continência à bandeira dos EUA; à esquerda o módulo lunar Orion e, ao lado, o veículo lunar

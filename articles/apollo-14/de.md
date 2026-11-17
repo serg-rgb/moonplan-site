@@ -4,7 +4,7 @@ section: apollo
 title: Apollo 14: Fra Mauro, ein Handwagen und zwei Golfbälle
 seoTitle: Apollo 14: Shepards Besatzung, sechs Kopplungsversuche, Landung am Krater Fra Mauro und 42,28 kg Proben
 description: Januar–Februar 1971. Sechs Kopplungsversuche, eine Landung in den Hügeln am Krater Fra Mauro, zwei Ausstiege von insgesamt 9 Stunden 23 Minuten, ein Handwagen für Werkzeuge und zwei Golfbälle. Chronik nach NASA-Daten.
-author: Aurelia.Lab
+author: Philipp Gladen
 updated: 2026-11-17
 cover: cover.webp
 coverAlt: Das Mondlandemodul Antares auf der Mondoberfläche, daneben die Flagge der USA

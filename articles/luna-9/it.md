@@ -4,7 +4,7 @@ section: luna
 title: Luna 9: il primo allunaggio morbido sulla Luna
 seoTitle: Luna 9: il primo allunaggio morbido sulla Luna e le prime immagini della sua superficie, 3 febbraio 1966
 description: Il 3 febbraio 1966 la stazione sovietica Luna 9 effettuò il primo allunaggio morbido della storia e trasmise alla Terra immagini della superficie. Com'era fatta la stazione da 99 kg, che cosa mostrarono i suoi panorami e come appariva la Luna dalla Terra quel giorno.
-author: Aurelia.Lab
+author: Philipp Gladen
 updated: 2026-11-17
 cover: cover.webp
 coverAlt: La stazione di allunaggio Luna 9 con i petali aperti e le antenne estese

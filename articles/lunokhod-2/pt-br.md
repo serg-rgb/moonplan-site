@@ -4,7 +4,7 @@ section: luna
 title: Lunokhod 2: 37 km pela cratera Le Monnier
 seoTitle: Lunokhod 2 e Luna 21: o trajeto pela cratera Le Monnier, como o veículo se aqueceu durante a noite lunar e por que parou de funcionar
 description: Janeiro de 1973: a Luna 21 levou o segundo veículo lunar soviético ao fundo da cratera Le Monnier, na borda do Mar da Serenidade (Mare Serenitatis). Em quatro meses e meio ele percorreu cerca de 37 km, atravessou a Fossa Recta e parou de funcionar por causa da poeira nos radiadores.
-author: Aurelia.Lab
+author: Philipp Gladen
 updated: 2026-11-17
 cover: cover.webp
 coverAlt: O Lunokhod 2 em sua última posição na cratera Le Monnier, visto da órbita pela câmera do LRO
