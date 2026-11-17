@@ -98,7 +98,7 @@ def landing(lang,c,cfg):
 <h1>{lines(c['hero'])}</h1><p class="intro">{e(c['intro'])}</p><p class="hero-body">{e(c['heroBody'])}</p><div class="hero-actions">{cta(c,cfg,'#discover',lang)}<p class="release">{e(c['status']) if not cfg['appStoreUrl'] else e(c['compatibility'])}</p></div>
 <ul class="proof">{''.join('<li>'+e(p)+'</li>' for p in c['proof'])}</ul></div>
 </section>
-<div class="phase-rail wrap" aria-hidden="true">{''.join(f'<span><i class="phase phase-{i}"></i>{e(s)}</span>' for i,s in enumerate(c['rail']))}</div>
+{reading.rail(lang,c,cfg)}
 {reading.read_section(lang,c,cfg)}
 <section id="discover" class="section wrap"><div class="section-heading reveal"><p class="eyebrow">{e(c['featureEyebrow'])}</p><h2>{lines(c['featureTitle'])}</h2><p>{e(c['featureIntro'])}</p></div>'''
     for f in c['features']:

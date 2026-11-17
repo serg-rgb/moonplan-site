@@ -87,6 +87,9 @@ async function imagesLoaded(page,sel){return page.evaluate(async sel=>{const img
     assert.equal(hrefs.length,4,`${lang}: news cards`);assert(hrefs.every(h=>h.startsWith('https://')),`${lang}: news links`);
     assert(await page.locator('.news time[datetime]').evaluateAll(n=>n.every(t=>t.textContent.trim().length>3)),`${lang}: news dates`);
     assert(await page.locator('#questions').evaluate(el=>el.previousElementSibling.id==='news'),`${lang}: news before FAQ`);
+    const rail=await page.locator('nav.phase-rail a').evaluateAll(n=>n.map(a=>a.getAttribute('href')));
+    assert.equal(rail.length,4,`${lang}: phase rail links`);assert.equal(await page.locator('.phase-rail[aria-hidden]').count(),0,`${lang}: rail must not be aria-hidden`);
+    for(const h of rail){if(h.startsWith('#'))assert.equal(await page.locator(h).count(),1,`${lang}: rail anchor ${h}`);else assert.equal((await context.request.get(new URL(h,base).href)).status(),200,`${lang}: rail ${h}`);}
     const read=await page.locator('#read a').evaluateAll(n=>n.map(a=>a.getAttribute('href')));
     assert(read.length>=3,`${lang}: #read cards`);
     assert(await page.locator('#discover').evaluate(el=>!!(document.querySelector('#read').compareDocumentPosition(el)&Node.DOCUMENT_POSITION_FOLLOWING)),`${lang}: #read before #discover`);

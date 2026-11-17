@@ -30,3 +30,7 @@ html[lang=ja] .read h2,html[lang=ja] .read-cards h3,.read-cards h4{letter-spacin
 .read-group .read-cards{margin-top:32px;gap:40px 32px}
 html[lang=ja] .read-head h3{font-weight:600;letter-spacing:.01em;font-size:24px}
 @media(max-width:600px){.read-head{grid-template-columns:1fr}.read-group{margin-top:48px}}
+.phase-rail>a{display:flex;align-items:center;gap:16px;font-size:12px;line-height:16px;letter-spacing:.08em;color:var(--muted);text-decoration:none;cursor:pointer;transition:color .3s var(--ease)}
+.phase-rail>a:hover,.phase-rail>a:focus-visible{color:var(--light-gold);text-decoration:underline;text-underline-offset:6px}
+.phase-rail>a:focus-visible{outline:2px solid var(--light-gold);outline-offset:6px;border-radius:4px}
+@media(max-width:600px){.phase-rail>a{gap:12px;letter-spacing:0}}
