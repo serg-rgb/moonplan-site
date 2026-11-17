@@ -6,15 +6,49 @@ seoTitle: Apolo 11: cronología del vuelo, tripulación, lugar de alunizaje y qu
 description: Cómo fue el primer alunizaje tripulado: desde el lanzamiento el 16 de julio de 1969 hasta el amerizaje el 24 de julio. Horas de los hechos clave según datos de la NASA, el lugar de alunizaje, 21,55 kg de muestras lunares y cómo se veía la Luna ese día.
 author: Aurelia.Lab
 updated: 2026-11-16
+cover: cover.webp
+coverAlt: Edwin Aldrin camina por la superficie de la Luna junto a un pie del módulo lunar Eagle, 20 de julio de 1969
 figures:
+  - id: crew
+    kind: photo
+    file: S69-31739.jpg
+    caption: La tripulación del Apollo 11, mayo de 1969. De izquierda a derecha: Neil Armstrong (comandante), Michael Collins (piloto del módulo de mando) y Edwin Aldrin (piloto del módulo lunar). Fotografía S69-31739, NASA.
+  - id: launch
+    kind: photo
+    file: S69-39961.jpg
+    caption: Lanzamiento del Apollo 11 desde el Complejo de Lanzamiento 39A del Centro Espacial Kennedy el 16 de julio de 1969 a las 9:32, hora de la costa este de EE. UU. (13:32 UTC). Fotografía S69-39961, NASA.
+  - id: aldrin-walk
+    kind: photo
+    file: as11-40-5903.jpg
+    caption: Edwin Aldrin camina por la Luna junto a un pie del módulo lunar Eagle. La tomó Neil Armstrong con una cámara de 70 milímetros. Fotografía AS11-40-5903, NASA.
+  - id: aldrin-flag
+    kind: photo
+    file: as11-40-5874.jpg
+    caption: Aldrin junto a la bandera de EE. UU. ya instalada. A la izquierda, el módulo lunar; en el suelo se ven bien las huellas de los astronautas. La tomó Armstrong. Fotografía AS11-40-5874, NASA.
+  - id: bootprint
+    kind: photo
+    file: as11-40-5878.jpg
+    caption: Primer plano de la huella de una bota de astronauta en el suelo lunar. Fotografía AS11-40-5878, NASA.
   - id: as11-footpad
     kind: photo
     file: as11-40-5917.jpg
     caption: Un pie del módulo lunar Eagle y huellas de botas en el Mar de la Tranquilidad. La varilla del primer plano es una sonda de contacto, un sensor que toca la superficie antes que nada. Fotografía AS11-40-5917, NASA.
+  - id: easep
+    kind: photo
+    file: as11-40-5948.jpg
+    caption: Aldrin acaba de instalar el conjunto de instrumentos científicos. En primer plano, el sismómetro; detrás, el reflector láser; en el centro, la bandera; a la izquierda, la cámara de televisión en blanco y negro; a la derecha, el módulo lunar. Fotografía AS11-40-5948, NASA.
+  - id: armstrong-lm
+    kind: photo
+    file: as11-37-5528.jpg
+    caption: Neil Armstrong en el módulo lunar después de salir a la superficie, cuando Eagle todavía estaba en la Luna. Fotografía AS11-37-5528, NASA.
+  - id: ascent
+    kind: photo
+    file: as11-44-6642.jpg
+    caption: La etapa de ascenso de Eagle, con Armstrong y Aldrin, se acerca a Columbia para el acoplamiento. Sobre el horizonte lunar se ve la mitad de la Tierra. Fotografía AS11-44-6642, NASA.
 sources:
   - NASA NSSDCA, Apollo 11 Command and Service Module (CSM): https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1969-059A
   - NASA NSSDCA, Apollo 11 Mission: https://nssdc.gsfc.nasa.gov/planetary/lunar/apollo11info.html
-  - NASA Image and Video Library, fotografía AS11-40-5917: https://images.nasa.gov/details/as11-40-5917
+  - NASA Image and Video Library (fotografías S69-31739, S69-39961, AS11-37-5528, AS11-40-5874, AS11-40-5878, AS11-40-5903, AS11-40-5917, AS11-40-5948, AS11-44-6642): https://images.nasa.gov/details/as11-40-5903
   - Cálculo de Moonplan con Astronomy Engine: fase, iluminación y distancia a la Luna el 20 de julio de 1969 a las 20:17:40 UTC
 ---
 
@@ -26,9 +60,13 @@ El comandante Neil Armstrong, el piloto del módulo lunar Edwin «Buzz» Aldrin 
 
 La nave constaba de dos partes con indicativos propios. Los módulos de mando y de servicio se llamaban Columbia, y el módulo lunar, Eagle.
 
+[[figure:crew]]
+
 ## Cronología del vuelo
 
 Todas las horas están en UTC, como en el archivo de la NASA.
+
+[[figure:launch]]
 
 | Fecha y hora, UTC | Suceso |
 |---|---|
@@ -50,9 +88,23 @@ Desde el lanzamiento hasta el amerizaje pasaron 195 horas, 18 minutos y 35 segun
 
 El módulo lunar alunizó en el Mar de la Tranquilidad, en el punto de coordenadas 0,67° de latitud norte y 23,47° de longitud este. Armstrong informó: «Houston, aquí Base Tranquilidad. Eagle ha alunizado» (“Houston, Tranquility Base here. The Eagle has landed.”). Seis horas y media después bajó por la escalerilla y pronunció la frase que todos han citado desde entonces: «Es un pequeño paso para el hombre, pero un gran salto para la humanidad» (“That's one small step for man, one giant leap for mankind.”). Aldrin salió detrás, 19 minutos después.
 
+[[figure:aldrin-walk]]
+
+[[figure:aldrin-flag]]
+
+[[figure:bootprint]]
+
 [[figure:as11-footpad]]
 
 Desde el primer paso de Armstrong hasta el cierre de la escotilla pasaron 2 horas y 15 minutos. Los astronautas instalaron instrumentos científicos (entre ellos un sismómetro y un retrorreflector para la medición de distancias con láser), tomaron fotografías y recogieron muestras. En total caminaron unos 250 metros.
+
+[[figure:easep]]
+
+[[figure:armstrong-lm]]
+
+21 horas y 36 minutos después del alunizaje, la etapa de ascenso de Eagle despegó de la Luna y, 3 horas y 40 minutos más tarde, se acopló con Columbia, donde los esperaba Collins.
+
+[[figure:ascent]]
 
 ## Cómo se veía la Luna desde la Tierra ese día
 

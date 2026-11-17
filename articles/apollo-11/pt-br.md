@@ -6,15 +6,49 @@ seoTitle: Apollo 11: cronologia do voo, tripulação, local de pouso e o que vol
 description: Como foi o primeiro pouso lunar tripulado: do lançamento em 16 de julho de 1969 até o pouso no mar em 24 de julho. Horários dos eventos principais segundo dados da NASA, o local de pouso, 21,55 kg de amostras lunares e como a Lua estava naquele dia.
 author: Aurelia.Lab
 updated: 2026-11-16
+cover: cover.webp
+coverAlt: Edwin Aldrin caminha na superfície da Lua ao lado de uma sapata do módulo lunar Eagle, 20 de julho de 1969
 figures:
+  - id: crew
+    kind: photo
+    file: S69-31739.jpg
+    caption: A tripulação da Apollo 11, maio de 1969. Da esquerda para a direita: Neil Armstrong (comandante), Michael Collins (piloto do módulo de comando) e Edwin Aldrin (piloto do módulo lunar). Fotografia S69-31739, NASA.
+  - id: launch
+    kind: photo
+    file: S69-39961.jpg
+    caption: Lançamento da Apollo 11 do Complexo de Lançamento 39A do Centro Espacial Kennedy em 16 de julho de 1969, às 9h32 no horário da costa leste dos EUA (13:32 UTC). Fotografia S69-39961, NASA.
+  - id: aldrin-walk
+    kind: photo
+    file: as11-40-5903.jpg
+    caption: Edwin Aldrin caminha na Lua ao lado de uma sapata do módulo lunar Eagle. A foto foi tirada por Neil Armstrong com uma câmera de 70 milímetros. Fotografia AS11-40-5903, NASA.
+  - id: aldrin-flag
+    kind: photo
+    file: as11-40-5874.jpg
+    caption: Aldrin ao lado da bandeira dos EUA já instalada. À esquerda, o módulo lunar; no solo ficam bem visíveis os rastros dos astronautas. Foto de Armstrong. Fotografia AS11-40-5874, NASA.
+  - id: bootprint
+    kind: photo
+    file: as11-40-5878.jpg
+    caption: Close da pegada de uma bota de astronauta no solo lunar. Fotografia AS11-40-5878, NASA.
   - id: as11-footpad
     kind: photo
     file: as11-40-5917.jpg
     caption: Uma das sapatas do módulo lunar Eagle e pegadas de botas no Mar da Tranquilidade. A haste em primeiro plano é uma sonda de contato, um sensor que toca a superfície antes de tudo. Fotografia AS11-40-5917, NASA.
+  - id: easep
+    kind: photo
+    file: as11-40-5948.jpg
+    caption: Aldrin acabou de instalar o conjunto de instrumentos científicos. Em primeiro plano, o sismômetro; atrás dele, o refletor a laser; no centro, a bandeira; à esquerda, a câmera de televisão em preto e branco; à direita, o módulo lunar. Fotografia AS11-40-5948, NASA.
+  - id: armstrong-lm
+    kind: photo
+    file: as11-37-5528.jpg
+    caption: Neil Armstrong no módulo lunar depois de sair para a superfície, enquanto Eagle ainda estava na Lua. Fotografia AS11-37-5528, NASA.
+  - id: ascent
+    kind: photo
+    file: as11-44-6642.jpg
+    caption: O estágio de subida de Eagle, com Armstrong e Aldrin, se aproxima de Columbia para a acoplagem. Acima do horizonte lunar, metade da Terra. Fotografia AS11-44-6642, NASA.
 sources:
   - NASA NSSDCA, Apollo 11 Command and Service Module (CSM): https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1969-059A
   - NASA NSSDCA, Apollo 11 Mission: https://nssdc.gsfc.nasa.gov/planetary/lunar/apollo11info.html
-  - NASA Image and Video Library, fotografia AS11-40-5917: https://images.nasa.gov/details/as11-40-5917
+  - NASA Image and Video Library (fotografias S69-31739, S69-39961, AS11-37-5528, AS11-40-5874, AS11-40-5878, AS11-40-5903, AS11-40-5917, AS11-40-5948, AS11-44-6642): https://images.nasa.gov/details/as11-40-5903
   - Cálculo do Moonplan com o Astronomy Engine: fase, iluminação e distância da Lua em 20 de julho de 1969 às 20:17:40 UTC
 ---
 
@@ -26,9 +60,13 @@ O comandante Neil Armstrong, o piloto do módulo lunar Edwin "Buzz" Aldrin e o p
 
 A nave tinha duas partes, cada uma com seu indicativo de chamada. Os módulos de comando e de serviço se chamavam Columbia, e o módulo lunar, Eagle.
 
+[[figure:crew]]
+
 ## Cronologia do voo
 
 Os horários estão em UTC, como no arquivo da NASA.
+
+[[figure:launch]]
 
 | Data e hora, UTC | Evento |
 |---|---|
@@ -50,9 +88,23 @@ Do lançamento ao pouso no mar passaram-se 195 horas, 18 minutos e 35 segundos.
 
 O módulo lunar pousou no Mar da Tranquilidade, no ponto de coordenadas 0,67° de latitude norte e 23,47° de longitude leste. Armstrong informou: "Houston, aqui é a Base da Tranquilidade. Eagle pousou" ("Houston, Tranquility Base here. The Eagle has landed."). Seis horas e meia depois, ele desceu a escada e disse a frase que todos citam desde então: "Este é um pequeno passo para o homem, mas um salto gigantesco para a humanidade" ("That's one small step for man, one giant leap for mankind."). Aldrin saiu em seguida, 19 minutos depois.
 
+[[figure:aldrin-walk]]
+
+[[figure:aldrin-flag]]
+
+[[figure:bootprint]]
+
 [[figure:as11-footpad]]
 
 Do primeiro passo de Armstrong até o fechamento da escotilha passaram-se 2 horas e 15 minutos. Os astronautas instalaram instrumentos científicos (entre eles um sismômetro e um retrorrefletor para medição de distância a laser), tiraram fotografias e coletaram amostras. Ao todo, caminharam cerca de 250 metros.
+
+[[figure:easep]]
+
+[[figure:armstrong-lm]]
+
+21 horas e 36 minutos após o pouso, o estágio de subida de Eagle decolou da Lua e, 3 horas e 40 minutos depois, fez a acoplagem com Columbia, onde Collins os esperava.
+
+[[figure:ascent]]
 
 ## Como a Lua era vista da Terra naquele dia
 

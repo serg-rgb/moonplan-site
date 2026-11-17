@@ -6,15 +6,49 @@ seoTitle: アポロ11号：飛行の時系列、乗組員、着陸地点、月�
 description: 人類初の月面着陸はどう進んだのか。1969年7月16日の打ち上げから7月24日の着水まで。NASAのデータに基づく主要な出来事の時刻、着陸地点、21.55 kgの月の試料、そして当日の月の見え方。
 author: Aurelia.Lab
 updated: 2026-11-16
+cover: cover.webp
+coverAlt: 1969年7月20日、月着陸船イーグルの脚の接地板のそばを月面で歩くエドウィン・オルドリン
 figures:
+  - id: crew
+    kind: photo
+    file: S69-31739.jpg
+    caption: アポロ11号の乗組員、1969年5月。左から右へ、ニール・アームストロング（船長）、マイケル・コリンズ（司令船操縦士）、エドウィン・オルドリン（月着陸船操縦士）。写真 S69-31739、NASA。
+  - id: launch
+    kind: photo
+    file: S69-39961.jpg
+    caption: アポロ11号の打ち上げ。1969年7月16日、米国東部時間9時32分（13:32 UTC）、ケネディ宇宙センターの39A発射施設から。写真 S69-39961、NASA。
+  - id: aldrin-walk
+    kind: photo
+    file: as11-40-5903.jpg
+    caption: 月着陸船イーグルの脚の接地板のそばを歩くエドウィン・オルドリン。撮影はニール・アームストロングで、70ミリカメラを使用。写真 AS11-40-5903、NASA。
+  - id: aldrin-flag
+    kind: photo
+    file: as11-40-5874.jpg
+    caption: 立てられた米国旗のそばに立つオルドリン。左に月着陸船、地面には宇宙飛行士の足跡がはっきり見えます。撮影はアームストロング。写真 AS11-40-5874、NASA。
+  - id: bootprint
+    kind: photo
+    file: as11-40-5878.jpg
+    caption: 月の地面に残る宇宙飛行士のブーツの足跡のクローズアップ。写真 AS11-40-5878、NASA。
   - id: as11-footpad
     kind: photo
     file: as11-40-5917.jpg
     caption: 月着陸船イーグルの脚の接地板と、静かの海に残るブーツの足跡。手前の棒は接触プローブで、最初に表面に触れるセンサーです。写真 AS11-40-5917、NASA。
+  - id: easep
+    kind: photo
+    file: as11-40-5948.jpg
+    caption: オルドリンが科学機器一式を設置し終えたところ。手前に地震計、その奥にレーザー反射器、中央に国旗、左に白黒テレビカメラ、右に月着陸船。写真 AS11-40-5948、NASA。
+  - id: armstrong-lm
+    kind: photo
+    file: as11-37-5528.jpg
+    caption: 月面に出たあと月着陸船の中にいるニール・アームストロング。イーグルはまだ月の上にありました。写真 AS11-37-5528、NASA。
+  - id: ascent
+    kind: photo
+    file: as11-44-6642.jpg
+    caption: アームストロングとオルドリンを乗せたイーグルの上昇段が、ドッキングのためコロンビアに近づく。月の地平線の上に地球が半分見えています。写真 AS11-44-6642、NASA。
 sources:
   - NASA NSSDCA, Apollo 11 Command and Service Module (CSM): https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1969-059A
   - NASA NSSDCA, Apollo 11 Mission: https://nssdc.gsfc.nasa.gov/planetary/lunar/apollo11info.html
-  - NASA Image and Video Library、写真 AS11-40-5917: https://images.nasa.gov/details/as11-40-5917
+  - NASA Image and Video Library（写真 S69-31739、S69-39961、AS11-37-5528、AS11-40-5874、AS11-40-5878、AS11-40-5903、AS11-40-5917、AS11-40-5948、AS11-44-6642）: https://images.nasa.gov/details/as11-40-5903
   - Moonplan による Astronomy Engine での計算：1969年7月20日20:17:40 UTCの月の位相、照らされた割合、月までの距離
 ---
 
@@ -26,9 +60,13 @@ sources:
 
 宇宙船は、それぞれ固有のコールサインをもつ2つの部分からなっていました。司令船と機械船はコロンビア、月着陸船はイーグルと呼ばれました。
 
+[[figure:crew]]
+
 ## 飛行の時系列
 
 時刻はNASAのアーカイブと同じくUTCで示します。
+
+[[figure:launch]]
 
 | 日時（UTC） | 出来事 |
 |---|---|
@@ -50,9 +88,23 @@ sources:
 
 月着陸船は静かの海、北緯0.67度、東経23.47度の地点に着陸しました。アームストロングはこう伝えました。「ヒューストン、こちら静かの基地。イーグルは着陸した」（“Houston, Tranquility Base here. The Eagle has landed.”）。6時間半後、彼ははしごを下り、その後ずっと引用されることになる言葉を述べました。「これは一人の人間にとっては小さな一歩だが、人類にとっては大きな飛躍である」（“That's one small step for man, one giant leap for mankind.”）。オルドリンは19分後に続きました。
 
+[[figure:aldrin-walk]]
+
+[[figure:aldrin-flag]]
+
+[[figure:bootprint]]
+
 [[figure:as11-footpad]]
 
 アームストロングの最初の一歩からハッチを閉じるまで、2時間15分でした。宇宙飛行士たちは科学機器（地震計や、レーザー測距用の再帰反射器など）を設置し、写真を撮り、試料を集めました。歩いた距離は合わせて約250メートルでした。
+
+[[figure:easep]]
+
+[[figure:armstrong-lm]]
+
+着陸から21時間36分後、イーグルの上昇段は月を離陸し、3時間40分後にコロンビアとドッキングしました。そこではコリンズが二人を待っていました。
+
+[[figure:ascent]]
 
 ## その日、地球から見た月
 
