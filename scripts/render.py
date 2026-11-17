@@ -1,6 +1,7 @@
 """Small, dependency-free HTML renderer. Content is stored per language."""
 from html import escape as e
 from news import news_section
+import reading
 
 LANGS = ('en', 'de', 'es', 'fr', 'it', 'pt-br', 'ru', 'ja')
 SECTIONS = ('moon', 'apollo')  # article sections: /{lang}/{section}/; strings articleSection_{section} in content/*.json
@@ -56,10 +57,10 @@ def head(lang, c, cfg, page='', title=None, description=None, noindex=False, roo
 <link rel="preload" href="{base}/assets/fonts/manrope_regular.ttf" as="font" type="font/ttf" crossorigin><link rel="stylesheet" href="{base}/assets/site.css"><link rel="stylesheet" href="{base}/assets/responsive.css">{space_css}
 <script defer src="{base}/assets/site.js"></script>{analytics(cfg)}{space_js}</head>'''
 
-def header(lang, c, cfg, page=''):
+def header(lang, c, cfg, page='', extra=''):
     base = cfg['base']
     targets = ('discover', 'how', 'questions')
-    nav = ''.join(f'<a href="{base}/{lang}/#{t}">{e(label)}</a>' for t,label in zip(targets,c['nav']))
+    nav = extra + ''.join(f'<a href="{base}/{lang}/#{t}">{e(label)}</a>' for t,label in zip(targets,c['nav']))
     return f'''<body><a class="skip" href="#main">{e(c['skip'])}</a>
 <header class="site-header"><a class="brand" href="{base}/{lang}/" aria-label="Moonplan · {e(c['home'])}">{moon_mark()}<span>Moonplan</span></a>
 <nav class="desktop-nav" aria-label="{e(c['menu'])}">{nav}</nav>{langs(lang,page,base,c['language'])}
@@ -92,12 +93,13 @@ def cta(c,cfg,href,lang='en'):
     return f'<a class="button" href="{e(href,quote=True)}">{e(c["cta"])}<span aria-hidden="true">↗</span></a>'
 
 def landing(lang,c,cfg):
-    result=head(lang,c,cfg,noindex=cfg['noindex'],space=True)+header(lang,c,cfg).replace('<body>','<body class="has-space"><canvas id="space" aria-hidden="true"></canvas>',1)
+    result=head(lang,c,cfg,noindex=cfg['noindex'],space=True).replace('</head>',reading.stylesheet(cfg)+'</head>',1)+header(lang,c,cfg,extra=reading.nav_link(lang,cfg)).replace('<body>','<body class="has-space"><canvas id="space" aria-hidden="true"></canvas>',1)
     result+=f'''<main id="main"><section class="hero wrap"><div class="hero-copy"><p class="eyebrow"><span class="tiny-moon" aria-hidden="true"></span>{e(c['eyebrow'])}</p>
 <h1>{lines(c['hero'])}</h1><p class="intro">{e(c['intro'])}</p><p class="hero-body">{e(c['heroBody'])}</p><div class="hero-actions">{cta(c,cfg,'#discover',lang)}<p class="release">{e(c['status']) if not cfg['appStoreUrl'] else e(c['compatibility'])}</p></div>
 <ul class="proof">{''.join('<li>'+e(p)+'</li>' for p in c['proof'])}</ul></div>
 </section>
 <div class="phase-rail wrap" aria-hidden="true">{''.join(f'<span><i class="phase phase-{i}"></i>{e(s)}</span>' for i,s in enumerate(c['rail']))}</div>
+{reading.read_section(lang,c,cfg)}
 <section id="discover" class="section wrap"><div class="section-heading reveal"><p class="eyebrow">{e(c['featureEyebrow'])}</p><h2>{lines(c['featureTitle'])}</h2><p>{e(c['featureIntro'])}</p></div>'''
     for f in c['features']:
         result+=f'''<article class="feature reveal"><div class="feature-copy"><p class="eyebrow"><span class="index">{f['number']}</span>{e(f['tag'])}</p><h3>{e(f['title'])}</h3><p>{e(f['body'])}</p><p class="feature-detail">{e(f['detail'])}</p>{'<p class="note">'+e(f['note'])+'</p>' if f.get('note') else ''}</div><figure class="feature-visual">{phone(lang,f['image'],f['alt'],cfg)}</figure></article>'''

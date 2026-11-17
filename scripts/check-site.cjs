@@ -6,6 +6,8 @@ const assert=require('node:assert/strict');
 const base=process.env.SITE_URL || 'http://127.0.0.1:4817';
 const artifacts=process.env.ARTIFACTS || path.resolve(__dirname,'../verification');
 fs.mkdirSync(artifacts,{recursive:true});
+// Scrolls every matching image into view (they are lazy) and reports how many failed to load.
+async function imagesLoaded(page,sel){return page.evaluate(async sel=>{const imgs=[...document.querySelectorAll(sel)];for(const i of imgs){i.scrollIntoView({block:'center'});for(let k=0;k<60&&!(i.complete&&i.naturalWidth>0);k++)await new Promise(r=>setTimeout(r,100));}return{n:imgs.length,bad:imgs.filter(i=>!(i.complete&&i.naturalWidth>0)).length};},sel);}
 (async()=>{
   const browser=await chromium.launch({channel:'chrome',headless:true,args:['--use-angle=swiftshader','--enable-unsafe-swiftshader']});
   const context=await browser.newContext({viewport:{width:1440,height:1000}});
@@ -42,7 +44,7 @@ fs.mkdirSync(artifacts,{recursive:true});
       assert(result.canonical,route);if(articleRoutes.has(route))assert(result.alternates>=2,route);else assert.equal(result.alternates,9,route);
       assert(!result.links.includes('#'),`${route}: dead anchor`);
       if(articleRoutes.has(route)){const x=await page.evaluate(()=>({canvas:document.querySelectorAll('canvas').length,ld:[...document.querySelectorAll('script[type="application/ld+json"]')].map(n=>JSON.parse(n.textContent)['@graph'].length),svg:document.querySelectorAll('svg.fig-svg title').length,og:document.querySelector('meta[property="og:type"]').content,wide:[...document.querySelectorAll('.article-body *')].filter(n=>n.getBoundingClientRect().right>innerWidth+1&&!n.closest('.table-wrap,.fig')).length}));
-      assert.equal(x.canvas,0,route);if(route.endsWith('/'))assert((await page.locator('.article-list li').count())>=1,route+' hub has no cards');assert.equal(x.wide,0,route+' content wider than viewport');if(route.endsWith('.html')){assert.deepEqual(x.ld,[2],route);assert.equal(x.og,'article',route);if(photoRoutes.has(route)){const p=await page.evaluate(async()=>{const img=document.querySelector('figure.fig-photo img');if(!img)return null;img.scrollIntoView();for(let i=0;i<50&&!(img.complete&&img.naturalWidth>0);i++)await new Promise(r=>setTimeout(r,100));return{w:img.naturalWidth,srcset:!!img.srcset,cap:(img.closest('figure').querySelector('figcaption')?.textContent||'').trim().length,alt:img.alt.length};});assert(p&&p.w>0&&p.srcset&&p.cap>10&&p.alt>10,`${route}: photo figure ${JSON.stringify(p)}`);assert.equal(x.svg,0,route);}else assert.equal(x.svg,2,route);}}
+      assert.equal(x.canvas,0,route);if(route.endsWith('/')){assert((await page.locator('.read-cards li').count())>=1,route+' hub has no cards');assert.deepEqual(await imagesLoaded(page,'.read-cards img'),{n:await page.locator('.read-cards img').count(),bad:0},route+' hub images');}assert.equal(x.wide,0,route+' content wider than viewport');if(route.endsWith('.html')){assert.deepEqual(x.ld,[2],route);assert.equal(x.og,'article',route);if(photoRoutes.has(route)){const p=await page.evaluate(async()=>{const img=document.querySelector('figure.fig-photo img');if(!img)return null;img.scrollIntoView();for(let i=0;i<50&&!(img.complete&&img.naturalWidth>0);i++)await new Promise(r=>setTimeout(r,100));return{w:img.naturalWidth,srcset:!!img.srcset,cap:(img.closest('figure').querySelector('figcaption')?.textContent||'').trim().length,alt:img.alt.length};});if(route.endsWith('/apollo-11.html')){assert.deepEqual(await imagesLoaded(page,'figure.fig-photo img'),{n:9,bad:0},route+' apollo-11 photos');}assert(p&&p.w>0&&p.srcset&&p.cap>10&&p.alt>10,`${route}: photo figure ${JSON.stringify(p)}`);assert.equal(x.svg,0,route);}else assert.equal(x.svg,2,route);}}
     if(/^\/(en|de|es|fr|it|pt-br|ru|ja)\//.test(route))assert.equal(result.lang,route.split('/')[1].replace('pt-br','pt-BR'));
       checks++;if(process.env.VERBOSE)console.log(width,route,Date.now()-t0,'ms');
     }
@@ -85,6 +87,16 @@ fs.mkdirSync(artifacts,{recursive:true});
     assert.equal(hrefs.length,4,`${lang}: news cards`);assert(hrefs.every(h=>h.startsWith('https://')),`${lang}: news links`);
     assert(await page.locator('.news time[datetime]').evaluateAll(n=>n.every(t=>t.textContent.trim().length>3)),`${lang}: news dates`);
     assert(await page.locator('#questions').evaluate(el=>el.previousElementSibling.id==='news'),`${lang}: news before FAQ`);
+    const read=await page.locator('#read a').evaluateAll(n=>n.map(a=>a.getAttribute('href')));
+    assert(read.length>=3,`${lang}: #read cards`);
+    assert(await page.locator('#discover').evaluate(el=>!!(document.querySelector('#read').compareDocumentPosition(el)&Node.DOCUMENT_POSITION_FOLLOWING)),`${lang}: #read before #discover`);
+    assert.equal(await page.locator('.desktop-nav a[href$="/#read"]').count(),1,`${lang}: nav item`);
+    const want=[...articleRoutes].filter(r=>r.startsWith(`/${lang}/`)&&r.endsWith('.html')).map(r=>base+r);
+    const got=await page.locator('#read a').evaluateAll(n=>n.map(a=>a.href));
+    for(const w of want)assert(got.includes(w),`${lang}: #read lacks ${w}`);
+    assert(got.includes(base+`/${lang}/today/`),`${lang}: #read lacks today`);
+    assert.deepEqual(await imagesLoaded(page,'#read img'),{n:await page.locator('#read img').count(),bad:0},`${lang}: #read images`);
+    for(const h of await page.locator('#read a').evaluateAll(n=>n.map(a=>a.href)))assert.equal((await context.request.get(h)).status(),200,h);
     await page.waitForFunction(()=>document.querySelector('[data-phase]').textContent.trim().length>0);
     const hud=await page.locator('[data-phase]').textContent();
     assert(/\d+%/.test(hud),`${lang}: HUD ${hud}`);

@@ -1,0 +1,32 @@
+/* Reading cards: landing section #read and the article hubs (same card style as the news feed, 16:9 image). */
+.read{padding-block:72px 32px;text-shadow:0 0 24px rgba(4,4,10,.85)}
+.read h2{font-family:var(--display);font-weight:400;font-size:36px;line-height:40px;letter-spacing:-.045em;margin-top:24px;max-width:22ch}
+.read-cards{margin:48px 0 0;padding:0;list-style:none;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:48px 32px}
+.read-cards a{display:grid;gap:12px;align-content:start;color:inherit;text-decoration:none}
+.read-cards figure{margin:0;overflow:hidden;border-radius:12px;border:1px solid rgba(232,210,158,.12);background:#04040a;aspect-ratio:16/9}
+.read-cards img{width:100%;height:100%;object-fit:cover;display:block;transform:scale(1.001);transition:transform .9s var(--ease)}
+.read-cards a:hover img{transform:scale(1.045)}
+.read-cards .meta{margin-top:4px;font-size:12px;line-height:16px;letter-spacing:.12em;text-transform:uppercase;font-weight:600;color:var(--gold)}
+.read-cards h3,.read-cards h4{margin:0;font-family:var(--display);font-weight:400;font-size:20px;line-height:28px;letter-spacing:-.03em;text-wrap:balance;color:var(--text)}
+.read-cards p{margin:0;color:var(--muted);font-size:15px;line-height:24px}
+.read-cards a:focus-visible{outline:2px solid var(--light-gold);outline-offset:6px;border-radius:12px}
+.read-cards a:hover h3,.read-cards a:hover h4{color:var(--light-gold)}
+.read-links{display:flex;flex-wrap:wrap;gap:12px 32px;margin:40px 0 0;font-size:15px;line-height:24px}
+.read-links a{color:var(--light-gold);border-bottom:1px solid rgba(232,210,158,.4);padding-bottom:2px}.read-links a:hover{border-color:var(--light-gold)}
+.article-page>.read-cards{margin-top:48px}
+html[lang=ja] .read h2,html[lang=ja] .read-cards h3,.read-cards h4{letter-spacing:.01em;font-weight:600}html[lang=ja] .read-cards h3,.read-cards h4{font-size:18px;line-height:28px}
+@media(max-width:900px){.read-cards{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:600px){.read-cards{grid-template-columns:1fr}.read{padding-block:48px 16px}.read h2{font-size:30px;line-height:36px}.read-cards{margin-top:32px;gap:40px}}
+.read-cards p{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;overflow:hidden}
+.read-today{margin-top:40px}.read-today .read-head{border-bottom:0;padding-bottom:0}
+.read-group{margin-top:64px}
+.read-head{display:grid;grid-template-columns:minmax(0,320px) 1fr;gap:24px 32px;align-items:center;color:inherit;text-decoration:none;padding-bottom:24px;border-bottom:1px solid rgba(232,210,158,.18)}
+.read-head figure{margin:0;overflow:hidden;border-radius:12px;border:1px solid rgba(232,210,158,.12);background:#04040a;aspect-ratio:16/9}
+.read-head img{width:100%;height:100%;object-fit:cover;display:block}
+.read-head h3{margin:0;font-family:var(--display);font-weight:400;font-size:28px;line-height:34px;letter-spacing:-.04em;color:var(--text)}
+.read-head p{margin:8px 0 0;color:var(--muted);font-size:15px;line-height:24px;max-width:60ch}
+.read-head .go{display:inline-block;margin-top:12px;font-size:14px;color:var(--light-gold);border-bottom:1px solid rgba(232,210,158,.4);padding-bottom:2px}
+.read-head:hover h3{color:var(--light-gold)}.read-head:focus-visible{outline:2px solid var(--light-gold);outline-offset:6px;border-radius:12px}
+.read-group .read-cards{margin-top:32px;gap:40px 32px}
+html[lang=ja] .read-head h3{font-weight:600;letter-spacing:.01em;font-size:24px}
+@media(max-width:600px){.read-head{grid-template-columns:1fr}.read-group{margin-top:48px}}

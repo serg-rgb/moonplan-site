@@ -6,6 +6,7 @@ from pathlib import Path
 from markdown import ArticleError, convert, front_matter
 from figures import render as render_figure
 from news import format_date
+import reading
 from render import LANGS, SECTIONS, cta, footer, head, header, tag
 
 IMAGES = ('.webp', '.png', '.jpg', '.jpeg', '.svg')  # only these are published; data/.md/.txt/.csv stay in the source folder
@@ -137,12 +138,11 @@ def hub_page(lang, arts, cfg, c, hub_langs, sec):
     name, intro = c[f'articleSection_{sec}'], sk(c, 'articleHubIntro', sec)
     top = head(lang, c, cfg, page_of(None, sec), title=f'{name} · Moonplan', description=intro, noindex=cfg['noindex'],
                alts=alt_links(cfg, [(l, url_of(cfg, l, None, sec)) for l in hub_langs]))
-    top = top.replace('</head>', f'<link rel="stylesheet" href="{base}/assets/article.css"></head>', 1)
+    top = top.replace('</head>', f'<link rel="stylesheet" href="{base}/assets/article.css">{reading.stylesheet(cfg)}</head>', 1)
     switch = {l: page_of(None, sec) for l in hub_langs}
-    cards = ''.join(f'<li><a href="{base}/{lang}/{sec}/{a["slug"]}.html"><h2>{e(a["meta"]["title"])}</h2><p>{e(a["meta"]["description"])}</p>'
-                    f'<span class="go">{e(c["articleRead"])} →</span></a></li>' for a in arts)
+    cards = reading.cards_list(arts, lang, cfg, c)
     return (top + header(lang, c, cfg, switch) + f'<main id="main" class="article-page wrap">{nav}<header class="article-head"><p class="eyebrow">Moonplan</p>'
-            f'<h1>{e(name)}</h1><p class="intro">{e(intro)}</p></header><ul class="article-list">{cards}</ul></main>' + footer(lang, c, cfg, switch))
+            f'<h1>{e(name)}</h1><p class="intro">{e(intro)}</p></header>{cards}</main>' + footer(lang, c, cfg, switch))
 
 def published(img, folder):
     """Photo originals (jpg/png with a -1600.webp next to them) stay in the repo; only derivatives are published."""
