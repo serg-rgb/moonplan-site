@@ -12,7 +12,7 @@
   "proof": ["Sin cuenta", "Cálculos en tu dispositivo", "Ocho idiomas"],
   "heroCaption": "Un vistazo real al interior de Moonplan",
   "heroAlt": "Pantalla Hoy de Moonplan con la Luna, su fase y datos lunares locales",
-  "rail": ["Fases lunares", "El cielo de tu ciudad", "Planificación diaria", "Una mirada de cerca"],
+  "rail": ["Fases lunares", "La Luna hoy", "Planificación diaria", "Una mirada de cerca"],
   "featureEyebrow": "Un poco más en cada día",
   "featureTitle": ["Una Luna.", "Tanto por descubrir."],
   "featureIntro": "Desde un vistazo rápido a la fase de esta noche hasta una mirada más pausada al mes que viene. Tú eliges hasta dónde profundizar.",
@@ -93,49 +93,110 @@
   "today": {
     "nav": "La Luna hoy",
     "crumb": "La Luna hoy",
-    "h1": "La Luna hoy: lo que sugiere la tradición",
-    "seoTitle": "La Luna hoy: lo que sugiere la tradición · Moonplan",
-    "description": "Qué tareas cotidianas considera favorables hoy la tradición popular y cuáles aconseja aplazar, para tu día local: fase lunar y calendario lunar tradicional.",
-    "lead": "La tradición popular relaciona las tareas de cada día, desde cortarse el pelo hasta sembrar, con la Luna. Esto es lo que sugiere para tu día local.",
+    "h1": "La Luna hoy",
+    "seoTitle": "Fase de la Luna hoy: iluminación, edad y distancia | Moonplan",
+    "description": "Fase lunar de hoy: iluminación, edad, distancia, libración, próximas cuatro fases principales, perigeo, apogeo y próximo eclipse lunar. Se actualiza cada día.",
+    "lead": "La Luna tal como se ve ahora mismo: fase, parte iluminada y distancia. Todos los números se calculan en su navegador con el reloj de su dispositivo.",
+    "noscript": "Active JavaScript para ver la Luna de hoy y sus números. Las secciones de abajo explican qué significa cada valor.",
+    "error": "No se pudieron calcular los datos lunares. Inténtelo de nuevo más tarde.",
     "tz": "Zona horaria: {tz}",
-    "lit": "{p} % iluminada",
-    "age": "Día {n} tras la luna nueva",
-    "phaseWaxing": "Luna creciente",
-    "phaseWaning": "Luna menguante",
-    "phaseNew": "Día de luna nueva",
-    "phaseFull": "Día de luna llena",
-    "vg": "especialmente favorable",
-    "good": "Tradicionalmente favorable",
-    "avoid": "Tradicionalmente se aplaza",
-    "empty": "Nada en particular para este día.",
-    "rWaxing": "luna creciente",
-    "rWaning": "luna menguante",
-    "rNew": "luna nueva",
-    "rFull": "luna llena",
-    "rCal": "según el calendario lunar tradicional",
-    "rVoid": "la Luna está «sin curso» gran parte del día",
-    "strip": "Los próximos 7 días",
-    "stripFmt": "favorables: {g} · aplazar: {a}",
-    "todayWord": "hoy",
-    "noscript": "Activa JavaScript para ver las valoraciones de tu día. Abajo está la lista de tareas con sus condiciones tradicionales.",
-    "error": "No se pudieron cargar los datos lunares. Inténtalo más tarde.",
-    "introTitle": "Qué muestra esta página",
-    "intro": "El planificador de Moonplan valora cada día para cada tarea según la fase de la Luna y un calendario lunar tradicional. Esta página muestra las mismas valoraciones para 40 tareas cotidianas conocidas, calculadas para tu zona horaria. Son tradiciones culturales, no consejos.",
-    "howTitle": "Cómo funciona",
-    "how": ["Cada tarea tiene algunas condiciones tradicionales: casi siempre la fase (Luna creciente o menguante), a veces un día del calendario lunar tradicional y a veces si la Luna está «sin curso». Así llaman los calendarios lunares populares a las pocas horas antes de que la Luna pase a la siguiente parte del cielo.", "Un día se valora como «favorable» cuando se cumplen las condiciones y como «muy favorable» cuando se cumplen a la vez condiciones de distinto tipo. Se valora como «aplazar» cuando hay una precaución: una fase desfavorable, el día de luna nueva o llena, un día desaconsejado del calendario lunar tradicional o, en las tareas que lo tienen en cuenta, la Luna sin curso durante seis horas o más. Un periodo sin curso más corto baja la valoración de esas tareas un escalón.", "El día es tu día local en la zona horaria de tu dispositivo, valorado al mediodía local; la luna nueva y la llena pertenecen al día en que cae el instante exacto. Las valoraciones se calculan en tu navegador con datos lunares precalculados; esta página no envía a ninguna parte tu zona horaria ni los resultados."],
-    "listTitle": "Las 40 tareas y sus condiciones tradicionales",
-    "cWaxing": "con la Luna creciente",
-    "cWaning": "con la Luna menguante",
-    "cNew": "el día de luna nueva",
-    "cFull": "el día de luna llena",
-    "cEarly": "en la primera mitad de la fase creciente (antes del cuarto creciente)",
-    "cNotWaxing": "no con la Luna creciente",
-    "cNotWaning": "no con la Luna menguante",
-    "cNotNewFull": "no el día de luna nueva ni de luna llena",
-    "cNotVoid": "no cuando la Luna está sin curso",
-    "cCal": "en ciertos días del calendario lunar tradicional",
-    "cCalExtra": "y en ciertos días del calendario lunar tradicional",
-    "disclaimer": "Son tradiciones populares, no recomendaciones científicas ni médicas.",
-    "ctaText": "La app Moonplan planifica con 90 días de antelación cualquiera de las 175 tareas y explica cada fecha."
+    "todayAt": "{name} hoy a las {time}",
+    "utc": "UTC",
+    "pNew": "Luna nueva",
+    "pFirst": "Cuarto creciente",
+    "pFull": "Luna llena",
+    "pLast": "Cuarto menguante",
+    "pWaxingCrescent": "Luna creciente",
+    "pWaxing": "Luna gibosa creciente",
+    "pWaning": "Luna gibosa menguante",
+    "pWaningCrescent": "Luna menguante",
+    "lLit": "Iluminación",
+    "lAge": "Edad de la Luna",
+    "lDist": "Distancia a la Luna",
+    "lDiam": "Diámetro angular",
+    "lLibLon": "Libración en longitud",
+    "lLibLat": "Libración en latitud",
+    "lPhaseAngle": "Ángulo de fase",
+    "uDays": "{n} días",
+    "uKm": "{n} km",
+    "qTitle": "Próximas cuatro fases principales",
+    "apTitle": "Perigeo y apogeo",
+    "ecTitle": "Próximo eclipse lunar",
+    "perigee": "Perigeo",
+    "apogee": "Apogeo",
+    "eTotal": "Total",
+    "ePartial": "Parcial",
+    "ePenumbral": "Penumbral",
+    "imgAlt": "La Luna en su fase actual",
+    "imgCredit": "Imagen construida con mosaicos de LRO (NASA/GSFC/Arizona State University): la fase del momento actual, libración media, girada según la orientación en el cielo.",
+    "stub": "No se pudo cargar la imagen de la Luna. Los datos de abajo no dependen de ella.",
+    "sections": [
+      {
+        "title": "Qué es la iluminación",
+        "text": "La iluminación es la parte del disco lunar visible que ilumina el Sol: del 0 % en luna nueva al 100 % en luna llena. Depende del ángulo de fase, el ángulo Sol–Luna–Tierra: cuanto menor es, más disco está iluminado. La iluminación no crece de forma uniforme de un día a otro: cambia más rápido cerca de los cuartos y más despacio cerca de la luna nueva y la llena."
+      },
+      {
+        "title": "La edad de la Luna",
+        "text": "La edad es el tiempo transcurrido desde la última luna nueva, en días. El intervalo entre dos lunas nuevas, el mes sinódico, dura de media unos 29,5 días, pero cada uno es algo más corto o más largo porque la velocidad de la Luna en su órbita varía."
+      },
+      {
+        "title": "Distancia y diámetro angular",
+        "text": "La distancia se mide desde el centro de la Tierra hasta el centro de la Luna. Como la órbita es una elipse, varía aproximadamente entre 356 000 y 407 000 km. El diámetro angular es el tamaño aparente del disco en el cielo, en minutos de arco (′): unos 29′ en el punto más lejano y unos 34′ en el más cercano."
+      },
+      {
+        "title": "Libración",
+        "text": "La Luna nos muestra siempre casi la misma cara, pero parece balancearse un poco. La libración en longitud desplaza la vista hacia el este o el oeste, y la libración en latitud hacia el norte o el sur, hasta unos pocos grados. Gracias a ella, con el tiempo se ve algo más de la mitad de la superficie lunar. El signo indica el sentido del desplazamiento."
+      },
+      {
+        "title": "Perigeo y apogeo",
+        "text": "El perigeo es el punto de la órbita lunar más cercano a la Tierra y el apogeo el más lejano. Ocurren cerca de una vez al mes, con unas dos semanas de diferencia. Una luna llena o nueva cerca del perigeo es lo que popularmente se llama superluna."
+      },
+      {
+        "title": "Eclipses lunares",
+        "text": "Un eclipse lunar ocurre cuando la Luna pasa por la sombra de la Tierra. En uno total todo el disco entra en el cono de sombra oscuro, en uno parcial solo una parte, y en uno penumbral la Luna apenas se atenúa en la sombra exterior. Un eclipse se ve desde cualquier lugar donde la Luna esté sobre el horizonte en ese momento."
+      }
+    ],
+    "howTitle": "Cómo se calculan los números",
+    "how": [
+      "Los valores provienen de la biblioteca Astronomy Engine (licencia MIT), que se ejecuta en su navegador. Las posiciones del Sol y de la Luna se calculan para el instante exacto del reloj de su dispositivo, y las horas se muestran en la zona horaria del dispositivo, con UTC en letra pequeña.",
+      "La página no pide su ubicación y no envía nada a ningún sitio. La salida y la puesta de la Luna no se muestran aquí porque dependen del lugar; la app Moonplan las muestra para la ciudad que elija.",
+      "La imagen de la Luna es uno de 72 fotogramas generados de antemano, uno por cada 5° de elongación Sol–Luna, a partir de los mosaicos LRO de la NASA. Se elige el fotograma más cercano a la fase actual y se gira según la posición del borde iluminado en el cielo."
+    ],
+    "srcTitle": "Fuentes",
+    "srcText": "Astronomy Engine, de Don Cross (licencia MIT); superficie lunar: NASA LRO (LROC y LOLA), NASA/GSFC/Arizona State University."
+  },
+  "banners": {
+    "apollo": {
+      "title": "Visite los lugares de alunizaje del Apolo",
+      "text": "El atlas lunar de Moonplan muestra los lugares de alunizaje de las misiones Apolo junto con los cráteres y mares de la Luna. Moonplan es un calendario lunar para iPhone."
+    },
+    "luna": {
+      "title": "Cráteres y mares de cerca",
+      "text": "Explore los cráteres y mares de la Luna sobre una superficie en relieve en el atlas lunar de Moonplan."
+    },
+    "china": {
+      "title": "Cráteres y mares de cerca",
+      "text": "Explore los cráteres y mares de la Luna sobre una superficie en relieve en el atlas lunar de Moonplan."
+    },
+    "new": {
+      "title": "El atlas y la fase de la Luna, cada día",
+      "text": "El atlas lunar muestra cráteres, mares y los lugares de alunizaje del Apolo, y el calendario muestra la fase de la Luna de cada día."
+    },
+    "moon": {
+      "title": "El calendario lunar en su iPhone",
+      "text": "Un mes de fases con iluminación, salida y puesta de la Luna para la ciudad que elija, y widgets de fase."
+    },
+    "today": {
+      "title": "Los días favorables y desfavorables están en la app Moonplan",
+      "text": "El planificador abarca 175 actividades hasta 90 días por adelantado y da el motivo de cada fecha. Según la tradición, ciertos días se consideran adecuados para ciertas actividades: una tradición cultural, no un efecto científico."
+    },
+    "home": {
+      "title": "Un planificador que explica cada fecha",
+      "text": "175 actividades, 90 días por adelantado, con el motivo de cada fecha. Según la tradición, la fase de la Luna importa para ciertas actividades: una tradición cultural, no un efecto científico."
+    },
+    "general": {
+      "title": "Moonplan: un calendario lunar para iPhone",
+      "text": "Fase de la Luna, iluminación, salida y puesta de la Luna para su ciudad, un planificador y un atlas lunar."
+    }
   }
 }

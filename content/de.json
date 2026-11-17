@@ -11,7 +11,7 @@
   "cta":"Moonplan entdecken", "download":"Im App Store laden", "status":"Bald im App Store", "compatibility":"Für iPhone · Ab iOS 17",
   "proof":["Ohne Benutzerkonto","Berechnung auf deinem Gerät","Acht Sprachen"],
   "heroCaption":"Ein echter Einblick in Moonplan", "heroAlt":"Die Heuteansicht von Moonplan mit Mondphase und lokalen Monddaten",
-  "rail":["Mondphasen","Der Himmel über deiner Stadt","Bewusst planen","Genauer hinsehen"],
+  "rail": ["Mondphasen", "Mond heute", "Bewusst planen", "Genauer hinsehen"],
   "featureEyebrow":"Mehr entdecken, jeden Tag", "featureTitle":["Ein Mond.","So viel zu entdecken."],
   "featureIntro":"Ein kurzer Blick auf die heutige Phase oder etwas Zeit für den kommenden Monat. Du entscheidest, wie tief du eintauchst.",
   "features":[
@@ -91,49 +91,110 @@
   "today": {
     "nav": "Mond heute",
     "crumb": "Mond heute",
-    "h1": "Der Mond heute: was die Tradition empfiehlt",
-    "seoTitle": "Der Mond heute: was die Tradition empfiehlt · Moonplan",
-    "description": "Welche Alltagstätigkeiten die Volkstradition heute für günstig hält und welche sie verschieben würde, für Ihren lokalen Tag: Mondphase und traditioneller Mondkalender.",
-    "lead": "Die Volkstradition verbindet Alltägliches, vom Haareschneiden bis zur Aussaat, mit dem Mond. Das empfiehlt sie für Ihren lokalen Tag.",
+    "h1": "Der Mond heute",
+    "seoTitle": "Mondphase heute: Beleuchtung, Alter und Entfernung | Moonplan",
+    "description": "Mondphase heute: Beleuchtung, Alter, Entfernung, Libration, nächste vier Hauptphasen, Perigäum, Apogäum und nächste Mondfinsternis. Täglich aktuell.",
+    "lead": "Der Mond, wie er jetzt gerade aussieht: Phase, beleuchteter Anteil, Entfernung. Alle Zahlen werden in Ihrem Browser anhand der Uhr Ihres Geräts berechnet.",
+    "noscript": "Aktivieren Sie JavaScript, um den heutigen Mond und seine Zahlen zu sehen. Die Abschnitte unten erklären, was jeder Wert bedeutet.",
+    "error": "Die Monddaten konnten nicht berechnet werden. Bitte später noch einmal versuchen.",
     "tz": "Zeitzone: {tz}",
-    "lit": "{p} % beleuchtet",
-    "age": "{n}. Tag nach Neumond",
-    "phaseWaxing": "Zunehmender Mond",
-    "phaseWaning": "Abnehmender Mond",
-    "phaseNew": "Neumondtag",
-    "phaseFull": "Vollmondtag",
-    "vg": "besonders günstig",
-    "good": "Traditionell günstig",
-    "avoid": "Traditionell besser verschieben",
-    "empty": "Für diesen Tag ist nichts Besonderes vermerkt.",
-    "rWaxing": "zunehmender Mond",
-    "rWaning": "abnehmender Mond",
-    "rNew": "Neumond",
-    "rFull": "Vollmond",
-    "rCal": "laut traditionellem Mondkalender",
-    "rVoid": "der Mond ist über weite Teile des Tages ohne Kurs",
-    "strip": "Die nächsten 7 Tage",
-    "stripFmt": "günstig: {g} · verschieben: {a}",
-    "todayWord": "heute",
-    "noscript": "Aktivieren Sie JavaScript, um die Bewertungen für Ihren Tag zu sehen. Die Liste der Tätigkeiten und ihrer traditionellen Bedingungen steht unten.",
-    "error": "Die Monddaten konnten nicht geladen werden. Bitte später erneut versuchen.",
-    "introTitle": "Was diese Seite zeigt",
-    "intro": "Der Moonplan-Planer bewertet jeden Tag für jede Tätigkeit nach der Mondphase und einem traditionellen Mondkalender. Diese Seite zeigt dieselben Bewertungen für 40 bekannte Alltagstätigkeiten, berechnet für Ihre Zeitzone. Es sind kulturelle Traditionen, keine Ratschläge.",
-    "howTitle": "So funktioniert es",
-    "how": ["Jede Tätigkeit hat einige traditionelle Bedingungen: meist die Phase (zunehmender oder abnehmender Mond), manchmal einen Tag des traditionellen Mondkalenders und manchmal, ob der Mond „ohne Kurs“ ist. So nennen volkstümliche Mondkalender die wenigen Stunden, bevor der Mond in den nächsten Himmelsabschnitt weiterzieht.", "Ein Tag gilt als „günstig“, wenn die Bedingungen erfüllt sind, und als „sehr günstig“, wenn Bedingungen verschiedener Art zugleich erfüllt sind. „Verschieben“ gilt, wenn eine Warnung zutrifft: eine ungünstige Phase, der Neu- oder Vollmondtag, ein gemiedener Tag des traditionellen Mondkalenders oder, bei Tätigkeiten, die das berücksichtigen, ein Mond ohne Kurs von sechs Stunden und mehr. Eine kürzere Phase ohne Kurs senkt die Bewertung solcher Tätigkeiten um eine Stufe.", "Der Tag ist Ihr lokaler Tag in der Zeitzone Ihres Geräts und wird zur lokalen Mittagszeit beurteilt; Neu- und Vollmond gehören zu dem Tag, in den der genaue Zeitpunkt fällt. Die Bewertungen werden in Ihrem Browser aus vorab berechneten Monddaten ermittelt; diese Seite sendet weder Ihre Zeitzone noch die Ergebnisse irgendwohin."],
-    "listTitle": "Alle 40 Tätigkeiten und ihre traditionellen Bedingungen",
-    "cWaxing": "bei zunehmendem Mond",
-    "cWaning": "bei abnehmendem Mond",
-    "cNew": "am Neumondtag",
-    "cFull": "am Vollmondtag",
-    "cEarly": "in der ersten Hälfte des Zunehmens (vor dem ersten Viertel)",
-    "cNotWaxing": "nicht bei zunehmendem Mond",
-    "cNotWaning": "nicht bei abnehmendem Mond",
-    "cNotNewFull": "nicht an Neu- und Vollmondtagen",
-    "cNotVoid": "nicht, wenn der Mond ohne Kurs ist",
-    "cCal": "an bestimmten Tagen des traditionellen Mondkalenders",
-    "cCalExtra": "und an bestimmten Tagen des traditionellen Mondkalenders",
-    "disclaimer": "Das sind Volkstraditionen, keine wissenschaftlichen oder medizinischen Empfehlungen.",
-    "ctaText": "Die Moonplan-App plant 90 Tage im Voraus für jede von 175 Tätigkeiten und erklärt jedes Datum."
+    "todayAt": "{name} heute um {time}",
+    "utc": "UTC",
+    "pNew": "Neumond",
+    "pFirst": "Erstes Viertel",
+    "pFull": "Vollmond",
+    "pLast": "Letztes Viertel",
+    "pWaxingCrescent": "Zunehmende Sichel",
+    "pWaxing": "Zunehmender Mond",
+    "pWaning": "Abnehmender Mond",
+    "pWaningCrescent": "Abnehmende Sichel",
+    "lLit": "Beleuchtung",
+    "lAge": "Alter des Mondes",
+    "lDist": "Entfernung zum Mond",
+    "lDiam": "Scheinbarer Durchmesser",
+    "lLibLon": "Libration in Länge",
+    "lLibLat": "Libration in Breite",
+    "lPhaseAngle": "Phasenwinkel",
+    "uDays": "{n} Tage",
+    "uKm": "{n} km",
+    "qTitle": "Nächste vier Hauptphasen",
+    "apTitle": "Perigäum und Apogäum",
+    "ecTitle": "Nächste Mondfinsternis",
+    "perigee": "Perigäum",
+    "apogee": "Apogäum",
+    "eTotal": "Total",
+    "ePartial": "Partiell",
+    "ePenumbral": "Halbschatten",
+    "imgAlt": "Der Mond in seiner aktuellen Phase",
+    "imgCredit": "Ein Bild aus LRO-Mosaiken (NASA/GSFC/Arizona State University): Phase des aktuellen Moments, mittlere Libration, passend zur Orientierung am Himmel gedreht.",
+    "stub": "Das Mondbild konnte nicht geladen werden. Die Daten unten hängen nicht davon ab.",
+    "sections": [
+      {
+        "title": "Was die Beleuchtung bedeutet",
+        "text": "Die Beleuchtung ist der Anteil der sichtbaren Mondscheibe, den die Sonne beleuchtet: von 0 % bei Neumond bis 100 % bei Vollmond. Sie folgt dem Phasenwinkel, dem Winkel Sonne–Mond–Erde: Je kleiner er ist, desto mehr der Scheibe ist beleuchtet. Die Beleuchtung wächst nicht gleichmäßig von Tag zu Tag: Am schnellsten ändert sie sich um die Viertel, am langsamsten um Neu- und Vollmond."
+      },
+      {
+        "title": "Das Alter des Mondes",
+        "text": "Das Alter ist die Zeit seit dem letzten Neumond in Tagen. Der Abstand zwischen zwei Neumonden, der synodische Monat, beträgt im Mittel etwa 29,5 Tage, doch jeder ist etwas kürzer oder länger, weil die Geschwindigkeit des Mondes auf seiner Bahn schwankt."
+      },
+      {
+        "title": "Entfernung und scheinbarer Durchmesser",
+        "text": "Die Entfernung wird vom Erdmittelpunkt zum Mondmittelpunkt gemessen. Weil die Bahn eine Ellipse ist, liegt sie etwa zwischen 356.000 und 407.000 km. Der scheinbare Durchmesser gibt an, wie groß die Scheibe am Himmel erscheint, in Bogenminuten (′): etwa 29′ im weitesten und etwa 34′ im nächsten Punkt."
+      },
+      {
+        "title": "Libration",
+        "text": "Der Mond zeigt uns immer fast dieselbe Seite, scheint aber leicht zu wippen. Die Libration in Länge verschiebt den Anblick nach Osten oder Westen, die Libration in Breite nach Norden oder Süden, um bis zu einige Grad. Dadurch sehen wir im Lauf der Zeit etwas mehr als die Hälfte der Mondoberfläche. Das Vorzeichen zeigt die Richtung der Verschiebung."
+      },
+      {
+        "title": "Perigäum und Apogäum",
+        "text": "Das Perigäum ist der erdnächste Punkt der Mondbahn, das Apogäum der erdfernste. Sie treten etwa einmal im Monat auf, im Abstand von rund zwei Wochen. Ein Voll- oder Neumond nahe dem Perigäum wird umgangssprachlich Supermond genannt."
+      },
+      {
+        "title": "Mondfinsternisse",
+        "text": "Eine Mondfinsternis entsteht, wenn der Mond durch den Erdschatten zieht. Bei einer totalen Finsternis tritt die ganze Scheibe in den dunklen Kernschatten ein, bei einer partiellen nur ein Teil, bei einer Halbschattenfinsternis wird der Mond im äußeren Schatten nur leicht schwächer. Eine Finsternis ist überall zu sehen, wo der Mond in diesem Moment über dem Horizont steht."
+      }
+    ],
+    "howTitle": "Wie die Zahlen berechnet werden",
+    "how": [
+      "Die Werte stammen aus der Bibliothek Astronomy Engine (MIT-Lizenz), die in Ihrem Browser läuft. Die Positionen von Sonne und Mond werden für den genauen Zeitpunkt der Uhr Ihres Geräts berechnet; die Zeiten erscheinen in der Zeitzone Ihres Geräts, UTC klein dazu.",
+      "Die Seite fragt nicht nach Ihrem Standort und sendet nichts irgendwohin. Mondaufgang und Monduntergang werden hier nicht gezeigt, weil sie vom Ort abhängen; die Moonplan-App zeigt sie für die von Ihnen gewählte Stadt.",
+      "Das Mondbild ist eines von 72 vorab berechneten Bildern, eines je 5° Elongation Sonne–Mond, aus den LRO-Mosaiken der NASA. Gewählt wird das Bild, das der aktuellen Phase am nächsten liegt; es wird passend zur Lage des beleuchteten Randes am Himmel gedreht."
+    ],
+    "srcTitle": "Quellen",
+    "srcText": "Astronomy Engine von Don Cross (MIT-Lizenz); Mondoberfläche: NASA LRO (LROC und LOLA), NASA/GSFC/Arizona State University."
+  },
+  "banners": {
+    "apollo": {
+      "title": "Die Landeplätze der Apollo-Missionen besuchen",
+      "text": "Der Mondatlas von Moonplan zeigt die Landeplätze der Apollo-Missionen zusammen mit den Kratern und Meeren des Mondes. Moonplan ist ein Mondkalender für das iPhone."
+    },
+    "luna": {
+      "title": "Krater und Meere ganz nah",
+      "text": "Entdecken Sie Krater und Meere des Mondes auf einer reliefartigen Oberfläche im Mondatlas von Moonplan."
+    },
+    "china": {
+      "title": "Krater und Meere ganz nah",
+      "text": "Entdecken Sie Krater und Meere des Mondes auf einer reliefartigen Oberfläche im Mondatlas von Moonplan."
+    },
+    "new": {
+      "title": "Der Atlas und die Mondphase, jeden Tag",
+      "text": "Der Mondatlas zeigt Krater, Meere und die Apollo-Landeplätze, der Kalender die Mondphase für jeden Tag."
+    },
+    "moon": {
+      "title": "Der Mondkalender auf Ihrem iPhone",
+      "text": "Ein Monat voller Phasen mit Beleuchtung, Mondaufgang und Monduntergang für die gewählte Stadt sowie Phasen-Widgets."
+    },
+    "today": {
+      "title": "Günstige und ungünstige Tage gibt es in der Moonplan-App",
+      "text": "Der Planer umfasst 175 Aktivitäten bis zu 90 Tage im Voraus und nennt den Grund für jedes Datum. Traditionell gelten bestimmte Tage für bestimmte Aktivitäten als geeignet: eine kulturelle Tradition, kein wissenschaftlicher Effekt."
+    },
+    "home": {
+      "title": "Ein Planer, der jedes Datum erklärt",
+      "text": "175 Aktivitäten, 90 Tage im Voraus, mit dem Grund für jedes Datum. Traditionell gilt die Mondphase für bestimmte Aktivitäten als wichtig: eine kulturelle Tradition, kein wissenschaftlicher Effekt."
+    },
+    "general": {
+      "title": "Moonplan: ein Mondkalender für das iPhone",
+      "text": "Mondphase, Beleuchtung, Mondaufgang und Monduntergang für Ihre Stadt, ein Planer und ein Mondatlas."
+    }
   }
 }

@@ -12,7 +12,7 @@
   "proof": ["No account needed", "Calculations on your device", "Eight languages"],
   "heroCaption": "A real look inside Moonplan",
   "heroAlt": "Moonplan Today screen with the Moon, its phase and local lunar information",
-  "rail": ["Lunar phases", "Your city’s sky", "Everyday planning", "A closer look"],
+  "rail": ["Lunar phases", "Moon today", "Everyday planning", "A closer look"],
   "featureEyebrow": "A little more in every day",
   "featureTitle": ["One Moon.", "So much to discover."],
   "featureIntro": "From a quick glance at tonight’s phase to a slower look at the month ahead. Choose how deep you want to go.",
@@ -93,49 +93,110 @@
   "today": {
     "nav": "Moon today",
     "crumb": "Moon today",
-    "h1": "The Moon today: what tradition suggests",
-    "seoTitle": "The Moon today: what tradition suggests · Moonplan",
-    "description": "Which everyday activities folk tradition considers good today and which to put off, for your local day: Moon phase and the traditional lunar calendar.",
-    "lead": "Folk tradition links everyday tasks, from a haircut to sowing, with the Moon. Here is what it suggests for your local day.",
+    "h1": "The Moon today",
+    "seoTitle": "Moon phase today: illumination, age and distance | Moonplan",
+    "description": "Today’s Moon phase, illumination, age, distance, libration, the next four main phases, perigee, apogee and the next lunar eclipse. Updates itself every day.",
+    "lead": "The Moon as it looks right now: phase, how much of it is lit, how far away it is. All numbers are calculated in your browser from your device’s clock.",
+    "noscript": "Turn on JavaScript to see today’s Moon and its numbers. The sections below explain what each value means.",
+    "error": "Could not calculate the lunar data. Please try again later.",
     "tz": "Time zone: {tz}",
-    "lit": "{p}% lit",
-    "age": "Day {n} after the new Moon",
-    "phaseWaxing": "Waxing Moon",
-    "phaseWaning": "Waning Moon",
-    "phaseNew": "New Moon day",
-    "phaseFull": "Full Moon day",
-    "vg": "especially suitable",
-    "good": "Traditionally suitable",
-    "avoid": "Traditionally put off",
-    "empty": "Nothing in particular for this day.",
-    "rWaxing": "waxing Moon",
-    "rWaning": "waning Moon",
-    "rNew": "new Moon",
-    "rFull": "full Moon",
-    "rCal": "according to the traditional lunar calendar",
-    "rVoid": "the Moon is void of course for much of the day",
-    "strip": "The next 7 days",
-    "stripFmt": "suitable: {g} · put off: {a}",
-    "todayWord": "today",
-    "noscript": "Turn on JavaScript to see the ratings for your day. The list of activities and their traditional conditions is below.",
-    "error": "Could not load the Moon data. Please try again later.",
-    "introTitle": "What this page shows",
-    "intro": "The Moonplan planner rates every day for each activity by the Moon's phase and a traditional lunar calendar. This page shows the same ratings for 40 well-known everyday activities, calculated for your time zone. These are cultural traditions, not advice.",
-    "howTitle": "How it works",
-    "how": ["Each activity has a few traditional conditions: most often the phase (waxing or waning Moon), sometimes a day of the traditional lunar calendar, and sometimes whether the Moon is “void of course”. Folk lunar calendars use this name for the few hours before the Moon moves on to the next part of the sky.", "A day is rated “suitable” when the conditions are met and “very suitable” when conditions of different kinds are met together. It is rated “put off” when a caution applies: an unfavorable phase, the day of the new or full Moon, an avoided day of the traditional lunar calendar, or, for activities that avoid it, the Moon being void of course for six hours or more. A shorter void period lowers the rating of such activities by one step.", "The day is your local day in the time zone of your device, judged at local noon; the new and full Moon belong to the day in which the exact moment falls. The ratings are computed in your browser from precomputed Moon data; this page does not send your time zone or the results anywhere."],
-    "listTitle": "All 40 activities and their traditional conditions",
-    "cWaxing": "when the Moon is waxing",
-    "cWaning": "when the Moon is waning",
-    "cNew": "on the new Moon day",
-    "cFull": "on the full Moon day",
-    "cEarly": "in the first half of the waxing (before the first quarter)",
-    "cNotWaxing": "not while the Moon is waxing",
-    "cNotWaning": "not while the Moon is waning",
-    "cNotNewFull": "not on the new or full Moon day",
-    "cNotVoid": "not while the Moon is void of course",
-    "cCal": "on certain days of the traditional lunar calendar",
-    "cCalExtra": "and on certain days of the traditional lunar calendar",
-    "disclaimer": "These are folk traditions, not scientific or medical advice.",
-    "ctaText": "The Moonplan app plans 90 days ahead for any of 175 activities and explains every date."
+    "todayAt": "{name} today at {time}",
+    "utc": "UTC",
+    "pNew": "New Moon",
+    "pFirst": "First quarter",
+    "pFull": "Full Moon",
+    "pLast": "Last quarter",
+    "pWaxingCrescent": "Waxing crescent",
+    "pWaxing": "Waxing gibbous",
+    "pWaning": "Waning gibbous",
+    "pWaningCrescent": "Waning crescent",
+    "lLit": "Illumination",
+    "lAge": "Age of the Moon",
+    "lDist": "Distance to the Moon",
+    "lDiam": "Angular diameter",
+    "lLibLon": "Libration in longitude",
+    "lLibLat": "Libration in latitude",
+    "lPhaseAngle": "Phase angle",
+    "uDays": "{n} days",
+    "uKm": "{n} km",
+    "qTitle": "Next four main phases",
+    "apTitle": "Perigee and apogee",
+    "ecTitle": "Next lunar eclipse",
+    "perigee": "Perigee",
+    "apogee": "Apogee",
+    "eTotal": "Total",
+    "ePartial": "Partial",
+    "ePenumbral": "Penumbral",
+    "imgAlt": "The Moon in its current phase",
+    "imgCredit": "An image built from LRO mosaics (NASA/GSFC/Arizona State University): the phase of the current moment, mean libration, rotated to the sky orientation.",
+    "stub": "The Moon image could not be loaded. The data below does not depend on it.",
+    "sections": [
+      {
+        "title": "What illumination means",
+        "text": "Illumination is the share of the visible lunar disc that the Sun lights, from 0% at new Moon to 100% at full Moon. It follows the phase angle, the angle Sun–Moon–Earth: the smaller it is, the more of the disc is lit. Illumination does not grow evenly from day to day: it changes fastest near the quarters and slowest near new and full Moon."
+      },
+      {
+        "title": "The age of the Moon",
+        "text": "The age is the time since the last new Moon, in days. The interval between two new Moons, the synodic month, averages about 29.5 days, but each one is a little longer or shorter because the Moon’s speed along its orbit varies."
+      },
+      {
+        "title": "Distance and angular diameter",
+        "text": "The distance is measured from the centre of the Earth to the centre of the Moon. Because the orbit is an ellipse, it varies between roughly 356,000 and 407,000 km. The angular diameter is how large the disc looks in the sky, in arcminutes (′): about 29′ when the Moon is farthest and about 34′ when it is nearest."
+      },
+      {
+        "title": "Libration",
+        "text": "The Moon always shows us nearly the same face, but it seems to rock slightly. Libration in longitude shifts the view east or west, libration in latitude north or south, by up to a few degrees. Thanks to it we can see a little more than half of the lunar surface over time. The sign shows the direction of the shift."
+      },
+      {
+        "title": "Perigee and apogee",
+        "text": "Perigee is the point of the Moon’s orbit closest to the Earth, apogee the farthest. They come about once a month, roughly two weeks apart. A full or new Moon near perigee is what is popularly called a supermoon."
+      },
+      {
+        "title": "Lunar eclipses",
+        "text": "A lunar eclipse happens when the Moon passes through the Earth’s shadow. In a total eclipse the whole disc enters the dark core of the shadow, in a partial one only a part does, and in a penumbral one the Moon only dims slightly in the outer shadow. An eclipse is visible wherever the Moon is above the horizon at that moment."
+      }
+    ],
+    "howTitle": "How the numbers are calculated",
+    "how": [
+      "The values come from the Astronomy Engine library (MIT license), which runs in your browser. Positions of the Sun and the Moon are calculated for the exact moment on your device’s clock, and times are shown in your device’s time zone with UTC in small print.",
+      "The page does not ask for your location and sends nothing anywhere. Moonrise and moonset are not shown here, because they depend on the place; the Moonplan app shows them for the city you choose.",
+      "The picture of the Moon is one of 72 pre-rendered frames, one per 5° of the Sun–Moon elongation, built from NASA’s LRO mosaics. The frame closest to the current phase is chosen and rotated to match the orientation of the lit limb in the sky."
+    ],
+    "srcTitle": "Sources",
+    "srcText": "Astronomy Engine by Don Cross (MIT license); lunar surface: NASA LRO (LROC and LOLA), NASA/GSFC/Arizona State University."
+  },
+  "banners": {
+    "apollo": {
+      "title": "Visit the Apollo landing sites",
+      "text": "Moonplan’s lunar atlas shows the Apollo landing sites together with the Moon’s craters and seas. Moonplan is a lunar calendar for iPhone."
+    },
+    "luna": {
+      "title": "Craters and seas, up close",
+      "text": "Explore the craters and seas of the Moon on a relief surface in Moonplan’s lunar atlas."
+    },
+    "china": {
+      "title": "Craters and seas, up close",
+      "text": "Explore the craters and seas of the Moon on a relief surface in Moonplan’s lunar atlas."
+    },
+    "new": {
+      "title": "The atlas and the Moon’s phase, every day",
+      "text": "The lunar atlas shows craters, seas and the Apollo landing sites, and the calendar shows the phase of the Moon for each day."
+    },
+    "moon": {
+      "title": "The lunar calendar on your iPhone",
+      "text": "A month of phases with illumination, moonrise and moonset for the city you choose, and phase widgets."
+    },
+    "today": {
+      "title": "Favourable and unfavourable days are in the Moonplan app",
+      "text": "The planner covers 175 activities up to 90 days ahead and gives the reason for each date. By tradition, certain days are considered suitable for certain activities: a cultural tradition, not a scientific effect."
+    },
+    "home": {
+      "title": "A planner that explains every date",
+      "text": "175 activities, 90 days ahead, with the reason for each date. By tradition, the phase of the Moon is considered to matter for certain activities: a cultural tradition, not a scientific effect."
+    },
+    "general": {
+      "title": "Moonplan: a lunar calendar for iPhone",
+      "text": "Moon phase, illumination, moonrise and moonset for your city, a planner and a lunar atlas."
+    }
   }
 }

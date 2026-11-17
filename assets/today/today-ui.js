@@ -1,95 +1,77 @@
-// "Moon today" page: fills the live block (day facts, two lists, 7-day strip) in the visitor's time zone.
-import { dayFacts, evaluate, localDate, addDays, lastNewMoon } from './today.js';
-import { moonPhase } from '../space/moonphase.js';
+// "Moon today": fills the live block in the visitor's time zone. Numbers come from assets/today/moon-data.js (Astronomy Engine, global `Astronomy`).
+// The Moon picture is a pre-rendered frame (assets/today/phases/NNN.webp, 5 degrees of elongation per frame) rotated to the sky orientation.
+import { moonState, phaseToday, phaseKey, upcoming, frameIndex, frameRotation } from './moon-data.js';
 
-const root = document.querySelector('[data-today]');
+const root = document.querySelector('[data-today]'), frameBox = document.querySelector('[data-frame]');
 const t = JSON.parse(document.getElementById('today-i18n').textContent);
 const tz = Intl.DateTimeFormat().resolvedOptions().timeZone || 'UTC';
-const el = (tag, cls, text) => { const n = document.createElement(tag); if (cls) n.className = cls; if (text !== undefined) n.textContent = text; return n; };
 const fill = (s, v) => s.replace(/\{(\w+)\}/g, (_, k) => v[k]);
+const el = (tag, cls, text) => { const n = document.createElement(tag); if (cls) n.className = cls; if (text !== undefined) n.textContent = text; return n; };
+const num = (digits, extra) => new Intl.NumberFormat(t.locale, { minimumFractionDigits: digits, maximumFractionDigits: digits, ...extra });
+const nInt = num(0), n1 = num(1), nSigned = num(1, { signDisplay: 'always' });
+const fmtDay = new Intl.DateTimeFormat(t.locale, { timeZone: tz, weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' });
+const fmtTime = new Intl.DateTimeFormat(t.locale, { timeZone: tz, hour: '2-digit', minute: '2-digit' });
+const dtOpts = { day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' };
+const fmtLocal = new Intl.DateTimeFormat(t.locale, { timeZone: tz, ...dtOpts }), fmtUtc = new Intl.DateTimeFormat(t.locale, { timeZone: 'UTC', ...dtOpts });
+const fmtLocalY = new Intl.DateTimeFormat(t.locale, { timeZone: tz, year: 'numeric', ...dtOpts }), fmtUtcY = new Intl.DateTimeFormat(t.locale, { timeZone: 'UTC', year: 'numeric', ...dtOpts });
+const QUARTER = ['pNew', 'pFirst', 'pFull', 'pLast'];
+const ECLIPSE = { total: 'eTotal', partial: 'ePartial', penumbral: 'ePenumbral' };
 
-function reasonText(reasons) {
-  const out = [];
-  for (const r of reasons) {
-    const s = r.t === 'phase' ? t[{ waxing: 'rWaxing', waning: 'rWaning', new: 'rNew', full: 'rFull' }[r.v]]
-      : r.t === 'void' ? t.rVoid : r.t === 'none' ? '' : t.rCal;
-    if (s && !out.includes(s)) out.push(s);
-  }
-  return out.join(' · ');
+function when(date, withYear) {
+  const w = el('span', 'when', (withYear ? fmtLocalY : fmtLocal).format(date));
+  w.append(' ', el('small', 'utc', `${(withYear ? fmtUtcY : fmtUtc).format(date)} ${t.utc}`));
+  return w;
+}
+function list(title, rows) {
+  const s = el('section', 'today-next'); s.append(el('h2', '', title));
+  const ul = el('ul'); for (const [label, node] of rows) { const li = el('li'); li.append(el('span', 'name', label), node); ul.append(li); }
+  s.append(ul); return s;
 }
 
-async function main() {
-  const [ev, rules] = await Promise.all(['events.json', 'rules.json'].map((f) => fetch(new URL(f, import.meta.url)).then((r) => r.json())));
-  const today = localDate(tz, Date.now());
-  const days = Array.from({ length: 7 }, (_, i) => {
-    const date = addDays(today, i), facts = dayFacts(ev, tz, date);
-    const results = rules.activities.map((a) => ({ a, v: evaluate(a, facts) }));
-    return { date, facts, results, good: results.filter((r) => r.v.rating === 'good' || r.v.rating === 'veryGood').length, avoid: results.filter((r) => r.v.rating === 'avoid').length };
-  });
-  if (days[0].facts.dayStart / 1000 < ev.from || days[6].facts.dayStart / 1000 > ev.to) throw new Error('date outside the data range');
-  const fmtLong = new Intl.DateTimeFormat(t.locale, { timeZone: tz, weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' });
-  const fmtWeek = new Intl.DateTimeFormat(t.locale, { timeZone: tz, weekday: 'short' });
-  const fmtDay = new Intl.DateTimeFormat(t.locale, { timeZone: tz, day: 'numeric' });
-  const groupName = new Map(rules.groups.map((g) => [g.id, g.names[t.lang]]));
-  const order = rules.groups.map((g) => g.id);
-  let selected = 0;
-
-  function list(title, kind, results) {
-    const sec = el('section', 'today-list today-' + kind);
-    sec.append(el('h2', '', title));
-    if (!results.length) { sec.append(el('p', 'today-empty', t.empty)); return sec; }
-    for (const g of order) {
-      const rows = results.filter((r) => r.a.group === g).sort((x, y) => (y.v.rating === 'veryGood') - (x.v.rating === 'veryGood'));
-      if (!rows.length) continue;
-      sec.append(el('h3', '', groupName.get(g)));
-      const ul = el('ul');
-      for (const r of rows) {
-        const li = el('li');
-        const name = el('span', 'name', r.a.names[t.lang]);
-        if (r.v.rating === 'veryGood') name.append(el('em', 'vg', t.vg));
-        li.append(name, el('span', 'why', reasonText(r.v.reasons)));
-        ul.append(li);
-      }
-      sec.append(ul);
-    }
-    return sec;
+let shown = '';
+function showFrame(elong, limb) {
+  const idx = String(frameIndex(elong) * 5).padStart(3, '0'), rot = Math.round(frameRotation(elong, limb) * 10) / 10;
+  let img = frameBox.querySelector('img');
+  if (!img) {
+    img = document.createElement('img'); img.alt = t.imgAlt; img.width = 800; img.height = 800; img.decoding = 'async';
+    img.sizes = '(max-width: 600px) 90vw, 520px';
+    img.addEventListener('error', () => { frameBox.replaceChildren(el('p', 'today-stub', t.stub)); shown = ''; }, { once: true });
+    frameBox.replaceChildren(img);
   }
-
-  function render() {
-    const d = days[selected], f = d.facts, isToday = selected === 0;
-    const ref = isToday ? Date.now() : f.noon;
-    const age = Math.floor((ref / 1000 - lastNewMoon(ev, Math.floor(ref / 1000))) / 86400) + 1;
-    const phase = f.hasNew ? t.phaseNew : f.hasFull ? t.phaseFull : f.waxing ? t.phaseWaxing : t.phaseWaning;
-    root.replaceChildren();
-    const head = el('div', 'today-head');
-    head.append(el('p', 'today-date', fmtLong.format(new Date(f.noon))), el('p', 'today-tz', fill(t.tz, { tz: tz.replace(/_/g, ' ') })));
-    const facts = el('ul', 'today-facts');
-    for (const s of [phase, fill(t.lit, { p: Math.round(moonPhase(new Date(ref)).fraction * 100) }), fill(t.age, { n: age })]) facts.append(el('li', '', s));
-    head.append(facts);
-    const lists = el('div', 'today-lists');
-    lists.append(list(t.good, 'good', d.results.filter((r) => r.v.rating === 'good' || r.v.rating === 'veryGood')),
-      list(t.avoid, 'avoid', d.results.filter((r) => r.v.rating === 'avoid')));
-    const strip = el('section', 'today-strip');
-    strip.append(el('h2', '', t.strip));
-    const row = el('ul');
-    days.forEach((x, i) => {
-      const li = el('li'), b = el('button', '', '');
-      b.type = 'button'; b.setAttribute('aria-pressed', String(i === selected));
-      const when = new Date(x.facts.noon);
-      b.setAttribute('aria-label', `${i === 0 ? t.todayWord + ', ' : ''}${fmtLong.format(when)}: ${fill(t.stripFmt, { g: x.good, a: x.avoid })}`);
-      if (i === 0) b.classList.add('is-today');
-      const c = el('span', 'counts');
-      c.append(el('b', 'g', String(x.good)), el('b', 'a', String(x.avoid)));
-      b.append(el('span', 'wd', fmtWeek.format(when)), el('span', 'dt', fmtDay.format(when)), c);
-      b.addEventListener('click', () => { selected = i; render(); root.querySelector('.today-strip [aria-pressed=true]').focus(); });
-      li.append(b); row.append(li);
-    });
-    const legend = el('p', 'legend');
-    legend.append(el('span', 'g', t.good), el('span', 'a', t.avoid));
-    strip.append(row, legend);
-    root.append(head, lists, strip);
+  if (idx !== shown) {
+    shown = idx; img.srcset = `${t.phases}${idx}-800.webp 800w, ${t.phases}${idx}.webp 1600w`; img.src = `${t.phases}${idx}-800.webp`;
   }
-  render();
+  img.style.transform = `rotate(${rot}deg)`;
 }
 
-main().catch((err) => { console.error('today:', err); root.replaceChildren(el('p', 'today-note', t.error)); });
+function render() {
+  const A = window.Astronomy, now = new Date();
+  const dayStart = new Date(now.getFullYear(), now.getMonth(), now.getDate()), dayEnd = new Date(now.getFullYear(), now.getMonth(), now.getDate() + 1);
+  const s = moonState(A, now), ev = phaseToday(A, dayStart, dayEnd), up = upcoming(A, now);
+  showFrame(s.elongation, s.limbAngle);
+  const head = el('div', 'today-head');
+  head.append(el('p', 'today-date', fmtDay.format(now)), el('p', 'today-tz', fill(t.tz, { tz })));
+  const name = ev ? t[QUARTER[ev.quarter]] : t[{ new: 'pNew', waxingCrescent: 'pWaxingCrescent', waxing: 'pWaxing', waning: 'pWaning', waningCrescent: 'pWaningCrescent' }[phaseKey(s.elongation)]];
+  head.append(el('p', 'today-phase', name));
+  if (ev) head.append(el('p', 'today-event', fill(t.todayAt, { name: t[QUARTER[ev.quarter]], time: fmtTime.format(ev.date) })));
+  const rows = [
+    [t.lLit, `${nInt.format(s.illumination)}%`, 'lit'], [t.lAge, fill(t.uDays, { n: n1.format(s.ageDays) }), 'age'],
+    [t.lDist, fill(t.uKm, { n: nInt.format(s.distanceKm) }), 'dist'], [t.lDiam, `${n1.format(s.diameterArcmin)}′`, 'diam'],
+    [t.lLibLon, `${nSigned.format(s.libLon)}°`, 'liblon'], [t.lLibLat, `${nSigned.format(s.libLat)}°`, 'liblat'],
+    [t.lPhaseAngle, `${n1.format(s.phaseAngle)}°`, 'angle'],
+  ];
+  const dl = el('dl', 'today-facts');
+  for (const [k, v, id] of rows) { const d = el('div'); const dd = el('dd', '', v); dd.dataset.fact = id; d.append(el('dt', '', k), dd); dl.append(d); }
+  const quarters = list(t.qTitle, up.quarters.map((q) => [t[QUARTER[q.quarter]], when(q.date)]));
+  const aps = list(t.apTitle, up.apsides.map((a) => [`${t[a.kind]} · ${fill(t.uKm, { n: nInt.format(a.distanceKm) })}`, when(a.date)]));
+  const ecl = list(t.ecTitle, [[t[ECLIPSE[up.eclipse.kind]] || up.eclipse.kind, when(up.eclipse.date, true)]]);
+  root.replaceChildren(head, dl, quarters, aps, ecl);
+}
+
+function tick() {
+  try { if (!window.Astronomy) throw new Error('Astronomy Engine not loaded'); render(); }
+  catch (e) { console.warn(e); root.replaceChildren(el('p', 'today-note', t.error)); }
+}
+tick();
+(function schedule() { setTimeout(() => { tick(); schedule(); }, 60000 - (Date.now() % 60000) + 50); })();
+document.addEventListener('visibilitychange', () => { if (!document.hidden) tick(); });

@@ -2,6 +2,7 @@
 from html import escape as e
 from news import news_section
 import reading
+from banner import banner, stylesheet as banner_css
 
 LANGS = ('en', 'de', 'es', 'fr', 'it', 'pt-br', 'ru', 'ja')
 SECTIONS = ('moon', 'apollo', 'luna', 'china', 'new')  # article sections: /{lang}/{section}/; strings articleSection_{section} in content/*.json
@@ -93,7 +94,7 @@ def cta(c,cfg,href,lang='en'):
     return f'<a class="button" href="{e(href,quote=True)}">{e(c["cta"])}<span aria-hidden="true">↗</span></a>'
 
 def landing(lang,c,cfg):
-    result=head(lang,c,cfg,noindex=cfg['noindex'],space=True).replace('</head>',reading.stylesheet(cfg)+'</head>',1)+header(lang,c,cfg,extra=reading.nav_link(lang,cfg)).replace('<body>','<body class="has-space"><canvas id="space" aria-hidden="true"></canvas>',1)
+    result=head(lang,c,cfg,noindex=cfg['noindex'],space=True).replace('</head>',reading.stylesheet(cfg)+banner_css(cfg)+'</head>',1)+header(lang,c,cfg,extra=reading.nav_link(lang,cfg)).replace('<body>','<body class="has-space"><canvas id="space" aria-hidden="true"></canvas>',1)
     result+=f'''<main id="main"><section class="hero wrap"><div class="hero-copy"><p class="eyebrow"><span class="tiny-moon" aria-hidden="true"></span>{e(c['eyebrow'])}</p>
 <h1>{lines(c['hero'])}</h1><p class="intro">{e(c['intro'])}</p><p class="hero-body">{e(c['heroBody'])}</p><div class="hero-actions">{cta(c,cfg,'#discover',lang)}<p class="release">{e(c['status']) if not cfg['appStoreUrl'] else e(c['compatibility'])}</p></div>
 <ul class="proof">{''.join('<li>'+e(p)+'</li>' for p in c['proof'])}</ul></div>
@@ -115,21 +116,21 @@ def landing(lang,c,cfg):
 
 def legal_page(lang,c,legal,cfg,kind):
     page=kind+'.html'; label=c['legalNotice' if kind=='publisher' else kind]; data=legal[kind]
-    result=head(lang,c,cfg,page,title=f'{label} · Moonplan',description=data['intro'],noindex=cfg['noindex'])+header(lang,c,cfg,page)
+    result=head(lang,c,cfg,page,title=f'{label} · Moonplan',description=data['intro'],noindex=cfg['noindex']).replace('</head>',banner_css(cfg)+'</head>',1)+header(lang,c,cfg,page)
     result+=f'<main id="main" class="legal wrap"><a class="back-link" href="{cfg["base"]}/{lang}/">← {e(c["back"])}</a><p class="eyebrow">{e(c["legalEyebrow"])}</p><h1>{e(label)}</h1><p class="updated">{e(c["updated"])}</p><p class="legal-intro">{e(data["intro"])}</p><div class="legal-layout"><aside><nav aria-label="{e(c["contents"])}"><p class="eyebrow">{e(c["contents"])}</p>'
     for section in data['sections']:
         result+=f'<a href="#{section["id"]}">{e(section["title"])}</a>'
     result+='</nav></aside><article class="legal-body">'
     for section in data['sections']:
         result+=f'<section id="{section["id"]}"><h2>{e(section["title"])}</h2>'+''.join('<p>'+p+'</p>' for p in section['paragraphs'])+'</section>'
-    return result+'</article></div></main>'+footer(lang,c,cfg,page)
+    return result+'</article></div>'+banner(c,cfg,lang,'general')+'</main>'+footer(lang,c,cfg,page)
 
 def support(lang,c,cfg):
     page='support.html'
-    result=head(lang,c,cfg,page,title=f'{c["support"]} · Moonplan',description=c['supportIntro'],noindex=cfg['noindex'])+header(lang,c,cfg,page)
+    result=head(lang,c,cfg,page,title=f'{c["support"]} · Moonplan',description=c['supportIntro'],noindex=cfg['noindex']).replace('</head>',banner_css(cfg)+'</head>',1)+header(lang,c,cfg,page)
     result+=f'''<main id="main" class="support wrap"><p class="eyebrow">{e(c['support'])}</p><h1>{lines(c['supportTitle'])}</h1><p class="intro">{e(c['supportIntro'])}</p>
 <div class="contact-card"><a class="email-address" href="mailto:{cfg['email']}">{cfg['email']}</a><div class="contact-actions"><a class="button" href="mailto:{cfg['email']}?subject=Moonplan">{e(c['emailAction'])}<span aria-hidden="true">↗</span></a><button class="text-button copy-email" data-email="{cfg['email']}" data-success="{e(c['copied'])}" data-error="{e(c['copyFailed'])}">{e(c['copyEmail'])}</button></div><p class="copy-status" role="status"></p></div>
-<section class="support-info"><h2>{e(c['supportChecklistTitle'])}</h2><ul>{''.join('<li>'+e(x)+'</li>' for x in c['supportChecklist'])}</ul><p>{e(c['supportPrivacy'])}</p><a href="privacy.html">{e(c['privacy'])} →</a></section></main>'''
+<section class="support-info"><h2>{e(c['supportChecklistTitle'])}</h2><ul>{''.join('<li>'+e(x)+'</li>' for x in c['supportChecklist'])}</ul><p>{e(c['supportPrivacy'])}</p><a href="privacy.html">{e(c['privacy'])} →</a></section>{banner(c,cfg,lang,'general')}</main>'''
     return result+footer(lang,c,cfg,page)
 
 def root_page(c,cfg,error=False):

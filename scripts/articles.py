@@ -7,6 +7,7 @@ from markdown import ArticleError, convert, front_matter
 from figures import render as render_figure
 from news import format_date
 import reading
+from banner import banner, stylesheet as banner_css
 from render import LANGS, SECTIONS, cta, footer, head, header, tag
 
 IMAGES = ('.webp', '.png', '.jpg', '.jpeg', '.svg')  # only these are published; data/.md/.txt/.csv stay in the source folder
@@ -114,7 +115,7 @@ def article_page(a, cfg, c, langs_here):
             for i, (t, u) in enumerate(items)]}]})
     top = head(lang, c, cfg, page_of(slug, sec), title=m['seoTitle'], description=m['description'], noindex=cfg['noindex'],
                alts=alt_links(cfg, [(l, url_of(cfg, l, slug, sec)) for l in langs_here]), og='article', image=img)
-    top = top.replace('</head>', f'<link rel="stylesheet" href="{base}/assets/article.css">{ld}</head>', 1)
+    top = top.replace('</head>', f'<link rel="stylesheet" href="{base}/assets/article.css">{banner_css(cfg)}{ld}</head>', 1)
     switch = {l: page_of(slug, sec) for l in langs_here}
     toc = ''.join(f'<li><a href="#{i}">{inline_text(t)}</a></li>' for i, t in heads)
     src = ''.join(source_item(s) for s in m['sources'])
@@ -124,8 +125,8 @@ def article_page(a, cfg, c, langs_here):
         f'{cover(a, cfg)}<nav class="toc" aria-label="{e(c["articleContents"], quote=True)}"><p class="eyebrow">{e(c["articleContents"])}</p><ol>{toc}</ol></nav>'
         f'<div class="article-body">{html}</div>'
         + (f'<section class="article-sources"><h2 id="sources">{e(c["articleSources"])}</h2><ol>{src}</ol></section>' if src else '')
-        + f'</article><aside class="article-cta"><p class="eyebrow">{e(c["eyebrow"])}</p>{cta(c, cfg, base + "/" + lang + "/", lang)}'
-        f'<p class="article-more"><span>{e(c["articleRead"])}</span><a href="{base}/{lang}/{sec}/">{e(sk(c, "articleBack", sec))} →</a></p></aside></main>'
+        + f'</article>{banner(c, cfg, lang, sec)}'
+        f'<p class="article-more"><span>{e(c["articleRead"])}</span><a href="{base}/{lang}/{sec}/">{e(sk(c, "articleBack", sec))} →</a></p></main>'
         + footer(lang, c, cfg, switch))
 
 def source_item(s):  # "text: https://url" -> link; a line without a URL is plain text
@@ -139,11 +140,11 @@ def hub_page(lang, arts, cfg, c, hub_langs, sec):
     name, intro = c[f'articleSection_{sec}'], sk(c, 'articleHubIntro', sec)
     top = head(lang, c, cfg, page_of(None, sec), title=f'{name} · Moonplan', description=intro, noindex=cfg['noindex'],
                alts=alt_links(cfg, [(l, url_of(cfg, l, None, sec)) for l in hub_langs]))
-    top = top.replace('</head>', f'<link rel="stylesheet" href="{base}/assets/article.css">{reading.stylesheet(cfg)}</head>', 1)
+    top = top.replace('</head>', f'<link rel="stylesheet" href="{base}/assets/article.css">{reading.stylesheet(cfg)}{banner_css(cfg)}</head>', 1)
     switch = {l: page_of(None, sec) for l in hub_langs}
     cards = reading.cards_list(arts, lang, cfg, c, 'h2')
     return (top + header(lang, c, cfg, switch) + f'<main id="main" class="article-page wrap">{nav}<header class="article-head"><p class="eyebrow">Moonplan</p>'
-            f'<h1>{e(name)}</h1><p class="intro">{e(intro)}</p></header>{cards}</main>' + footer(lang, c, cfg, switch))
+            f'<h1>{e(name)}</h1><p class="intro">{e(intro)}</p></header>{cards}{banner(c, cfg, lang, sec)}</main>' + footer(lang, c, cfg, switch))
 
 def published(img, folder):
     """Photo originals (jpg/png with a -1600.webp next to them) stay in the repo; only derivatives are published."""

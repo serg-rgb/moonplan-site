@@ -78,8 +78,9 @@ def read_section(lang, c, cfg):
     groups = ''.join(group(s, [a for a in arts if a['meta']['section'] == s], lang, c, cfg)
                      for s in SECTIONS if any(a['meta']['section'] == s for a in arts))
     eyebrow, title, _ = STR[lang]
+    from banner import banner
     return (f'<section class="read wrap" id="read" aria-labelledby="read-title"><p class="eyebrow">{e(eyebrow)}</p><h2 id="read-title">{e(title)}</h2>'
-            f'{today}{groups}</section>')
+            f'{today}{groups}{banner(c, cfg, lang, "home")}</section>')
 
 def nav_link(lang, cfg):
     return f'<a href="{cfg["base"]}/{lang}/#read">{e(STR[lang][2])}</a>'
@@ -87,12 +88,12 @@ def nav_link(lang, cfg):
 def stylesheet(cfg): return f'<link rel="stylesheet" href="{cfg["base"]}/assets/reading.css">'
 
 def rail(lang, c, cfg):
-    """Phase rail under the hero as real navigation. Targets: moon-phases article, #discover (city sky = app features), today page (daily plans), Apollo hub;
+    """Phase rail under the hero as real navigation. Targets: moon-phases article, today page, #discover (everyday plans = app features), Apollo hub;
     a target missing for the language falls back to #read."""
     base = cfg['base']
     have = {a['slug'] for a in articles_for(lang)}
     apollo = lang in cfg.get('hubs', {}).get('apollo', ())
-    hrefs = [f'{base}/{lang}/moon/moon-phases.html' if 'moon-phases' in have else '#read', '#discover', f'{base}/{lang}/today/',
+    hrefs = [f'{base}/{lang}/moon/moon-phases.html' if 'moon-phases' in have else '#read', f'{base}/{lang}/today/', '#discover',
              f'{base}/{lang}/apollo/' if apollo else '#read']
     items = ''.join(f'<a href="{e(h, quote=True)}"><i class="phase phase-{i}" aria-hidden="true"></i>{e(x)}</a>' for i, (h, x) in enumerate(zip(hrefs, c['rail'])))
     return f'<nav class="phase-rail wrap" aria-label="{e(STR[lang][1], quote=True)}">{items}</nav>'
