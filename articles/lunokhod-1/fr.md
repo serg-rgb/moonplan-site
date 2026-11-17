@@ -3,7 +3,7 @@ slug: lunokhod-1
 section: luna
 title: Lunokhod 1 : 10,5 km à travers la Mer des Pluies
 seoTitle: Lunokhod 1 et Luna 17 : le premier astromobile lunaire, comment on le pilotait depuis la Terre et où il se trouve aujourd'hui
-description: Novembre 1970 : Luna 17 a déposé dans la Mer des Pluies l'astromobile à huit roues Lunokhod 1. On le croyait bon pour trois jours lunaires, il en a fonctionné onze, parcouru 10,54 km et transmis plus de 20 000 images de télévision. Comment cela s'est passé et comment on l'a retrouvé depuis l'orbite 40 ans plus tard.
+description: Novembre 1970 : Luna 17 a déposé dans la Mer des Pluies l'astromobile à huit roues Lunokhod 1. Prévu pour trois jours lunaires, il en a fonctionné onze, parcouru 10,54 km et transmis plus de 20 000 images de télévision. Comment cela s'est passé et comment on l'a retrouvé depuis l'orbite 40 ans plus tard.
 author: Aurelia.Lab
 updated: 2026-11-17
 cover: cover.webp
