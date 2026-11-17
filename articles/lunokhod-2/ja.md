@@ -7,7 +7,7 @@ description: 1973年1月、ルナ21号は2台目のソ連の月面ローバー�
 author: Aurelia.Lab
 updated: 2026-11-17
 cover: cover.webp
-coverAlt: 月の平原に立つソ連の8輪ローバー、古い地図帳風の銅版画
+coverAlt: ル・モニエ・クレーターの最終停車地点にあるルノホート2号。LROのカメラが軌道上から撮影
 figures:
   - id: region
     kind: photo

@@ -7,7 +7,7 @@ description: November 1970: Luna 17 delivered the eight-wheeled Lunokhod 1 to Ma
 author: Aurelia.Lab
 updated: 2026-11-17
 cover: cover.webp
-coverAlt: The eight-wheeled Lunokhod 1 with its solar panel lid open on a lunar plain, an engraving in the style of an old atlas
+coverAlt: Lunokhod 1 at its final parking place in Mare Imbrium, seen from orbit by the LRO camera
 figures:
   - id: rover
     kind: photo

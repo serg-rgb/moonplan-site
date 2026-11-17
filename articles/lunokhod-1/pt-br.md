@@ -7,7 +7,7 @@ description: Novembro de 1970: a Luna 17 levou ao Mar das Chuvas o Lunokhod 1, d
 author: Aurelia.Lab
 updated: 2026-11-17
 cover: cover.webp
-coverAlt: O Lunokhod 1, de oito rodas, com a tampa do painel solar aberta em uma planície lunar, gravura no estilo de um atlas antigo
+coverAlt: O Lunokhod 1 em sua última posição no Mare Imbrium, visto da órbita pela câmera do LRO
 figures:
   - id: rover
     kind: photo

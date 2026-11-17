@@ -7,7 +7,7 @@ description: Novembre 1970 : Luna 17 a déposé dans la Mer des Pluies l'astromo
 author: Aurelia.Lab
 updated: 2026-11-17
 cover: cover.webp
-coverAlt: Lunokhod 1, à huit roues, avec le couvercle de son panneau solaire ouvert sur une plaine lunaire, gravure dans le style d'un atlas ancien
+coverAlt: Lunokhod 1 à son dernier emplacement dans la mer des Pluies, vu depuis l’orbite par la caméra de LRO
 figures:
   - id: rover
     kind: photo

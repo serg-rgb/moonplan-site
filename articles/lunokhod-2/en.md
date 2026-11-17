@@ -7,7 +7,7 @@ description: January 1973: Luna 21 delivered the second Soviet rover to the floo
 author: Aurelia.Lab
 updated: 2026-11-17
 cover: cover.webp
-coverAlt: A Soviet eight-wheeled rover on a lunar plain, an engraving in the style of an old atlas
+coverAlt: Lunokhod 2 at its final parking place in Le Monnier crater, seen from orbit by the LRO camera
 figures:
   - id: region
     kind: photo

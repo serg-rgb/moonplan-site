@@ -7,7 +7,7 @@ description: Janvier 1973 : Luna 21 a déposé le second astromobile soviétique
 author: Aurelia.Lab
 updated: 2026-11-17
 cover: cover.webp
-coverAlt: Un astromobile soviétique à huit roues sur une plaine lunaire, gravure dans le style d'un atlas ancien
+coverAlt: Lunokhod 2 à son dernier emplacement dans le cratère Le Monnier, vu depuis l’orbite par la caméra de LRO
 figures:
   - id: region
     kind: photo

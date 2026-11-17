@@ -7,7 +7,7 @@ description: Gennaio 1973: la Luna 21 portò il secondo rover sovietico sul fond
 author: Aurelia.Lab
 updated: 2026-11-17
 cover: cover.webp
-coverAlt: Un rover sovietico a otto ruote su una pianura lunare, incisione nello stile di un atlante antico
+coverAlt: Lunochod 2 nella sua ultima posizione nel cratere Le Monnier, ripreso dall’orbita dalla camera di LRO
 figures:
   - id: region
     kind: photo

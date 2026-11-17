@@ -7,7 +7,7 @@ description: Noviembre de 1970: la Luna 17 llevó al Mar de las Lluvias el Lunoj
 author: Aurelia.Lab
 updated: 2026-11-17
 cover: cover.webp
-coverAlt: El Lunojod 1, de ocho ruedas, con la tapa del panel solar abierta sobre una llanura lunar, grabado al estilo de un atlas antiguo
+coverAlt: El Lunojod 1 en su última posición en el Mare Imbrium, visto desde la órbita por la cámara del LRO
 figures:
   - id: rover
     kind: photo

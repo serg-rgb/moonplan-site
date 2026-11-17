@@ -7,7 +7,7 @@ description: November 1970: Luna 17 brachte den achträdrigen Lunochod 1 ins Reg
 author: Aurelia.Lab
 updated: 2026-11-17
 cover: cover.webp
-coverAlt: Der achträdrige Lunochod 1 mit aufgeklapptem Deckel der Solarbatterie auf einer Mondebene, Stich im Stil eines alten Atlas
+coverAlt: Lunochod 1 an seinem letzten Standort im Mare Imbrium, aufgenommen aus der Umlaufbahn von der LRO-Kamera
 figures:
   - id: rover
     kind: photo

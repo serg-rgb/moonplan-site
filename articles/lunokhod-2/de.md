@@ -7,7 +7,7 @@ description: Januar 1973: Luna 21 setzte den zweiten sowjetischen Rover auf dem 
 author: Aurelia.Lab
 updated: 2026-11-17
 cover: cover.webp
-coverAlt: Ein sowjetischer achträdriger Rover auf einer Mondebene, Stich im Stil eines alten Atlas
+coverAlt: Lunochod 2 an seinem letzten Standort im Krater Le Monnier, aufgenommen aus der Umlaufbahn von der LRO-Kamera
 figures:
   - id: region
     kind: photo

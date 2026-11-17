@@ -7,7 +7,7 @@ description: 1970年11月、ルナ17号は8輪のルノホート1号を雨の海
 author: Aurelia.Lab
 updated: 2026-11-17
 cover: cover.webp
-coverAlt: 太陽電池パネルの蓋を開けた8輪のルノホート1号が月の平原に立つ、古い地図帳風の銅版画
+coverAlt: 雨の海の最終停車地点にあるルノホート1号。LROのカメラが軌道上から撮影
 figures:
   - id: rover
     kind: photo

@@ -7,7 +7,7 @@ description: Enero de 1973: la Luna 21 llevó el segundo vehículo lunar soviét
 author: Aurelia.Lab
 updated: 2026-11-17
 cover: cover.webp
-coverAlt: Un vehículo lunar soviético de ocho ruedas sobre una llanura lunar, grabado al estilo de un atlas antiguo
+coverAlt: El Lunojod 2 en su última posición en el cráter Le Monnier, visto desde la órbita por la cámara del LRO
 figures:
   - id: region
     kind: photo

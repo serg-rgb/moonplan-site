@@ -7,7 +7,7 @@ description: Novembre 1970: la Luna 17 portò nel Mare delle Piogge il Lunochod 
 author: Aurelia.Lab
 updated: 2026-11-17
 cover: cover.webp
-coverAlt: Il Lunochod 1 a otto ruote, con il coperchio del pannello solare aperto, su una pianura lunare, incisione nello stile di un atlante antico
+coverAlt: Lunochod 1 nella sua ultima posizione nel Mare Imbrium, ripreso dall’orbita dalla camera di LRO
 figures:
   - id: rover
     kind: photo

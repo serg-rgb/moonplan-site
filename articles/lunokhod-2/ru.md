@@ -7,7 +7,7 @@ description: Январь 1973 года: «Луна-21» доставила вт
 author: Aurelia.Lab
 updated: 2026-11-17
 cover: cover.webp
-coverAlt: Советский восьмиколёсный луноход на лунной равнине, гравюра в стиле старинного атласа
+coverAlt: «Луноход-2» на последней стоянке в кратере Лемонье, снимок с орбиты камерой LRO
 figures:
   - id: region
     kind: photo
