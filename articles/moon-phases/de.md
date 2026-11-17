@@ -7,7 +7,7 @@ description: Warum der Mond als Sichel, als Halbkreis und als volle Scheibe ersc
 author: Aurelia.Lab
 updated: 2026-11-16
 cover: cover.webp
-coverAlt: Die Phasen des Mondes von der schmalen zunehmenden Sichel bis zum Vollmond und zurück, gestochen im Stil eines alten Sternatlas
+coverAlt: Die Mondphasen von der zunehmenden Sichel über den Vollmond bis zur abnehmenden Sichel, von Moonplan aus Daten der LRO-Kamera berechnet
 figures:
   - id: phases-orbit
     kind: svg

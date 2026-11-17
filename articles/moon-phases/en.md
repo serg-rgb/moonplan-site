@@ -7,7 +7,7 @@ description: Why the Moon shows a crescent, a half and a full disc, how the syno
 author: Aurelia.Lab
 updated: 2026-11-16
 cover: cover.webp
-coverAlt: The phases of the Moon from a thin waxing crescent to full and back, engraved in the style of an old star atlas
+coverAlt: The phases of the Moon from waxing crescent through full Moon to waning crescent, rendered by Moonplan from LRO camera data
 figures:
   - id: phases-orbit
     kind: svg

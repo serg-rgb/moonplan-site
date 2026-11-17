@@ -7,7 +7,7 @@ description: 月が三日月にも半月にも満月にも見える理由、朔�
 author: Aurelia.Lab
 updated: 2026-11-16
 cover: cover.webp
-coverAlt: 細い三日月から満月まで、そしてまた元へ戻る月の満ち欠けを、古い星図の様式で描いた銅版画風のイラスト
+coverAlt: 満ちていく三日月から満月を経て欠けていく月までの月の満ち欠け。LROのカメラのデータからMoonplanが描画
 figures:
   - id: phases-orbit
     kind: svg

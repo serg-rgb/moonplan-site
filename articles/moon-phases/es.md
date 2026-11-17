@@ -7,7 +7,7 @@ description: Por qué la Luna se ve como un creciente, una mitad o un disco comp
 author: Aurelia.Lab
 updated: 2026-11-16
 cover: cover.webp
-coverAlt: Las fases de la Luna, del creciente fino a la luna llena y de vuelta, grabadas al estilo de un atlas estelar antiguo
+coverAlt: Las fases de la Luna, de creciente a llena y a menguante, representadas por Moonplan a partir de datos de la cámara del LRO
 figures:
   - id: phases-orbit
     kind: svg

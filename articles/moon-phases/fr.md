@@ -7,7 +7,7 @@ description: Pourquoi la Lune apparaît en croissant, en demi-disque ou en disqu
 author: Aurelia.Lab
 updated: 2026-11-16
 cover: cover.webp
-coverAlt: Les phases de la Lune, du fin croissant à la pleine Lune et retour, gravées dans le style d'un ancien atlas céleste
+coverAlt: Les phases de la Lune, du premier croissant à la pleine Lune puis au dernier croissant, rendues par Moonplan à partir des données de la caméra de LRO
 figures:
   - id: phases-orbit
     kind: svg

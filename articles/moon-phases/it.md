@@ -7,7 +7,7 @@ description: Perché la Luna appare come una falce, una metà o un disco intero,
 author: Aurelia.Lab
 updated: 2026-11-16
 cover: cover.webp
-coverAlt: Le fasi della Luna, dalla sottile falce crescente alla Luna piena e ritorno, incise nello stile di un antico atlante celeste
+coverAlt: Le fasi della Luna dalla falce crescente alla Luna piena fino alla falce calante, ricostruite da Moonplan con i dati della camera di LRO
 figures:
   - id: phases-orbit
     kind: svg

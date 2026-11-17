@@ -7,7 +7,7 @@ description: Почему Луна бывает серпом, половинко
 author: Aurelia.Lab
 updated: 2026-11-16
 cover: cover.webp
-coverAlt: Фазы Луны от тонкого растущего серпа до полнолуния и обратно, гравюра в стиле старинного атласа
+coverAlt: Фазы Луны от растущего серпа через полнолуние до убывающего серпа, отрисованные Moonplan по данным камеры LRO
 figures:
   - id: phases-orbit
     kind: svg

@@ -7,7 +7,7 @@ description: Por que a Lua aparece como um crescente, uma metade ou um disco int
 author: Aurelia.Lab
 updated: 2026-11-16
 cover: cover.webp
-coverAlt: As fases da Lua, do crescente fino à Lua cheia e de volta, gravadas no estilo de um antigo atlas estelar
+coverAlt: As fases da Lua do crescente à cheia e ao minguante, desenhadas pelo Moonplan a partir de dados da câmera do LRO
 figures:
   - id: phases-orbit
     kind: svg
