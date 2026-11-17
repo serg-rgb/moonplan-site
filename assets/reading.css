@@ -7,14 +7,14 @@
 .read-cards img{width:100%;height:100%;object-fit:contain;display:block;transform:scale(1.001);transition:transform .9s var(--ease)}
 .read-cards a:hover img{transform:scale(1.045)}
 .read-cards .meta{margin-top:4px;font-size:12px;line-height:16px;letter-spacing:.12em;text-transform:uppercase;font-weight:600;color:var(--gold)}
-.read-cards h3,.read-cards h4{margin:0;font-family:var(--display);font-weight:400;font-size:20px;line-height:28px;letter-spacing:-.03em;text-wrap:balance;color:var(--text)}
+.read-cards h2,.read-cards h3,.read-cards h4{margin:0;font-family:var(--display);font-weight:400;font-size:20px;line-height:28px;letter-spacing:-.03em;text-wrap:balance;color:var(--text)}
 .read-cards p{margin:0;color:var(--muted);font-size:15px;line-height:24px}
 .read-cards a:focus-visible{outline:2px solid var(--light-gold);outline-offset:6px;border-radius:12px}
 .read-cards a:hover h3,.read-cards a:hover h4{color:var(--light-gold)}
 .read-links{display:flex;flex-wrap:wrap;gap:12px 32px;margin:40px 0 0;font-size:15px;line-height:24px}
 .read-links a{color:var(--light-gold);border-bottom:1px solid rgba(232,210,158,.4);padding-bottom:2px}.read-links a:hover{border-color:var(--light-gold)}
 .article-page>.read-cards{margin-top:48px}
-html[lang=ja] .read h2,html[lang=ja] .read-cards h3,.read-cards h4{letter-spacing:.01em;font-weight:600}html[lang=ja] .read-cards h3,.read-cards h4{font-size:18px;line-height:28px}
+html[lang=ja] .read h2,html[lang=ja] .read-cards h2,html[lang=ja] .read-cards h3,html[lang=ja] .read-cards h4{letter-spacing:.01em;font-weight:600}html[lang=ja] .read-cards h2,html[lang=ja] .read-cards h3,html[lang=ja] .read-cards h4{font-size:18px;line-height:28px}
 @media(max-width:900px){.read-cards{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:600px){.read-cards{grid-template-columns:1fr}.read{padding-block:48px 16px}.read h2{font-size:30px;line-height:36px}.read-cards{margin-top:32px;gap:40px}}
 .read-cards p{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;overflow:hidden}

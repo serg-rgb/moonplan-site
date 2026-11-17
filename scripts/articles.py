@@ -98,8 +98,9 @@ def article_page(a, cfg, c, langs_here):
     m, lang, slug = a['meta'], a['lang'], a['slug']; sec = m['section']
     base = cfg['base']; url = url_of(cfg, lang, slug, sec)
     html, heads = convert(a['body'], lambda k, i: figure_html(k, i, a, cfg))
-    words = len(re.findall(r'\w+', re.sub(r'\[\[.*?\]\]', '', a['body'])))
-    minutes = math.ceil(words / 180)
+    plain = re.sub(r'\[\[.*?\]\]', '', a['body'])
+    # Japanese has no spaces between words: count characters (~500 per minute) instead of words (~180 per minute)
+    minutes = math.ceil(len(re.findall(r'\w', plain)) / 500) if lang == 'ja' else math.ceil(len(re.findall(r'\w+', plain)) / 180)
     nav, items = crumbs(c, cfg, lang, m['title'], sec)
     og = (f'{cfg["url"]}/assets/articles/{slug}/og.png' if (a['folder'] / 'og.png').exists() else None)
     img = og or f'{cfg["url"]}/assets/og-image.png'
@@ -140,7 +141,7 @@ def hub_page(lang, arts, cfg, c, hub_langs, sec):
                alts=alt_links(cfg, [(l, url_of(cfg, l, None, sec)) for l in hub_langs]))
     top = top.replace('</head>', f'<link rel="stylesheet" href="{base}/assets/article.css">{reading.stylesheet(cfg)}</head>', 1)
     switch = {l: page_of(None, sec) for l in hub_langs}
-    cards = reading.cards_list(arts, lang, cfg, c)
+    cards = reading.cards_list(arts, lang, cfg, c, 'h2')
     return (top + header(lang, c, cfg, switch) + f'<main id="main" class="article-page wrap">{nav}<header class="article-head"><p class="eyebrow">Moonplan</p>'
             f'<h1>{e(name)}</h1><p class="intro">{e(intro)}</p></header>{cards}</main>' + footer(lang, c, cfg, switch))
 
