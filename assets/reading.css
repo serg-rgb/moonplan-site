@@ -1,5 +1,5 @@
 /* Reading cards: landing section #read and the article hubs (same card style as the news feed, 16:9 image). */
-.read{padding-block:72px 32px;text-shadow:0 0 24px rgba(4,4,10,.85)}
+.read{padding-block:40px 16px;text-shadow:0 0 24px rgba(4,4,10,.85)}
 .read h2{font-family:var(--display);font-weight:400;font-size:36px;line-height:40px;letter-spacing:-.045em;margin-top:24px;max-width:22ch}
 .read-cards{margin:48px 0 0;padding:0;list-style:none;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:48px 32px;align-items:start}
 .read-cards a{display:grid;gap:12px;align-content:start;color:inherit;text-decoration:none}
@@ -18,7 +18,7 @@ html[lang=ja] .read h2,html[lang=ja] .read-cards h2,html[lang=ja] .read-cards h3
 @media(max-width:900px){.read-cards{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:600px){.read-cards{grid-template-columns:1fr}.read{padding-block:48px 16px}.read h2{font-size:30px;line-height:36px}.read-cards{margin-top:32px;gap:40px}}
 .read-cards p{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;overflow:hidden}
-.read-group{margin-top:64px}.read-today{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:32px 48px;align-items:center;margin-top:40px}
+.read-group{margin-top:48px}.read-today{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:32px 48px;align-items:center;margin-top:40px}
 .today-fig{display:block;text-decoration:none}
 .read-today h3,.rg-head h3{margin:0;font-family:var(--display);font-weight:400;font-size:28px;line-height:34px;letter-spacing:-.04em;color:var(--text)}
 .read-today p,.rg-head p{margin:8px 0 0;color:var(--muted);font-size:15px;line-height:24px;max-width:60ch}
@@ -47,3 +47,7 @@ html[lang=ja] .read-today h3,html[lang=ja] .rg-head h3,html[lang=ja] .rg-main h4
 .phase-rail>a:hover,.phase-rail>a:focus-visible{color:var(--light-gold);text-decoration:underline;text-underline-offset:6px}
 .phase-rail>a:focus-visible{outline:2px solid var(--light-gold);outline-offset:6px;border-radius:4px}
 @media(max-width:600px){.phase-rail>a{gap:12px;letter-spacing:0}}
+
+/* compact home rhythm (2026-11-18): first group of a block sits close to the block top */
+.read>.read-group:first-child,.read>h2+.read-group,.read>.eyebrow+h2+.read-group{margin-top:24px}
+#discover{padding-block:48px 0}
