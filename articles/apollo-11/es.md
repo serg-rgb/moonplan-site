@@ -45,6 +45,16 @@ figures:
     kind: photo
     file: as11-44-6642.jpg
     caption: La etapa de ascenso de Eagle, con Armstrong y Aldrin, se acerca a Columbia para el acoplamiento. Sobre el horizonte lunar se ve la mitad de la Tierra. Fotografía AS11-44-6642, NASA.
+  - id: moonwalk-video
+    kind: video
+    file: a11-moonwalk.mp4
+    poster: a11-moonwalk.jpg
+    width: 1280
+    height: 720
+    caption: Fragmentos del paseo lunar del Apolo 11: el descenso por la escalerilla y el trabajo junto al módulo lunar. Montaje de la NASA, 2 minutos, con sonido.
+    source: https://images.nasa.gov/details/Apollo_11_moonwalk_montage_720p
+    sourceLabel: Vídeo de la NASA
+    sound: yes
 sources:
   - NASA NSSDCA, Apollo 11 Command and Service Module (CSM): https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1969-059A
   - NASA NSSDCA, Apollo 11 Mission: https://nssdc.gsfc.nasa.gov/planetary/lunar/apollo11info.html
@@ -87,6 +97,8 @@ Desde el lanzamiento hasta el amerizaje pasaron 195 horas, 18 minutos y 35 segun
 ## Alunizaje
 
 El módulo lunar alunizó en el Mar de la Tranquilidad, en el punto de coordenadas 0,67° de latitud norte y 23,47° de longitud este. Armstrong informó: «Houston, aquí Base Tranquilidad. Eagle ha alunizado» (“Houston, Tranquility Base here. The Eagle has landed.”). Seis horas y media después bajó por la escalerilla y pronunció la frase que todos han citado desde entonces: «Es un pequeño paso para el hombre, pero un gran salto para la humanidad» (“That's one small step for man, one giant leap for mankind.”). Aldrin salió detrás, 19 minutos después.
+
+[[figure:moonwalk-video]]
 
 [[figure:aldrin-walk]]
 

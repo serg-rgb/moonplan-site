@@ -33,6 +33,24 @@ figures:
     kind: photo
     file: S71-43542.jpg
     caption: Amerizaje del módulo de mando el 7 de agosto de 1971. Uno de los tres paracaídas principales no se abrió del todo; la tripulación resultó ilesa. Fotografía S71-43542, NASA.
+  - id: rover-video
+    kind: video
+    file: a15-rover.mp4
+    poster: a15-rover.jpg
+    width: 1920
+    height: 1080
+    caption: Imágenes tomadas durante un trayecto en el vehículo lunar. Fragmento de un vídeo de la NASA sobre el Apolo 15, sin sonido.
+    source: https://images.nasa.gov/details/Apollo%2015%20Never%20Been%20on%20a%20Ride%20like%20this%20Before
+    sourceLabel: Vídeo de la NASA
+  - id: surface-video
+    kind: video
+    file: a15-surface.mp4
+    poster: a15-surface.jpg
+    width: 1920
+    height: 1080
+    caption: Astronautas en la superficie lunar. Fragmento del mismo vídeo de la NASA sobre el Apolo 15, sin sonido.
+    source: https://images.nasa.gov/details/Apollo%2015%20Never%20Been%20on%20a%20Ride%20like%20this%20Before
+    sourceLabel: Vídeo de la NASA
 sources:
   - NASA NSSDCA, Apollo 15 Command and Service Module (CSM): https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1971-063A
   - NASA Image and Video Library (fotografías S71-37963, 7120062, AS15-86-11603, AS15-85-11425, AS15-88-11901, S71-43542; el nombre del módulo lunar Falcon figura en sus pies de foto): https://images.nasa.gov/details/as15-86-11603
@@ -84,9 +102,13 @@ Fue la primera expedición con vehículo lunar. En él, los astronautas se despl
 
 [[figure:irwin-rover]]
 
+[[figure:rover-video]]
+
 [[figure:rille]]
 
 [[figure:rover-alone]]
+
+[[figure:surface-video]]
 
 ## El martillo y la pluma
 

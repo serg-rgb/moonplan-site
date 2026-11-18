@@ -1,0 +1,4 @@
+From NASA Image and Video Library, nasa_id "Apollo 15 Never Been on a Ride like this Before" (NASA HQ, 2021-07-26), ~orig.mp4 1920x1080 24 fps, 299 s.
+https://images.nasa.gov/details/Apollo%2015%20Never%20Been%20on%20a%20Ride%20like%20this%20Before
+a15-surface.mp4 = 00:01:30-00:01:46, no audio; a15-rover.mp4 = 00:03:40-00:03:57, no audio (audio of the source is a narrated documentary, not used).
+H.264 CRF22. Posters: frame 3 s / 12 s. Which exact EVA each shot shows is NOT stated by NASA for these excerpts - caption only as excerpts of this NASA video.

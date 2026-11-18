@@ -35,6 +35,11 @@ def load(root):
                         if not f.get(k): raise ArticleError(f'photo figure {f.get("id")}: missing "{k}"')
                     for n in photo_names(f['file']):
                         if not (folder / n).exists(): raise ArticleError(f'{n} not found: run tools/articles/prepare_images.py')
+                if f.get('kind') == 'video':
+                    for k in ('file', 'poster', 'caption', 'width', 'height'):
+                        if not f.get(k): raise ArticleError(f'video figure {f.get("id")}: missing "{k}"')
+                    for n in (f['file'], f['poster']):
+                        if not (folder / 'video' / n).exists(): raise ArticleError(f'video/{n} not found')
         except (ArticleError, ValueError) as err:
             raise ArticleError(f'{md}: {err}') from None
         found.append(dict(meta=meta, body=body, folder=folder, lang=lang, slug=meta['slug']))
@@ -63,9 +68,19 @@ def photo(f, a, cfg):
             f'sizes="(min-width:1000px) 960px, 100vw" width="{w}" height="{h}" loading="lazy" decoding="async" alt="{alt}">'
             f'<figcaption>{e(f["caption"])}</figcaption></figure>')
 
+def video(f, a, cfg):
+    """NASA clip from articles/{slug}/video/: H.264 MP4 + JPEG poster; width/height/sound in front matter; nothing preloads."""
+    base = f'{cfg["base"]}/assets/articles/{a["slug"]}/video/'
+    mute = '' if f.get('sound') else ' muted loop'
+    src = f' <a href="{e(f["source"], quote=True)}" rel="noopener">{e(f.get("sourceLabel", "NASA"))}</a>' if f.get('source') else ''
+    return (f'<figure class="fig fig-photo fig-video"><video controls playsinline preload="none"{mute} width="{f["width"]}" height="{f["height"]}" '
+            f'poster="{base}{f["poster"]}"><source src="{base}{f["file"]}" type="video/mp4"></video>'
+            f'<figcaption>{e(f["caption"])}{src}</figcaption></figure>')
+
 def figure_html(kind, ident, a, cfg):
     f = next((x for x in a['meta']['figures'] if x['id'] == ident), None)
     if kind == 'figure' and f and f.get('kind') == 'photo': return photo(f, a, cfg)
+    if kind == 'figure' and f and f.get('kind') == 'video': return video(f, a, cfg)
     return render_figure(kind, ident, a['lang'], a['folder'], a['meta']['figures'])
 
 def url_of(cfg, lang, slug=None, sec='moon'): return f'{cfg["url"]}/{lang}/{sec}/' + (f'{slug}.html' if slug else '')
@@ -158,6 +173,10 @@ def build(root, out, cfg, contents):
         for img in sorted(x for x in d.iterdir() if published(x, d)):
             (out / 'assets' / 'articles' / slug).mkdir(parents=True, exist_ok=True)
             shutil.copy2(img, out / 'assets' / 'articles' / slug / img.name)
+        if (d / 'video').is_dir():  # NASA clips and their posters (see video/SOURCE.txt)
+            (out / 'assets' / 'articles' / slug / 'video').mkdir(parents=True, exist_ok=True)
+            for v in sorted(d.glob('video/*')):
+                if v.suffix in ('.mp4', '.jpg'): shutil.copy2(v, out / 'assets' / 'articles' / slug / 'video' / v.name)
     for sec, langs in cfg['hubs'].items():
         for lang in langs:
             mine = [a for a in arts if a['lang'] == lang and a['meta']['section'] == sec]

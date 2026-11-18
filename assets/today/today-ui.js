@@ -7,6 +7,8 @@ const t = JSON.parse(document.getElementById('today-i18n').textContent);
 const tz = Intl.DateTimeFormat().resolvedOptions().timeZone || 'UTC';
 const fill = (s, v) => s.replace(/\{(\w+)\}/g, (_, k) => v[k]);
 const el = (tag, cls, text) => { const n = document.createElement(tag); if (cls) n.className = cls; if (text !== undefined) n.textContent = text; return n; };
+// Distances are shown to 100 km: Astronomy Engine differs from JPL Horizons by ~50 km (checked 2026-11-17)
+const km100 = (x) => Math.round(x / 100) * 100;
 const num = (digits, extra) => new Intl.NumberFormat(t.locale, { minimumFractionDigits: digits, maximumFractionDigits: digits, ...extra });
 const nInt = num(0), n1 = num(1), nSigned = num(1, { signDisplay: 'always' });
 const fmtDay = new Intl.DateTimeFormat(t.locale, { timeZone: tz, weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' });
@@ -56,14 +58,14 @@ function render() {
   if (ev) head.append(el('p', 'today-event', fill(t.todayAt, { name: t[QUARTER[ev.quarter]], time: fmtTime.format(ev.date) })));
   const rows = [
     [t.lLit, `${nInt.format(s.illumination)}%`, 'lit'], [t.lAge, fill(t.uDays, { n: n1.format(s.ageDays) }), 'age'],
-    [t.lDist, fill(t.uKm, { n: nInt.format(s.distanceKm) }), 'dist'], [t.lDiam, `${n1.format(s.diameterArcmin)}′`, 'diam'],
+    [t.lDist, fill(t.uKm, { n: nInt.format(km100(s.distanceKm)) }), 'dist'], [t.lDiam, `${n1.format(s.diameterArcmin)}′`, 'diam'],
     [t.lLibLon, `${nSigned.format(s.libLon)}°`, 'liblon'], [t.lLibLat, `${nSigned.format(s.libLat)}°`, 'liblat'],
     [t.lPhaseAngle, `${n1.format(s.phaseAngle)}°`, 'angle'],
   ];
   const dl = el('dl', 'today-facts');
   for (const [k, v, id] of rows) { const d = el('div'); const dd = el('dd', '', v); dd.dataset.fact = id; d.append(el('dt', '', k), dd); dl.append(d); }
   const quarters = list(t.qTitle, up.quarters.map((q) => [t[QUARTER[q.quarter]], when(q.date)]));
-  const aps = list(t.apTitle, up.apsides.map((a) => [`${t[a.kind]} · ${fill(t.uKm, { n: nInt.format(a.distanceKm) })}`, when(a.date)]));
+  const aps = list(t.apTitle, up.apsides.map((a) => [`${t[a.kind]} · ${fill(t.uKm, { n: nInt.format(km100(a.distanceKm)) })}`, when(a.date)]));
   const ecl = list(t.ecTitle, [[t[ECLIPSE[up.eclipse.kind]] || up.eclipse.kind, when(up.eclipse.date, true)]]);
   root.replaceChildren(head, dl, quarters, aps, ecl);
 }

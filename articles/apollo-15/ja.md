@@ -33,6 +33,24 @@ figures:
     kind: photo
     file: S71-43542.jpg
     caption: 1971年8月7日の司令船の着水。3つあるメインパラシュートのうち1つが完全には開きませんでしたが、乗組員にけがはありませんでした。写真 S71-43542、NASA。
+  - id: rover-video
+    kind: video
+    file: a15-rover.mp4
+    poster: a15-rover.jpg
+    width: 1920
+    height: 1080
+    caption: 月面車で走行中に撮影された映像。アポロ15号に関するNASAの動画の抜粋、音声なし。
+    source: https://images.nasa.gov/details/Apollo%2015%20Never%20Been%20on%20a%20Ride%20like%20this%20Before
+    sourceLabel: NASAの動画
+  - id: surface-video
+    kind: video
+    file: a15-surface.mp4
+    poster: a15-surface.jpg
+    width: 1920
+    height: 1080
+    caption: 月面の宇宙飛行士。アポロ15号に関する同じNASAの動画の抜粋、音声なし。
+    source: https://images.nasa.gov/details/Apollo%2015%20Never%20Been%20on%20a%20Ride%20like%20this%20Before
+    sourceLabel: NASAの動画
 sources:
   - NASA NSSDCA, Apollo 15 Command and Service Module (CSM): https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1971-063A
   - NASA Image and Video Library（写真 S71-37963、7120062、AS15-86-11603、AS15-85-11425、AS15-88-11901、S71-43542。月着陸船の名前ファルコンはそれらの説明文に記載）: https://images.nasa.gov/details/as15-86-11603
@@ -84,9 +102,13 @@ sources:
 
 [[figure:irwin-rover]]
 
+[[figure:rover-video]]
+
 [[figure:rille]]
 
 [[figure:rover-alone]]
+
+[[figure:surface-video]]
 
 ## ハンマーと羽根
 

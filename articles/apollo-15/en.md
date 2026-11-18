@@ -33,6 +33,24 @@ figures:
     kind: photo
     file: S71-43542.jpg
     caption: Splashdown of the command module on August 7, 1971. One of the three main parachutes did not open fully; the crew was unhurt. Photo S71-43542, NASA.
+  - id: rover-video
+    kind: video
+    file: a15-rover.mp4
+    poster: a15-rover.jpg
+    width: 1920
+    height: 1080
+    caption: Footage taken during a drive on the lunar rover. Excerpt of a NASA video about Apollo 15, no sound.
+    source: https://images.nasa.gov/details/Apollo%2015%20Never%20Been%20on%20a%20Ride%20like%20this%20Before
+    sourceLabel: NASA video
+  - id: surface-video
+    kind: video
+    file: a15-surface.mp4
+    poster: a15-surface.jpg
+    width: 1920
+    height: 1080
+    caption: Astronauts on the lunar surface. Excerpt of the same NASA video about Apollo 15, no sound.
+    source: https://images.nasa.gov/details/Apollo%2015%20Never%20Been%20on%20a%20Ride%20like%20this%20Before
+    sourceLabel: NASA video
 sources:
   - NASA NSSDCA, Apollo 15 Command and Service Module (CSM): https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1971-063A
   - NASA Image and Video Library (photos S71-37963, 7120062, AS15-86-11603, AS15-85-11425, AS15-88-11901, S71-43542; the name of the lunar module Falcon is in their captions): https://images.nasa.gov/details/as15-86-11603
@@ -84,9 +102,13 @@ This was the first expedition with a lunar rover. In it the astronauts drove ove
 
 [[figure:irwin-rover]]
 
+[[figure:rover-video]]
+
 [[figure:rille]]
 
 [[figure:rover-alone]]
+
+[[figure:surface-video]]
 
 ## The hammer and the feather
 

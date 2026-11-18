@@ -45,6 +45,16 @@ figures:
     kind: photo
     file: as11-44-6642.jpg
     caption: Взлётная ступень «Игла» с Армстронгом и Олдрином подходит к «Колумбии» для стыковки. Над горизонтом Луны половина Земли. Снимок AS11-44-6642, NASA.
+  - id: moonwalk-video
+    kind: video
+    file: a11-moonwalk.mp4
+    poster: a11-moonwalk.jpg
+    width: 1280
+    height: 720
+    caption: Фрагменты выхода экипажа Apollo 11 на Луну: спуск по трапу и работа у лунного модуля. Монтаж NASA, 2 минуты, со звуком.
+    source: https://images.nasa.gov/details/Apollo_11_moonwalk_montage_720p
+    sourceLabel: Видео NASA
+    sound: yes
 sources:
   - NASA NSSDCA, Apollo 11 Command and Service Module (CSM): https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1969-059A
   - NASA NSSDCA, Apollo 11 Mission: https://nssdc.gsfc.nasa.gov/planetary/lunar/apollo11info.html
@@ -87,6 +97,8 @@ Apollo 11 летал восемь с небольшим суток. За это 
 ## Посадка
 
 Лунный модуль сел в Море Спокойствия, в точке с координатами 0,67° северной широты и 23,47° восточной долготы. Армстронг сообщил: «Хьюстон, говорит база Спокойствие. "Игл" сел» (англ. «Houston, Tranquility Base here. The Eagle has landed»). Через шесть с половиной часов он спустился по трапу и произнёс фразу, которую потом цитировали все: «Это маленький шаг для человека, но огромный скачок для человечества» (англ. «That’s one small step for man, one giant leap for mankind»). Олдрин вышел следом, через 19 минут.
+
+[[figure:moonwalk-video]]
 
 [[figure:aldrin-walk]]
 

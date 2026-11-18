@@ -33,6 +33,24 @@ figures:
     kind: photo
     file: S71-43542.jpg
     caption: Amerrissagem do módulo de comando em 7 de agosto de 1971. Um dos três paraquedas principais não abriu por completo; a tripulação saiu ilesa. Fotografia S71-43542, NASA.
+  - id: rover-video
+    kind: video
+    file: a15-rover.mp4
+    poster: a15-rover.jpg
+    width: 1920
+    height: 1080
+    caption: Imagens feitas durante um trajeto no jipe lunar. Trecho de um vídeo da NASA sobre a Apollo 15, sem som.
+    source: https://images.nasa.gov/details/Apollo%2015%20Never%20Been%20on%20a%20Ride%20like%20this%20Before
+    sourceLabel: Vídeo da NASA
+  - id: surface-video
+    kind: video
+    file: a15-surface.mp4
+    poster: a15-surface.jpg
+    width: 1920
+    height: 1080
+    caption: Astronautas na superfície lunar. Trecho do mesmo vídeo da NASA sobre a Apollo 15, sem som.
+    source: https://images.nasa.gov/details/Apollo%2015%20Never%20Been%20on%20a%20Ride%20like%20this%20Before
+    sourceLabel: Vídeo da NASA
 sources:
   - NASA NSSDCA, Apollo 15 Command and Service Module (CSM): https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1971-063A
   - NASA Image and Video Library (fotografias S71-37963, 7120062, AS15-86-11603, AS15-85-11425, AS15-88-11901, S71-43542; o nome do módulo lunar Falcon consta nas legendas delas): https://images.nasa.gov/details/as15-86-11603
@@ -84,9 +102,13 @@ Foi a primeira expedição com veículo lunar. Nele, os astronautas se deslocara
 
 [[figure:irwin-rover]]
 
+[[figure:rover-video]]
+
 [[figure:rille]]
 
 [[figure:rover-alone]]
+
+[[figure:surface-video]]
 
 ## O martelo e a pena
 

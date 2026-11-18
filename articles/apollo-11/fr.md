@@ -45,6 +45,16 @@ figures:
     kind: photo
     file: as11-44-6642.jpg
     caption: L'étage de remontée d'Eagle, avec Armstrong et Aldrin, s'approche de Columbia pour l'amarrage. Au-dessus de l'horizon lunaire, la moitié de la Terre. Photographie AS11-44-6642, NASA.
+  - id: moonwalk-video
+    kind: video
+    file: a11-moonwalk.mp4
+    poster: a11-moonwalk.jpg
+    width: 1280
+    height: 720
+    caption: Extraits de la sortie sur la Lune d’Apollo 11 : la descente par l’échelle et le travail autour du module lunaire. Montage de la NASA, 2 minutes, avec le son.
+    source: https://images.nasa.gov/details/Apollo_11_moonwalk_montage_720p
+    sourceLabel: Vidéo de la NASA
+    sound: yes
 sources:
   - NASA NSSDCA, Apollo 11 Command and Service Module (CSM): https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1969-059A
   - NASA NSSDCA, Apollo 11 Mission: https://nssdc.gsfc.nasa.gov/planetary/lunar/apollo11info.html
@@ -87,6 +97,8 @@ Du lancement à l'amerrissage, il s'est écoulé 195 heures 18 minutes 35 second
 ## Alunissage
 
 Le module lunaire s'est posé dans la mer de la Tranquillité, au point de coordonnées 0,67° de latitude nord et 23,47° de longitude est. Armstrong a annoncé : « Houston, ici la base de la Tranquillité. Eagle s'est posé. » (“Houston, Tranquility Base here. The Eagle has landed.”) Six heures et demie plus tard, il est descendu par l'échelle et a prononcé la phrase que tout le monde cite depuis : « C'est un petit pas pour l'homme, mais un bond de géant pour l'humanité. » (“That's one small step for man, one giant leap for mankind.”) Aldrin l'a suivi 19 minutes plus tard.
+
+[[figure:moonwalk-video]]
 
 [[figure:aldrin-walk]]
 

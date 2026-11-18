@@ -33,6 +33,24 @@ figures:
     kind: photo
     file: S71-43542.jpg
     caption: L'amerrissage du module de commande le 7 août 1971. Un des trois parachutes principaux ne s'est pas ouvert complètement ; l'équipage est indemne. Photographie S71-43542, NASA.
+  - id: rover-video
+    kind: video
+    file: a15-rover.mp4
+    poster: a15-rover.jpg
+    width: 1920
+    height: 1080
+    caption: Images tournées pendant un trajet en rover lunaire. Extrait d’une vidéo de la NASA sur Apollo 15, sans son.
+    source: https://images.nasa.gov/details/Apollo%2015%20Never%20Been%20on%20a%20Ride%20like%20this%20Before
+    sourceLabel: Vidéo de la NASA
+  - id: surface-video
+    kind: video
+    file: a15-surface.mp4
+    poster: a15-surface.jpg
+    width: 1920
+    height: 1080
+    caption: Astronautes sur la surface lunaire. Extrait de la même vidéo de la NASA sur Apollo 15, sans son.
+    source: https://images.nasa.gov/details/Apollo%2015%20Never%20Been%20on%20a%20Ride%20like%20this%20Before
+    sourceLabel: Vidéo de la NASA
 sources:
   - NASA NSSDCA, Apollo 15 Command and Service Module (CSM) : https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1971-063A
   - NASA Image and Video Library (photographies S71-37963, 7120062, AS15-86-11603, AS15-85-11425, AS15-88-11901, S71-43542 ; le nom du module lunaire Falcon figure dans leurs légendes) : https://images.nasa.gov/details/as15-86-11603
@@ -84,9 +102,13 @@ C'était la première expédition avec un véhicule lunaire. À son bord, les as
 
 [[figure:irwin-rover]]
 
+[[figure:rover-video]]
+
 [[figure:rille]]
 
 [[figure:rover-alone]]
+
+[[figure:surface-video]]
 
 ## Le marteau et la plume
 

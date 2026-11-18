@@ -45,6 +45,16 @@ figures:
     kind: photo
     file: as11-44-6642.jpg
     caption: アームストロングとオルドリンを乗せたイーグルの上昇段が、ドッキングのためコロンビアに近づく。月の地平線の上に地球が半分見えています。写真 AS11-44-6642、NASA。
+  - id: moonwalk-video
+    kind: video
+    file: a11-moonwalk.mp4
+    poster: a11-moonwalk.jpg
+    width: 1280
+    height: 720
+    caption: アポロ11号の月面活動の抜粋：はしごを降りる場面と月着陸船の周りでの作業。NASAによる編集映像、2分、音声あり。
+    source: https://images.nasa.gov/details/Apollo_11_moonwalk_montage_720p
+    sourceLabel: NASAの動画
+    sound: yes
 sources:
   - NASA NSSDCA, Apollo 11 Command and Service Module (CSM): https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1969-059A
   - NASA NSSDCA, Apollo 11 Mission: https://nssdc.gsfc.nasa.gov/planetary/lunar/apollo11info.html
@@ -87,6 +97,8 @@ sources:
 ## 着陸
 
 月着陸船は静かの海、北緯0.67度、東経23.47度の地点に着陸しました。アームストロングはこう伝えました。「ヒューストン、こちら静かの基地。イーグルは着陸した」（“Houston, Tranquility Base here. The Eagle has landed.”）。6時間半後、彼ははしごを下り、その後ずっと引用されることになる言葉を述べました。「これは一人の人間にとっては小さな一歩だが、人類にとっては大きな飛躍である」（“That's one small step for man, one giant leap for mankind.”）。オルドリンは19分後に続きました。
+
+[[figure:moonwalk-video]]
 
 [[figure:aldrin-walk]]
 

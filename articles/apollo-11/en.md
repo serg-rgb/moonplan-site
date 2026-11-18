@@ -45,6 +45,16 @@ figures:
     kind: photo
     file: as11-44-6642.jpg
     caption: The ascent stage of Eagle with Armstrong and Aldrin approaches Columbia for docking. Half of the Earth is above the Moon's horizon. Photo AS11-44-6642, NASA.
+  - id: moonwalk-video
+    kind: video
+    file: a11-moonwalk.mp4
+    poster: a11-moonwalk.jpg
+    width: 1280
+    height: 720
+    caption: Excerpts of the Apollo 11 moonwalk: the descent down the ladder and work around the lunar module. NASA montage, 2 minutes, with sound.
+    source: https://images.nasa.gov/details/Apollo_11_moonwalk_montage_720p
+    sourceLabel: NASA video
+    sound: yes
 sources:
   - NASA NSSDCA, Apollo 11 Command and Service Module (CSM): https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1969-059A
   - NASA NSSDCA, Apollo 11 Mission: https://nssdc.gsfc.nasa.gov/planetary/lunar/apollo11info.html
@@ -87,6 +97,8 @@ From launch to splashdown, 195 hours 18 minutes 35 seconds passed.
 ## Landing
 
 The lunar module landed in the Sea of Tranquility, at 0.67° north latitude and 23.47° east longitude. Armstrong reported: "Houston, Tranquility Base here. The Eagle has landed." Six and a half hours later he climbed down the ladder and said the words that everyone has quoted since: "That's one small step for man, one giant leap for mankind." Aldrin followed 19 minutes later.
+
+[[figure:moonwalk-video]]
 
 [[figure:aldrin-walk]]
 

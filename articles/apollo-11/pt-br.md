@@ -45,6 +45,16 @@ figures:
     kind: photo
     file: as11-44-6642.jpg
     caption: O estágio de subida de Eagle, com Armstrong e Aldrin, se aproxima de Columbia para a acoplagem. Acima do horizonte lunar, metade da Terra. Fotografia AS11-44-6642, NASA.
+  - id: moonwalk-video
+    kind: video
+    file: a11-moonwalk.mp4
+    poster: a11-moonwalk.jpg
+    width: 1280
+    height: 720
+    caption: Trechos da caminhada lunar da Apollo 11: a descida pela escada e o trabalho ao redor do módulo lunar. Montagem da NASA, 2 minutos, com som.
+    source: https://images.nasa.gov/details/Apollo_11_moonwalk_montage_720p
+    sourceLabel: Vídeo da NASA
+    sound: yes
 sources:
   - NASA NSSDCA, Apollo 11 Command and Service Module (CSM): https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1969-059A
   - NASA NSSDCA, Apollo 11 Mission: https://nssdc.gsfc.nasa.gov/planetary/lunar/apollo11info.html
@@ -87,6 +97,8 @@ Do lançamento ao pouso no mar passaram-se 195 horas, 18 minutos e 35 segundos.
 ## Pouso
 
 O módulo lunar pousou no Mar da Tranquilidade, no ponto de coordenadas 0,67° de latitude norte e 23,47° de longitude leste. Armstrong informou: "Houston, aqui é a Base da Tranquilidade. Eagle pousou" ("Houston, Tranquility Base here. The Eagle has landed."). Seis horas e meia depois, ele desceu a escada e disse a frase que todos citam desde então: "Este é um pequeno passo para o homem, mas um salto gigantesco para a humanidade" ("That's one small step for man, one giant leap for mankind."). Aldrin saiu em seguida, 19 minutos depois.
+
+[[figure:moonwalk-video]]
 
 [[figure:aldrin-walk]]
 

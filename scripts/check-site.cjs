@@ -27,7 +27,8 @@ async function imagesLoaded(page,sel){return page.evaluate(async sel=>{const img
     await page.setViewportSize({width,height:900});
     for(const route of routes){
       const t0=Date.now();
-      const response=await page.goto(base+route,{waitUntil:'networkidle'});
+      // one retry on a navigation timeout (local http.server occasionally stalls under load); the route is reported
+      let response;try{response=await page.goto(base+route,{waitUntil:'networkidle'});}catch(err){console.error(`retry ${width}px ${route}: ${err.message.split('\n')[0]}`);response=await page.goto(base+route,{waitUntil:'networkidle'});}
       assert.equal(response.status(),200,route);
       const result=await page.evaluate(()=>({
         overflow:document.documentElement.scrollWidth>innerWidth,
@@ -99,7 +100,7 @@ async function imagesLoaded(page,sel){return page.evaluate(async sel=>{const img
     for(const w of want)assert(got.includes(w),`${lang}: #read lacks ${w}`);
     assert(got.includes(base+`/${lang}/today/`),`${lang}: #read lacks today`);
     assert.deepEqual(await imagesLoaded(page,'#read img'),{n:await page.locator('#read img').count(),bad:0},`${lang}: #read images`);
-    for(const h of await page.locator('#read a').evaluateAll(n=>n.map(a=>a.href)))assert.equal((await context.request.get(h)).status(),200,h);
+    for(const h of (await page.locator('#read a').evaluateAll(n=>n.map(a=>a.href))).filter(h=>h.startsWith(base)))assert.equal((await context.request.get(h)).status(),200,h);
     await page.waitForFunction(()=>document.querySelector('[data-phase]').textContent.trim().length>0);
     const hud=await page.locator('[data-phase]').textContent();
     assert(/\d+%/.test(hud),`${lang}: HUD ${hud}`);

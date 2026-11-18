@@ -45,6 +45,16 @@ figures:
     kind: photo
     file: as11-44-6642.jpg
     caption: Die Aufstiegsstufe von Eagle mit Armstrong und Aldrin nähert sich Columbia zur Ankopplung. Über dem Mondhorizont steht die halbe Erde. Aufnahme AS11-44-6642, NASA.
+  - id: moonwalk-video
+    kind: video
+    file: a11-moonwalk.mp4
+    poster: a11-moonwalk.jpg
+    width: 1280
+    height: 720
+    caption: Ausschnitte aus dem Mondspaziergang von Apollo 11: der Abstieg über die Leiter und die Arbeit an der Mondlandefähre. Zusammenschnitt der NASA, 2 Minuten, mit Ton.
+    source: https://images.nasa.gov/details/Apollo_11_moonwalk_montage_720p
+    sourceLabel: NASA-Video
+    sound: yes
 sources:
   - NASA NSSDCA, Apollo 11 Command and Service Module (CSM): https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1969-059A
   - NASA NSSDCA, Apollo 11 Mission: https://nssdc.gsfc.nasa.gov/planetary/lunar/apollo11info.html
@@ -87,6 +97,8 @@ Vom Start bis zur Wasserung vergingen 195 Stunden 18 Minuten 35 Sekunden.
 ## Landung
 
 Die Mondfähre landete im Meer der Ruhe, bei 0,67° nördlicher Breite und 23,47° östlicher Länge. Armstrong meldete: „Houston, hier ist Tranquility Base. Eagle ist gelandet." (“Houston, Tranquility Base here. The Eagle has landed.”) Sechseinhalb Stunden später stieg er die Leiter hinab und sagte den Satz, den seither alle zitieren: „Das ist ein kleiner Schritt für einen Menschen, aber ein riesiger Sprung für die Menschheit." (“That's one small step for man, one giant leap for mankind.”) Aldrin folgte 19 Minuten später.
+
+[[figure:moonwalk-video]]
 
 [[figure:aldrin-walk]]
 

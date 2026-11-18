@@ -33,6 +33,24 @@ figures:
     kind: photo
     file: S71-43542.jpg
     caption: L'ammaraggio del modulo di comando il 7 agosto 1971. Uno dei tre paracadute principali non si aprì completamente; l'equipaggio rimase illeso. Fotografia S71-43542, NASA.
+  - id: rover-video
+    kind: video
+    file: a15-rover.mp4
+    poster: a15-rover.jpg
+    width: 1920
+    height: 1080
+    caption: Riprese durante un tragitto sul rover lunare. Estratto di un video della NASA sull’Apollo 15, senza audio.
+    source: https://images.nasa.gov/details/Apollo%2015%20Never%20Been%20on%20a%20Ride%20like%20this%20Before
+    sourceLabel: Video della NASA
+  - id: surface-video
+    kind: video
+    file: a15-surface.mp4
+    poster: a15-surface.jpg
+    width: 1920
+    height: 1080
+    caption: Astronauti sulla superficie lunare. Estratto dello stesso video della NASA sull’Apollo 15, senza audio.
+    source: https://images.nasa.gov/details/Apollo%2015%20Never%20Been%20on%20a%20Ride%20like%20this%20Before
+    sourceLabel: Video della NASA
 sources:
   - NASA NSSDCA, Apollo 15 Command and Service Module (CSM): https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1971-063A
   - NASA Image and Video Library (fotografie S71-37963, 7120062, AS15-86-11603, AS15-85-11425, AS15-88-11901, S71-43542; il nome del modulo lunare Falcon è nelle loro didascalie): https://images.nasa.gov/details/as15-86-11603
@@ -84,9 +102,13 @@ Fu la prima spedizione con un veicolo lunare. Con questo gli astronauti si spost
 
 [[figure:irwin-rover]]
 
+[[figure:rover-video]]
+
 [[figure:rille]]
 
 [[figure:rover-alone]]
+
+[[figure:surface-video]]
 
 ## Il martello e la piuma
 

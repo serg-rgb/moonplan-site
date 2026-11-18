@@ -33,6 +33,24 @@ figures:
     kind: photo
     file: S71-43542.jpg
     caption: Wasserung des Kommandomoduls am 7. August 1971. Einer der drei Hauptfallschirme öffnete sich nicht vollständig, die Besatzung blieb unverletzt. Aufnahme S71-43542, NASA.
+  - id: rover-video
+    kind: video
+    file: a15-rover.mp4
+    poster: a15-rover.jpg
+    width: 1920
+    height: 1080
+    caption: Aufnahmen während einer Fahrt mit dem Mondauto. Ausschnitt aus einem NASA-Video über Apollo 15, ohne Ton.
+    source: https://images.nasa.gov/details/Apollo%2015%20Never%20Been%20on%20a%20Ride%20like%20this%20Before
+    sourceLabel: NASA-Video
+  - id: surface-video
+    kind: video
+    file: a15-surface.mp4
+    poster: a15-surface.jpg
+    width: 1920
+    height: 1080
+    caption: Astronauten auf der Mondoberfläche. Ausschnitt aus demselben NASA-Video über Apollo 15, ohne Ton.
+    source: https://images.nasa.gov/details/Apollo%2015%20Never%20Been%20on%20a%20Ride%20like%20this%20Before
+    sourceLabel: NASA-Video
 sources:
   - NASA NSSDCA, Apollo 15 Command and Service Module (CSM): https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1971-063A
   - NASA Image and Video Library (Aufnahmen S71-37963, 7120062, AS15-86-11603, AS15-85-11425, AS15-88-11901, S71-43542; der Name des Mondlandemoduls Falcon steht in den Bildunterschriften dazu): https://images.nasa.gov/details/as15-86-11603
@@ -84,9 +102,13 @@ Es war die erste Expedition mit einem Mondauto. Damit fuhren die Astronauten im 
 
 [[figure:irwin-rover]]
 
+[[figure:rover-video]]
+
 [[figure:rille]]
 
 [[figure:rover-alone]]
+
+[[figure:surface-video]]
 
 ## Hammer und Feder
 
