@@ -87,20 +87,22 @@ async function imagesLoaded(page,sel){return page.evaluate(async sel=>{const img
     const hrefs=await page.locator('.news .feed a').evaluateAll(n=>n.map(a=>a.getAttribute('href')));
     assert.equal(hrefs.length,4,`${lang}: news cards`);assert(hrefs.every(h=>h.startsWith('https://')),`${lang}: news links`);
     assert(await page.locator('.news time[datetime]').evaluateAll(n=>n.every(t=>t.textContent.trim().length>3)),`${lang}: news dates`);
-    assert(await page.locator('#questions').evaluate(el=>el.previousElementSibling.id==='news'),`${lang}: news before FAQ`);
+    assert(await page.locator('#questions').evaluate(el=>el.previousElementSibling.matches('.home-banner')&&el.previousElementSibling.previousElementSibling.id==='news'),`${lang}: news, banner, FAQ order`);
     const rail=await page.locator('nav.phase-rail a').evaluateAll(n=>n.map(a=>a.getAttribute('href')));
     assert.equal(rail.length,4,`${lang}: phase rail links`);assert.equal(await page.locator('.phase-rail[aria-hidden]').count(),0,`${lang}: rail must not be aria-hidden`);
     for(const h of rail){if(h.startsWith('#'))assert.equal(await page.locator(h).count(),1,`${lang}: rail anchor ${h}`);else assert.equal((await context.request.get(new URL(h,base).href)).status(),200,`${lang}: rail ${h}`);}
-    const read=await page.locator('#read a').evaluateAll(n=>n.map(a=>a.getAttribute('href')));
+    const read=await page.locator('[data-read] a').evaluateAll(n=>n.map(a=>a.getAttribute('href')));
     assert(read.length>=3,`${lang}: #read cards`);
     assert(await page.locator('#discover').evaluate(el=>!!(document.querySelector('#read').compareDocumentPosition(el)&Node.DOCUMENT_POSITION_FOLLOWING)),`${lang}: #read before #discover`);
     assert.equal(await page.locator('.desktop-nav a[href$="/#read"]').count(),1,`${lang}: nav item`);
     const want=[...articleRoutes].filter(r=>r.startsWith(`/${lang}/`)&&r.endsWith('.html')).map(r=>base+r);
-    const got=await page.locator('#read a').evaluateAll(n=>n.map(a=>a.href));
+    const got=await page.locator('[data-read] a').evaluateAll(n=>n.map(a=>a.href));
+    for(const hub of [...articleRoutes].filter(r=>r.startsWith(`/${lang}/`)&&r.endsWith('/')))assert(got.includes(base+hub),`${lang}: #read lacks hub ${hub}`);
     for(const w of want)assert(got.includes(w),`${lang}: #read lacks ${w}`);
     assert(got.includes(base+`/${lang}/today/`),`${lang}: #read lacks today`);
-    assert.deepEqual(await imagesLoaded(page,'#read img'),{n:await page.locator('#read img').count(),bad:0},`${lang}: #read images`);
-    for(const h of (await page.locator('#read a').evaluateAll(n=>n.map(a=>a.href))).filter(h=>h.startsWith(base)))assert.equal((await context.request.get(h)).status(),200,h);
+    assert.deepEqual(await imagesLoaded(page,'[data-read] img'),{n:await page.locator('[data-read] img').count(),bad:0},`${lang}: #read images`);
+    {const srcs=await page.locator('main img:not(.store-badge img)').evaluateAll(n=>n.map(i=>i.getAttribute('src')));const dup=srcs.filter((x,i)=>srcs.indexOf(x)!==i);assert.deepEqual(dup,[],`${lang}: repeated images on home: ${dup}`);}
+    for(const h of (await page.locator('[data-read] a').evaluateAll(n=>n.map(a=>a.href))).filter(h=>h.startsWith(base)))assert.equal((await context.request.get(h)).status(),200,h);
     await page.waitForFunction(()=>document.querySelector('[data-phase]').textContent.trim().length>0);
     const hud=await page.locator('[data-phase]').textContent();
     assert(/\d+%/.test(hud),`${lang}: HUD ${hud}`);

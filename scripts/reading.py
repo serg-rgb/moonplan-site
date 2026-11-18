@@ -4,7 +4,7 @@ from html import escape as e
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-TODAY_IMAGE = 'assets/news/supermoon.webp'  # same illustration as the news card
+TODAY_IMAGE = 'assets/today/phases/180-800.webp'  # full-moon frame of the Moon-today page; not repeated in the news cards
 LIMIT = {'ja': 70}  # characters; Japanese has no word boundaries and is denser
 STR = {  # (eyebrow, title, nav item)
     'ru': ('Читать', 'Луна, календарь и история', 'Статьи'),
@@ -56,31 +56,6 @@ def cover_of(a, cfg):
     small = Path(cov).with_name(Path(cov).stem + '-800.webp')
     if not (a['folder'] / small).exists(): return None
     return f'{cfg["base"]}/assets/articles/{a["slug"]}/{small.name}', articles.image_size(a['folder'] / small)
-
-def group(sec, arts, lang, c, cfg):
-    """One section: header tile (cover of its newest article, name, hub intro, link) and every article as a card."""
-    base = cfg['base']; hub = f'{base}/{lang}/{sec}/'
-    cov = cover_of(arts[0], cfg)
-    fig = f'<figure><img src="{cov[0]}" alt="" width="{cov[1][0]}" height="{cov[1][1]}" loading="lazy" decoding="async"></figure>' if cov else ''
-    intro = c.get(f'articleHubIntro_{sec}', c['articleHubIntro'])
-    head = (f'<a class="read-head" href="{e(hub, quote=True)}">{fig}<div><h3>{e(c[f"articleSection_{sec}"])}</h3><p>{e(intro)}</p>'
-            f'<span class="go">{e(c["articleBack"] if sec == "moon" else c[f"articleSection_{sec}"])} →</span></div></a>')
-    return f'<div class="read-group">{head}{cards_list(arts, lang, cfg, c, "h4")}</div>'
-
-def read_section(lang, c, cfg):
-    import articles
-    from render import SECTIONS
-    base, t = cfg['base'], c['today']
-    size = articles.image_size(ROOT / TODAY_IMAGE)
-    today = (f'<div class="read-group read-today"><a class="read-head" href="{base}/{lang}/today/"><figure><img src="{base}/{TODAY_IMAGE}" alt="" width="{size[0]}" height="{size[1]}" loading="lazy" decoding="async"></figure>'
-             f'<div><h3>{e(t["nav"])}</h3><p>{e(shorten(t["description"], lang, 200))}</p><span class="go">{e(t["nav"])} →</span></div></a></div>')
-    arts = articles_for(lang)
-    groups = ''.join(group(s, [a for a in arts if a['meta']['section'] == s], lang, c, cfg)
-                     for s in SECTIONS if any(a['meta']['section'] == s for a in arts))
-    eyebrow, title, _ = STR[lang]
-    from banner import banner
-    return (f'<section class="read wrap" id="read" aria-labelledby="read-title"><p class="eyebrow">{e(eyebrow)}</p><h2 id="read-title">{e(title)}</h2>'
-            f'{today}{groups}{banner(c, cfg, lang, "home")}</section>')
 
 def nav_link(lang, cfg):
     return f'<a href="{cfg["base"]}/{lang}/#read">{e(STR[lang][2])}</a>'

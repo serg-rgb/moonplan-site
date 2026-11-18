@@ -2,6 +2,7 @@
 from html import escape as e
 from news import news_section
 import reading
+import home
 from banner import banner, stylesheet as banner_css
 
 LANGS = ('en', 'de', 'es', 'fr', 'it', 'pt-br', 'ru', 'ja')
@@ -100,15 +101,12 @@ def landing(lang,c,cfg):
 <ul class="proof">{''.join('<li>'+e(p)+'</li>' for p in c['proof'])}</ul></div>
 </section>
 {reading.rail(lang,c,cfg)}
-{reading.read_section(lang,c,cfg)}
-<section id="discover" class="section wrap"><div class="section-heading reveal"><p class="eyebrow">{e(c['featureEyebrow'])}</p><h2>{lines(c['featureTitle'])}</h2><p>{e(c['featureIntro'])}</p></div>'''
-    for f in c['features']:
-        result+=f'''<article class="feature reveal"><div class="feature-copy"><p class="eyebrow"><span class="index">{f['number']}</span>{e(f['tag'])}</p><h3>{e(f['title'])}</h3><p>{e(f['body'])}</p><p class="feature-detail">{e(f['detail'])}</p>{'<p class="note">'+e(f['note'])+'</p>' if f.get('note') else ''}</div><figure class="feature-visual">{phone(lang,f['image'],f['alt'],cfg)}</figure></article>'''
-    result+=f'''<p class="preview-note">{e(c['preview'])}</p><div class="extra-grid">{''.join(f'<article class="extra reveal"><span class="extra-symbol" aria-hidden="true">{s}</span><h3>{e(x["title"])}</h3><p>{e(x["body"])}</p></article>' for s,x in zip(('◔','☾','文'),c['extras']))}</div></section>
+{home.middle(lang,c,cfg)}
 <section id="how" class="section wrap"><div class="section-heading reveal"><p class="eyebrow">{e(c['howEyebrow'])}</p><h2>{lines(c['howTitle'])}</h2></div><ol class="steps">{''.join(f'<li class="reveal"><span class="step-number" aria-hidden="true">0{i+1}</span><h3>{e(x["title"])}</h3><p>{e(x["body"])}</p></li>' for i,x in enumerate(c['steps']))}</ol></section>
 <section class="tagline wrap" aria-label="{e(' '.join(c['tagline']),quote=True)}"><div class="tagline-orbit" aria-hidden="true"></div><p aria-hidden="true">{''.join('<span class="tagline-line">'+''.join('<span class="word">'+e(w)+'</span>'+('' if lang=='ja' else ' ') for w in (list(line) if lang=='ja' else line.split(' ')))+'</span>' for line in c['tagline'])}</p></section>
 <section class="section principles wrap"><div class="section-heading reveal"><p class="eyebrow">{e(c['principleEyebrow'])}</p><h2>{lines(c['principleTitle'])}</h2></div><div class="principle-list">{''.join(f'<article class="reveal"><span class="index" aria-hidden="true">0{i+1}</span><div><h3>{e(x["title"])}</h3><p>{e(x["body"])}</p></div></article>' for i,x in enumerate(c['principles']))}</div></section>
 {news_section(lang,c,cfg)}
+<div class="wrap home-banner">{banner(c,cfg,lang,'home')}</div>
 <section id="questions" class="section wrap faq"><div class="section-heading reveal"><p class="eyebrow">{e(c['faqEyebrow'])}</p><h2>{e(c['faqTitle'])}</h2></div><div class="faq-items">{''.join(f'<details><summary>{e(q)}<span aria-hidden="true">+</span></summary><p>{e(a)}</p></details>' for q,a in c['faq'])}</div></section>
 <section class="final-cta section wrap reveal"><span class="final-moon" aria-hidden="true">☾</span><p class="eyebrow">{e(c['finalEyebrow'])}</p><h2>{lines(c['finalTitle'])}</h2><p>{e(c['finalBody'])}</p>{cta(c,cfg,'#discover',lang)}<p class="release">{e(c['status']) if not cfg['appStoreUrl'] else e(c['compatibility'])}</p></section></main>
 <div class="hud" aria-live="polite"><div class="wrap"><span><strong>{e(c['moonNow'])}</strong>&nbsp;&nbsp;<span data-phase data-lit="{e(c['lit'],quote=True)}" data-waxing="{e(c['waxing'],quote=True)}" data-waning="{e(c['waning'],quote=True)}"></span></span><span>{e(c['moonCredit'])}</span></div></div>'''
