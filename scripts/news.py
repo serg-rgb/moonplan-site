@@ -4,6 +4,8 @@ from html import escape as e
 from pathlib import Path
 from urllib.parse import urlsplit
 
+ROOT = Path(__file__).resolve().parent.parent
+
 MONTHS = {
     'en': 'January February March April May June July August September October November December',
     'de': 'Januar Februar März April Mai Juni Juli August September Oktober November Dezember',
@@ -38,9 +40,12 @@ def news_section(lang, c, cfg):
         if not it['url'].startswith('https://'):
             raise ValueError(f'news item {it["id"]}: url must be https')
         t = it['text'].get(lang) or it['text']['en']
+        from articles import image_size  # lazy: articles -> figures -> news would be circular at import time
+        w, h = image_size(ROOT / 'assets' / 'news' / f'{it["image"]}.webp')  # whole picture, natural proportions (no crop)
+        credit = it['credit'] if isinstance(it['credit'], str) else (it['credit'].get(lang) or it['credit']['en'])
         cards += (f'<li><a href="{e(it["url"], quote=True)}" target="_blank" rel="noopener">'
-                  f'<figure><img src="{base}/assets/news/{it["image"]}.webp" alt="{e(t["alt"], quote=True)}" width="800" height="500" loading="lazy" decoding="async">'
-                  f'<figcaption>{e(c["illustrationCredit"])}</figcaption></figure>'
+                  f'<figure><img src="{base}/assets/news/{it["image"]}.webp" alt="{e(t["alt"], quote=True)}" width="{w}" height="{h}" loading="lazy" decoding="async">'
+                  f'<figcaption>{e(credit)}</figcaption></figure>'
                   f'<span class="meta">{e(it["source"])} <time datetime="{it["date"]}">{e(format_date(it["date"], lang))}</time></span>'
                   f'<h3>{e(t["title"])}</h3><p>{e(t["summary"])}</p><span class="go">{go}</span></a></li>')
     return (f'<section class="news wrap" id="news" aria-labelledby="news-title"><p class="eyebrow">{e(c["newsEyebrow"])}</p>'

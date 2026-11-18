@@ -24,8 +24,8 @@ body.has-space{background:#04040a}
 .news .note{margin-top:16px;color:var(--muted);max-width:60ch}
 .feed{margin:48px 0 0;padding:0;list-style:none;display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:48px 32px}
 .feed a{display:grid;gap:16px;align-content:start;color:inherit;text-decoration:none}
-.feed figure{margin:0;position:relative;overflow:hidden;border-radius:12px;border:1px solid rgba(232,210,158,.12);background:#04040a;aspect-ratio:8/5}
-.feed img{width:100%;height:100%;object-fit:cover;display:block;transform:scale(1.001);transition:transform .9s var(--ease)}
+.feed figure{margin:0;position:relative;overflow:hidden;border-radius:12px;border:1px solid rgba(232,210,158,.12);background:#04040a}
+.feed img{width:100%;height:auto;display:block;transform:scale(1.001);transition:transform .9s var(--ease)}
 .feed a:hover img{transform:scale(1.045)}
 .feed figcaption{text-shadow:0 1px 6px rgba(4,4,10,.9);position:absolute;left:12px;bottom:10px;font-size:11px;line-height:14px;color:rgba(240,232,216,.62);letter-spacing:.04em}
 .feed .meta{display:flex;flex-wrap:wrap;gap:4px 12px;font-size:12px;line-height:16px;letter-spacing:.12em;text-transform:uppercase;font-weight:600;color:var(--gold)}
