@@ -136,7 +136,8 @@ def article_page(a, cfg, c, langs_here):
     src = ''.join(source_item(s) for s in m['sources'])
     return (top + header(lang, c, cfg, switch) + f'<main id="main" class="article-page wrap">{nav}<article class="article">'
         f'<header class="article-head"><p class="eyebrow">{e(c[f"articleSection_{sec}"])}</p><h1>{e(m["title"])}</h1>'
-        f'<p class="article-meta">{e(m["author"])} · {e(c["articleUpdated"])} <time datetime="{m["updated"]}">{e(format_date(m["updated"], lang))}</time> · {minutes} {e(c["articleMinutes"])}</p></header>'
+        f'<p class="article-byline"><span>{e(c["articleAuthor"])}</span> {e(m["author"])}</p>'
+        f'<p class="article-meta">{e(c["articleUpdated"])} <time datetime="{m["updated"]}">{e(format_date(m["updated"], lang))}</time> · {minutes} {e(c["articleMinutes"])}</p></header>'
         f'{cover(a, cfg)}<nav class="toc" aria-label="{e(c["articleContents"], quote=True)}"><p class="eyebrow">{e(c["articleContents"])}</p><ol>{toc}</ol></nav>'
         f'<div class="article-body">{html}</div>'
         + (f'<section class="article-sources"><h2 id="sources">{e(c["articleSources"])}</h2><ol>{src}</ol></section>' if src else '')

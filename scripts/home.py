@@ -53,20 +53,21 @@ def today_block(lang, c, cfg):
 def phone(lang, kind, alt, cfg):
     return f'<div class="phone"><img src="{cfg["base"]}/assets/screens/{kind}-{lang}.webp" width="1290" height="2796" alt="{e(alt, quote=True)}" loading="lazy" decoding="async"></div>'
 
-def feature(f, lang, cfg, flip=False):
+def feature(f, lang, cfg, c, flip=False):
+    from render import cta  # App Store badge next to every phone (Sergey, 2026-11-18)
     note = f'<p class="note">{e(f["note"])}</p>' if f.get('note') else ''
     return (f'<article class="feature reveal{" flip" if flip else ""}"><div class="feature-copy"><p class="eyebrow"><span class="index">{f["number"]}</span>{e(f["tag"])}</p><h3>{e(f["title"])}</h3>'
-            f'<p>{e(f["body"])}</p><p class="feature-detail">{e(f["detail"])}</p>{note}</div>'
+            f'<p>{e(f["body"])}</p><p class="feature-detail">{e(f["detail"])}</p>{note}<div class="feature-cta">{cta(c, cfg, "#discover", lang)}</div></div>'
             f'<figure class="feature-visual">{phone(lang, f["image"], f["alt"], cfg)}</figure></article>')
 
 def lines(v): return '<br>'.join(e(x) for x in (v if isinstance(v, list) else v.split('\n')))
 
 def discover(lang, c, cfg):
     return (f'<section id="discover" class="section wrap"><div class="section-heading reveal"><p class="eyebrow">{e(c["featureEyebrow"])}</p><h2>{lines(c["featureTitle"])}</h2><p>{e(c["featureIntro"])}</p></div>'
-            f'{feature(c["features"][0], lang, cfg)}</section>')
+            f'{feature(c["features"][0], lang, cfg, c)}</section>')
 
 def feature_block(i, lang, c, cfg):
-    return f'<section class="wrap feature-block">{feature(c["features"][i], lang, cfg, flip=i == 1)}</section>'
+    return f'<section class="wrap feature-block">{feature(c["features"][i], lang, cfg, c, flip=i == 1)}</section>'
 
 def extras(c):
     return (f'<section class="section wrap"><p class="preview-note">{e(c["preview"])}</p><div class="extra-grid">'

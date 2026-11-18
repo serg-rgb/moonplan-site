@@ -30,3 +30,4 @@
 .fig-photo{padding:0;overflow:hidden}.fig-photo img{display:block;width:100%;height:auto;border-radius:16px 16px 0 0}.fig-photo figcaption{margin:0;padding:16px}
 .fig-photo{max-width:860px;margin-inline:auto}.fig-photo img{max-height:80vh;object-fit:contain;background:#04040a}
 .fig-video video{display:block;width:100%;height:auto;max-height:80vh;border-radius:16px 16px 0 0;background:#04040a}
+.article-byline{margin-top:24px;font-size:16px;line-height:24px;color:var(--text)}.article-byline span{margin-right:8px;font-size:12px;letter-spacing:.12em;text-transform:uppercase;font-weight:600;color:var(--gold)}.article-byline+.article-meta{margin-top:4px}
