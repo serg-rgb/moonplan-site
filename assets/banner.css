@@ -1,8 +1,13 @@
 /* App banner (scripts/banner.py): dark card with an accent eyebrow, used on every content page */
-.app-banner{max-width:960px;margin:80px auto 0;padding:40px;display:grid;gap:16px;justify-items:start;border:1px solid var(--line);border-radius:24px;background:linear-gradient(135deg,rgba(201,168,106,.12),rgba(13,13,26,0) 60%),var(--panel);text-shadow:none}
+.app-banner{max-width:960px;margin:80px auto 0;padding:40px;display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:16px 40px;border:1px solid var(--line);border-radius:24px;background:linear-gradient(135deg,rgba(201,168,106,.12),rgba(13,13,26,0) 60%),var(--panel);text-shadow:none}
 .app-banner .app-banner-title{margin:0;max-width:30ch;font-family:var(--display);font-weight:400;font-size:26px;line-height:34px;letter-spacing:-.035em;text-wrap:balance;color:var(--text)}
 .app-banner .app-banner-text{margin:0;max-width:62ch;font-size:17px;line-height:28px;color:var(--muted)}
 .app-banner .store-badge{margin-top:8px}
 .app-banner+.article-more{max-width:960px;margin:24px auto 0}
 .read .app-banner{margin-top:64px}
 @media(max-width:600px){.app-banner{padding:24px;margin-top:56px;border-radius:20px}.app-banner .app-banner-title{font-size:21px;line-height:28px}.app-banner .app-banner-text{font-size:16px;line-height:26px}}
+.app-banner-body{display:grid;gap:16px;justify-items:start;grid-column:1;grid-row:1}
+.app-banner-moon{grid-column:2;grid-row:1;margin:0;display:grid;justify-items:center;gap:6px}
+.app-banner-moon img{width:180px;height:180px;border-radius:50%;box-shadow:0 0 48px rgba(255,236,190,.18)}
+.app-banner-moon figcaption{font-size:11px;line-height:14px;letter-spacing:.06em;color:var(--faint)}
+@media(max-width:600px){.app-banner{grid-template-columns:1fr}.app-banner-moon{grid-row:1;grid-column:1;justify-items:start}.app-banner-moon img{width:96px;height:96px}.app-banner-body{grid-row:2}}

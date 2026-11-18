@@ -1,0 +1,1 @@
+full-moon.webp: NASA ISS014-E-08916 (4 Dec 2006, Expedition 14 crew), https://images.nasa.gov/details/iss014e08916 ; cropped to the whole disc with margin, toned warm (PIL autocontrast + colorize), transparent outside the disc, 480x480.

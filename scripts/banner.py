@@ -9,6 +9,8 @@ def stylesheet(cfg): return f'<link rel="stylesheet" href="{cfg["base"]}/assets/
 def banner(c, cfg, lang, kind):
     from render import cta  # late import: render imports pages that import this module
     b = c['banners'][kind]
-    return (f'<aside class="app-banner" data-banner="{kind}"><p class="eyebrow">{e(c["eyebrow"])}</p>'
+    moon = (f'<figure class="app-banner-moon"><img src="{cfg["base"]}/assets/banner/full-moon.webp" width="480" height="480" alt="" '
+            f'loading="lazy" decoding="async"><figcaption>NASA</figcaption></figure>')  # ISS014-E-08916, toned warm (assets/banner/SOURCE.txt)
+    return (f'<aside class="app-banner" data-banner="{kind}">{moon}<div class="app-banner-body"><p class="eyebrow">{e(c["eyebrow"])}</p>'
             f'<h2 class="app-banner-title">{e(b["title"])}</h2><p class="app-banner-text">{e(b["text"])}</p>'
-            f'{cta(c, cfg, cfg["base"] + "/" + lang + "/", lang)}</aside>')
+            f'{cta(c, cfg, cfg["base"] + "/" + lang + "/", lang)}</div></aside>')
