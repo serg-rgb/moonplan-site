@@ -4,7 +4,7 @@ from html import escape as e
 import reading
 from reading import shorten
 
-MAIN = {'apollo': 'apollo-11', 'luna': 'lunokhod-1', 'china': 'change-4', 'new': 'artemis-2'}
+MAIN = {'moon': 'moon-folk-signs', 'apollo': 'apollo-11', 'luna': 'lunokhod-1', 'china': 'change-4', 'new': 'artemis-2'}
 THUMB_H, THUMB_MAX_W = 72, 144
 
 def _link(a, lang, cfg):
@@ -29,8 +29,8 @@ def group(sec, arts, lang, c, cfg):
     hub = f'{cfg["base"]}/{lang}/{sec}/'
     main = next((a for a in arts if a['slug'] == MAIN.get(sec)), arts[0])
     rest = [a for a in arts if a is not main]
-    head = (f'<div class="rg-head"><h3>{e(c[f"articleSection_{sec}"])}</h3><p>{e(c[f"articleHubIntro_{sec}"])}</p>'
-            f'<a class="go" href="{e(hub, quote=True)}">{e(c[f"articleBack_{sec}"])} →</a></div>')
+    head = (f'<div class="rg-head"><h3>{e(c[f"articleSection_{sec}"])}</h3><p>{e(c.get(f"articleHubIntro_{sec}", c["articleHubIntro"]))}</p>'
+            f'<a class="go" href="{e(hub, quote=True)}">{e(c.get(f"articleBack_{sec}", c["articleBack"]))} →</a></div>')
     lst = f'<ul class="rg-list">{"".join(_item(a, lang, cfg) for a in rest)}</ul>' if rest else ''
     return f'<div class="read-group">{head}<div class="rg-body">{_main(main, lang, cfg, c)}{lst}</div></div>'
 
@@ -43,12 +43,10 @@ def today_block(lang, c, cfg):
     import articles  # late import: articles imports render
     base, t = cfg['base'], c['today']; arts = reading.articles_for(lang)
     size = articles.image_size(reading.ROOT / reading.TODAY_IMAGE)
-    phases = next((a for a in arts if a['slug'] == 'moon-phases'), None)
-    more = f'<a class="go" href="{e(_link(phases, lang, cfg), quote=True)}">{e(phases["meta"]["title"])} →</a>' if phases else ''
     eyebrow, title, _ = reading.STR[lang]
     return (f'<section class="read wrap" id="read" data-read aria-labelledby="read-title"><p class="eyebrow">{e(eyebrow)}</p><h2 id="read-title">{e(title)}</h2>'
             f'<div class="read-group read-today"><a class="today-fig" href="{base}/{lang}/today/" tabindex="-1" aria-hidden="true"><figure><img src="{base}/{reading.TODAY_IMAGE}" alt="" width="{size[0]}" height="{size[1]}" loading="lazy" decoding="async"></figure></a>'
-            f'<div><h3>{e(t["nav"])}</h3><p>{e(shorten(t["description"], lang, 200))}</p><p class="links"><a class="go" href="{base}/{lang}/today/">{e(t["nav"])} →</a>{more}<a class="go" href="{base}/{lang}/moon/">{e(c["articleBack"])} →</a></p></div></div></section>')
+            f'<div><h3>{e(t["nav"])}</h3><p>{e(shorten(t["description"], lang, 200))}</p><p class="links"><a class="go" href="{base}/{lang}/today/">{e(t["nav"])} →</a></p></div></div></section>')
 
 def phone(lang, kind, alt, cfg):
     return f'<div class="phone"><img src="{cfg["base"]}/assets/screens/{kind}-{lang}.webp" width="1290" height="2796" alt="{e(alt, quote=True)}" loading="lazy" decoding="async"></div>'
@@ -76,6 +74,6 @@ def extras(c):
 
 def middle(lang, c, cfg):
     """Everything between the phase rail and the "how" section, in the order of layout A."""
-    return ''.join([today_block(lang, c, cfg), groups_block(('apollo',), lang, c, cfg), discover(lang, c, cfg),
+    return ''.join([today_block(lang, c, cfg), groups_block(('moon',), lang, c, cfg), groups_block(('apollo',), lang, c, cfg), discover(lang, c, cfg),
                     groups_block(('luna',), lang, c, cfg), feature_block(1, lang, c, cfg),
                     groups_block(('china', 'new'), lang, c, cfg, 'read-pair'), feature_block(2, lang, c, cfg), extras(c)])
