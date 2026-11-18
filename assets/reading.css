@@ -39,7 +39,7 @@ html[lang=ja] .read h2,html[lang=ja] .read-cards h2,html[lang=ja] .read-cards h3
 .rg-main:focus-visible,.rg-list a:focus-visible,.go:focus-visible{outline:2px solid var(--light-gold);outline-offset:6px;border-radius:8px}
 .read-pair .read-group+.read-group{margin-top:56px;padding-top:56px;border-top:1px solid rgba(232,210,158,.18)}
 .read-pair .read-group+.read-group .rg-head{border-bottom:0;padding-bottom:0}
-.home-banner{padding-block:32px}
+.home-banner{padding-block:16px}
 html[lang=ja] .read-today h3,html[lang=ja] .rg-head h3,html[lang=ja] .rg-main h4,html[lang=ja] .rg-list h4{font-weight:600;letter-spacing:.01em}html[lang=ja] .rg-head h3,html[lang=ja] .read-today h3{font-size:24px}
 @media(max-width:900px){.read-today,.rg-body{grid-template-columns:1fr}}
 @media(max-width:600px){.read-group{margin-top:48px}.rg-main h4{font-size:20px;line-height:28px}.read-pair .read-group+.read-group{margin-top:40px;padding-top:40px}}

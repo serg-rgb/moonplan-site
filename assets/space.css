@@ -19,7 +19,7 @@ body.has-space{background:#04040a}
 .hud span{opacity:0;transition:opacity 1.2s var(--ease) 1.4s}
 .space-ready .hud span{opacity:1}
 
-.news{padding-block:96px 64px;text-shadow:0 0 24px rgba(4,4,10,.85)}
+.news{padding-block:56px 32px;text-shadow:0 0 24px rgba(4,4,10,.85)}
 .news h2{font-family:var(--display);font-weight:400;font-size:36px;line-height:40px;letter-spacing:-.045em;margin-top:24px;max-width:18ch}
 .news .note{margin-top:16px;color:var(--muted);max-width:60ch}
 .feed{margin:48px 0 0;padding:0;list-style:none;display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:48px 32px}
