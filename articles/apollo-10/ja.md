@@ -4,7 +4,7 @@ section: apollo
 title: アポロ10号：月面着陸の総仕上げのリハーサル
 seoTitle: アポロ10号：月から14 kmのスヌーピー、チャーリー・ブラウン、最速の大気圏突入
 description: 1969年5月。スタッフォード、ヤング、サーナンの3人は、着陸以外のすべてを月で行いました。月着陸船スヌーピーは、静かの海の上空約14 kmまで降下しました。
-author: Philipp Gladen
+author: Sergei Martynov
 updated: 2026-11-18
 cover: cover.webp
 coverAlt: 1969年5月、39B発射施設のサターンVロケットを背にしたアポロ10号の乗組員

@@ -4,7 +4,7 @@ section: apollo
 title: Apollo 10: o ensaio geral do pouso na Lua
 seoTitle: Apollo 10: Snoopy a 14 km da Lua, Charlie Brown, reentrada rápida
 description: Maio de 1969. Stafford, Young e Cernan fizeram na Lua tudo, menos pousar: o módulo lunar Snoopy desceu até cerca de 14 km acima do Mar da Tranquilidade.
-author: Philipp Gladen
+author: Sergei Martynov
 updated: 2026-11-18
 cover: cover.webp
 coverAlt: A tripulação da Apollo 10 diante de um foguete Saturn V no Complexo de Lançamento 39B, maio de 1969

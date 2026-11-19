@@ -4,7 +4,7 @@ section: luna
 title: Lunokhod 2 : 37 km à travers le cratère Le Monnier
 seoTitle: Lunokhod 2 et Luna 21 : l'itinéraire à travers le cratère Le Monnier, comment l'astromobile se chauffait pendant la nuit lunaire et pourquoi il a cessé de fonctionner
 description: Janvier 1973 : Luna 21 a déposé le second astromobile soviétique au fond du cratère Le Monnier, au bord de la Mer de la Sérénité (Mare Serenitatis). En quatre mois et demi, il a parcouru environ 37 km, franchi la Fossa Recta et cessé de fonctionner à cause de la poussière sur ses radiateurs.
-author: Philipp Gladen
+author: Sergei Martynov
 updated: 2026-11-17
 cover: cover.webp
 coverAlt: Lunokhod 2 à son dernier emplacement dans le cratère Le Monnier, vu depuis l’orbite par la caméra de LRO

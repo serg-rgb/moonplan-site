@@ -4,7 +4,7 @@ section: apollo
 title: Apollo 8: i primi uomini alla Luna e la «Levata della Terra»
 seoTitle: Apollo 8: primo volo con equipaggio alla Luna, 10 orbite, Earthrise
 description: Dicembre 1968: Borman, Lovell e Anders, primi a raggiungere la Luna, fecero 10 orbite e fotografarono la levata della Terra.
-author: Philipp Gladen
+author: Sergei Martynov
 updated: 2026-11-17
 cover: cover.webp
 coverAlt: La Terra sorge sopra l'orizzonte della Luna, fotografia dell'equipaggio di Apollo 8 del 24 dicembre 1968

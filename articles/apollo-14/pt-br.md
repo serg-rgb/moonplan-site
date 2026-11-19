@@ -4,7 +4,7 @@ section: apollo
 title: Apollo 14: Fra Mauro, um carrinho de mão e duas bolas de golfe
 seoTitle: Apollo 14: a tripulação de Shepard, seis tentativas de acoplamento, o pouso perto da cratera Fra Mauro e 42,28 kg de amostras
 description: Janeiro-fevereiro de 1971. Seis tentativas de acoplamento, um pouso nas colinas perto da cratera Fra Mauro, duas saídas somando 9 horas e 23 minutos, um carrinho de mão para as ferramentas e duas bolas de golfe. Cronologia segundo dados da NASA.
-author: Philipp Gladen
+author: Sergei Martynov
 updated: 2026-11-17
 cover: cover.webp
 coverAlt: O módulo lunar Antares na superfície da Lua, com a bandeira dos EUA ao lado

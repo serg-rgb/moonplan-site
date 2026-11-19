@@ -4,7 +4,7 @@ section: moon
 title: Calendario lunare per il giardino e l'orto: tradizione e scienza
 seoTitle: Calendario lunare per l'orto 2027: tradizione e scienza
 description: Piantare a Luna crescente ciò che si raccoglie sopra terra e le radici a calante? Fasi lunari della primavera 2027 e cosa dicono gli studi.
-author: Philipp Gladen
+author: Sergei Martynov
 updated: 2026-11-18
 cover: cover.webp
 coverAlt: Un orto di notte sotto una giovane falce di Luna: aiuole di lattuga, carote e barbabietole, fagioli su un sostegno, un annaffiatoio sul vialetto

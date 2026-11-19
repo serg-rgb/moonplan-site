@@ -4,7 +4,7 @@ section: china
 title: 嫦娥5号と嫦娥6号：月の表側と裏側の土壌
 seoTitle: 嫦娥5号と嫦娥6号：嵐の大洋の土壌1,731 gと、アポロ盆地にある月の裏側の土壌1,935.3 g
 description: 2020年に嫦娥5号は嵐の大洋の土壌1,731 gを、2024年に嫦娥6号は月の裏側の土壌1,935.3 gを地球へ持ち帰りました。どこに着陸したのか、LROの画像で何が見えるのか、そして科学者が月の火山の年代について何を明らかにしたのかを紹介します。
-author: Philipp Gladen
+author: Sergei Martynov
 updated: 2026-11-17
 cover: cover.webp
 coverAlt: アポロ盆地の南縁にある嫦娥6号の着陸地域。LROのカメラによるカラーモザイク

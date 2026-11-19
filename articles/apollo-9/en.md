@@ -4,7 +4,7 @@ section: apollo
 title: Apollo 9: the Spider lunar module in Earth orbit
 seoTitle: Apollo 9: first lunar module flight, Spider and Gumdrop, a spacewalk
 description: March 1969. McDivitt, Scott and Schweickart spent ten days testing the lunar module in Earth orbit: undocking, rendezvous, docking and a spacewalk.
-author: Philipp Gladen
+author: Sergei Martynov
 updated: 2026-11-18
 cover: cover.webp
 coverAlt: The Apollo 9 lunar module Spider with its landing legs extended against the background of Earth, seen from the command module

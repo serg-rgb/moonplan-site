@@ -4,7 +4,7 @@ section: apollo
 title: Apollo 9: o módulo lunar Spider na órbita da Terra
 seoTitle: Apollo 9: módulo lunar Spider, Gumdrop e caminhada espacial
 description: Março de 1969. McDivitt, Scott e Schweickart testaram por dez dias o módulo lunar na órbita da Terra: separação, encontro, acoplagem e saída ao espaço.
-author: Philipp Gladen
+author: Sergei Martynov
 updated: 2026-11-18
 cover: cover.webp
 coverAlt: O módulo lunar Spider da Apollo 9 com as pernas de pouso estendidas contra o fundo da Terra, visto do módulo de comando

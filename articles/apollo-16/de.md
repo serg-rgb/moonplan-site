@@ -4,7 +4,7 @@ section: apollo
 title: Apollo 16: das Hochland von Descartes und der Sprung mit Salut
 seoTitle: Apollo 16: das Hochland von Descartes, eine Triebwerksstörung, 95,71 kg Proben, Chronik nach NASA-Daten
 description: April 1972. Eine fast sechsstündige Verzögerung der Landung wegen einer Störung im Triebwerk des Servicemoduls, drei Ausstiege von insgesamt 20 Stunden 14 Minuten, 27 km im Mondauto durch das Hochland von Descartes und 95,71 kg Proben.
-author: Philipp Gladen
+author: Sergei Martynov
 updated: 2026-11-17
 cover: cover.webp
 coverAlt: John Young springt und grüßt die US-Flagge, links das Mondlandemodul Orion, daneben das Mondauto

@@ -4,7 +4,7 @@ section: moon
 title: Dictons populaires sur la Lune : ce qu'il y a de vrai
 seoTitle: Dictons sur la Lune : halo, cornes du croissant, pleine Lune
 description: Dictons sur la Lune chez Dal et d'autres peuples : cercle pour le mauvais temps, cornes dressées pour le gel, semis à la nouvelle Lune. Ce que dit la météo.
-author: Philipp Gladen
+author: Sergei Martynov
 updated: 2026-11-18
 cover: cover.webp
 coverAlt: Un village d'hiver la nuit, un large halo lumineux autour de la pleine Lune

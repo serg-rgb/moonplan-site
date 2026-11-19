@@ -4,7 +4,7 @@ section: new
 title: Artemis II: l'uomo di nuovo vicino alla Luna per la prima volta dopo mezzo secolo
 seoTitle: Artemis II: primo sorvolo lunare con equipaggio in 50 anni, eclissi
 description: Aprile 2026: quattro astronauti a bordo di Orion hanno girato attorno alla Luna e sono tornati in 9 giorni 1 ora 32 minuti, con un'eclissi di quasi 54 minuti.
-author: Philipp Gladen
+author: Sergei Martynov
 updated: 2026-11-17
 cover: cover.webp
 coverAlt: La Terra tramonta dietro il bordo della Luna, fotografia dell'equipaggio di Artemis II attraverso un finestrino di Orion il 6 aprile 2026

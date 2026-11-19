@@ -4,7 +4,7 @@ section: apollo
 title: Apollo 11: acht Tage im Juli 1969
 seoTitle: Apollo 11: Flugchronik, Besatzung, Landeplatz und was vom Mond mitgebracht wurde
 description: Wie die erste bemannte Mondlandung ablief: vom Start am 16. Juli 1969 bis zur Wasserung am 24. Juli. Zeiten der wichtigsten Ereignisse nach NASA-Daten, der Landeplatz, 21,55 kg Mondproben und wie der Mond an diesem Tag aussah.
-author: Philipp Gladen
+author: Sergei Martynov
 updated: 2026-11-16
 cover: cover.webp
 coverAlt: Edwin Aldrin geht auf der Mondoberfläche neben einem Landeteller der Mondfähre Eagle, 20. Juli 1969

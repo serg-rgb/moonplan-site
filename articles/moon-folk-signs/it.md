@@ -4,7 +4,7 @@ section: moon
 title: Proverbi popolari sulla Luna e che cosa c'è di vero
 seoTitle: Proverbi sulla Luna: alone, corna della falce, Luna piena e gelo
 description: Proverbi sulla Luna da Dal e da altri popoli: alone per il maltempo, corna dritte per il gelo, semina a Luna nuova. Cosa spiega la meteorologia.
-author: Philipp Gladen
+author: Sergei Martynov
 updated: 2026-11-18
 cover: cover.webp
 coverAlt: Un villaggio invernale di notte, con un ampio alone luminoso intorno alla Luna piena

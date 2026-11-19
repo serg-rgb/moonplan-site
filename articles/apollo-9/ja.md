@@ -4,7 +4,7 @@ section: apollo
 title: アポロ9号：地球周回軌道の月着陸船「スパイダー」
 seoTitle: アポロ9号：初の月着陸船飛行、スパイダーとガムドロップ、船外活動
 description: 1969年3月。マクディビット、スコット、シュワイカートの3人は、10日間にわたり地球周回軌道で月着陸船を試験しました。分離、ランデブー、ドッキング、そして船外活動です。
-author: Philipp Gladen
+author: Sergei Martynov
 updated: 2026-11-18
 cover: cover.webp
 coverAlt: 着陸脚を伸ばした、アポロ9号の月着陸船スパイダー。背景に地球。司令船から撮影

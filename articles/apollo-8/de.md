@@ -4,7 +4,7 @@ section: apollo
 title: Apollo 8: die ersten Menschen am Mond und der „Erdaufgang“
 seoTitle: Apollo 8: erster bemannter Flug zum Mond, 10 Umläufe, Erdaufgang
 description: Dezember 1968: Borman, Lovell und Anders erreichten als erste Menschen den Mond, umrundeten ihn 10-mal und fotografierten den Erdaufgang.
-author: Philipp Gladen
+author: Sergei Martynov
 updated: 2026-11-17
 cover: cover.webp
 coverAlt: Die Erde geht über dem Mondhorizont auf, Aufnahme der Besatzung von Apollo 8 am 24. Dezember 1968

@@ -4,7 +4,7 @@ section: apollo
 title: Apollo 10: el ensayo general del alunizaje
 seoTitle: Apollo 10: Snoopy a 14 km de la Luna, Charlie Brown, reentrada récord
 description: Mayo de 1969. Stafford, Young y Cernan hicieron en la Luna todo menos alunizar: el módulo lunar Snoopy bajó hasta unos 14 km sobre el Mar de la Tranquilidad.
-author: Philipp Gladen
+author: Sergei Martynov
 updated: 2026-11-18
 cover: cover.webp
 coverAlt: La tripulación del Apollo 10 frente a un cohete Saturn V en el Complejo de Lanzamiento 39B, mayo de 1969

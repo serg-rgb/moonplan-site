@@ -4,7 +4,7 @@ section: luna
 title: Lunochod 1: 10,5 km durch das Regenmeer
 seoTitle: Lunochod 1 und Luna 17: der erste Mondrover, wie er von der Erde aus gesteuert wurde und wo er heute steht
 description: November 1970: Luna 17 brachte den achträdrigen Lunochod 1 ins Regenmeer (Mare Imbrium). Er war für drei Mondtage ausgelegt und arbeitete elf, legte 10,54 km zurück und sendete mehr als 20.000 Fernsehbilder. Wie es ablief und wie man ihn 40 Jahre später aus dem Orbit wiederfand.
-author: Philipp Gladen
+author: Sergei Martynov
 updated: 2026-11-17
 cover: cover.webp
 coverAlt: Lunochod 1 an seinem letzten Standort im Mare Imbrium, aufgenommen aus der Umlaufbahn von der LRO-Kamera

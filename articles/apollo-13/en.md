@@ -4,7 +4,7 @@ section: apollo
 title: Apollo 13: an explosion halfway out and the return in the lunar module
 seoTitle: Apollo 13: what happened to the oxygen tank, how the crew returned to Earth, a timeline based on NASA data
 description: April 1970. An oxygen tank in the service module exploded 55 hours and 54 minutes after launch, and the landing was cancelled. The crew flew around the Moon and came home using the lunar module as a lifeboat. A minute-by-minute timeline based on NASA data.
-author: Philipp Gladen
+author: Sergei Martynov
 updated: 2026-11-17
 cover: cover.webp
 coverAlt: The damaged Apollo 13 service module after separation: the explosion tore a whole panel off the hull

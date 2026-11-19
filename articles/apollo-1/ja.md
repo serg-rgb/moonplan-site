@@ -4,7 +4,7 @@ section: apollo
 title: アポロ1号：34発射施設で起きた火災
 seoTitle: アポロ1号：乗組員、1967年1月27日の火災、その後の変更点
 description: 1967年1月27日、地上試験中にヴァージル・グリソム、エドワード・ホワイト、ロジャー・チャフィーの3人が亡くなりました。経緯、調査委員会の結論、宇宙船の変更点を紹介します。
-author: Philipp Gladen
+author: Sergei Martynov
 updated: 2026-11-18
 cover: cover.webp
 coverAlt: 34発射施設の前に立つヴァージル・グリソム、エドワード・ホワイト、ロジャー・チャフィー。1967年1月

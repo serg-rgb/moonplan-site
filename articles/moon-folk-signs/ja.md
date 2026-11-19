@@ -4,7 +4,7 @@ section: moon
 title: 月にまつわる言い伝えと、そのどこが正しいのか
 seoTitle: 月の言い伝え：月の暈、三日月の角、満月と霜 — 科学ではどう説明されるか
 description: ダーリの収集や各地の民族に伝わる月の言い伝え。月の暈は悪天候、角の立った月は寒さ、新月の種まき。どれが気象学で説明でき、どれが言い伝えにとどまるのかを検証します。
-author: Philipp Gladen
+author: Sergei Martynov
 updated: 2026-11-18
 cover: cover.webp
 coverAlt: 冬の夜の村。満月のまわりに大きなハロの輪が光っている

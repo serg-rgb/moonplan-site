@@ -4,7 +4,7 @@ section: new
 title: Artemis II : des humains de nouveau près de la Lune, pour la première fois en un demi-siècle
 seoTitle: Artemis II : premier survol lunaire habité en 50 ans et éclipse
 description: Avril 2026 : quatre astronautes à bord d'Orion ont contourné la Lune et sont revenus en 9 jours 1 heure 32 minutes, avec une éclipse de presque 54 minutes.
-author: Philipp Gladen
+author: Sergei Martynov
 updated: 2026-11-17
 cover: cover.webp
 coverAlt: La Terre se couche derrière le bord de la Lune, photographie de l'équipage d'Artemis II à travers un hublot d'Orion le 6 avril 2026

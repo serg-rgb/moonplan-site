@@ -4,7 +4,7 @@ section: luna
 title: Luna 16, Luna 20, Luna 24: lunar soil without people
 seoTitle: Luna 16, Luna 20 and Luna 24: how Soviet automatic stations brought lunar soil to Earth, 101, 55 and 170 grams
 description: From 1970 to 1976, three Soviet automatic stations took samples of lunar soil and delivered them to Earth: 101 g from Mare Fecunditatis (Sea of Fertility), 55 g from the highlands near Apollonius crater and 170 g from Mare Crisium (Sea of Crises), from a depth of more than two metres. How it worked and how their descent stages look today from orbit.
-author: Philipp Gladen
+author: Sergei Martynov
 updated: 2026-11-17
 cover: cover.webp
 coverAlt: The Luna 16 descent stage in Mare Fecunditatis (Sea of Fertility), seen from orbit by the LRO camera

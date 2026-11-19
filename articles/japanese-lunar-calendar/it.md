@@ -4,7 +4,7 @@ section: moon
 title: Il calendario lunare giapponese: il vecchio calendario, i nomi dei mesi e l'ammirazione della Luna
 seoTitle: Calendario lunare giapponese (kyūreki): mesi, rokuyō, tsukimi 2026-27
 description: Il calendario lunisolare del Giappone fino al 1873, gli antichi nomi dei mesi, il rokuyō e quando ammirare la Luna d'autunno nel 2026 e nel 2027.
-author: Philipp Gladen
+author: Sergei Martynov
 updated: 2026-11-18
 cover: cover.webp
 coverAlt: L'ammirazione della Luna d'autunno sulla veranda di una casa giapponese: Luna piena sopra le colline, pennacchi di susuki in un vaso e una piramide di polpette di riso, i dango

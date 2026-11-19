@@ -4,7 +4,7 @@ section: china
 title: Chang'e 4: die erste Landung auf der Rückseite des Mondes
 seoTitle: Chang'e 4 und Yutu-2: die erste weiche Landung auf der Mondrückseite, der Krater Von Kármán und der Relaissatellit Queqiao
 description: Am 3. Januar 2019 landete die chinesische Sonde Chang'e 4 als erste in der Geschichte weich auf der Rückseite des Mondes, im Krater Von Kármán. Wie das Kommunikationsproblem gelöst wurde, wonach der Rover Yutu-2 sucht und wie man beide aus der Umlaufbahn mit der amerikanischen LRO-Kamera sieht.
-author: Philipp Gladen
+author: Sergei Martynov
 updated: 2026-11-17
 cover: cover.webp
 coverAlt: Die Rückseite des Mondes im Gebiet des Kraters Von Kármán, Illustration von Moonplan nach Daten der LRO-Kamera

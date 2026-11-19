@@ -4,7 +4,7 @@ section: moon
 title: Por que a Lua tem fases
 seoTitle: As fases da Lua explicadas: por que a Lua muda de forma e quanto dura um mês lunar
 description: Por que a Lua aparece como um crescente, uma metade ou um disco inteiro, em que o mês sinódico difere do mês sideral e por que um mês lunar real pode ser até 13 horas mais curto ou mais longo que outro.
-author: Philipp Gladen
+author: Sergei Martynov
 updated: 2026-11-16
 cover: cover.webp
 coverAlt: As fases da Lua do crescente à cheia e ao minguante, desenhadas pelo Moonplan a partir de dados da câmera do LRO

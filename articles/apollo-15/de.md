@@ -4,7 +4,7 @@ section: apollo
 title: Apollo 15: das erste Mondauto an den Apenninen
 seoTitle: Apollo 15: das erste Mondauto mit Astronauten, die Hadley Rille, Hammer und Feder, ein Ausstieg ins All auf dem Heimweg
 description: Juli–August 1971. Die erste Expedition mit einem Mondauto: drei Ausstiege von insgesamt 18 Stunden 35 Minuten, 27,9 km über die Ebene an den Apenninen und der Hadley Rille, 77,31 kg Proben, Hammer und Feder, die gleichzeitig fielen, und der erste Ausstieg ins All weit von der Erde entfernt.
-author: Philipp Gladen
+author: Sergei Martynov
 updated: 2026-11-17
 cover: cover.webp
 coverAlt: James Irwin neben dem Mondauto, im Hintergrund der Mount Hadley

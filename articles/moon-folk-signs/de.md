@@ -4,7 +4,7 @@ section: moon
 title: Bauernregeln und Volksglaube zum Mond: was daran stimmt
 seoTitle: Volksglaube zum Mond: Halo, Sichel, Vollmond und was daran stimmt
 description: Mondregeln aus Dals Sammlung und von anderen Völkern: Ring für schlechtes Wetter, steile Sichel für Frost, Aussaat bei Neumond. Was die Meteorologie erklärt.
-author: Philipp Gladen
+author: Sergei Martynov
 updated: 2026-11-18
 cover: cover.webp
 coverAlt: Ein Dorf in einer Winternacht, um den Vollmond leuchtet ein breiter Halo-Ring

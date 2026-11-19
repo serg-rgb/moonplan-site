@@ -4,7 +4,7 @@ section: apollo
 title: アポロ14号：フラ・マウロ、手押し車、2個のゴルフボール
 seoTitle: アポロ14号：シェパードの乗組員、6回のドッキング試行、フラ・マウロ・クレーター近くへの着陸、42.28 kgの試料
 description: 1971年1月〜2月。6回のドッキング試行、フラ・マウロ・クレーター近くの丘陵への着陸、合計9時間23分の2回の船外活動、工具用の手押し車、そして2個のゴルフボール。NASAのデータによる時系列。
-author: Philipp Gladen
+author: Sergei Martynov
 updated: 2026-11-17
 cover: cover.webp
 coverAlt: 月面に立つ月着陸船アンタレスと、そのそばのアメリカ国旗

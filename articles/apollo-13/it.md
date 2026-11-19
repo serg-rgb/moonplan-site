@@ -4,7 +4,7 @@ section: apollo
 title: Apollo 13: un'esplosione a metà strada e il ritorno nel modulo lunare
 seoTitle: Apollo 13: cosa accadde al serbatoio di ossigeno, come l'equipaggio tornò sulla Terra, cronologia secondo i dati della NASA
 description: Aprile 1970. A 55 ore e 54 minuti dal lancio esplose un serbatoio di ossigeno del modulo di servizio e l'allunaggio fu annullato. L'equipaggio girò attorno alla Luna e tornò a casa usando il modulo lunare come scialuppa di salvataggio. Cronologia minuto per minuto secondo i dati della NASA.
-author: Philipp Gladen
+author: Sergei Martynov
 updated: 2026-11-17
 cover: cover.webp
 coverAlt: Il modulo di servizio danneggiato dell'Apollo 13 dopo la separazione: l'esplosione ha strappato un intero pannello del rivestimento

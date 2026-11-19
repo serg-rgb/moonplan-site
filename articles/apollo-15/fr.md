@@ -4,7 +4,7 @@ section: apollo
 title: Apollo 15 : le premier véhicule lunaire au pied des Apennins
 seoTitle: Apollo 15 : le premier véhicule lunaire avec des astronautes, la rille d'Hadley, le marteau et la plume, une sortie dans l'espace sur le chemin du retour
 description: Juillet-août 1971. La première expédition avec un véhicule lunaire : trois sorties totalisant 18 heures 35 minutes, 27,9 km parcourus dans la plaine au pied des Apennins et de la rille d'Hadley, 77,31 kg d'échantillons, un marteau et une plume tombés en même temps, et la première sortie dans l'espace loin de la Terre.
-author: Philipp Gladen
+author: Sergei Martynov
 updated: 2026-11-17
 cover: cover.webp
 coverAlt: James Irwin près du véhicule lunaire, avec le mont Hadley à l'arrière-plan

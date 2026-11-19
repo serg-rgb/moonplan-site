@@ -4,7 +4,7 @@ section: apollo
 title: Apollo 15: o primeiro veículo lunar junto aos montes Apeninos
 seoTitle: Apollo 15: o primeiro veículo lunar com astronautas, a Rima Hadley, o martelo e a pena, uma saída ao espaço no caminho de volta
 description: Julho-agosto de 1971. A primeira expedição com veículo lunar: três saídas somando 18 horas e 35 minutos, 27,9 km pela planície junto aos montes Apeninos e à Rima Hadley, 77,31 kg de amostras, um martelo e uma pena que caíram ao mesmo tempo, e a primeira saída ao espaço longe da Terra.
-author: Philipp Gladen
+author: Sergei Martynov
 updated: 2026-11-17
 cover: cover.webp
 coverAlt: James Irwin junto ao veículo lunar, com o monte Hadley ao fundo

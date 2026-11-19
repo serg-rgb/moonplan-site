@@ -4,7 +4,7 @@ section: apollo
 title: Apollo 9 : le module lunaire Spider en orbite terrestre
 seoTitle: Apollo 9 : module lunaire Spider, Gumdrop et sortie dans l'espace
 description: Mars 1969. McDivitt, Scott et Schweickart ont testé dix jours le module lunaire en orbite terrestre : séparation, rendez-vous, amarrage et sortie dans l'espace.
-author: Philipp Gladen
+author: Sergei Martynov
 updated: 2026-11-18
 cover: cover.webp
 coverAlt: Le module lunaire Spider d'Apollo 9, jambes d'atterrissage déployées, devant la Terre, vu depuis le module de commande

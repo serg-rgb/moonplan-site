@@ -4,7 +4,7 @@ section: moon
 title: 日本の旧暦：古い暦、月の和名、そしてお月見
 seoTitle: 日本の旧暦（太陰太陽暦）のしくみ：月の和名、六曜、お月見 — 2026年・2027年の日付
 description: 1873年まで使われた日本の太陰太陽暦のしくみ、閏月が入る理由、月の和名の意味、六曜とは何か、そして2026年と2027年の中秋の名月はいつかを解説します。
-author: Philipp Gladen
+author: Sergei Martynov
 updated: 2026-11-18
 cover: cover.webp
 coverAlt: 日本家屋の縁側での秋のお月見。丘の上の満月、花瓶に挿したススキの穂、積み上げた団子

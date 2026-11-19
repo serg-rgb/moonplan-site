@@ -4,7 +4,7 @@ section: moon
 title: Folk signs about the Moon and what is true in them
 seoTitle: Moon folk signs: halo, crescent horns, full Moon, and the science
 description: Moon signs from Dal and other peoples: a ring for bad weather, steep horns for frost, sowing at new Moon. What meteorology explains and what stays belief.
-author: Philipp Gladen
+author: Sergei Martynov
 updated: 2026-11-18
 cover: cover.webp
 coverAlt: A winter village at night with a wide halo ring glowing around the full Moon

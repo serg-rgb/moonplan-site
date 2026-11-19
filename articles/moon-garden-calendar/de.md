@@ -4,7 +4,7 @@ section: moon
 title: Mondkalender für Garten und Beet: Tradition und Wissenschaft
 seoTitle: Mondkalender für den Garten 2027: Tradition und Wissenschaft
 description: Oberirdisches bei zunehmendem, Wurzelgemüse bei abnehmendem Mond setzen? Mondphasen im Frühjahr 2027, was Studien sagen und was die Saatzeit wirklich bestimmt.
-author: Philipp Gladen
+author: Sergei Martynov
 updated: 2026-11-18
 cover: cover.webp
 coverAlt: Ein Gemüsegarten nachts unter einer jungen Mondsichel: Beete mit Salat, Möhren und Roter Bete, Bohnen an einer Stütze, eine Gießkanne auf dem Weg

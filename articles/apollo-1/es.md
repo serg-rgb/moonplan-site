@@ -4,7 +4,7 @@ section: apollo
 title: Apollo 1: el incendio en el Complejo de Lanzamiento 34
 seoTitle: Apollo 1: tripulación, incendio del 27 de enero de 1967 y cambios
 description: El 27 de enero de 1967 murieron Grissom, White y Chaffee en una prueba en tierra. Cómo ocurrió, qué determinó la comisión y qué cambió en la nave.
-author: Philipp Gladen
+author: Sergei Martynov
 updated: 2026-11-18
 cover: cover.webp
 coverAlt: Virgil Grissom, Edward White y Roger Chaffee frente al Complejo de Lanzamiento 34, enero de 1967

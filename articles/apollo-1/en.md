@@ -4,7 +4,7 @@ section: apollo
 title: Apollo 1: the fire at Launch Complex 34
 seoTitle: Apollo 1: the crew, the fire of January 27, 1967 and what changed
 description: On January 27, 1967, Grissom, White and Chaffee died during a ground test. How it happened, what the board found and what changed in the spacecraft.
-author: Philipp Gladen
+author: Sergei Martynov
 updated: 2026-11-18
 cover: cover.webp
 coverAlt: Virgil Grissom, Edward White and Roger Chaffee in front of Launch Complex 34, January 1967

@@ -4,7 +4,7 @@ section: new
 title: アルテミス2号：半世紀ぶりに、人類が再び月へ
 seoTitle: アルテミス2号：50年ぶりの有人月フライバイ、日食、観測結果
 description: 2026年4月。オリオンに乗った4人の宇宙飛行士が月を周回し、9日1時間32分で地球に帰還。約54分続いた日食と、5回の衝突の閃光を観測しました。
-author: Philipp Gladen
+author: Sergei Martynov
 updated: 2026-11-17
 cover: cover.webp
 coverAlt: 月の縁の向こうに沈む地球。2026年4月6日、アルテミス2号の乗組員がオリオンの窓から撮影した写真

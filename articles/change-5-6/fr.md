@@ -4,7 +4,7 @@ section: china
 title: Chang'e 5 et Chang'e 6 : du sol de la face visible et de la face cachée de la Lune
 seoTitle: Chang'e 5 et Chang'e 6 : 1731 g de sol de l'Océan des Tempêtes et 1935,3 g de la face cachée de la Lune, du bassin Apollo
 description: En 2020, Chang'e 5 a rapporté sur Terre 1731 g de sol de l'Océan des Tempêtes ; en 2024, Chang'e 6 en a rapporté 1935,3 g de la face cachée de la Lune. Où elles se sont posées, ce que montrent les images de LRO et ce que les scientifiques ont appris sur l'âge des volcans lunaires.
-author: Philipp Gladen
+author: Sergei Martynov
 updated: 2026-11-17
 cover: cover.webp
 coverAlt: La région d'alunissage de Chang'e 6 sur le bord sud du bassin Apollo, mosaïque en couleurs de la caméra de LRO

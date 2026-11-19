@@ -4,7 +4,7 @@ section: apollo
 title: Apollo 10: la prova generale dell'allunaggio
 seoTitle: Apollo 10: Snoopy a 14 km dalla Luna, Charlie Brown, rientro record
 description: Maggio 1969. Stafford, Young e Cernan fecero presso la Luna tutto tranne allunare: il modulo lunare Snoopy scese fino a circa 14 km sul Mare della Tranquillità.
-author: Philipp Gladen
+author: Sergei Martynov
 updated: 2026-11-18
 cover: cover.webp
 coverAlt: L'equipaggio di Apollo 10 davanti a un razzo Saturn V sul complesso di lancio 39B, maggio 1969

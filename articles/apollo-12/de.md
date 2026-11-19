@@ -4,7 +4,7 @@ section: apollo
 title: Apollo 12: Blitzeinschläge beim Start und ein Treffen mit Surveyor
 seoTitle: Apollo 12: Blitze beim Start, Landung bei Surveyor 3, Besatzung und Flugchronik
 description: Die zweite bemannte Mondlandung, November 1969. Zwei Blitzeinschläge in der ersten Flugminute, eine punktgenaue Landung 600 Fuß vom unbemannten Surveyor 3 entfernt, zwei Ausstiege auf die Oberfläche und 34,35 kg Proben. Zeiten der Ereignisse nach NASA-Daten.
-author: Philipp Gladen
+author: Sergei Martynov
 updated: 2026-11-17
 cover: cover.webp
 coverAlt: Charles Conrad neben der Raumsonde Surveyor 3, im Hintergrund die Mondfähre von Apollo 12

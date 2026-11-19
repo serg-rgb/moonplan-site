@@ -4,7 +4,7 @@ section: apollo
 title: Apollo 7: il primo volo con equipaggio della navicella Apollo
 seoTitle: Apollo 7: primo Apollo con equipaggio, 11 giorni in orbita, TV
 description: Ottobre 1968. Schirra, Eisele e Cunningham collaudarono Apollo per quasi 11 giorni in orbita e fecero le prime trasmissioni TV in diretta da una navicella USA.
-author: Philipp Gladen
+author: Sergei Martynov
 updated: 2026-11-18
 cover: cover.webp
 coverAlt: Lancio del razzo Saturn IB con la navicella Apollo 7 dal complesso di lancio 34, 11 ottobre 1968

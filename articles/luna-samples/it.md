@@ -4,7 +4,7 @@ section: luna
 title: Luna 16, Luna 20, Luna 24: suolo lunare senza persone
 seoTitle: Luna 16, Luna 20 e Luna 24: come le stazioni automatiche sovietiche portarono sulla Terra il suolo lunare, 101, 55 e 170 grammi
 description: Dal 1970 al 1976 tre stazioni automatiche sovietiche prelevarono campioni di suolo lunare e li consegnarono alla Terra: 101 g dal Mare della Fecondità (Mare Fecunditatis), 55 g dagli altopiani vicino al cratere Apollonius e 170 g dal Mare delle Crisi (Mare Crisium), da una profondità di oltre due metri. Come funzionava e come appaiono oggi dall'orbita i loro stadi di discesa.
-author: Philipp Gladen
+author: Sergei Martynov
 updated: 2026-11-17
 cover: cover.webp
 coverAlt: Lo stadio di discesa della Luna 16 nel Mare della Fecondità, visto dall'orbita dalla camera del LRO

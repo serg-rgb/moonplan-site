@@ -4,7 +4,7 @@ section: apollo
 title: Apollo 10: die Generalprobe für die Mondlandung
 seoTitle: Apollo 10: Snoopy 14 km vom Mond, Charlie Brown, Wiedereintrittsrekord
 description: Mai 1969. Stafford, Young und Cernan taten am Mond alles außer der Landung: Die Mondfähre Snoopy sank bis auf etwa 14 km über das Meer der Ruhe.
-author: Philipp Gladen
+author: Sergei Martynov
 updated: 2026-11-18
 cover: cover.webp
 coverAlt: Die Besatzung von Apollo 10 vor einer Saturn-V-Rakete auf dem Startkomplex 39B, Mai 1969

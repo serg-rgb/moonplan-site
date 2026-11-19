@@ -4,7 +4,7 @@ section: apollo
 title: Apollo 12: i fulmini al lancio e l'incontro con il Surveyor
 seoTitle: Apollo 12: i fulmini al lancio, l'allunaggio vicino al Surveyor 3, l'equipaggio e la cronologia del volo
 description: Il secondo allunaggio con equipaggio, novembre 1969. Due fulmini nel primo minuto di volo, un allunaggio preciso a 600 piedi dalla sonda automatica Surveyor 3, due uscite sulla superficie e 34,35 kg di campioni. Orari degli eventi secondo i dati della NASA.
-author: Philipp Gladen
+author: Sergei Martynov
 updated: 2026-11-17
 cover: cover.webp
 coverAlt: Charles Conrad accanto alla sonda Surveyor 3, con il modulo lunare dell'Apollo 12 sullo sfondo

@@ -4,7 +4,7 @@ section: moon
 title: Le calendrier lunaire japonais : l'ancien calendrier, les noms des mois et la contemplation de la Lune
 seoTitle: Calendrier lunaire japonais (kyūreki) : mois, rokuyō, tsukimi 2026-27
 description: Le calendrier luni-solaire du Japon jusqu'en 1873, les anciens noms des mois, le rokuyō et quand admirer la Lune d'automne en 2026 et 2027.
-author: Philipp Gladen
+author: Sergei Martynov
 updated: 2026-11-18
 cover: cover.webp
 coverAlt: Contemplation de la Lune d'automne sur la véranda d'une maison japonaise : pleine Lune au-dessus des collines, panicules de susuki dans un vase et pyramide de boulettes de riz, les dango

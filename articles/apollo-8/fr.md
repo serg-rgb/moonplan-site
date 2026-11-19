@@ -4,7 +4,7 @@ section: apollo
 title: Apollo 8 : les premiers humains près de la Lune et le « Lever de Terre »
 seoTitle: Apollo 8 : premier vol habité vers la Lune, 10 orbites, Earthrise
 description: Décembre 1968 : Borman, Lovell et Anders, premiers humains à atteindre la Lune, ont fait 10 orbites et photographié le lever de Terre.
-author: Philipp Gladen
+author: Sergei Martynov
 updated: 2026-11-17
 cover: cover.webp
 coverAlt: La Terre se lève au-dessus de l'horizon de la Lune, photographie de l'équipage d'Apollo 8 le 24 décembre 1968

@@ -4,7 +4,7 @@ section: moon
 title: Calendario lunar para el jardín y el huerto: tradición y ciencia
 seoTitle: Calendario lunar del huerto 2027: tradición y ciencia
 description: ¿Sembrar en luna creciente lo que se cosecha sobre la tierra y las raíces en menguante? Fases lunares de primavera de 2027, qué dicen los estudios.
-author: Philipp Gladen
+author: Sergei Martynov
 updated: 2026-11-18
 cover: cover.webp
 coverAlt: Un huerto de noche bajo una Luna creciente joven: bancales de lechuga, zanahorias y remolachas, judías en un tutor, una regadera en el camino

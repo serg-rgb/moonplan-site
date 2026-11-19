@@ -4,7 +4,7 @@ section: new
 title: Artemis I : un vol sans équipage autour de la Lune avant le retour des humains
 seoTitle: Artemis I : le premier vol de la fusée SLS et du vaisseau Orion vers la Lune, 25 jours dans l'espace, images de la NASA
 description: Novembre–décembre 2022. Le premier vol d'essai de la fusée SLS et du vaisseau Orion sans équipage : 25 jours 10 heures 53 minutes, deux survols de la Lune à environ 80 milles de la surface et un amerrissage au large de San Diego.
-author: Philipp Gladen
+author: Sergei Martynov
 updated: 2026-11-17
 cover: cover.webp
 coverAlt: Une partie de la face cachée de la Lune près du vaisseau Orion, image de la caméra située à l'extrémité de son panneau solaire

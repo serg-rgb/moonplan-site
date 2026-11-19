@@ -4,7 +4,7 @@ section: moon
 title: Lunar calendar for the garden: tradition and science
 seoTitle: Moon gardening calendar 2027: waxing, waning Moon and the science
 description: Plant above-ground crops on the waxing Moon and roots on the waning one? Moon phase dates for spring 2027, what research says and what really sets sowing time.
-author: Philipp Gladen
+author: Sergei Martynov
 updated: 2026-11-18
 cover: cover.webp
 coverAlt: A vegetable garden at night under a young crescent Moon: beds of lettuce, carrots and beets, beans on a support, a watering can on the path

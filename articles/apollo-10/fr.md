@@ -4,7 +4,7 @@ section: apollo
 title: Apollo 10 : la répétition générale de l'alunissage
 seoTitle: Apollo 10 : Snoopy à 14 km de la Lune, Charlie Brown, rentrée record
 description: Mai 1969. Stafford, Young et Cernan ont tout fait près de la Lune sauf alunir : Snoopy est descendu à environ 14 km au-dessus de la mer de la Tranquillité.
-author: Philipp Gladen
+author: Sergei Martynov
 updated: 2026-11-18
 cover: cover.webp
 coverAlt: L'équipage d'Apollo 10 devant une fusée Saturn V sur le complexe de lancement 39B, mai 1969

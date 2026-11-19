@@ -4,7 +4,7 @@ section: apollo
 title: Apollo 7: o primeiro voo tripulado da nave Apollo
 seoTitle: Apollo 7: primeira Apollo tripulada, 11 dias em órbita e TV ao vivo
 description: Outubro de 1968. Schirra, Eisele e Cunningham testaram a Apollo quase 11 dias em órbita e fizeram as primeiras transmissões de TV ao vivo de uma nave dos EUA.
-author: Philipp Gladen
+author: Sergei Martynov
 updated: 2026-11-18
 cover: cover.webp
 coverAlt: Lançamento do foguete Saturn IB com a nave Apollo 7 do Complexo de Lançamento 34, 11 de outubro de 1968

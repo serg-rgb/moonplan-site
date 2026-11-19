@@ -4,7 +4,7 @@ section: luna
 title: Lunojod 2: 37 km por el cráter Le Monnier
 seoTitle: Lunojod 2 y Luna 21: la ruta por el cráter Le Monnier, cómo se mantuvo caliente el vehículo durante la noche lunar y por qué dejó de funcionar
 description: Enero de 1973: la Luna 21 llevó el segundo vehículo lunar soviético al fondo del cráter Le Monnier, en el borde del Mar de la Serenidad (Mare Serenitatis). En cuatro meses y medio recorrió unos 37 km, cruzó la Fossa Recta y dejó de funcionar por el polvo en sus radiadores.
-author: Philipp Gladen
+author: Sergei Martynov
 updated: 2026-11-17
 cover: cover.webp
 coverAlt: El Lunojod 2 en su última posición en el cráter Le Monnier, visto desde la órbita por la cámara del LRO

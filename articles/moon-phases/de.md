@@ -4,7 +4,7 @@ section: moon
 title: Warum der Mond Phasen hat
 seoTitle: Mondphasen erklärt: Warum der Mond seine Gestalt wechselt und wie lang ein Mondmonat ist
 description: Warum der Mond als Sichel, als Halbkreis und als volle Scheibe erscheint, worin sich der synodische vom siderischen Monat unterscheidet und warum ein echter Mondmonat um 13 Stunden kürzer oder länger sein kann als ein anderer.
-author: Philipp Gladen
+author: Sergei Martynov
 updated: 2026-11-16
 cover: cover.webp
 coverAlt: Die Mondphasen von der zunehmenden Sichel über den Vollmond bis zur abnehmenden Sichel, von Moonplan aus Daten der LRO-Kamera berechnet

@@ -4,7 +4,7 @@ section: apollo
 title: Apollo 17: o último pouso, um lançamento noturno e o primeiro cientista na Lua
 seoTitle: Apollo 17: a última expedição com pouso na Lua, o vale de Taurus-Littrow, Harrison Schmitt, cronologia segundo dados da NASA
 description: Dezembro de 1972. O primeiro lançamento noturno de um Saturn V, três dias no vale de Taurus-Littrow, 30 km no veículo lunar, 110,52 kg de amostras e o primeiro cientista na Lua, Harrison Schmitt. Até hoje, a última expedição Apollo com pouso de pessoas.
-author: Philipp Gladen
+author: Sergei Martynov
 updated: 2026-11-17
 cover: cover.webp
 coverAlt: Harrison Schmitt ao lado de um enorme rochedo partido no vale de Taurus-Littrow

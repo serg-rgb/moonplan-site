@@ -4,7 +4,7 @@ section: moon
 title: 月はなぜ満ち欠けするのか
 seoTitle: 月の満ち欠けの仕組み：月はなぜ形を変えるのか、1か月はどれくらいの長さか
 description: 月が三日月にも半月にも満月にも見える理由、朔望月と恒星月の違い、そして実際の1か月の長さが13時間も短くなったり長くなったりする理由を解説します。
-author: Philipp Gladen
+author: Sergei Martynov
 updated: 2026-11-16
 cover: cover.webp
 coverAlt: 満ちていく三日月から満月を経て欠けていく月までの月の満ち欠け。LROのカメラのデータからMoonplanが描画

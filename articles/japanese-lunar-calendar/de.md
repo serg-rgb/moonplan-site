@@ -4,7 +4,7 @@ section: moon
 title: Der japanische Mondkalender: der alte Kalender, Monatsnamen und Mondschau
 seoTitle: Japanischer Mondkalender (Kyūreki): Monate, Rokuyō, Tsukimi 2026–27
 description: Wie Japans Lunisolarkalender bis 1873 aufgebaut war, die alten Monatsnamen, Rokuyō und wann man 2026 und 2027 den Herbstmond bewundert.
-author: Philipp Gladen
+author: Sergei Martynov
 updated: 2026-11-18
 cover: cover.webp
 coverAlt: Herbstliche Mondschau auf der Veranda eines japanischen Hauses: Vollmond über den Hügeln, Susuki-Gras in einer Vase und eine Pyramide aus Reisklößchen, Dango

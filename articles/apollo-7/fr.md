@@ -4,7 +4,7 @@ section: apollo
 title: Apollo 7 : le premier vol habité du vaisseau Apollo
 seoTitle: Apollo 7 : premier Apollo habité, 11 jours en orbite, télévision
 description: Octobre 1968. Schirra, Eisele et Cunningham ont testé Apollo près de 11 jours en orbite et fait les premières émissions de télé en direct d'un vaisseau US.
-author: Philipp Gladen
+author: Sergei Martynov
 updated: 2026-11-18
 cover: cover.webp
 coverAlt: Décollage de la fusée Saturn IB avec le vaisseau Apollo 7 depuis le complexe de lancement 34, le 11 octobre 1968

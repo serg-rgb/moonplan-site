@@ -4,7 +4,7 @@ section: apollo
 title: Apolo 11: ocho días de julio de 1969
 seoTitle: Apolo 11: cronología del vuelo, tripulación, lugar de alunizaje y qué se trajo de la Luna
 description: Cómo fue el primer alunizaje tripulado: desde el lanzamiento el 16 de julio de 1969 hasta el amerizaje el 24 de julio. Horas de los hechos clave según datos de la NASA, el lugar de alunizaje, 21,55 kg de muestras lunares y cómo se veía la Luna ese día.
-author: Philipp Gladen
+author: Sergei Martynov
 updated: 2026-11-16
 cover: cover.webp
 coverAlt: Edwin Aldrin camina por la superficie de la Luna junto a un pie del módulo lunar Eagle, 20 de julio de 1969

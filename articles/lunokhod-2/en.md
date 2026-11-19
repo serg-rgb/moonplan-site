@@ -4,7 +4,7 @@ section: luna
 title: Lunokhod 2: 37 km across Le Monnier crater
 seoTitle: Lunokhod 2 and Luna 21: the route across Le Monnier crater, how the rover kept warm through the lunar night and why it stopped working
 description: January 1973: Luna 21 delivered the second Soviet rover to the floor of Le Monnier crater at the edge of Mare Serenitatis (Sea of Serenity). In four and a half months it drove about 37 km, crossed the Fossa Recta (Straight Rille) and stopped working because of dust on its radiators.
-author: Philipp Gladen
+author: Sergei Martynov
 updated: 2026-11-17
 cover: cover.webp
 coverAlt: Lunokhod 2 at its final parking place in Le Monnier crater, seen from orbit by the LRO camera

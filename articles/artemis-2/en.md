@@ -4,7 +4,7 @@ section: new
 title: Artemis II: people back at the Moon for the first time in half a century
 seoTitle: Artemis II: first crewed Moon flyby in 50 years, eclipse, results
 description: April 2026: four astronauts in Orion flew around the Moon and returned in 9 days 1 hour 32 minutes, with a 54-minute solar eclipse and five impact flashes.
-author: Philipp Gladen
+author: Sergei Martynov
 updated: 2026-11-17
 cover: cover.webp
 coverAlt: Earth setting behind the limb of the Moon, a photo by the Artemis II crew through an Orion window on April 6, 2026

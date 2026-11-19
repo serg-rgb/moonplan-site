@@ -4,7 +4,7 @@ section: moon
 title: Perché la Luna ha le fasi
 seoTitle: Le fasi lunari spiegate: perché la Luna cambia forma e quanto dura un mese lunare
 description: Perché la Luna appare come una falce, una metà o un disco intero, in che cosa il mese sinodico differisce da quello siderale e perché un mese lunare reale può essere più breve o più lungo di un altro fino a 13 ore.
-author: Philipp Gladen
+author: Sergei Martynov
 updated: 2026-11-16
 cover: cover.webp
 coverAlt: Le fasi della Luna dalla falce crescente alla Luna piena fino alla falce calante, ricostruite da Moonplan con i dati della camera di LRO

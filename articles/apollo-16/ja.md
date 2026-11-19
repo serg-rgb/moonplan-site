@@ -4,7 +4,7 @@ section: apollo
 title: アポロ16号：デカルト高地と敬礼のジャンプ
 seoTitle: アポロ16号：デカルト高地、エンジンの不具合、95.71 kgの試料、NASAのデータによる時系列
 description: 1972年4月。機械船のエンジンの不具合で着陸が6時間近く遅れ、合計20時間14分の3回の船外活動、月面車でデカルト高地を走った27 km、95.71 kgの試料。
-author: Philipp Gladen
+author: Sergei Martynov
 updated: 2026-11-17
 cover: cover.webp
 coverAlt: ジャンプしてアメリカ国旗に敬礼するジョン・ヤング。左に月着陸船オリオン、その隣に月面車

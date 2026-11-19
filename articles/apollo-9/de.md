@@ -4,7 +4,7 @@ section: apollo
 title: Apollo 9: die Mondfähre Spider in der Erdumlaufbahn
 seoTitle: Apollo 9: erster Flug der Mondfähre, Spider, Gumdrop, Ausstieg
 description: März 1969. McDivitt, Scott und Schweickart testeten zehn Tage die Mondfähre im Erdorbit: Abkopplung, Rendezvous, Ankopplung und Ausstieg ins All.
-author: Philipp Gladen
+author: Sergei Martynov
 updated: 2026-11-18
 cover: cover.webp
 coverAlt: Die Mondfähre Spider von Apollo 9 mit ausgefahrenen Landebeinen vor der Erde, gesehen vom Kommandomodul aus

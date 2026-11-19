@@ -4,7 +4,7 @@ section: apollo
 title: Apollo 14 : Fra Mauro, une charrette à bras et deux balles de golf
 seoTitle: Apollo 14 : l'équipage de Shepard, six tentatives d'amarrage, l'alunissage près du cratère Fra Mauro et 42,28 kg d'échantillons
 description: Janvier-février 1971. Six tentatives d'amarrage, un alunissage dans les collines près du cratère Fra Mauro, deux sorties totalisant 9 heures 23 minutes, une charrette à bras pour les outils et deux balles de golf. Chronologie d'après les données de la NASA.
-author: Philipp Gladen
+author: Sergei Martynov
 updated: 2026-11-17
 cover: cover.webp
 coverAlt: Le module lunaire Antares sur la surface de la Lune, avec le drapeau des États-Unis à côté

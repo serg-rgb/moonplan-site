@@ -4,7 +4,7 @@ section: luna
 title: Luna 9 : le premier alunissage en douceur sur la Lune
 seoTitle: Luna 9 : le premier alunissage en douceur sur la Lune et les premières images de sa surface, 3 février 1966
 description: Le 3 février 1966, la station soviétique Luna 9 a réalisé le premier alunissage en douceur de l'histoire et transmis à la Terre des images de la surface. Comment était construite cette station de 99 kg, ce que montraient ses panoramas et comment la Lune apparaissait depuis la Terre ce jour-là.
-author: Philipp Gladen
+author: Sergei Martynov
 updated: 2026-11-17
 cover: cover.webp
 coverAlt: La station d'alunissage Luna 9 avec ses pétales ouverts et ses antennes déployées

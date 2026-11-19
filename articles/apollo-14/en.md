@@ -4,7 +4,7 @@ section: apollo
 title: Apollo 14: Fra Mauro, a hand cart and two golf balls
 seoTitle: Apollo 14: Shepard's crew, six docking attempts, the landing near Fra Mauro crater and 42.28 kg of samples
 description: January–February 1971. Six docking attempts, a landing in the hills near Fra Mauro crater, two moonwalks totalling 9 hours 23 minutes, a hand cart for tools and two golf balls. A timeline based on NASA data.
-author: Philipp Gladen
+author: Sergei Martynov
 updated: 2026-11-17
 cover: cover.webp
 coverAlt: The Antares lunar module on the surface of the Moon, with the US flag beside it

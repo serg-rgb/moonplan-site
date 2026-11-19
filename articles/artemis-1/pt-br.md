@@ -4,7 +4,7 @@ section: new
 title: Artemis I: um voo não tripulado ao redor da Lua antes da volta das pessoas
 seoTitle: Artemis I: o primeiro voo do foguete SLS e da espaçonave Orion à Lua, 25 dias no espaço, imagens da NASA
 description: Novembro–dezembro de 2022. O primeiro voo de teste do foguete SLS e da espaçonave Orion sem tripulação: 25 dias 10 horas 53 minutos, dois sobrevoos da Lua a cerca de 80 milhas da superfície e uma amerrissagem ao largo de San Diego.
-author: Philipp Gladen
+author: Sergei Martynov
 updated: 2026-11-17
 cover: cover.webp
 coverAlt: Parte do lado oculto da Lua ao lado da espaçonave Orion, imagem da câmera na ponta de seu painel solar

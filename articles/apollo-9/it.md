@@ -4,7 +4,7 @@ section: apollo
 title: Apollo 9: il modulo lunare Spider in orbita terrestre
 seoTitle: Apollo 9: modulo lunare Spider, Gumdrop e uscita nello spazio
 description: Marzo 1969. McDivitt, Scott e Schweickart collaudarono per dieci giorni il modulo lunare in orbita: separazione, rendez-vous, aggancio e uscita nello spazio.
-author: Philipp Gladen
+author: Sergei Martynov
 updated: 2026-11-18
 cover: cover.webp
 coverAlt: Il modulo lunare Spider di Apollo 9 con le gambe di atterraggio estese sullo sfondo della Terra, visto dal modulo di comando

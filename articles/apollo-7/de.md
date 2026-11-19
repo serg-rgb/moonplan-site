@@ -4,7 +4,7 @@ section: apollo
 title: Apollo 7: der erste bemannte Flug des Apollo-Raumschiffs
 seoTitle: Apollo 7: erster bemannter Apollo-Flug, 11 Tage im Orbit, TV-Bilder
 description: Oktober 1968. Schirra, Eisele und Cunningham testeten Apollo fast 11 Tage im Erdorbit und sendeten die ersten Live-Fernsehbilder eines US-Raumschiffs.
-author: Philipp Gladen
+author: Sergei Martynov
 updated: 2026-11-18
 cover: cover.webp
 coverAlt: Start der Saturn-IB-Rakete mit dem Raumschiff Apollo 7 vom Startkomplex 34, 11. Oktober 1968

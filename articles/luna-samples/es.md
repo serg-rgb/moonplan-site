@@ -4,7 +4,7 @@ section: luna
 title: Luna 16, Luna 20, Luna 24: suelo lunar sin personas
 seoTitle: Luna 16, Luna 20 y Luna 24: cómo las estaciones automáticas soviéticas trajeron suelo lunar a la Tierra, 101, 55 y 170 gramos
 description: Entre 1970 y 1976, tres estaciones automáticas soviéticas tomaron muestras de suelo lunar y las entregaron a la Tierra: 101 g del Mar de la Fecundidad (Mare Fecunditatis), 55 g de las tierras altas cerca del cráter Apollonius y 170 g del Mar de las Crisis (Mare Crisium), desde una profundidad de más de dos metros. Cómo funcionaba y cómo se ven hoy desde la órbita sus etapas de descenso.
-author: Philipp Gladen
+author: Sergei Martynov
 updated: 2026-11-17
 cover: cover.webp
 coverAlt: La etapa de descenso de la Luna 16 en el Mar de la Fecundidad, vista desde la órbita por la cámara del LRO

@@ -4,7 +4,7 @@ section: apollo
 title: Apollo 8: as primeiras pessoas na Lua e o «Nascer da Terra»
 seoTitle: Apollo 8: primeiro voo tripulado à Lua, 10 órbitas, Earthrise
 description: Dezembro de 1968: Borman, Lovell e Anders, os primeiros a chegar à Lua, deram 10 voltas ao redor dela e fotografaram o nascer da Terra.
-author: Philipp Gladen
+author: Sergei Martynov
 updated: 2026-11-17
 cover: cover.webp
 coverAlt: A Terra nasce acima do horizonte da Lua, fotografia da tripulação da Apollo 8 em 24 de dezembro de 1968

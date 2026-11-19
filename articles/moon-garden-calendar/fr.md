@@ -4,7 +4,7 @@ section: moon
 title: Calendrier lunaire pour le jardin et le potager : tradition et science
 seoTitle: Calendrier lunaire du jardin 2027 : tradition et science
 description: Planter en Lune croissante ce qui se récolte hors du sol, les racines en décroissante ? Phases au printemps 2027 et ce que disent les études.
-author: Philipp Gladen
+author: Sergei Martynov
 updated: 2026-11-18
 cover: cover.webp
 coverAlt: Un potager la nuit sous un jeune croissant de Lune : planches de laitue, de carottes et de betteraves, haricots sur un tuteur, un arrosoir dans l'allée

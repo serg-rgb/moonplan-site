@@ -4,7 +4,7 @@ section: apollo
 title: Apollo 10: the dress rehearsal for the Moon landing
 seoTitle: Apollo 10: Snoopy 14 km from the Moon, Charlie Brown, fastest reentry
 description: May 1969. Stafford, Young and Cernan did everything at the Moon except land: the lunar module Snoopy descended to about 14 km above the Sea of Tranquility.
-author: Philipp Gladen
+author: Sergei Martynov
 updated: 2026-11-18
 cover: cover.webp
 coverAlt: The Apollo 10 crew in front of a Saturn V rocket at Launch Complex 39B, May 1969

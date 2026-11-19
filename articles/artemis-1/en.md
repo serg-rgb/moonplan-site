@@ -4,7 +4,7 @@ section: new
 title: Artemis I: an uncrewed flight around the Moon before the return of people
 seoTitle: Artemis I: the first flight of the SLS rocket and the Orion spacecraft to the Moon, 25 days in space, NASA images
 description: November–December 2022. The first test flight of the SLS rocket and the Orion spacecraft without a crew: 25 days 10 hours 53 minutes, two flybys of the Moon about 80 miles from the surface and a splashdown off San Diego.
-author: Philipp Gladen
+author: Sergei Martynov
 updated: 2026-11-17
 cover: cover.webp
 coverAlt: Part of the far side of the Moon next to the Orion spacecraft, an image from the camera at the end of its solar array

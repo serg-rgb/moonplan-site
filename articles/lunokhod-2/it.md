@@ -4,7 +4,7 @@ section: luna
 title: Lunochod 2: 37 km attraverso il cratere Le Monnier
 seoTitle: Lunochod 2 e Luna 21: il percorso nel cratere Le Monnier, come il rover si scaldava durante la notte lunare e perché smise di funzionare
 description: Gennaio 1973: la Luna 21 portò il secondo rover sovietico sul fondo del cratere Le Monnier, al margine del Mare della Serenità (Mare Serenitatis). In quattro mesi e mezzo percorse circa 37 km, attraversò la Fossa Recta e smise di funzionare a causa della polvere sui radiatori.
-author: Philipp Gladen
+author: Sergei Martynov
 updated: 2026-11-17
 cover: cover.webp
 coverAlt: Lunochod 2 nella sua ultima posizione nel cratere Le Monnier, ripreso dall’orbita dalla camera di LRO

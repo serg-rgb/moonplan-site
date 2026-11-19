@@ -4,7 +4,7 @@ section: apollo
 title: Apollo 16 : les hautes terres de Descartes et le saut avec salut
 seoTitle: Apollo 16 : les hautes terres de Descartes, une anomalie du moteur, 95,71 kg d'échantillons, chronologie d'après les données de la NASA
 description: Avril 1972. Un alunissage retardé de près de six heures à cause d'une anomalie du moteur du module de service, trois sorties totalisant 20 heures 14 minutes, 27 km en véhicule lunaire à travers les hautes terres de Descartes et 95,71 kg d'échantillons.
-author: Philipp Gladen
+author: Sergei Martynov
 updated: 2026-11-17
 cover: cover.webp
 coverAlt: John Young en plein saut, saluant le drapeau américain ; à gauche le module lunaire Orion, à côté le véhicule lunaire

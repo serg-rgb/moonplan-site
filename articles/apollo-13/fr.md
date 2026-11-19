@@ -4,7 +4,7 @@ section: apollo
 title: Apollo 13 : une explosion à mi-chemin et le retour dans le module lunaire
 seoTitle: Apollo 13 : ce qui est arrivé au réservoir d'oxygène, comment l'équipage est revenu sur Terre, chronologie d'après les données de la NASA
 description: Avril 1970. 55 heures et 54 minutes après le lancement, un réservoir d'oxygène du module de service a explosé et l'alunissage a été annulé. L'équipage a contourné la Lune et est rentré en utilisant le module lunaire comme canot de sauvetage. Chronologie minute par minute d'après les données de la NASA.
-author: Philipp Gladen
+author: Sergei Martynov
 updated: 2026-11-17
 cover: cover.webp
 coverAlt: Le module de service endommagé d'Apollo 13 après la séparation : l'explosion a arraché tout un panneau du revêtement

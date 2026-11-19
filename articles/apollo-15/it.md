@@ -4,7 +4,7 @@ section: apollo
 title: Apollo 15: il primo veicolo lunare ai piedi degli Appennini
 seoTitle: Apollo 15: il primo veicolo lunare con gli astronauti, la Rima Hadley, il martello e la piuma, un'uscita nello spazio sulla via del ritorno
 description: Luglio-agosto 1971. La prima spedizione con un veicolo lunare: tre uscite per un totale di 18 ore e 35 minuti, 27,9 km sulla pianura ai piedi degli Appennini e della Rima Hadley, 77,31 kg di campioni, un martello e una piuma caduti nello stesso istante, e la prima uscita nello spazio lontano dalla Terra.
-author: Philipp Gladen
+author: Sergei Martynov
 updated: 2026-11-17
 cover: cover.webp
 coverAlt: James Irwin accanto al veicolo lunare, sullo sfondo il monte Hadley

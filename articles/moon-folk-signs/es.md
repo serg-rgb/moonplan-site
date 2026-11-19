@@ -4,7 +4,7 @@ section: moon
 title: Refranes y creencias populares sobre la Luna y qué hay de cierto en ellos
 seoTitle: Refranes sobre la Luna: halo, cuernos, luna llena y qué es cierto
 description: Refranes sobre la Luna de Dal y de otros pueblos: halo para el mal tiempo, cuernos erguidos para el hielo, siembra en luna nueva. Qué explica la meteorología.
-author: Philipp Gladen
+author: Sergei Martynov
 updated: 2026-11-18
 cover: cover.webp
 coverAlt: Un pueblo nevado de noche, con un ancho anillo de halo brillando alrededor de la Luna llena

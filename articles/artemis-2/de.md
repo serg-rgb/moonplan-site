@@ -4,7 +4,7 @@ section: new
 title: Artemis II: Menschen sind nach einem halben Jahrhundert wieder am Mond
 seoTitle: Artemis II: erster bemannter Mondvorbeiflug seit 50 Jahren
 description: April 2026: Vier Astronauten in Orion umrundeten den Mond und kehrten nach 9 Tagen 1 Stunde 32 Minuten zurück, mit 54 Minuten Sonnenfinsternis.
-author: Philipp Gladen
+author: Sergei Martynov
 updated: 2026-11-17
 cover: cover.webp
 coverAlt: Die Erde geht hinter dem Mondrand unter, Aufnahme der Besatzung von Artemis II durch ein Fenster von Orion am 6. April 2026

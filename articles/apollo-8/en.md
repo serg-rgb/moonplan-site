@@ -4,7 +4,7 @@ section: apollo
 title: Apollo 8: the first people at the Moon and Earthrise
 seoTitle: Apollo 8: first crewed flight to the Moon, 10 orbits, Earthrise
 description: December 1968: Borman, Lovell and Anders became the first people to reach the Moon, made 10 orbits, photographed Earthrise and gave a Christmas broadcast.
-author: Philipp Gladen
+author: Sergei Martynov
 updated: 2026-11-17
 cover: cover.webp
 coverAlt: Earth rising above the Moon's horizon, a photo by the Apollo 8 crew on December 24, 1968

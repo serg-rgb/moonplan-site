@@ -4,7 +4,7 @@ section: luna
 title: Lunokhod 1: 10,5 km pelo Mar das Chuvas
 seoTitle: Lunokhod 1 e Luna 17: o primeiro veículo lunar, como era guiado da Terra e onde está agora
 description: Novembro de 1970: a Luna 17 levou ao Mar das Chuvas o Lunokhod 1, de oito rodas. Esperava-se que funcionasse por três dias lunares, mas funcionou onze, percorreu 10,54 km e transmitiu mais de 20.000 imagens de televisão. Como foi e como o encontraram da órbita 40 anos depois.
-author: Philipp Gladen
+author: Sergei Martynov
 updated: 2026-11-17
 cover: cover.webp
 coverAlt: O Lunokhod 1 em sua última posição no Mare Imbrium, visto da órbita pela câmera do LRO

@@ -4,7 +4,7 @@ section: apollo
 title: Apollo 12 : la foudre au décollage et un rendez-vous avec Surveyor
 seoTitle: Apollo 12 : la foudre au lancement, l'alunissage près de Surveyor 3, l'équipage et la chronologie du vol
 description: Deuxième alunissage habité, novembre 1969. Deux coups de foudre dans la première minute du vol, un alunissage précis à 600 pieds de la sonde automatique Surveyor 3, deux sorties sur la surface et 34,35 kg d'échantillons. Heures des événements d'après les données de la NASA.
-author: Philipp Gladen
+author: Sergei Martynov
 updated: 2026-11-17
 cover: cover.webp
 coverAlt: Charles Conrad près de la sonde Surveyor 3, avec le module lunaire d'Apollo 12 à l'arrière-plan

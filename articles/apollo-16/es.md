@@ -4,7 +4,7 @@ section: apollo
 title: Apollo 16: las tierras altas de Descartes y el salto con saludo
 seoTitle: Apollo 16: las tierras altas de Descartes, una avería del motor, 95,71 kg de muestras, cronología según datos de la NASA
 description: Abril de 1972. Un alunizaje retrasado casi seis horas por una avería en el motor del módulo de servicio, tres salidas que suman 20 horas y 14 minutos, 27 km en el vehículo lunar por las tierras altas de Descartes y 95,71 kg de muestras.
-author: Philipp Gladen
+author: Sergei Martynov
 updated: 2026-11-17
 cover: cover.webp
 coverAlt: John Young en un salto saludando a la bandera de EE. UU., a la izquierda el módulo lunar Orion y, a su lado, el vehículo lunar

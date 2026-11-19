@@ -4,7 +4,7 @@ section: apollo
 title: アポロ8号：月に到達した最初の人類と「地球の出」
 seoTitle: アポロ8号：初の有人月飛行、月を10周、「地球の出」
 description: 1968年12月。ボーマン、ラベル、アンダースの3人が人類で初めて月に到達し、月を10周して「地球の出」を撮影し、月周回軌道からクリスマスのテレビ中継を行いました。
-author: Philipp Gladen
+author: Sergei Martynov
 updated: 2026-11-17
 cover: cover.webp
 coverAlt: 月の地平線の上に昇る地球。1968年12月24日、アポロ8号の乗組員が撮影した写真

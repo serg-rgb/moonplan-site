@@ -4,7 +4,7 @@ section: luna
 title: ルナ9号：月面への初の軟着陸
 seoTitle: ルナ9号：月面への初の軟着陸と月面から届いた最初の画像、1966年2月3日
 description: 1966年2月3日、ソ連の探査機ルナ9号は史上初めて月に軟着陸し、地表の画像を地球へ送りました。重さ99 kgの探査機の構造、パノラマ画像に写っていたもの、その日に地球から見えた月の姿を紹介します。
-author: Philipp Gladen
+author: Sergei Martynov
 updated: 2026-11-17
 cover: cover.webp
 coverAlt: 花びらを開き、アンテナを伸ばしたルナ9号の着陸機

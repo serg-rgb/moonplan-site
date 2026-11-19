@@ -4,7 +4,7 @@ section: china
 title: Chang'e 5 e Chang'e 6: solo do lado visível e do lado oculto da Lua
 seoTitle: Chang'e 5 e Chang'e 6: 1.731 g de solo do Oceano das Tempestades e 1.935,3 g do lado oculto da Lua, da bacia Apollo
 description: Em 2020, a Chang'e 5 trouxe à Terra 1.731 g de solo do Oceano das Tempestades; em 2024, a Chang'e 6 trouxe 1.935,3 g do lado oculto da Lua. Onde elas pousaram, o que se vê nas imagens da LRO e o que os cientistas descobriram sobre a idade dos vulcões lunares.
-author: Philipp Gladen
+author: Sergei Martynov
 updated: 2026-11-17
 cover: cover.webp
 coverAlt: A região de pouso da Chang'e 6 na borda sul da bacia Apollo, mosaico em cores da câmera da LRO

@@ -4,7 +4,7 @@ section: new
 title: Artemis II: las personas vuelven a la Luna por primera vez en medio siglo
 seoTitle: Artemis II: primer sobrevuelo lunar tripulado en 50 años y eclipse
 description: Abril de 2026: cuatro astronautas en Orion rodearon la Luna y volvieron a la Tierra en 9 días 1 hora 32 minutos, con un eclipse solar de casi 54 minutos.
-author: Philipp Gladen
+author: Sergei Martynov
 updated: 2026-11-17
 cover: cover.webp
 coverAlt: La Tierra se pone tras el borde de la Luna, fotografía de la tripulación de Artemis II a través de una ventana de Orion el 6 de abril de 2026

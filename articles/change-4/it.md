@@ -4,7 +4,7 @@ section: china
 title: Chang'e 4: il primo allunaggio sul lato nascosto della Luna
 seoTitle: Chang'e 4 e Yutu-2: il primo allunaggio morbido sul lato nascosto della Luna, il cratere Von Kármán e il satellite relè Queqiao
 description: Il 3 gennaio 2019 la sonda cinese Chang'e 4 si posò per la prima volta nella storia in modo morbido sul lato nascosto della Luna, nel cratere Von Kármán. Come fu risolto il problema delle comunicazioni, che cosa cerca il rover Yutu-2 e come si vedono dall'orbita con la fotocamera americana LRO.
-author: Philipp Gladen
+author: Sergei Martynov
 updated: 2026-11-17
 cover: cover.webp
 coverAlt: Il lato nascosto della Luna nella zona del cratere Von Kármán, illustrazione di Moonplan basata sui dati della fotocamera di LRO

@@ -4,7 +4,7 @@ section: apollo
 title: Apollo 8: las primeras personas en la Luna y la «Salida de la Tierra»
 seoTitle: Apollo 8: primer vuelo tripulado a la Luna, 10 órbitas, Earthrise
 description: Diciembre de 1968: Borman, Lovell y Anders llegaron a la Luna, dieron 10 vueltas a su alrededor, fotografiaron la salida de la Tierra y emitieron en Navidad.
-author: Philipp Gladen
+author: Sergei Martynov
 updated: 2026-11-17
 cover: cover.webp
 coverAlt: La Tierra se eleva sobre el horizonte de la Luna, fotografía de la tripulación del Apollo 8 el 24 de diciembre de 1968

@@ -4,7 +4,7 @@ section: apollo
 title: Apollo 7: the first crewed flight of the Apollo spacecraft
 seoTitle: Apollo 7: the first crewed Apollo, 11 days in orbit and TV broadcasts
 description: October 1968. Schirra, Eisele and Cunningham tested Apollo in Earth orbit for almost 11 days and made the first live TV broadcasts from a US spacecraft.
-author: Philipp Gladen
+author: Sergei Martynov
 updated: 2026-11-18
 cover: cover.webp
 coverAlt: The Saturn IB rocket with the Apollo 7 spacecraft lifting off from Launch Complex 34, October 11, 1968

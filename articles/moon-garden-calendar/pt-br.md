@@ -4,7 +4,7 @@ section: moon
 title: Calendário lunar para o jardim e a horta: tradição e ciência
 seoTitle: Calendário lunar da horta 2027: tradição e ciência
 description: Plantar na lua crescente o que se colhe acima do solo e raízes na minguante? Fases da Lua na primavera de 2027, o que dizem os estudos e o que define o plantio.
-author: Philipp Gladen
+author: Sergei Martynov
 updated: 2026-11-18
 cover: cover.webp
 coverAlt: Uma horta à noite sob uma jovem Lua crescente: canteiros de alface, cenoura e beterraba, feijão num tutor, um regador no caminho

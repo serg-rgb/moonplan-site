@@ -4,7 +4,7 @@ section: new
 title: アルテミス1号：人類が戻る前の、月を回る無人飛行
 seoTitle: アルテミス1号：SLSロケットとオリオン宇宙船による初の月への飛行、宇宙での25日間、NASAの画像
 description: 2022年11月〜12月。SLSロケットとオリオン宇宙船による、乗組員なしの初の試験飛行。25日10時間53分、表面から約80マイルでの2回の月フライバイ、そしてサンディエゴ沖への着水。
-author: Philipp Gladen
+author: Sergei Martynov
 updated: 2026-11-17
 cover: cover.webp
 coverAlt: オリオン宇宙船のそばに見える月の裏側の一部。太陽電池パネルの先端にあるカメラの画像

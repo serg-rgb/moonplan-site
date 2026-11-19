@@ -4,7 +4,7 @@ section: apollo
 title: アポロ13号：行程の途中での爆発と、月着陸船での帰還
 seoTitle: アポロ13号：酸素タンクに何が起きたか、乗組員はどう地球へ戻ったか、NASAのデータによる時系列
 description: 1970年4月。打ち上げから55時間54分後に機械船の酸素タンクが爆発し、着陸は中止されました。乗組員は月を回り込み、月着陸船を救命ボート代わりにして帰還しました。NASAのデータによる分刻みの時系列。
-author: Philipp Gladen
+author: Sergei Martynov
 updated: 2026-11-17
 cover: cover.webp
 coverAlt: 分離後の損傷したアポロ13号の機械船：爆発で外板が1枚まるごとはぎ取られている

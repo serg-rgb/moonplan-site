@@ -4,7 +4,7 @@ section: luna
 title: Lunojod 1: 10,5 km por el Mar de las Lluvias
 seoTitle: Lunojod 1 y Luna 17: el primer vehículo lunar, cómo se conducía desde la Tierra y dónde está ahora
 description: Noviembre de 1970: la Luna 17 llevó al Mar de las Lluvias el Lunojod 1, de ocho ruedas. Se había previsto que funcionara tres días lunares y funcionó once, recorrió 10,54 km y transmitió más de 20 000 imágenes de televisión. Cómo fue y cómo se le encontró desde la órbita 40 años después.
-author: Philipp Gladen
+author: Sergei Martynov
 updated: 2026-11-17
 cover: cover.webp
 coverAlt: El Lunojod 1 en su última posición en el Mare Imbrium, visto desde la órbita por la cámara del LRO

@@ -4,7 +4,7 @@ section: apollo
 title: アポロ7号：アポロ宇宙船による初の有人飛行
 seoTitle: アポロ7号：初の有人アポロ、11日間の周回飛行とテレビ中継
 description: 1968年10月。シラー、アイズリー、カニンガムの3人は、ほぼ11日間、地球周回軌道でアポロ宇宙船を試験し、アメリカの宇宙船から初のテレビ生中継を行いました。
-author: Philipp Gladen
+author: Sergei Martynov
 updated: 2026-11-18
 cover: cover.webp
 coverAlt: 1968年10月11日、34発射施設から打ち上げられるアポロ7号を載せたサターンIBロケット

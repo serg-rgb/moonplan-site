@@ -4,7 +4,7 @@ section: apollo
 title: Apollo 1: das Feuer auf dem Startkomplex 34
 seoTitle: Apollo 1: die Besatzung, das Feuer vom 27. Januar 1967 und die Folgen
 description: Am 27. Januar 1967 starben Grissom, White und Chaffee bei einem Bodentest. Wie es dazu kam, was die Kommission feststellte und was sich am Raumschiff änderte.
-author: Philipp Gladen
+author: Sergei Martynov
 updated: 2026-11-18
 cover: cover.webp
 coverAlt: Virgil Grissom, Edward White und Roger Chaffee vor dem Startkomplex 34, Januar 1967

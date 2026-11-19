@@ -4,7 +4,7 @@ section: moon
 title: Ditados populares sobre a Lua e o que há de verdade neles
 seoTitle: Ditados sobre a Lua: halo, pontas do crescente, lua cheia e geada
 description: Ditados sobre a Lua de Dal e de outros povos: halo para o mau tempo, pontas erguidas para o frio, plantio na lua nova. O que a meteorologia explica.
-author: Philipp Gladen
+author: Sergei Martynov
 updated: 2026-11-18
 cover: cover.webp
 coverAlt: Uma vila de inverno à noite, com um largo anel de halo brilhando em volta da Lua cheia

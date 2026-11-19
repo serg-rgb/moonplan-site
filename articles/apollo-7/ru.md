@@ -4,7 +4,7 @@ section: apollo
 title: Apollo 7: первый полёт людей на корабле Apollo
 seoTitle: Apollo 7: первый пилотируемый Apollo и телевидение с орбиты
 description: Октябрь 1968 года: Ширра, Эйзел и Каннингем почти 11 суток испытывали корабль Apollo на орбите Земли и провели первые прямые телетрансляции.
-author: Philipp Gladen
+author: Сергей Мартынов
 updated: 2026-11-18
 cover: cover.webp
 coverAlt: Старт ракеты Saturn IB с кораблём Apollo 7 со стартового комплекса 34, 11 октября 1968 года
